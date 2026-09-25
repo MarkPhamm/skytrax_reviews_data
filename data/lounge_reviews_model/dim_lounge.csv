@@ -1,0 +1,2221 @@
+lounge_id,lounge_name,airport,type_of_lounge
+667eb3d8f7db344339fae2abdc5114d2,unknown,New York JFK Airport,First Class
+83ea2c418ab1c4c412a70f9fe6cca9fe,unknown,Moscow Domodedovo Airport,Business Class
+75e3fd55c90514110a2142a8c2206c5e,Maple Leaf Lounge,Edmonton Airport,Business Class
+10f5743b3b2de86a5878afa0d299e417,unknown,Dubai Airport,First Class
+19e7153b5c16da755383beb08a940562,Royal Orchid,Kansai International Airport,First Class
+55075523df8709f351aa7a7fc6512be8,Clubhouse,London Heathrow Airport,unknown
+8d4bbea5f715caddbc3854f0ddc9c975,Virgin Atlantic Heathrow T3,London Heathrow Airport,Business Class
+5ffc063eb776c2baed829d2f4da5d1d8,unknown,Bari Palese Airport,Members
+71da385d79d38828cbb870c4b835c033,RJ Airlines,Amman Queen Alia Airport,Business Class
+465ab69a2f612909e7d719e4baed418f,unknown,Los Angeles LAX Airport,Business Class
+0d524404a60ee1273172af82c5a9bac8,Sala Cibeles,Madrid Barajas Airport,Business Class
+2098d9d794732f81a2010f5f11c519a3,unknown,Beijing Capital Airport,Business Class
+83713037ed80477e090bdb9c33441334,Golden Lounge Domestic,KLIA Kuala Lumpur Airport,Frequent Flyer
+c5602411e09e97bb1789b8521cd97730,Terminal 5 South Lounge,London Heathrow Airport,Business Class
+f115f8049833c87120fe7954449b048b,Senator lounge,London Heathrow Airport,Business Class
+814b2113893b333ce5a052354dd534a8,Senator Gates A,Frankfurt Main Airport,Frequent Flyer
+26d64d86c07b106f5e9405623b664e75,unknown,Washington Dulles Airport,First Class
+aa480d797ec3e137f5410780567fd26f,Silver Kris Lounge,Melbourne Airport,Business Class
+4093ab0ba82741d88d683bbfc901bf9f,Airport First Class Lounge,Xiamen Airport,First Class
+a5cd52c9437c1d865a28f7cfccaddcb9,Silver Kris,Singapore Changi Airport,Business Class
+926d171cb76d85a67bc1b71a3359cd33,The Club,Atlanta Hartsfield Airport,Business Class
+fc85b039d1655f25daa3a5edde2d1eb9,unknown,Orlando Airport,First Class
+ead7c371c8975cd8a2f951aa0441aa29,Slow Lounge,Cape Town Airport,Business Class
+bd5debce07f5429ee956374cdf4a7a56,Qantas Club,Honolulu Airport,Business Class
+e1f83a8803ea6fc875c3fcef9821e132,Gold Lounge,Stockholm Arlanda Airport,Business Class
+d1777d79a7ff9d3c4d3cae3ba5fc1b93,Tap Lounge,Lisbon Airport,Business Class
+c82fde9e7fb60abd1398ccced27cb401,unknown,Singapore Changi Airport,First Class
+2c911e068748499664db3831e3f741e2,unknown,Oslo Airport,unknown
+be90ba1fb1f80e49a0753eff40c6bd1e,SilverKris Lounge,Brisbane Airport,Business Class
+7b839a9eab2eb98510145b0d149e4e27,unknown,London Gatwick Airport,First Class
+1bfdb5b6d630f72b878cc9f6e9082d6b,unknown,Munich Airport,First Class
+cce7961ab4d714cb691908274fa29ee9,Karubuni,Entebbe Airport,Business Class
+5cf3b87ad11d0bc32d799af39a551d14,Aena Miro,Barcelona Airport,Business Class
+3039bc3dd8be41902a5fa616f9bb6e80,Business Class,Santiago De Chile Airport,Business Class
+f4a0e2dfd9c3a2255ea8e710f074dae7,Terminal 3,Jakarta Airport,Business Class
+5de7d19713de774754644dfe08359d3b,Royal Orchid,Bangkok Suvarnabhumi Airport,Business Class
+ff78fa645f68a53dd7c3aaef5ec173e7,Emperor Lounge,Auckland Airport,Business Class
+05b7fc7e822715d0bbde6f4c24e231f3,Domestic Lounge,Bangkok Suvarnabhumi Airport,Business Class
+77a6d799e7ad9605b6629322e7a9d033,Senator,Zurich Airport,Frequent Flyer
+be5d7c3a8fb06ce7032fecb1d5482539,Crown Lounge,Amman Queen Alia Airport,Business Class
+b1696c9384f5b88dff11a83fdf18bfe1,Club World,Antigua Vc Bird Airport,unknown
+d4afcf114f81e50c9940baee6e32e3a1,Senator Lounge,Washington Dulles Airport,Frequent Flyer
+c199072ceb3e491736486dd848c37d3c,Kandinskiy Lounge,Moscow Sheremetyevo Airport,Members
+62440a76abe2ea3676ceaf199e56827d,unknown,Perth Airport,Frequent Flyer
+a7a8f8b40aed156e1c989d4e3f4ea801,Plumeria lounge,Honolulu Airport,Business Class
+9ab5fbeac6d4c44b8b62ec7e4ade0265,Business Class Lounge,Istanbul Airport,Business Class
+034186f1fac0874c6d489f8becef5ebb,unknown,Shenzhen Baoan Airport,First Class
+0dfb66e7b5b28e49d2858376687ddcc7,ANA,Lisbon Airport,Business Class
+37a99e472c988e0b2d44c1d999361342,Star Alliance,Los Angeles LAX Airport,Frequent Flyer
+934407afa97a4dad6e4764ac0e20e296,Wings,Hong Kong Airport,Business Class
+c528a57fc796599df2741edf0486659c,Aspire,Copenhagen Airport,Business Class
+60437c9789827569de527998b1eb616e,Senator Lounge,New York JFK Airport,unknown
+daa79636837473bbc3da256642acd0a2,Premier Lounge,Denpasar Bali Airport,Business Class
+aba3b59fcdf8cd879ace6cf4313b7d64,Star Alliance,Sao Paulo Guarulhos Airport,unknown
+691f3d3c3e234fb5bee21bc68a9bad19,Club Lounge Gate 15,Glasgow Airport,Business Class
+0052d7a353532a0ecba25340fd5d8e28,080 Domestic Lounge,Bangalore Airport,Pay to Use
+b0875fc1da56bc6782dfb7f3ec02a6b5,Admirals Club,London Heathrow Airport,Business Class
+b4f7fc2537822d8ad8eae4e29cdfb2e6,Club ATL,Atlanta Hartsfield Airport,Business Class
+755a6c0c1e33431b1b697eedeebdb9f8,Business Lounge,Brussels Zaventem Airport,Business Class
+16717b390afe3d3abfa858fd67f81438,Gold Lounge,Copenhagen Airport,Frequent Flyer
+f59e6857ea18a8a6888848b91e3c8942,Serenediva Lounge,Colombo Airport,Business Class
+a892c1f1705b1fd9f5273039a4af1c00,Terminal 2 (4D),Taipei Airport,Business Class
+c0d22cf983b64a213038e04fea29efd5,Qantas London Lounge,London Heathrow Airport,Business Class
+c5213cbcbd0166d0b77c9546fc4f664d,Star Alliance,London Heathrow Airport,Business Class
+bb74b99a4cb3d6c82385092ea8dd8f82,unknown,Frankfurt Main Airport,unknown
+6af0d2bec08a9351a47c896ee081cdd2,Terraces Lounge,Jersey Airport,Business Class
+cdf18715826ee75ee02e6a316c030a50,Virgin Australia lounge,Brisbane Airport,Business Class
+2de422214a0854ce7055ded461166a31,The Loft,Los Angeles LAX Airport,Business Class
+628ead326adbb4bc9ad5146578440870,JAL Sakura Lounge,Tokyo Haneda Airport,Business Class
+285c9dbc9ece32f012732e38c9f5cf8d,Non-Schengen Lounge,Helsinki Vantaa Airport,Business Class
+1668357c1242c67d02b614aed188c068,Menzies lounge,Prague Airport,Frequent Flyer
+670349020cbf289eee5e2dee9e6f262f,Sky team lounge,Sydney Airport,First Class
+ab58bb144434eada0b17c005bba7fd6c,unknown,Fortaleza Airport,Business Class
+171c43dbc7fe89c97c80345726182392,Royal Orchid Lounge,Phuket Airport,Business Class
+e73fbbf6ad83c95e91de7c38c8190b1b,Galleries Lounge,London Heathrow Airport,unknown
+349776d8188c4a4b6a74bcba1a462d8a,Terminal 3,London Heathrow Airport,unknown
+611e7c51d5e2661f511703c70b81da7b,unknown,Vancouver Airport,First Class
+37df7e1e9d0e942592881fbad24a6aa4,Terminal 3 lounge,London Heathrow Airport,Business Class
+16a0ef7a7852241c3e4e5485a7c9bdcc,Terraces Lounge,London Heathrow Airport,Business Class
+0aeaacf4b4911ab5683587c6ced8059d,Qantas Business Class Lounge,Sydney Airport,Business Class
+8e8284767625b3abc1b76b7dcd46a844,Skyteam,London Heathrow Airport,unknown
+68cfc132d6f86cc842f72c547a21a32e,Servisair 41 Lounge,Amsterdam Schiphol Airport,Business Class
+5def111f0a856cd49f3753eb116963fb,Priority Pass,Hamad  Doha Airport,Business Class
+54931ed6e6167e2e87e9b71d4064c4f1,VIP Lounge SAC,Catania Airport,Business Class
+cd9fbb462913aaa1246708e88d0f0137,Admirals Club,Chicago O'Hare Airport,Members
+1e05b2bcfa584866d7f3906bfff7f428,unknown,Dammam Port Airport,Business Class
+d4d11098c93b424c7f1da6d86e3c6731,Rublev,Moscow Sheremetyevo Airport,Business Class
+fa96eae5cbb40da8358b1578c469085a,Qantas Club,Rockhampton Airport,Frequent Flyer
+d9c1398ff494940dbcfd8bb52ecd28b7,Aegean Lounge,Athens Airport,Frequent Flyer
+3769fc1498f4f7ff7c4be89e4346f598,Terraces Lounge,Rome Fiumicino Airport,Business Class
+a326b4ff2784aea5ad65fe8f39c5c47a,Club Europe,London Gatwick Airport,Business Class
+b83ac7f2029aff9fa0784b335a4647c0,unknown,Lyon Airport,Business Class
+31aa9ebc52c3bd7a97006eed985b27e4,Executive Lounge,Rome Fiumicino Airport,Business Class
+1332c7da088ab7fd795c90e4f7905347,Plaza Premium,Clark Airport,Pay to Use
+2995c2d91a2fd21a6561e14caf4ccc49,Koru,Auckland Airport,Frequent Flyer
+45412dfd1e867b42e654ef33d14b1552,Polaris,Chicago O'Hare Airport,Business Class
+dbe1ddbf711cc7009c5f90d28954525c,unknown,Tianjin Binhai Airport,Business Class
+e3f77fc8c99a62b28ea832cf9210d8ec,Presidential club,Honolulu Airport,First Class
+24727e3545d2a401578bc6d011897e7a,Premium Lounge,London Heathrow Airport,Business Class
+71fa912e573747fcc800e9596b4cc4cb,Qantas,Perth Airport,Business Class
+6ac2249c5a500f8213738bcb721967a0,Clubhouse,Hong Kong Airport,unknown
+9b45b42e1c94958d2fb86e424e0e4c4b,Gallery,Johannesburg Airport,First Class
+772f3e7966cceb69dd9e88bfebfacab4,La Première,Paris CDG Airport,First Class
+2a436afdfc71bd1816227a1b4ffc7419,El Safwa,Doha Airport,First Class
+7bdb2c1c2915f59fe66a87e00f32d9b2,Business Lounge (A Gates),Dubai Airport,Business Class
+71909b73a4016ba0d848928353db4ee3,Marhaba Lounge,Dubai Airport,Business Class
+bf3c317622214a5c9c6b1b82c6e5ea6e,Galleries Lounge,Washington Dulles Airport,Business Class
+27bea9b7b542d038bdc08033d05ed5c9,Blue Ribbon Domestic,Bangkok Suvarnabhumi Airport,Business Class
+4afed818c50fcbc8730e0a3b9c62c9f5,International Business,Denpasar Bali Airport,Business Class
+ef9faff94dae2e5c21b9bd3511e0038d,Maple Leaf,Montréal Airport,unknown
+44c289bfe5c78d6a6399c58f4ba3eaf7,Business lounge,Hong Kong Airport,Business Class
+b42c44815afd9c123a04629c9e1289c9,The Lodge,Johannesburg Airport,unknown
+e993fc421f6410c2e3a2c8330b13c08b,unknown,Vienna Airport,Frequent Flyer
+42c332c61fdba7bb7864a5ed96783451,SilverKris Lounge,Singapore Changi Airport,unknown
+8f241b4bd623005a3f8a71278471c57d,Tokyo Haneda Terminal 2 Power North,Tokyo Haneda Airport,Pay to Use
+c7a1a2a8bca8d41afd96587ee566545c,Lufthansa Star Alliance,Athens Airport,Business Class
+7627567f4f5011df887f5b03196045f0,unknown,Mombasa Airport,Business Class
+0e52fbd9ff15d73bf25294b41daa858f,unknown,Bahrain Airport,First Class
+3c24ae05454784eb6a84624910d9301f,Dynasty lounge,Taipei Airport,Business Class
+ce9244c86fcafbae7f07852675689573,Star Alliance,Rome Fiumicino Airport,Business Class
+3358f75845eb1a66b6b6e3f3f9a3e16b,Sky Team Lounge,Dubai Airport,Business Class
+cbb2c94e5a9b5149f268cad22185860f,United Club Terminal E,Houston IAH,Members
+379ca1267795aa368168360f07cabc73,unknown,Toronto Pearson Airport,Frequent Flyer
+cf8892de6d4d39d108fcfe7d434db8ce,Munich K,Munich Airport,Frequent Flyer
+90512058feb5903cbe2cc34fb4653f9f,Concorde Room,New York JFK Airport,First Class
+241b4f59ad4108515421f291f97cb42e,Plaza Premium,Hyderabad Airport,Business Class
+b90e3b728a919c8155ec882c71456f4c,Travel Club Lounge,Kolkata Airport,Business Class
+0a554dfd8fabf1149e1ed015a5062996,Club America,Miami Airport,unknown
+cd65f53f18c01e64cfd8b65ddd5a1016,unknown,Seattle Airport,unknown
+1004c2a99d0074e2d87b094d424b1234,Cathay Pacific,Paris CDG Airport,Business Class
+bf8dac5ba38a30785e2ce6b597fa1cfc,Maple Leaf Lounge,Montréal Airport,Business Class
+496ad9d1268477544048b3cc062475ce,Bolero,Warsaw Chopin Airport,Pay to Use
+3f449a6ea76febed44f42f050cc92f2e,unknown,Portland Airport,Business Class
+ea9399e51d39c6625eb76356e1bb6e82,Lounge T1,Singapore Changi Airport,Pay to Use
+b213c6c7a97ab418ce6ad91755fbc046,Galaxy,Moscow Sheremetyevo Airport,Business Class
+e89c3309df9520ddb42bc30e8c1db38c,unknown,Hannover Airport,Frequent Flyer
+f4926785920a9ae55687411115814fac,Admirals  Club,New York JFK Airport,Business Class
+57412ca158fdef60002387d4f9324a6c,Almeisan Lounge,Cairo Airport,Frequent Flyer
+d3f3a58fb7716bb2170b3bc6ea2c72e6,Galleries South,London Heathrow Airport,Business Class
+619153b6cef782d9cdd7d38a1a926614,Sats Premier Lounge T1,Singapore Changi Airport,Pay to Use
+4ecd4af49d6a0db33103e9c99e3b1679,Diamond Elite,Bogota Airport,Business Class
+763ef189dd9333e3799c6bf4065f3d84,United Club,Los Angeles LAX Airport,unknown
+6ec1d8708d4bf50a3c12382abc3e0597,unknown,Ottawa Airport,Business Class
+4c2085db06ae02315e5299214f9a6864,Terminal G,Rome Fiumicino Airport,Business Class
+4e82ec515845906cce527bb92699f614,Star Gold Lounge,Charlotte Airport,unknown
+db7d9f3af71c7af5ab2ef872f6be505c,LHR Terminal 4,London Heathrow Airport,First Class
+8a24bcda9748946e2a87ce1bc2c462d8,Senator Lounge - Gates G,Munich Airport,Frequent Flyer
+af915a4676b2888f5c397f5a7d1aaefa,Ngurah rai,Denpasar Bali Airport,Business Class
+660f1d849e1b6cc26ead49a2990c6332,Business Lounge,Brisbane Airport,Business Class
+ae6c9674ec387dd75a7a8a1747ab9c0e,Admirals Club,Los Angeles LAX Airport,Members
+affba8530ff30676993f5526144752f0,Senator Lounge,Geneva Airport,Business Class
+3924d85af8e732019b17ee8e17ee74e8,United Club,San Francisco Airport,First Class
+cebe03f67e99ecf7a94a9ea159737464,SATS Premier Lounge,Singapore Changi Airport,Business Class
+c54beff9a93b6080b882b8ef64576e97,unknown,Dusseldorf Airport,Business Class
+b6a910a78145108b2b1b2a268a3c38f5,unknown,Los Angeles LAX Airport,First Class
+fdca553370606308d0b54da23fe0ef6e,Al Mourjan Lounge,Hamad  Doha Airport,Business Class
+934cd4ae7d123bb3c9fba9f5602c7976,unknown,Beijing Capital Airport,First Class
+ae088fe9138228ef0f75cde418ba3064,unknown,New York JFK Airport,Business Class
+7922a37c00ea172c92c5ad9940d254c2,unknown,Manchester Airport,Business Class
+24938410b9ca92916723c8e4a7cd0277,Swiss Lounge Terminal E,Zurich Airport,Business Class
+c2f4a9742c12cefc330de80d2c5e726f,unknown,Washington Dulles Airport,Business Class
+25003664c0753defc0dceaf1005e2731,unknown,Dublin Airport,Business Class
+b3af31c32af11e19105197d6663c096b,Blue Ribbon Lounge,Bangkok Suvarnabhumi Airport,Business Class
+5bed3ca47c1876c920db1164143fa746,Senator Lounge,Vienna Airport,unknown
+5690984d774a7a1bb2eacb17d5e51aaf,"IBERIA ""SALA VIP"" BUSINESS CLASS LOUNGE REVIEW",Madrid Barajas Airport,Business Class
+3aa618b0cdb81939bfe9245e792cdba1,Galleries South T5,London Heathrow Airport,Business Class
+2ff76a71dbe65e39c0772ec04ccdcbda,T5 Business Lounge,London Heathrow Airport,Business Class
+58bc0e6c633180214706e4d2c5fc97b6,unknown,Dubai Airport,Business Class
+f1426a8e933739ef53958e7072caf282,Al Mourjan The Garden,Hamad  Doha Airport,Business Class
+28658453e17dc5d818cdbb2d209888a8,America Express,Sydney Airport,Pay to Use
+f4e0646bb8726f9ed3c0ea20dd82ae6c,unknown,Singapore Changi Airport,Business Class
+553c094219ceb9e36d925f4acb6717b0,Dynasty Lounge,Bangkok Suvarnabhumi Airport,Business Class
+6abe070c2239f32f3364858da961a0bc,unknown,Bangkok Suvarnabhumi Airport,unknown
+a5dd716ef3320a58f394c6ae427af84e,Lounge D Senator,Zurich Airport,Frequent Flyer
+0e9597f83f5e562dee0db60efed50bbf,Garuda Business Lounge,Jakarta Airport,Business Class
+e9acd614d15d7e4c6fee72bacd7e8666,Domestic Lounge,Yangon Airport,Business Class
+fc468a1ff8a694ec2f6b416086a922bc,United Club,Honolulu Airport,Business Class
+870ec656c863318a917eb5c8bc6506fc,Gold Lounge,Oslo Airport,Business Class
+33555fba7f7f40452664be696c70e830,Miles and Smiles lounge,Istanbul Airport,Frequent Flyer
+d91d627fd24cbf8d7168f79b98056108,VIP Lounge,Florence Airport,Business Class
+0b5312950643c101a5dece83a781ae82,Concorde,London Heathrow Airport,First Class
+0c8cf8088584f4c2ca3732e7df1cbb0a,unknown,Vancouver Airport,Business Class
+029ff99b9151d323d89802b7201fe8c4,unknown,Munich Airport,Business Class
+a68eac34c9f6d2aef289984d9373d717,Flagship,London Heathrow Airport,First Class
+6c025bf50697f1be08f038d9f227d0e7,SAS Lounge (T5),Stockholm Arlanda Airport,Business Class
+2e7e4acc3df1e6018d465e7269348fa1,Maple Leaf Lounge,Vancouver Airport,Business Class
+885db56ccc3a3f84a6645d023c5070b8,Star Alliance Lounge,Newark Airport,Pay to Use
+846f213f2ceca167c8d5f4b7e5103491,Chivas,Almaty Airport,Business Class
+ce31a39b9de5529b160a8491443d3503,"Business Lounge, T2",Singapore Changi Airport,Business Class
+88ac9f24ad97da51068b9728c97b82dc,Business Lounge,Leipzig/halle Airport,Business Class
+c299f67f2c37e1d1db375289a17b7954,unknown,Bahrain Airport,Business Class
+61513c340fc6622973df6128623670a9,unknown,San Diego Airport,Business Class
+f0b0586ebefee97ddb3c71465b4a3207,Lufthansa Senator Lounge,London Heathrow Airport,Business Class
+209574a8d67aa4077e69c1327434c841,Aspire,Manchester Airport,Frequent Flyer
+400e4ad9ace39abb792ce54c70082491,unknown,Phoenix Sky Harbor Airport,Business Class
+d9e669df1d9dd41b907c9de52cecab66,unknown,London Gatwick Airport,Business Class
+c243ddd09be28b2663054ba8336d1af1,Gold Circle,Cork Airport,Business Class
+176c1e310d1c60e0fcb937c9eba34836,Blue Ribbon Lounge,Koh Samui Airport,Business Class
+5090f7096c8918c58d699e9fe6ae8ebe,Platinum Lounge,Budapest Ferihegy Airport,Frequent Flyer
+13cc0b2828303aef0f4978819fc5e9e0,Galleries Lounge,Washington Dulles Airport,First Class
+0bfa1a0d2f0c5d6bd840dcf642ad543f,unknown,Orlando Airport,Business Class
+417305d8af27f0f737411f52f2c34b30,Air New Zealand Lounge,Brisbane Airport,Business Class
+ac40f421ba0025c8df51584281069243,United Club,San Francisco Airport,Business Class
+ccb118d4b60a470c94af6e41124a71c8,Sala VIP,Mexico City Airport,Frequent Flyer
+65f0df1ea103d5298242cfcf6150c888,Polaris Lounge,Chicago O'Hare Airport,Business Class
+4087b3a8046253bb69d4e9d6f9523d0f,Maple Lea,Los Angeles LAX Airport,Business Class
+fcb2365c5c954b9eda017d3087030600,Business Lounge,Melbourne Airport,Business Class
+7545834562dc37282ddb0b7a96cfc0cb,Terminal 5 Zone A,London Heathrow Airport,Business Class
+cfdd032b9894a24b792d65b32c72aeb0,Mabuhay Miles Lounge,Manila Airport,Business Class
+09b6552d6cf5313ed63e9c77669f1950,No 1 lounge,London Gatwick Airport,Business Class
+0c9e81d276897fef5e98a6bc63bb632b,Premier Lounge T3,Singapore Changi Airport,unknown
+31685bf4c80077a390fa79f6e249d8fe,Admiral's Club,Philadelphia Airport,Business Class
+91b18cdbf3c4c7fd080bbf9564799045,Korean Air,New York JFK Airport,Business Class
+c5cc61a4977d1a9dadb9aee228b39510,unknown,Rio De Janeiro Airport,Business Class
+03f9bf364afee2bf042f9ece21f5bada,Satellite C Golden Lounge,KLIA Kuala Lumpur Airport,Business Class
+080e0636d59aa1c43f3d253cdc8b3142,First Class Lounge,Beijing Capital Airport,First Class
+9109c0144212f609036d86017a06ad1a,The Loft,Los Angeles LAX Airport,First Class
+e644ba3856963b19bfe1ae09085d2bc8,KLM Crown Lounge (non-Schengen),Amsterdam Schiphol Airport,Business Class
+965b92332c7c3f4af4473878be1bd16d,Toronto Domestic Maple Leaf Lounge,Toronto Pearson Airport,Members
+15878872d23f3a348d19f213c8557ec4,unknown,Lisbon Airport,Frequent Flyer
+9ed9896751c7479134cb065fc4572e5a,unknown,Zurich Airport,Frequent Flyer
+1705d3434227dfdf5f1fd4ec2f2412e9,Swissport Lounge,Athens Airport,Business Class
+d6611e3b2d785f3069cb0b15bc70e409,Maharaja Lounge,Mumbai Airport,Business Class
+f33b0b6d508758829cf468ed60e159ff,Velazquez,Madrid Barajas Airport,Business Class
+66256332040bac85969c686b1212b546,Star Alliance Gold,Seoul Incheon Airport,Frequent Flyer
+aa9430790ae4e136b44fef3d4af12399,unknown,Doha Airport,Frequent Flyer
+b797a465432bb92add5e5cc8bcd432a0,Krisflyer Gold lounge,Singapore Changi Airport,Frequent Flyer
+76e69b19f50b83269665cafe4184c4fb,First Class,Sydney Airport,First Class
+c18a8891d9efae8184905b2aa48d45e3,Premium Lounge,Miami Airport,Frequent Flyer
+d969f7e6284c2634355099944e80f127,Admirals Lounge,Nashville Airport,Business Class
+95903e3e630061134a4749b6a7647fac,Business Lounge,Curacao Airport,Business Class
+f215d6bf043b41dc7dd127b5c5324252,unknown,KLIA Kuala Lumpur Airport,Frequent Flyer
+a9a9372e62114274a34e683a5bfb4cf0,Club Lounge,Chicago O'Hare Airport,Business Class
+b3fb9f9e0e5ca6559948d675228b1385,unknown,Shanghai Hongqiao Airport,First Class
+bc51d648a9c50793675040e56c0cb854,Plaza Premium,KLIA Kuala Lumpur Airport,Business Class
+a833c47e4a682d8cb482736a7aabb0e9,Zone C,Bangkok Suvarnabhumi Airport,Business Class
+a205b4f2a4cb1da497327e1aac449dcd,SilverKris Lounge,Melbourne Airport,unknown
+7ad59bdfba7c5adbbbc08d0e7e02e8f7,Senator Business,Berlin Tegel Airport,Business Class
+1befa35f12d7e92d40379393b360d719,Kochab Lounge,Cairo Airport,Business Class
+8254e91ffc1af3b7df4863db81dbb6ef,Dnata Lounge,Singapore Changi Airport,Business Class
+70936b476eb90c233cf4b70fcbd10024,Wingtips,New York JFK Airport,unknown
+bf85134ab0aef03129d7ce1a48fd2cbe,SilverKris Lounge,Incheon Airport,Frequent Flyer
+d1d36417092b83f8de26a4aaa3d22b95,Sun Coast,Cam Ranh International Airport,Business Class
+0513e43a0f166ecc3e0fa6e26197613c,Qantas Club,Sydney Airport,Frequent Flyer
+11a3407126b7208d6e15a9891c61b928,First / Business Class,Guangzhou Airport,Business Class
+4f08cb7c1859b753d1103cea5b517cee,Wellcome Lounge,Riyadh Airport,Frequent Flyer
+78bbfd26a2406e3ad444297d53da72b5,Strata Lounge,Auckland Airport,Pay to Use
+88006f4ece4510b35233db1cb17fb5bd,Arrivals Lounge,Frankfurt Main Airport,Business Class
+cf92c758b297c52cebf87a846015410d,Sakura Lounge,San Francisco Airport,Business Class
+46407a84b61daa3a9eb27dc301537474,Sala Formentor,Palma de Majorca Airport,Business Class
+0f3024f945a58b238eaecc4a52dc07b6,51st & Green,Dublin Airport,Business Class
+3ebd35ea082d55825516c5e24203e206,Al Safwa Lounge,Hamad  Doha Airport,First Class
+5558785d7c0e203ef002b33508987a50,United Lounge,Los Angeles LAX Airport,Business Class
+0a9d0aa11b0d3f073bc1d7bbf3012dc4,unknown,Portland Airport,First Class
+e6c216e7ba4f54a292296652d0caa799,Cloud Nine Lounge,Addis Ababa Airport,Business Class
+18e38d1a347a7a7032f9acff2e760957,Aspire,unknown,Business Class
+5c5d13640d2976a792ccd07d8864406f,Qantas Club,Bangkok Suvarnabhumi Airport,Business Class
+9d8eacecaa6bdad35149dccbb1c878c2,Qantas One World,Hong Kong Airport,First Class
+7415102591a9e679f6c8b97f28df5bec,Silver Kris T2,Singapore Changi Airport,Business Class
+c185e3620318b29cdbcae80eec11c624,Golden Lounge KLIA,KLIA Kuala Lumpur Airport,Business Class
+510c61862b0bb36be1554c3744da24ca,Aspire,Newcastle Airport,Frequent Flyer
+caf20fdf197754f22da300e6b2b4943e,Eurobonus Lounge,Stockholm Arlanda Airport,unknown
+b08a0e7d8e56854cd168128935a13ce4,Dynasty Lounge,unknown,Business Class
+24d3606efb452f33a743feceec082df3,Swissport Lounge,Geneva Airport,Business Class
+763ba53313601d2bb306a16559fea04d,THE LOFT,Brussels Zaventem Airport,Business Class
+76a8f822851a26bcce798aa2f887c2f3,unknown,Abidjan Airport,Business Class
+092821afa17d08681e84594e463dffae,Business S terminal,Madrid Barajas Airport,Business Class
+89ad33c35684a07abb96fca0b5d6a8b2,Pier,Hong Kong Airport,Business Class
+501230f89ff82f1500fd33f17ccd5f71,"First Class, Dock E",Zurich Airport,First Class
+4f84af2b43ec668ae85485fe3f90b78f,UpperDeck Lounge,Glasgow Airport,Pay to Use
+3788b496ee80b5b92606af96fdee7d3d,unknown,Kahului Maui Airport,First Class
+cc91d9760f7e4e13602f6baf8a0bbbc8,Sky Lounge,Vienna Airport,Business Class
+9a88b84d1d4d24068e81d611ef8702f2,LAT Lounge,Beirut Airport,Business Class
+bd66f0d5bcc80da929e0cc1676546463,unknown,Kota Kinabalu Airport,Frequent Flyer
+30cf6804b94c67eab4dc433b1983de05,Premier,Mexico City Airport,Business Class
+ba84d3ab267a35d40ed89cc8b690399f,unknown,Brussels Zaventem Airport,Frequent Flyer
+81c369369c24211079ac800197f83f91,unknown,St Louis Airport,Business Class
+a1eaeca82b0f034b506bd7a048154f7c,Asiana Airlines lounge,Seoul Incheon Airport,Business Class
+ee7f2d0ffc9423faf144de2af598f97b,Terminal 2,Manila Airport,Business Class
+7dad6884bf47162bbc9b193a2ed83a7b,Admirals Club,Paris CDG Airport,unknown
+ccb284c58f7d3ecce44af6ad829a1508,Classica,Moscow Sheremetyevo Airport,Business Class
+2ea39a33bb04057393d3b2255d1ab761,Senator,Boston Logan Airport,Frequent Flyer
+69209c544eda1cd94fa3d893101ba4f3,T3 Lounge,London Heathrow Airport,Business Class
+3f0afcf8c0ed774ec639922cb1b4c017,Business class,Moscow Sheremetyevo Airport,Business Class
+fc21eef992a4d35f85891b84bb0e8ed2,Okura Lounge,Tokyo Narita Airport,Business Class
+bf3dd56428291f04d6bc0b4719535b79,Royal,Cairo Airport,Business Class
+3fa867c9ad394991b74b3199eedc16c5,Crown Lounge 52,Amsterdam Schiphol Airport,Frequent Flyer
+ce4681611ff5ccf57f55003eed682ec3,unknown,Cebu Airport,Business Class
+27ccfd436c28c566ae9ff61284f760b3,unknown,Cochin Airport,Frequent Flyer
+85205d3b6fb3d9ab6be6f77995facf59,Le Patio,Paris Orly Airport,unknown
+2f822995b6ceda703c18d503347f672d,VIP,Lima Airport,Business Class
+95d69651a53bd93e9af3cf14807e97e5,Admirals Club T4,Los Angeles LAX Airport,Members
+3b00964e7fc22adff08c150871a81cbd,unknown,Seoul Incheon Airport,Members
+2bf10b85b902feb154842f749d9d6772,Admirals Club,London Heathrow Airport,First Class
+5e1695e0f2aedd9e0828ff79d051275b,"Terminal 3, Concourse F",San Francisco Airport,Business Class
+cca9ba08e331386d0bf22b951df03a24,unknown,Jakarta Airport,Business Class
+1aa62c7abf4dc68f28d297bc9f057d91,Sky Club,Los Angeles LAX Airport,First Class
+46f86ceb75fe982bb46e88e06f4cc706,Ambassador,Singapore Changi Airport,Business Class
+88d0a3ce3a68dd6697889b2a0ecedc36,Crown,Amsterdam Schiphol Airport,Business Class
+45a21973580d1df311c4323f4b877362,unknown,Tokyo Narita Airport,Business Class
+486f1a9dba147e644b949a32de88a781,unknown,London Heathrow Airport,Business Class
+606865dc72eb6db9276032828fcd3f8b,unknown,Sao Paulo Guarulhos Airport,Business Class
+2739b2ccc7c6fba2ec900c6f3ae992f5,unknown,Melbourne Airport,Frequent Flyer
+1e2dbdae155145ceb1db1233f29d4e3f,Sydney Domestic Lounge,Sydney Airport,Frequent Flyer
+400cb7eb5bdae71e1bf390c81269c5b6,Golden Lounge,KLIA Kuala Lumpur Airport,Business Class
+9a85f40caba5acaa7ea4b6925983a628,Flagship Lounge,New York JFK Airport,First Class
+3654a5744a8c6e74a1e43b34aed1d1ec,Premium Lounge T2,Helsinki Vantaa Airport,Business Class
+50851aa44cb1f8a1fb3a00cfdb6d253f,Koru Lounge,Brisbane Airport,Business Class
+6fca1882655fb6e6232a1e45471d34fc,Admirals Club,San Juan Airport,Business Class
+95046613c1a632cc877fb4b4d1c5b336,unknown,Manila Airport,Business Class
+a9e2769d8e48588a75537a4a9c9699e5,Intra Shengen,Athens Airport,Business Class
+f63d9ffca6570cfc72673a15ccf5a60c,unknown,Muscat Seeb Airport,unknown
+704176bcae469d06c447f1a0f29f4749,Plaza Premium Lounge,Rome Fiumicino Airport,Business Class
+008978160c8adcf5f11ea3cb53505215,Arrivals lounge,Abu Dhabi Airport,Business Class
+827eae28a266f86fdda9001d0c06b1bc,Galleries T5,London Heathrow Airport,Business Class
+fc4f8eb22823b81cb79150e240e08180,unknown,Da Nang Airport,Business Class
+6c9896e8d5af1214869412969bf6c5c8,Bidwest Lounge,Johannesburg Airport,Business Class
+909da39ab9773508d1eceb2b88b77f5e,Falcon Gold Lounge,London Heathrow Airport,Business Class
+825f87d250e7a60339817fc96750f4a3,unknown,Miami Airport,Business Class
+73c898b0fcadb6c6c54b5ab6ae636fa2,Gold Lounge,Bogota Airport,Business Class
+b46bbaa4a035e7533c4e6f1269fc28d2,unknown,Bogota Airport,Business Class
+832c5ec8d006b890d0845054f630cc2f,Gold Circle,Dublin Airport,Business Class
+1ca965cb6b14d228ad0fa8fc1a69524d,First Class lounge,Tokyo Haneda Airport,First Class
+bb89b3833d57aefbb739d7aa91dde556,unknown,Tel Aviv Airport,Business Class
+f3b0e67485a45e464043b82830fbdf8d,Coral Executive Lounge,Bangkok Don Muang Airport,Pay to Use
+ded70513ca16832bbc2846d7aee78e7b,unknown,Abu Dhabi Airport,unknown
+d3547a386b46fa3c77a0605c72ea2a01,Upper Class,London Heathrow Airport,Business Class
+867004cc168b16e5306f271e42cac18d,unknown,Detroit Airport,Business Class
+5cd80f281f1cc608b44518225525339f,Royal Silk Lounge,Bangkok Suvarnabhumi Airport,Business Class
+21c2c998c5905ae175620594b885b8f3,unknown,Chennai Airport,unknown
+93d8ee7832e1e81e64a679e10eb071bc,Admirals Club,Honolulu Airport,Business Class
+794d29d0fede436ebb6a8079d31b3c16,unknown,Thessaloniki Airport,Business Class
+c1cb7da0c280a2ff625d1c1611315135,Senator Lounge Schengen,Frankfurt Main Airport,Frequent Flyer
+6acffca65b412d117bd9911dde12160e,Escape,Manchester Airport,Business Class
+8e744a9a12d289e604a0facf021261e0,Flagship Lounge,Dallas Fort-Worth Airport,Business Class
+dfcdb81e0caa6f15d143ce30b17e03bd,Kona Lounge,Melbourne Airport,Business Class
+ea17de33b9f3d30156be0e04ac2c4a66,Admirals Club,Miami Airport,Business Class
+c22278b4cf8977dd86d2d9f4a3649733,Royal Orchid Lounge,Bangkok Suvarnabhumi Airport,unknown
+000a1b94e31921849dff931700d5bafd,T5B Lounge,London Heathrow Airport,Business Class
+7563ef8d100857030ab6fad4c4aa170b,T2,Mexico City Airport,Business Class
+63230fdc77895a2a77095a366c4a6970,Terraces Lounge,Edinburgh Airport,Business Class
+f09b5adc69f5d258691001e6d6e4c937,Galleries First,Johannesburg Airport,First Class
+627783762f62fe7cd9be752fcc217b4c,unknown,Darwin Airport,Business Class
+016c9124457b7230fc34d2a173349e7c,Domestic,Oslo Airport,Business Class
+4c953b2be37d1909861c9452f81b75f1,Qantas Club,Melbourne Airport,Frequent Flyer
+6377c29c5cff1e387f031f9bb460ac86,Galleries Lounge,Athens Airport,Business Class
+6539c049596e554e541a41a6a317a37e,United Club,London Heathrow Airport,Business Class
+c8e4ee5d89628879564cfe491d9ea00c,Dolce Vita,Rome Fiumicino Airport,Frequent Flyer
+d62c3a46f2d3f53cd643b82e82ae8689,Queenstown,Queenstown Airport,Frequent Flyer
+a208d2eca08926648c5d4aa5e623c2e0,unknown,Phnom Penh Airport,Business Class
+81719fb97ab92622be2afd50bfbeb64f,No1 traveller,London Gatwick Airport,Business Class
+1a9dfae3ebfdef1f551df395b2ae16d4,Port Lounge,Kolkata Airport,Business Class
+275f5a6b43103b84e3ed019bc9d05b7a,Business Class Lounge,Shanghai Pudong Airport,Business Class
+023fd75b30af5f618acde541ab6010d9,Plaza Premium,Rome Fiumicino Airport,Business Class
+e0160675154cf59c47f27cb4dd9e94da,2M,Paris CDG Airport,First Class
+e52afdc07bc7703a53d220ddca05d0f0,Galactica,Moscow Sheremetyevo Airport,Business Class
+5a37254e177d0523a9b737fd4a9d3291,Velasquez,Madrid Barajas Airport,Business Class
+d05156e0b26947899e07c0340c21abe5,Business Lounge,Ljubljana Airport,Business Class
+0503f0627fca6bc5627f300db948f030,Admirals Club,unknown,unknown
+24cd296481e55abc40c15ac71d03cda8,Emirates,Bangkok Suvarnabhumi Airport,Business Class
+1f0f7ffb459880b2e26617c835a184a0,Sakura / First Class,Tokyo Narita Airport,First Class
+a23a9f539bc1ef1c1520387f1795b5c6,Al Mourjan lounge,Hamad  Doha Airport,Business Class
+88718db508c844e4dda14e0c3ad1d70a,LATAM Lounge,Santiago De Chile Airport,Business Class
+f245898bca350be5aa9d0a31525c80f1,Paradise,Port Moresby Airport,Business Class
+a72f99ebd42731fb4b2cf35933fd02d7,unknown,Addis Ababa Airport,Pay to Use
+0727ff3751cee10ee42944b39dfd662e,Presidential club,Houston IAH,First Class
+11be0db04279a5ca2c07ed9209f2c540,Marhaba Lounge T1,Manila Airport,Business Class
+ff5b439e3d79659c452d84b79a814e42,Galleries,New York JFK Airport,Business Class
+b0dc78bb1bedf77c053f6688cb2148ab,Oman Lounge at Bangkok,Bangkok Suvarnabhumi Airport,Frequent Flyer
+1238aa9fd4b8d9e11347e158ba006c1e,Maple Leaf international,Montréal Airport,Business Class
+c71d203f87da9d3281cacb57bf7961a6,Galleries,London Heathrow Airport,Business Class
+aa196ab1b83eda55e0f594632b5ebe20,Polonez - HON Lounge,Warsaw Chopin Airport,Frequent Flyer
+ee34e2682b5a1b074e0475ee921ae12d,First Class Lounge T5,London Heathrow Airport,First Class
+8021d80da8beb9d34043d782b6addf7d,Emerald Sky Lounge,Jakarta Airport,Frequent Flyer
+e35a55f787228adc0c74d3fb6b4c1fc8,Gaudi Lounge,Barcelona Airport,Business Class
+3139c575f42c1adbc91340c08100d8c5,Galleries Lounge,unknown,First Class
+18054b9b13432d26e3620777fa228809,Lisbon Airport,Lisbon Airport,Business Class
+334a4800c447c928d5124397c3eeba08,Crowne Lounge,Amsterdam Schiphol Airport,Frequent Flyer
+6a88fae907a0de267095be9413c9862d,Skyteam,London Heathrow Airport,Frequent Flyer
+0aa70c86b2e20803e3b508304100cc31,Swissport,Athens Airport,Business Class
+46285ba84998f88d88b6ec06f98cb567,United Club,Dallas Fort-Worth Airport,Frequent Flyer
+f39f5ecbd8d97c1ae005bed507c159fe,S7 Business Lounge,Moscow Domodedovo Airport,unknown
+9e289441e6b707eb459bcca23bbd0047,unknown,Perth Airport,unknown
+7077367cb3afe7869f1763c576af8d38,Sala Dali,Madrid Barajas Airport,Business Class
+6618598c9c4c42e40baa388affb12102,unknown,Alicante Airport,Business Class
+5c0f417eed689eb301cbd9463e7a7c1d,Asiana Lounge,Seoul Incheon Airport,Business Class
+ececdfc2f2ccbfd5e63f7a22eb45af14,First Lounge,Zurich Airport,First Class
+0c4b95782ba3766fb1864382eaa47786,OSL - Lounge,Oslo Airport,Business Class
+5c13943c06b1f91ddb4b0b58174e311a,KrisFlyer Silver,Singapore Changi Airport,Business Class
+ec35aeb000c74698e4a507271c567f27,China Airlines VIP Lounge,Kaohsiung Airport,Frequent Flyer
+a97285c7b8b1844d61fe154263f2be03,Senator / Star Alliance Lounge,Hannover Airport,unknown
+d68577d6366068052f33ee33533a09db,Business Class,Abu Dhabi Airport,Business Class
+378c27d796dc4dfddf997d9950b223b0,VIP Lounge,Taipei Airport,Frequent Flyer
+b0c4331ec95ec07c0c5865faacad8765,Golden Lounge,Perth Airport,Business Class
+c2af833e4ffad2b324f2b8e2838f032d,Business Lounge Frankfurt,Frankfurt Main Airport,Frequent Flyer
+d3425eb925ac9302e314a132ccaee5aa,United Club,Atlanta Hartsfield Airport,unknown
+88bd58e601eca061f5a8b79f5e66aa41,Maple Leaf Lounge,Regina Airport,Business Class
+7dd9c6c4cbfc6eea81b3dd1384022c60,Dynasty Lounge,Tokyo Narita Airport,Business Class
+c5ddf114742bd97ae5469cd50c8f26a1,Aspire Lounge,Manchester Airport,unknown
+ba326a416e82279e72069ba4a557cb35,Business Class,Frankfurt Main Airport,Business Class
+2b9148c950832320869632ac51955b59,Emirates Lounge,Melbourne Airport,Business Class
+71226332c04da8b9cd3d194b39d85ef7,Plaza Premium,Brisbane Airport,Pay to Use
+faf7cd800918d350937aef54ca1937c9,Coral First Class Lounge,Phuket Airport,First Class
+875f811c18a35eae9800962bc1e48a5d,Qantas Club,Townsville Airport,Frequent Flyer
+4e75f47ff36c8f7ba651e2449fb76720,unknown,Newark Airport,unknown
+7b97cf8ab580bc2fa8a7e4cd29ea869e,Chinook Lounge,New York JFK Airport,Business Class
+e17ee474756a66c78b617118a9099cb3,Ambassador Transit Lounge,Singapore Changi Airport,Business Class
+56aecaf6e30c368f427f42d07e954cae,Admirals Club,Los Angeles LAX Airport,Business Class
+44c1462a15c2de56cdf75968678b7584,Schengen,Zurich Airport,Pay to Use
+32d3aefd4285a979e6e7da9ed7da8d26,Al Maha,Hamad  Doha Airport,Business Class
+42b5f69872e143ec5b9447bc910b31e2,unknown,Birmingham Airport,Business Class
+a6870dbe23fb2e137d4e93ea177167fa,Maple Leaf Lounge,Toronto Pearson Airport,Business Class
+d1fb8aa2a5702268a3efbab9421acdef,unknown,Sydney Airport,First Class
+8b59930bcd76abfa44d8f2428a2e6514,Business class lounge,Washington Dulles Airport,Business Class
+a9f3fcf2bdda593018febc9313b7021b,Cloud 9,Addis Ababa Airport,Frequent Flyer
+aaffdf789c53656218e0880540de6868,Senator Lounge,Zurich Airport,unknown
+80015c2d7a4fd03afabcfdfdea0ac663,Turkish Airlines Lounge,Washington Dulles Airport,Members
+cc3432883aa80abcb8cea3acb1c5a451,unknown,Mumbai Airport,Business Class
+752a8584fb59f1828be9918e0bc02416,unknown,Philadelphia Airport,Business Class
+2ccf6674c36cc474b4760a97b8d7bfbf,Copa lounge,Panama Tocumen Airport,Business Class
+0cd64cf8682d39e73144a46c7ea1a11b,AIR NEW ZEALAND BUSINESS CLASS LOUNGE REVIEW,Auckland Airport,Business Class
+7d9539cff0732601c4002d01911d780f,Charles De Gaulle 2E,Paris CDG Airport,Business Class
+4ff41f8b7834fc6737321bc68c321598,unknown,Adelaide Airport,Business Class
+d04035d475b657ca5bc171836e58379b,Maple Leaf,Los Angeles LAX Airport,Business Class
+9eb271a0654d5a8ffb1a653bf94270a3,Koru Lounge,Auckland Airport,Frequent Flyer
+9dd1faba3a8efb50f3bdc079606f0695,unknown,Shanghai Pudong Airport,First Class
+eaa3af1a4fac11d93775dcc7481aa124,Sala VIP Pau Casals,Barcelona Airport,Business Class
+6b010ef0f47c003787b9fc50776f905d,Admirals Club,Chicago O'Hare Airport,Business Class
+c7196cc6f9ab799eaf107a3b82f9e8bd,unknown,Istanbul Airport,Frequent Flyer
+d9d68ea131dfc21cb0a73b2a2c320d16,unknown,Sofia Airport,Frequent Flyer
+08c08fcb792554973b19da6e4f012b1c,Al Mourjan Lounge,Doha Airport,Business Class
+11daaf310677d83fbe1ef1ba37c10ae4,Terraces Lounge,Geneva Airport,Business Class
+2f64fc4bf2d9fdea1c96845bd494a8fc,AIR NEW ZEALAND BUSINESS CLASS LOUNGE REVIEW,unknown,Business Class
+d8e066a40152b402e43f95ceecf9c795,SilverKris Lounge,London Heathrow Airport,Business Class
+c90b1ae6b5405107177413d3731dadcb,E Terminal Lounge,Zurich Airport,Business Class
+94ad688c19ac7c773542e208b18fd452,United Club,Chicago O'Hare Airport,unknown
+c3a0e1e600827b0b324de625b0dffacf,unknown,Xiamen Airport,First Class
+aee7c1a81be9ac08e1bd5ec474f35011,ANA,Lisbon Airport,Members
+d5fa511132cfed8f3914c9b9fed443df,unknown,Johannesburg Airport,Business Class
+edaa57de0c88e33f1198ab2d434b917b,Alfursan,Cairo Airport,First Class
+1efd849bc4073b5cd05abbc1625d78bb,unknown,Delhi Airport,Frequent Flyer
+26227f30e1efc523ad203a1947c1a838,Velazquez,unknown,Business Class
+fe677bc50a2566932504b4c98c5c2aa5,Plumeria Lounge,Honolulu Airport,Business Class
+aee43d9a812f19c597518e0ce1b9ecc8,unknown,Quito Mariscal Airport,Business Class
+ba7dfad6bb608fa5b24f2646289f31c3,unknown,Bandar Seri Begawan Airport,Business Class
+718d2952e0bdef50ee5ec09f4bd831a6,Galleries Lounge,Vancouver Airport,Business Class
+446f4bee22f1db74f0d569f009c5fc01,Aspire,Newcastle Airport,Pay to Use
+a3be924d271500a5b8abc064f4f65fcb,unknown,Seoul Incheon Airport,First Class
+82e79f1a313f30fa6288347a3a2ed543,Terraces Lounge,London Gatwick Airport,unknown
+be95871e5bd6f483c88e5851e22e3410,unknown,Atlanta Hartsfield Airport,First Class
+14a7ffc56b72264562d2793346c73e5f,Hainan Club T2,Beijing Capital Airport,Business Class
+a4f840fc080d06087d51a5bb0dfe38f7,SkyClub,Seattle Airport,Business Class
+83f5ce58339306c026f4e4e7821041be,unknown,Gothenburg City Airport,Business Class
+383fdfc37a51f91cd681cd6d18189dd2,Sakura,Tokyo Narita Airport,Business Class
+4ab6ca587a39d0db6427dabc74cc7e15,Golden Lounmge,KLIA Kuala Lumpur Airport,Business Class
+8ddd6a948261f1d6f61ca1b3143961e2,Sydney,Sydney Airport,Business Class
+09e37495877d9841a0a6fe9ebe933989,Ahlan Business Lounge Dubai,Dubai Airport,Business Class
+e2b0ce4fb3fa79f92b7983d8eb6bae8f,Polaris Lounge,San Francisco Airport,Business Class
+c6f21adf6fad5a2866e8fdd579a1cd9d,Diners Club,Bangkok Suvarnabhumi Airport,Frequent Flyer
+3e15a21dc10d946de9a746a7c554cff3,Star Alliance,Singapore Changi Airport,Business Class
+ab39fd2ed7c04a1c3ee03de9ab75aa72,Terraces Lounge,Cape Town Airport,Business Class
+a604c513cc134f8c2a25d028b6b655d3,unknown,Pleiku Airport,Business Class
+1e7ae8e8639c4eec5598b59fbbb23c37,Senator Lounge B-Gates,Frankfurt Main Airport,Frequent Flyer
+d3d580287e3aebc37266f48c1ff866bd,International departures,Chiang Mai Airport,Business Class
+fc2f2d816e8eb7b467871cb98eed86bb,Domestic Lounge,Beijing Capital Airport,First Class
+26d8f090746582b38549984125935e32,unknown,Kansai International Airport,Business Class
+c8a0db9a7d664b24a7173337299c82b1,Executive Club,Houston IAH,Business Class
+822b4861d00724a160647dc529db5bfe,Platinum / Gold Lounge North,Hamad  Doha Airport,Members
+9422a5d4a8b3df41133b1dd515814fab,Business lounge,Sydney Airport,Business Class
+bbe8b74fc522e2af8cac629304280654,Plaza Prermium,KLIA Kuala Lumpur Airport,Business Class
+8132a5d449d6f36828659ea30367b1ec,unknown,Cape Town Airport,Business Class
+7d72588c89a5f9332e712fcd9a82f06c,unknown,Raleigh-Durham Airport,First Class
+44379a00e2b4936c90199940f27b3ea0,Dynasty Lounge,Hong Kong Airport,Business Class
+ded1570f6d51e3dd0b0340275607556b,Gold lounge,Copenhagen Airport,Business Class
+d4ae81f474c42ebb17ddfefce3e8d160,Terminal 1,Addis Ababa Airport,Business Class
+fadbb9bac5c5031e44bc4295cff6b2d3,Baobab Lounge,Johannesburg Airport,Business Class
+92f5b39d626f7071dff3a7c9bb8e5fa1,Denver B23,Denver Airport,Members
+3b2d542c03857396d0e9c1ae288a50cb,Air Serbia Premium Lounge,Belgrade Airport,Business Class
+8fcaf4cfc274a260d734afb20311891d,Senator Business Class Lounge,Frankfurt Main Airport,Frequent Flyer
+d53ab2ccbf380b0154d5bfff5c4001c0,Terminal A,Zurich Airport,Business Class
+dbc0547409584153eade983bfbeed6f8,unknown,Chiang Mai Airport,Business Class
+474643b3bf11f9d7db04a47ab59d8e54,unknown,Saidpur Airport,Pay to Use
+947dec6e9683b4941453297bb365c71c,SATS Premier Lounge Terminal -3,Singapore Changi Airport,Pay to Use
+6750c66e21b6a5e38e1c6e236b17e82f,Rose Lounge,Ho Chi Minh City Airport,Business Class
+8d9c049968b9787a960e852e6d2d6fdc,unknown,Montréal Airport,Frequent Flyer
+794042eb22cb3b319745756a57f6cb2f,Maple Leaf,Toronto Pearson Airport,unknown
+a5ce338c58ba37fc21ce81cfa1798af0,United Club,Newark Airport,Business Class
+f18769b28c3f65e2c9d076abeb79224a,SATS Premier Lounge,Singapore Changi Airport,Members
+fcfa0beaf45e377ffa06351e9622891a,Terraces Lounge,San Francisco Airport,Business Class
+bd6ebf335a58d2725c9951633eda497a,Silverkris Lounge,Hong Kong Airport,Business Class
+3c41aa458b23d54559467d411ea7d98f,unknown,San Francisco Airport,Frequent Flyer
+c8007a788bdc32a21936ca9d81924b71,Star Gold / Senator Lounge,Vienna Airport,unknown
+8a4b7b73f3860421d0f78a326e4f66e8,Business lounge,Split Airport,Business Class
+5fb9fda53ec0bfc4eb7e8e0c65cd2377,unknown,Krabi Airport,unknown
+7f28e1ca9424573f0800384540a6340e,SJO American Express,San Jose Intl Airport,Members
+1a79e63650656d110a0e93971631d4fb,Maple Leaf Transborder,Toronto Pearson Airport,Business Class
+9c1e63ac9e9cc107065dc714e41ab775,Oneworld Lounge,Los Angeles LAX Airport,First Class
+cfa4334b01bd555229251cdcab3355f1,Puerta de Alcala,Madrid Barajas Airport,Business Class
+01e39ec1590ad2e1e0d2e45838da1ea2,Plaza Premium,Hong Kong Airport,Members
+36ed4ab7b41561e83f2590515e19ed98,Royal First Lounge,Bangkok Suvarnabhumi Airport,First Class
+c4077407eb2b10e82dce33ab7e16c8fe,Boardroom,Anchorage Airport,Frequent Flyer
+bff25a208cf57ca11e4ed1d2e85a0207,T3,London Heathrow Airport,Business Class
+e6573d861bb26ac82b463731821da57d,Ahlan First Class Lounge,Dubai Airport,First Class
+afa780297895e5596c867988e1038460,Absheron Lounge,Baku Airport,Members
+cb6b786d0b7f633cd4f401c356baf2e1,Star Alliance Lounge,Paris CDG Airport,First Class
+4fbb6dab438de9fa225dafee2fe29156,unknown,Kiev Borispol Airport,Business Class
+ef3b9cb119a7b4e6be3790764a768c0a,First wing,London Heathrow Airport,First Class
+08f93351d594ffd75c7c042304a62a34,Concourse C,Dubai Airport,Business Class
+431f06dbd89ab4446e1590ff4bc8b350,Maple Leaf Lounge,Frankfurt Main Airport,Business Class
+faf502a9a4e50a36c9f4a0c7f9aaad04,unknown,Luxembourg Airport,Business Class
+48128ace3334ebc8e47be9e6831eda39,=,Beijing Capital Airport,Business Class
+a57fe8b6a6c46476258c0c586866f338,Alfursan,Riyadh Airport,Business Class
+c035154d299448f22a38519dba205ff9,Gold Lounge,Stockholm Arlanda Airport,Members
+41745f6641c7e93b090aa7f3a98d0853,Plaza Premium,Bangalore Airport,Business Class
+3ccbc398e62b09bd3b6bc20be99bd550,unknown,Boston Logan Airport,Frequent Flyer
+ba567476ba02807031d86ac7773eb3a1,Skyview,Singapore Changi Airport,Business Class
+8cf1f9ae4e0aab399fc5730d440efff4,The Lounge,Harare Airport,Business Class
+d1939c1a56e7aecdef45761164e1b254,Thai Domestic Lounge,Bangkok Suvarnabhumi Airport,Frequent Flyer
+151a0d774c780c7d794af1bcc89bae57,Strata Lounge,Auckland Airport,Frequent Flyer
+ac5bef01375e40f1de5a0e7344956b2b,Club / Star Alliance,Charlotte Airport,unknown
+59cb4f3423a5db3405595d6209560104,Business,Warsaw Chopin Airport,Business Class
+c0f110300600bf33ade51d0c53fcb531,Senator Lounge,Frankfurt Main Airport,First Class
+68494aecd61ac625f8dc1dbe43da980c,United lounge,Honolulu Airport,First Class
+bcc3c3d44f9e20cb4fa64f1812f6fc5d,Premium Lounge,Bangkok Suvarnabhumi Airport,Business Class
+c8f6d9b305b558be9a8bb2c6d78e7594,Clubhouse,Chicago O'Hare Airport,unknown
+12e3ea7ae8e8e03c1abc76ae81cc6185,Cloud Nine Lounge T2,Addis Ababa Airport,Business Class
+deb7983163cbba3d0eb0c539c760fa66,Al-Safwa,Hamad  Doha Airport,First Class
+cf8d1cf3a34f12d044e3cfce4dfc9508,Krisflyer,London Heathrow Airport,Business Class
+6e87fe28de15676c21f12e5068b99760,Le Saigonnesse,Ho Chi Minh City Airport,Business Class
+e397f9a567f4eae4c7971b3bf04a71bb,Star Alliance,Geneva Airport,Frequent Flyer
+e98c5e91d5f5a0e7be35de3d0d294d0b,unknown,Toulouse Airport,Business Class
+3ab23c417ea3cdaebf006cc4ae6c9426,Good times,Goa Airport,Pay to Use
+e005bb1f595369a733513214dac62519,Clubhouse,London Gatwick Airport,unknown
+11986c23312d60146d160f6da77548df,Club lounge,Boston Logan Airport,Business Class
+de8bd66cdf0a6c7b24dc2e5378bf97a2,United Club C16,Chicago O'Hare Airport,Frequent Flyer
+600a3e270047c3ee39cd265ffde64e0e,Safari VIP Lounge,Mombasa Airport,Business Class
+2843829201ead68560ea026cc9f29971,AMERICAN AIRLINES FIRST CLASS LOUNGE REVIEW,New York JFK Airport,First Class
+ad8976c87547735aaf17e2ff18cc49f9,unknown,Pisa Airport,Business Class
+aa0437d5d184d36ee5fddfc867f8aa77,No 1 Traveller,Birmingham Airport,Frequent Flyer
+28d763e7fbe82dc840795fd929cb6a49,Zanzibar Dhow,Zanzibar Airport,Business Class
+792cb7aa89d2f9f64cd745bc807ff9d1,unknown,Wellington Airport,Business Class
+887aadfdc907d30666e3a48ffe9a6b93,Global one,Washington Dulles Airport,First Class
+78fb3c535ca995fe793188061f849bf5,Domestic Lounge T2,Manila Airport,Business Class
+b7f5b67cb0e06c8162aa2dab62cc4b19,SAS Gold Lounge,Oslo Airport,Frequent Flyer
+bc395927f6b0a4395b5e9b24ef67d729,Star Alliance Lounge,Munich Airport,Business Class
+e7418733eca56fb9c2c3abff7d8c684f,Admirals Club,Dallas Fort-Worth Airport,First Class
+2dafa702dc2792362d1ef1169a3c49f5,unknown,Lisbon Airport,Pay to Use
+6bd5c4e338011a31b016a3dcd5a3b240,Frequent Flyer,Ho Chi Minh City Airport,Frequent Flyer
+1ac30928607c5fc8875da4378fea051a,SAS Arlanda Domestic,Stockholm Arlanda Airport,Frequent Flyer
+13b53ac904b8c8aa0f48c60950dae490,unknown,KLIA Kuala Lumpur Airport,Pay to Use
+618a40ff5c3e42fe99163f6aeb124532,Salon Vallée de Mai,Seychelles Airport,Pay to Use
+df0055fedcd0b3eb385187d00f496b9e,First & Business Lounge,London Heathrow Airport,First Class
+565c6b6a64c94a576e6977f2a9b252cd,unknown,Abu Dhabi Airport,Business Class
+d44439e7ea3104cd4138ee1fe6516c19,unknown,Toronto Pearson Airport,Business Class
+4eed4853a33f911a60a7c442b3e7709e,Mabuhay Lounge,Manila Airport,Members
+189531fd8787148a5e10e3612e1891fb,Gatwick Lounge,London Gatwick Airport,Business Class
+3bb60d5e912bda14ea9729e721da0c3e,unknown,Vienna Airport,Business Class
+afb574827801bb08b7299c824bbc9a85,Star Alliance,Los Angeles LAX Airport,Business Class
+583a60d0ff4631c26b502eaae1ef6c37,Senator Lounge,Washington Dulles Airport,Business Class
+51cf639cb5c0a9fa547e59b5f35f08a0,unknown,London Heathrow Airport,unknown
+abbf0c0506cddeb90c855586d9799b22,Louis tavern,Bangkok Suvarnabhumi Airport,Business Class
+894d97df21042610071d8d48929f2725,unknown,Las Vegas Airport,Business Class
+3e38ea2c9c40fca0e689c9896b126ba7,London,London Heathrow Airport,First Class
+16f7930babcc5cfafdc0cc7d51c96517,Flagship Lounge,Chicago O'Hare Airport,First Class
+44dfc2f1a467faf55159807abc505529,Gatwick North No 1 lounge,London Gatwick Airport,Pay to Use
+6f81e9e7c456c5875daf27f1e831d0cb,unknown,Perth Airport,Business Class
+c96404fba77314115cb8b2136020311e,Plaza Premium Lounge,Bangalore Airport,Frequent Flyer
+7aa88beeabfd5ddbf0e6f2aa9dbc72b2,Admirals Club,unknown,Business Class
+96d9041e58ef23af7d8d0eddb5308b71,unknown,Newark Airport,Business Class
+293110581acde4d2158a28dfd68b8463,Joan Miro,Barcelona Airport,Business Class
+1f87dc67761c91307200cd4727ea6c26,unknown,Athens Airport,Business Class
+e1cd98f0e3370d7c728306cef7a02a89,Admirals Club,Miami Airport,unknown
+2b1a9799af27a2b46fc5c4733716f846,Star Gold Lounge,Washington Dulles Airport,Business Class
+e143bf088cc848d26ab5b3d988f270f1,unknown,Muscat Seeb Airport,Business Class
+8d0cf9314390baf6a606a1578c10eb3c,Mingalabar Sky Lounge,Yangon Airport,Business Class
+a1664b0373c0b48c558062c19a17f34d,Al Maha Transit Lounge,Hamad  Doha Airport,unknown
+e80618d8034710a1a9e99611c98818ba,Senator Lounge Dock A,Zurich Airport,Frequent Flyer
+9c0e5cd6b927bae5fa5f19e7f053bbdb,Sky Lounge,Detroit Airport,Members
+58abe251893aa7f6e0f397ad250bb1b4,unknown,unknown,First Class
+b9af223f8b0cf91628201b3d06c556e7,unknown,Vnukovo Airport,Business Class
+52ac104a76a1014553abacfd7b47cb79,Silver Kris First Class,Singapore Changi Airport,First Class
+d8112dc4459eac69854ded71788b9b4c,Business Class Lounge,Munich Airport,Business Class
+95d3486df572a4fe07ee69508577c670,unknown,Tokyo Narita Airport,unknown
+50975497780277a26470504443c069c7,unknown,Doha Airport,First Class
+815cc69ecf91aea9d155662323ceba71,Business Class,Barbados Grantley Adams Airport,Business Class
+e26e248e2e5485493f2569b13d6f41e7,Plaza Premium,Toronto Pearson Airport,unknown
+21e717edfd3d5483c0a3630f588675a0,unknown,Los Angeles LAX Airport,Frequent Flyer
+37a67d2b8587a32286449b603f0f383d,OSL lounge,Oslo Airport,Business Class
+46d868f337b2e43311db8a7d7d259727,First,Abu Dhabi Airport,First Class
+e6e286209dec5491b9ba548b61db3424,Tarom Lounge,Bucharest Otopeni Airport,Business Class
+eef31274d5cf767b9f294f72036abaf9,unknown,Zurich Airport,First Class
+dc82897bea9f2c8514a736b43d5ec0ee,United Club - Terminal E,Houston IAH,Frequent Flyer
+b1ee633478fe51024e7a5ca6229fda31,Koru,Auckland Airport,Business Class
+17a6f103735623623527534a3ec4f9ca,unknown,Beijing Capital Airport,Frequent Flyer
+d34e66edf5c9eaae38256fb46d06cdfd,Al Mourjan,Doha Airport,Business Class
+28025679a23ae352dedd3267b20e8276,Pau Casals,Barcelona Airport,Frequent Flyer
+1f148960d84f9bde681eaeadd98f8e61,unknown,Colombo Airport,First Class
+df78111c86a69847128d0df615dcd746,AA Flagship Lounge,New York JFK Airport,First Class
+ca9f63238346c1b8d750f60bdba26e5d,unknown,Basel Mulhouse Airport,Business Class
+c4d5e283a9e1ddc79a83faea5dafa17f,SkyClub,New York JFK Airport,unknown
+22a84b59b9daed4525abe146222e220e,Swissport Lounge,Larnaca Airport,Frequent Flyer
+e3cabd80d0a12cad69fe301fbaa769d0,T5 Galleries South,London Heathrow Airport,Business Class
+2c5077a6d698b9df53e07c09544fee3a,Royal Silk,Hong Kong Airport,Business Class
+84f5b8887494f3fb6d653b83352bc895,unknown,Belgrade Airport,Business Class
+78661de18ffffeed976746cf366e7d1e,Air France,Berlin Tegel Airport,Business Class
+25fefbe9a1f40632fd48640945fe4e79,Aegean Lounge,Athens Airport,Business Class
+3aa0c41d15dbd86eb20f442ce187145a,CIP Lounge,Istanbul Airport,Frequent Flyer
+4e8a46f44a5f4b89f59f77e8c6239291,unknown,Chengdu Airport,Business Class
+33360db24d3032508d29aa4f56b21887,Giotto,Rome Fiumicino Airport,Business Class
+c38ebfa64bc1cb93a0edc64122f56c65,Club lounge,Bermuda Airport,Business Class
+8f8c00701e065530fb5eefd5d7a09b21,unknown,Yangon Airport,Business Class
+67c9886e506c8974b017a9b227db4197,unknown,KLIA Kuala Lumpur Airport,First Class
+5eb9d4809917b4786c1b3ac08d0d8610,unknown,Chennai Airport,Business Class
+617de5e83157041714c6024cc20ef31d,Skyserv Lounge,Athens Airport,Business Class
+10d47c2964478ade57e51c77c8bea8b5,Aspire Lounge 41,Amsterdam Schiphol Airport,Business Class
+bd91e1367f86a0ce99790df811413c34,unknown,Sao Paulo Guarulhos Airport,unknown
+adb26ca257e41d5a1e0e7e163683bef7,Latam Concourse J,Miami Airport,Business Class
+9d150e9cbc5b672d88f40bcdcec8fd56,TAP Premium Lounge,Lisbon Airport,Frequent Flyer
+3f2f9228f8ebdeb60c8c4262814725d5,Plaza Premium Lounge,Jakarta Airport,Frequent Flyer
+29d463cffac47a1b86d14b630b9f03b3,T5 Business,London Heathrow Airport,Business Class
+4a763aa6ab5abb564b94da2a91d50f05,LHR & DOH,Hamad  Doha Airport,Business Class
+8eca2a43c2f24cbe0c42b80ef39e1476,Royal Orchid Lounge,Bangkok Suvarnabhumi Airport,Business Class
+4ac125534a4c7d3b8e0eed26d9de80f7,Lounge ANA,Lisbon Airport,Business Class
+8462945323b502266edeff68172192ab,DNATA T1,Singapore Changi Airport,Members
+fdbd6c13a53efff68779aed4bb22d285,unknown,Istanbul Airport,Members
+ff52389f879e0354822018846ea05dc0,Star Alliance LAX Lounge,Los Angeles LAX Airport,Business Class
+78fa09c3ff524a7943d50e327c6966ac,Primus lounge,Jaipur Airport,Pay to Use
+5a99564d987d3f56a037eb04d2961ee2,Zvezdniy,Moscow Sheremetyevo Airport,Business Class
+a327d797ac625dda6fc899f5b4ebd17f,Aspire,Zurich Airport,Business Class
+d6292a8e21a81c2ff0b0dd58c538bbf9,Blue Lounge,Lisbon Airport,Business Class
+f88966170c0149cd05388de496d6ece9,unknown,Delhi Airport,Members
+67ed684c08952338a40da2fb0dd95a32,Aspire,Amsterdam Schiphol Airport,Members
+9797aa456dab5e0e29732ba20c776d05,United Airlines,Denver Airport,Frequent Flyer
+952b227f5de111d5e56bc94159bfd36f,Turkish Airlines Lounge,Istanbul Airport,Business Class
+ea1e2a22fc869c252616cf17d5beec5c,Air Berlin,Dusseldorf Airport,Business Class
+631a667709b0aa9f81738755a49ac538,Silver Kris,Brisbane Airport,Business Class
+43e3bc313deaef042e934a73a9927fa6,Falcon Gold,Bahrain Airport,Business Class
+8c162fc12bcd20462c780021b0861611,Wing,Hong Kong Airport,Business Class
+63f66ba5829f52cd04bfde0d4b30f421,unknown,Newcastle Airport,Business Class
+223a595e05ad0099f9562cb3467ceeaf,Puerta de Alcalá,Madrid Barajas Airport,Business Class
+b8e204adafec249182637946e3590b72,Pergolesi,Milan Malpensa Airport,Business Class
+a12aee829645f044b10edd7dc2068e98,unknown,Minneapolis St Paul Airport,Business Class
+82ea023186e64948cfe3ee0d2f3a8c8d,unknown,Miami Airport,unknown
+4a683411ede4e71015012c1188ef979b,Polaris,Newark Airport,Business Class
+437776d417ddd146e848630361d0dc89,T5 South / North Lounges,London Heathrow Airport,Business Class
+1dbd8bf8103bf0c0c711279fd32576ac,Business Class Lounge,Abu Dhabi Airport,Business Class
+4c86e1cef7d206b84de2959e8f82677e,Qantas Club,Hong Kong Airport,Business Class
+25125fa0a4865b5f642bcfab666be46d,Proair Lounge,Sao Paulo Guarulhos Airport,First Class
+f6a493dc2feb2a389991afcaa4f90f07,T2,Dublin Airport,Business Class
+fca3ec803abf12704b3551599062a501,Plaza Premium,Cancun Airport,Pay to Use
+6979ff39f45fce7400e1ed0ee60560f8,Sakura lounge,Tokyo Narita Airport,Business Class
+1a1c88c325c40f104c2f236038e68b55,unknown,Istanbul Sabiha Gökçen Airport,Business Class
+bdc901e43e24a35ae96417e706c9251f,unknown,San Francisco Airport,Members
+9a4909a27726662d60c5a013e5c7006b,VIP Sala,Bogota Airport,Business Class
+3fcbf8a49fc22f97d1146719722ad770,Barbados Executive Lounge,Barbados Grantley Adams Airport,Business Class
+e0eca984f47cdf7e6e842a7b7963e04b,unknown,Novosibirsk Airport,Business Class
+29db0ab03d71012f068f4fa7d508d933,LHR First Class,London Heathrow Airport,First Class
+3876e191c1d321e9d19aab74a9a6ad0c,Star lounge Terminal 3,Vienna Airport,Frequent Flyer
+a1c2c85aa27727012d6b10f2da8ea715,SilverKris Lounge,Manila Airport,Business Class
+f4fed6cd56e7afe990a53f7b1aa2d227,Mariner Lounge,Hamad  Doha Airport,Members
+22cf2435359a32d5ca1695eb4454800e,Sala Leonardo,Milan Linate Airport,Frequent Flyer
+22f5034145c07acb773603e29971b71f,Flagship Chelsea Lounge,New York JFK Airport,First Class
+2991e51be9bb55aec19b872e108d78f0,Oasis Lounge,Marrakech Airport,Business Class
+a6bd65e30b4c9b2f71d2c80b49301836,unknown,Hannover Airport,Business Class
+01a103b2da5003e15a8eefc59479a257,Terraces Lounge,New York JFK Airport,First Class
+7c9a920acc3b41748ca776fba25ea114,Sala VIP,unknown,Business Class
+9672326cf33939c20ebbd3b2c1720c15,TAM First / Business,Sao Paulo Guarulhos Airport,Business Class
+cf298f36afaa51e994baaa89f3b397f6,Crown Lounge Schengen,Amsterdam Schiphol Airport,Business Class
+e1696387225528ab9208b8b635d06d75,Qantas Business,Melbourne Airport,Business Class
+73557365bb82e9c0bea1997656bc9122,Al-Dhabi,Abu Dhabi Airport,Frequent Flyer
+dcd9a05212c4ea7ccf38955c0918b5d8,Coral Cosmo Lounge,Bangkok Suvarnabhumi Airport,Business Class
+f43e0aa45320664813d81cbd3a855124,JFK Terminal 7,New York JFK Airport,Business Class
+a183607c41050d1cad9a1eed419f0a43,American Express Lounge Sydney,Sydney Airport,unknown
+a49a830787f45afb871e9ed08835784f,East Lounge,Seoul Incheon Airport,Business Class
+b9a4312069cb170c908da26a867089a4,SilverKris Business Class Lounge,Singapore Changi Airport,Business Class
+0a319ff9afb839c19f306580bb8af8f0,Polonez,Warsaw Chopin Airport,Members
+bf4242cf2a709e15ac82d7dd2d61d387,unknown,Sydney Airport,Pay to Use
+c58889878c8a0654a2ab4b359836d211,SATS Premier Lounge,Singapore Changi Airport,Frequent Flyer
+2ed527e566bcc5f46868ccc0caa62249,Senator Lounge,Dresden Airport,Business Class
+08ebfc2c58f6da5743be86f45cce71fc,Giotto Lounge,Rome Fiumicino Airport,Business Class
+ffdddd5821b5be816527df93e7927f90,unknown,Darwin Airport,unknown
+a5afda80bda23e9674708cedee7beb28,Krisflyer Gold T2,Singapore Changi Airport,Frequent Flyer
+1ab902d9e07f3a6202f14e1b53c85c27,unknown,Raratonga Airport,Business Class
+f0d762cf11f85a0687cb6787a2aee913,VIP Lounge,Sao Paulo Guarulhos Airport,Business Class
+da13ae88ca8e6493a7a115c933ca8b68,Business Lounge,Tirana Airport,Members
+8c42da42913bdf297b271c1cf65ef91a,AIR NEW ZEALAND BUSINESS CLASS (INT'L) LOUNGE REVIEW,Sydney Airport,Business Class
+2197f8e7dbb7be84d3a58e04066bdab3,Brussels Airlines Lounge,Brussels Zaventem Airport,Business Class
+49c1ac9aa5101049ad513090bb16d69a,Maple Leaf,La Guardia Airport,Business Class
+579c6d571e5c531d9b15f640fcaf7d6c,International Terminal,San Francisco Airport,Business Class
+98e0db0dbb2c6f059381eb9f487ccf69,The Pier First Class,Hong Kong Airport,First Class
+8074de7d612c620d9bd5508f18480a31,Casa Alitalia Roma,Rome Fiumicino Airport,Business Class
+401ba03c975e1ee967cf846442a3cad7,unknown,San Juan Airport,Frequent Flyer
+db7b8b5904683809eec8d134e6be33f0,Admirals Club,Phoenix Sky Harbor Airport,First Class
+c28af81d6e8f02db6a29e6a8adeeaf83,unknown,Denpasar Bali Airport,Business Class
+41c886916b6a46618f0d7e914cb9d9d6,Bolero,Warsaw Chopin Airport,Business Class
+c0d035b23f95d878055ef31f4d6dbd74,Elite,Warsaw Chopin Airport,Business Class
+356cbef5ddfdde58d4b8b0597851b875,Senator Lounge,Frankfurt Main Airport,Frequent Flyer
+2e9ddcc40364c356e8cc3bec5538e867,Silver Kris Lounge,Hong Kong Airport,Business Class
+7ba7f8c07196e3b06508799c63658de8,unknown,Xiamen Airport,Frequent Flyer
+0351153d2b7f7793ccac6557ce9f68f2,The Bridge,Hong Kong Airport,Business Class
+6de98d0f6174148a2f1b400e7c4b65de,Qantas,Adelaide Airport,Frequent Flyer
+36ba4afab898b87e52a717157f987882,Mabuhay,Manila Airport,Business Class
+d78327a1d672d9b945c3cccc2c38322b,unknown,Ponta Delgada Airport,Business Class
+44602faf6b138daa16c25770a4e98d82,The Wing,Hong Kong Airport,First Class
+d1d7bd50cc9d1a6e42eed50c574f71c4,unknown,Antalya Airport,Business Class
+78e91705347fbcb086ecbcaf1593679e,unknown,Rome Fiumicino Airport,Business Class
+fa84332050edb1a5301e9df6ce9fd61f,Air France-KLM Lounge,Chicago O'Hare Airport,Business Class
+e4b50b599ce92212259e9d8eaa0b919f,SAS silver lounge,Stockholm Arlanda Airport,Business Class
+14ae9534435ce663bb5223d591e227af,unknown,Amsterdam Schiphol Airport,Business Class
+f8f82dab085a0b7348ee755204824871,unknown,Honolulu Airport,Business Class
+377df1e4f701a552b91a655a1e055ed5,The Star,Taipei Airport,Business Class
+c82031bfc88dd91cdfc2112ac5c513ed,Panorama Lounge,Zurich Airport,Business Class
+bc2168edd2cf6aaa15156bc5bc347193,Domestic Maple Leaf,Toronto Pearson Airport,unknown
+25157371b6be7014017cb883477f0fa9,unknown,Boston Logan Airport,First Class
+20e3d2336d97340cf178496723c06051,British Airways,Dubai Airport,Business Class
+2913ad2c3ebbe086c976bc3610f24b1c,CIP Lounge,Istanbul Airport,Pay to Use
+3be6a4db2e0f4595af3d60ec6e8ae48d,Golden Lounge (Domestic),KLIA Kuala Lumpur Airport,Business Class
+11cc6a3e204014a1dbd5034c1d3e29ba,unknown,Guernsey Airport,unknown
+100e87b364618cc0a7b016b638392d4f,unknown,Chicago O'Hare Airport,Business Class
+82421be2639f9d26a82b924d244e52e7,unknown,Dallas Fort-Worth Airport,Business Class
+ab9caa3c9e7c0705dbb5e8bf30644f6e,Business Class,Buenos Aires Airport,Business Class
+ed5f4d11689b2a8d9bf307048d223577,Club Europe / World Lounge,London Gatwick Airport,unknown
+6769750f8ee4b50efa162afc5e0ece96,unknown,Sydney Airport,Frequent Flyer
+845cb747f1bd3818affe12c1be70805a,Dynasty Lounge,Rome Ciampino Airport,Business Class
+9c03342f1237270f5f827e0d11358a1f,Falcon Gold Lounge,Bahrain Airport,Frequent Flyer
+f23942916a39444fef0b68c52c22beb5,Maple Leaf,Vancouver Airport,unknown
+b21c660b57751316f74374d935adfa22,Dynasty Lounge,Taipei Airport,Business Class
+fe6bf9eaf4ea23c3b10db445ecede403,unknown,Brisbane Airport,unknown
+efd1da4f6a526641a4c99e368e5c9b23,Maple Leaf,Calgary Airport,Business Class
+beec6a4e4ba3a23acf25a78df912f763,2,Mexico City Airport,Frequent Flyer
+e43edfbd9378430c06b98582b9bcdacb,Miracle Lounge,Bangkok Suvarnabhumi Airport,Frequent Flyer
+99ad9dc728d481abc7817c150027c274,unknown,Seoul Incheon Airport,Frequent Flyer
+20ccfeb3dea146a138ae6afae5f5b986,Emirates,Dubai Airport,Business Class
+dd4ffefb2e8629eb7716f9d5a195b058,unknown,San Francisco Airport,First Class
+4869299a8d925229cd8ab45e91ac3549,Senator Lounge,Berlin Tegel Airport,Frequent Flyer
+6457ee56466ea377d8ac1abcc2255efe,The Boardroom,Anchorage Airport,Frequent Flyer
+bc084a2399672b41d1664e2e1eb6f77a,Virgin America Loft,Los Angeles LAX Airport,Business Class
+12c3854c2ef128d5b3df8f5a81b62382,First-class Terminal,Frankfurt Main Airport,First Class
+7394d91625211d85b23e4b67fd1abe20,Royal Air Maroc Lounge,Casablanca Airport,Business Class
+65b77d2c57f98237bdaf3e0b3ffd1abc,Dacia business lounge,Bucharest Otopeni Airport,Frequent Flyer
+87e707ea1b9c4acf57019a42f1482470,PAGSS Terminal 1,Manila Airport,Frequent Flyer
+b2e631b0de357f655850505b851b8432,Gold Circle,Boston Logan Airport,Business Class
+189451fdc3fb710c3ef6ee420ebf8357,United Club,Las Vegas Airport,First Class
+befbfa8fd1788f391c07f036bf236b63,ETIHAD AIRWAYS BUSINESS CLASS LOUNGE REVIEW,Abu Dhabi Airport,Business Class
+6937911336aa8328c970fec7bfc3e344,"CDG 2E, Hall L",Paris CDG Airport,Business Class
+5348b95c122a1b34d12b89db56a2e3a3,First class,Hamad  Doha Airport,First Class
+c39fc264fbed6f0dbccd1b3a2641633a,KOREAN AIR BUSINESS CLASS LOUNGE REVIEW,Incheon Airport,Business Class
+786d5586d3b419c6c1e00b34e048aab8,Maple Leaf lounge,Vancouver Airport,Business Class
+9de4058b6023f535a60e652502903836,Air Caraïbes lounge,Pointe-à-Pitre Airport,Business Class
+93f7ec614d3e3d552deff567b4151d82,Mingalar Sky Lounge,Yangon Airport,Business Class
+f7aceff5e4bcec94de86db4f12c83d0d,Vitosha,Sofia Airport,Members
+9c33dde9211221386167a0962a0f2dd4,Araliya,Colombo Airport,Business Class
+0469a510e3e645c4509946d18e704826,Business lounge,Doha Airport,Business Class
+88778112b5e14ba06782633a361a468b,Escape T2,Manchester Airport,Frequent Flyer
+f85521ea3fe01abd44db395591f3ce61,Priority Pass,Cabo San Lucas,Members
+d15c5f812908a760abf9f98f680a5939,Platinum,Budapest Ferihegy Airport,Business Class
+3ff336c62aef202d1e9c3a97efca466e,Finnair Lounge,Helsinki Vantaa Airport,Business Class
+a3420c97bba5d22ccd22473fea5ecb5f,Premier Lounge,Denpasar Bali Airport,Pay to Use
+c36b76cd6e45805f738b6cd83b3bb5d6,Concorde,New York JFK Airport,First Class
+12dc8e03a1ee134cf4f13207938c68a2,SilverKris Lounge,Sydney Airport,Business Class
+dcf6b8e84e76891d6ce573aaf0d6e22c,SkyClub,Detroit Airport,Business Class
+4588606f55fd2130c218d697a2f51200,Miles and Smiles,Istanbul Airport,Frequent Flyer
+d3665e1b4f822661553db5bb48b1e3cf,Madrid Puerta del Sol Aena lounge,Madrid Barajas Airport,Business Class
+6fbd29349b6f63a8ae156ec8b071bba8,Arrival Lounge,Johannesburg Airport,Business Class
+3665b02afe106909e3b65ac7b97e3cc8,Le Navi,Rome Fiumicino Airport,Business Class
+22ccf552456e6f79a6bc59eb56cff558,ANA,Lisbon Airport,Pay to Use
+6de36039ce08d815d039df614539f027,SkyClub,Atlanta Hartsfield Airport,First Class
+b75d84d26a786e42636d16bbae8a2df4,United Club,Seattle Airport,Frequent Flyer
+46a053a904b07f5a85b7090828ae51e6,Ryurin Lounge,Okinawa Naha Airport,Business Class
+d1156fd1c6cf0a41b8b87098a8c7538e,Melbourne,Melbourne Airport,Business Class
+6562bc6d17e55d2b2c4e39936af83690,Lufthansa Senator Lounge,Berlin Brandenburg Airport,Members
+0cab01f9bbbbfe40dd88864b1950f33f,Polaris,San Francisco Airport,Business Class
+9481f9f509d2f6e2df33ac007c507880,Kris Flyer,Singapore Changi Airport,unknown
+e29b806c3378d3abc681e9c49827e368,Royal Orchid lounge,Singapore Changi Airport,Business Class
+1f2a55b1d2918e844cfb0e1b671a649d,SkyClub,unknown,unknown
+381b3d84c32fbe4b9e67adddd0bf9b7d,Manaia Lounge,Christchurch Airport,Frequent Flyer
+7690b3e11958f4fdb6f762613fdc2bb0,SkyClub,Portland Airport,unknown
+c08b13e44c2bb9662d5f40f379c37f43,Sky Lounge,Bandar Seri Begawan Airport,Business Class
+33c4be62cb95f48a0654cdad342441ef,Ambaar Club,Salvador Airport,Members
+df8e99caee3c03bd04aaea1129c7679d,Concorde - First Class,Dubai Airport,First Class
+e9c00bc510cdca88ee092b86a03a49c7,Virgin Australia Lounge,Sydney Airport,Frequent Flyer
+a8dc9f6978e5b939da65b29264183467,GVK Lounge,Mumbai Airport,Business Class
+b143ad9908ac402319d43a020d96d88a,Domestic,Chiang Mai Airport,Members
+bf78dfccaf218986f938ebfeb9063584,Silver members,Guangzhou Airport,Frequent Flyer
+a98681ecc32b709306b5af62285b2109,Bangkok Airways Lounge,Bangkok Suvarnabhumi Airport,Members
+c16b4ff7f35d7ba23ecdd0573ee13977,Maple Leaf Club,Los Angeles LAX Airport,Frequent Flyer
+71ed2a426b94cb3b576000ac782e04df,Star Alliance,Paris CDG Airport,Business Class
+6b2b3b1909db6c9e775ce95c754d9e1d,First Lounge - T5,London Heathrow Airport,First Class
+a6e3e91f2ae93c8faab9702ffdea739d,Club World,Montréal Airport,unknown
+9c7c98c93306eed25c8d4b5ac965d941,unknown,Stockholm Arlanda Airport,unknown
+4fc4c78df066702c799ed946ab8523d0,Premier Lounge,Tokyo Narita Airport,Business Class
+6f18ccfee5a78bd9a90bdb9a00509020,Clubhouse,San Francisco Airport,unknown
+d207142416a11b4c1735548f0ebff349,Admiral,London Heathrow Airport,Frequent Flyer
+294c9f509b1f188a014adac0568ada78,unknown,Auckland Airport,unknown
+4520d9365f5a7e8aba766dc0593d4a39,Mabuhay Lounge Domestic,Manila Airport,Business Class
+77ca24437039726be38c97938bb06ce6,Domestic Business Lounge,Sydney Airport,Business Class
+b3812d8c000f05d33664e87e2c116753,Admirals Club,Buffalo Airport,unknown
+db182dd98d0440d50b3e7e91e420fc09,JAL Sakura,Tokyo Narita Airport,Business Class
+3a02aeae8a99b46d4e28110aa405de00,Avianca T2,Sao Paulo Guarulhos Airport,Business Class
+6c1d8189b3aafa4694173f81d4ec48a9,dnata lounge,Singapore Changi Airport,Business Class
+144a776c598a5558b15fb5cbf0d2c49f,American Express,Melbourne Airport,Members
+f576fc23d595321993c9f5a63ee95585,Plaza Premium International Departure,KLIA Kuala Lumpur Airport,Pay to Use
+9523388651c3265549fa4ac3cc38de70,Terraces Lounge,Berlin Tegel Airport,unknown
+d5d222b9f3ab206028f5e1152975d065,PrimeClass,Frankfurt Main Airport,Members
+b608ff7d0f6762d6ccb0b598644ad831,North Lounge,Seoul Gimpo Airport,Business Class
+23c3154826e3c8832f4947558ed6583a,ANA suite lounge,Tokyo Narita Airport,Frequent Flyer
+560d67c8e87de81e8174e70f5a59ba9f,Rose,Ho Chi Minh City Airport,Business Class
+5ca3707a2c3d8a726c3398647b4d297b,unknown,Cologne/bonn Airport,Business Class
+ead409dc3b16033a86fecc02d155fadb,Admirals Club,New York JFK Airport,unknown
+0fdf07e5a5cb2a9293b03b6f37fb9916,unknown,Calgary Airport,Business Class
+785cda7eda0e5856a7a86e056165aeda,Salon Première,Paris CDG Airport,Frequent Flyer
+8737409260210580d97df80daf5ac22f,Terminal 5 Galleries First,London Heathrow Airport,First Class
+017741590ea1262173efa2225e401169,Tarom,Bucharest Otopeni Airport,Frequent Flyer
+e22dad765598e71e00a37f35e6b44eb4,Oman Air Lounge,Salalah Airport,Business Class
+1f3957a586a9280a06b72bcfe5232a9f,Swiss Alpine Lounge,Zurich Airport,Business Class
+15fbfc10a7cd86ffe765e94968706d18,Majan Lounge,Muscat Seeb Airport,Frequent Flyer
+515675f6975b672248f80342a0ff0b36,G16,Hong Kong Airport,Business Class
+34491df13f04dbd914520f6175addc40,Earth Lounge,unknown,Business Class
+8ba7ca6eb2432b8813b6fcfe369825ac,Domestic Lounge,Sydney Airport,Business Class
+94d3960d2e6f71a1bdbcd5871ff28610,Salones Premier,Guadalajara Airport,First Class
+3c9660f7b8d485a0c4a8e6db79cc1be7,VIP Lounge,Cancun Airport,Pay to Use
+8d6b8378236b97749ad8707bd31e3877,unknown,Istanbul Airport,Business Class
+1c1c2a7f9aa6f3dbb969246f908d08af,Mabuhay Lounge,Manila Airport,Business Class
+bcf2ea8466922e8a04e3bee97768ae87,unknown,San Francisco Airport,Business Class
+043a6f8a406355f71147cdd8e08fca24,unknown,Washington Dulles Airport,Pay to Use
+cdeffa5ccf2b2ff552554eaa1fe0232a,unknown,Denver Airport,Business Class
+829366568b8ff02fbd295862d9f0d0fa,unknown,Istanbul Sabiha Gökçen Airport,Members
+d4c1b42f46494f51ec532252f22c52d7,Al Mourjan,Hamad  Doha Airport,Business Class
+1931445e59bb27a1c311aabd2ec97f1d,Garuda Airlines,Denpasar Bali Airport,Business Class
+91398ce22800e936a77331eacef305d4,Al Fursan,Riyadh Airport,Business Class
+fcbf7948a3efc6fdde280168964dde4f,unknown,Delhi Airport,Business Class
+ab7d485c032888259ce27ed86ed9d34c,The Wing,Hong Kong Airport,Business Class
+50bcd4b4d6fda5adb3827cb6f1389608,Istanbul,Istanbul Airport,Business Class
+1a922c0ad96fbff95a0bcc5e36a074d4,Boston Clubhouse,Boston Logan Airport,Business Class
+32d29e3c29221fdc52bf09f36bf3fba4,Royal Silk,Bangkok Suvarnabhumi Airport,Business Class
+8804916ee7d0cf3df3d92870e5e462e4,Zenith I VIP Lounge,Casablanca Airport,Business Class
+be5f343446286902bbdb59da1a0e7d46,Miracle Lounge,Bangkok Don Muang Airport,Business Class
+4548707bbbfd4634c5ae90f02af8e8ee,"United Club, D Concourse",Washington Dulles Airport,Members
+39c792e81c277793a4e805be427008d8,Sala VIP,Madrid Barajas Airport,Business Class
+9827b3eb94d5c366b7308865f083e443,Business,Beijing Capital Airport,Business Class
+77bdd0e8eddac70282f19eba58a39648,United Club,Las Vegas Airport,Business Class
+b48f3ec1c7bbb84ffc1ba8db2c7a3480,unknown,Boston Logan Airport,Business Class
+3d9b269e23f57ac05e2daa2f90eaf23e,Infinity,Taipei Airport,Business Class
+8aa4e34d17af988a79a393b4175dbe85,unknown,Perth Airport,Members
+0a28864f801d7a7f65d0c293c3b1cbdc,SAT Terminal 2,Singapore Changi Airport,Pay to Use
+48362c8e9e8c690318406d4336ec0294,Clubhouse,Washington Dulles Airport,Business Class
+02ddc9e489f586def65d3b7e96da7150,Star Alliance,Paris CDG Airport,First Class
+58a2e9c1740e26982f658b7b9679ad69,Crown Class Lounge,Amman Queen Alia Airport,Business Class
+1bd6fba8055417201554c8198e446122,Galleries Lounge,Mumbai Airport,Business Class
+15576334b01ba4d52a2af22701df130e,VIP lounge,Heraklion Airport,Members
+cfb60e19bdc757e31f33e72a8a98bb5d,unknown,Chicago O'Hare Airport,First Class
+ef750ae76eccead3693366a925608dd6,unknown,Rome Fiumicino Airport,First Class
+0e4c3933156eb773b48f9682247d58f8,Schengen Lounge,Amsterdam Schiphol Airport,Business Class
+232bf3f855496cbced3a182fe5f3a434,The Bridge,Hong Kong Airport,First Class
+f3a2373bb8110ac1084d3831bd1c2cb7,unknown,Johannesburg Airport,Frequent Flyer
+439066c6766969dd203c768261fa79e9,Salon Premier Lounge,Tijuana Airport,Business Class
+26b999062c6af03728964c7d3b90f663,Iyanola,unknown,unknown
+9788274d1a4d0fa01d40629353091e57,Cloud 9,Addis Ababa Airport,Business Class
+338cb35c0c2e392a475639d6b3978db8,Lounge 52,Amsterdam Schiphol Airport,Frequent Flyer
+6afac17380d9f9a5194505793daafeb4,Las Vegas Club Terminal  3,Las Vegas Airport,unknown
+483a2e910a50faf7f9793d1148bf25ae,unknown,Wellington Airport,Frequent Flyer
+1d67b55400f6a2e42aa678432ceeb987,Maple Leaf Lounge,Toronto Pearson Airport,Frequent Flyer
+d9028143713165c085cf6a895864e258,unknown,Dubai Airport,Pay to Use
+5ff36161dfa954d5f3d062f06b5b0368,Al-Mourjan,Hamad  Doha Airport,Business Class
+19f42eecda2c023065c94e57504e9cc1,Galleries Lounge South,London Heathrow Airport,Business Class
+6d33e70434413a81c928767d68c8f8cd,unknown,Honolulu Airport,First Class
+4bea21bba517c15e8e475455d2e4448b,Royal Executive Lounge,unknown,unknown
+02258b022ee525b95be55da293f89572,Krisflyer Gold Lounge Terminal 3,Singapore Changi Airport,unknown
+50e7d9b706ff1c12e7309bf89b2758eb,unknown,London Gatwick Airport,Pay to Use
+b6252751d568175278bb9738727b07de,unknown,Kiev Borispol Airport,Frequent Flyer
+c4d71b0f61a0382766659c24040f52f7,Terminal 3,Dubai Airport,Business Class
+a4644159dd605114d83b8250b0e97ca6,El Dorado,Bogota Airport,Business Class
+54cfd74a0f7aa0bd18f67bc1d6c43e16,Admirals Club,Los Angeles LAX Airport,Frequent Flyer
+971f556c726293c8b65248b21d11f91b,Turkish Airlines,Washington Dulles Airport,unknown
+8540f24601ff8b0611dee29c00ba653d,VIP Lounge,Malaga Airport,Pay to Use
+4af30eb1e3b473e8e7de0bd06e43ee20,Senator / Star Alliance Lounge,Frankfurt Main Airport,unknown
+37d9533835e9799ffdf3274a92cd9fdc,Polonez,Warsaw Chopin Airport,Business Class
+d37250572eda3b9be4c904c9c5ac7595,King David,Tel Aviv Airport,Business Class
+82c4875bd6c4c059ad9c10cb10c8cb1c,Galleries Lounge,Edinburgh Airport,unknown
+8cd60819640dbbd7a7ba9f201da07aed,Maple Leaf Transborder,Toronto Pearson Airport,Frequent Flyer
+eb271a541a7a93ca8c432a29338e030f,Aspire,Amsterdam Schiphol Airport,Business Class
+8f991db6ce247d3c8dad96d3683b6722,Salon Des Vignobles,Bordeaux Airport,Business Class
+6ffc10a9a9f076d6a657b599772fdd8f,The Pier Marco Polo Club,Hong Kong Airport,Business Class
+502a94d8f3b1478a0222f32669ebd5dd,Polaris Lounge,Houston IAH,Business Class
+f991cb14ed234b9e8f4b71eecbe048a2,unknown,Larnaca Airport,Business Class
+abf2921c3c257f680766d98599c21b95,First,Chicago O'Hare Airport,First Class
+564c6f3277e3669f2c85e6a62466d3ed,The Club at CLT,Charlotte Airport,Members
+1052581bb688a47afecb793dd8dc47c7,Business/First,Los Angeles LAX Airport,First Class
+a2408d31c33c9514fd0f3099dcc3ac8d,SkyClub,Atlanta Hartsfield Airport,Business Class
+9c5de6786144941437e53197f3a68376,Club MCO,Orlando Airport,Business Class
+9a58556ad08c820fa94d349fe756dea7,Pearl Lounge,Kigali Airport,Frequent Flyer
+ddaf85cdfd47f494d70199bd41a576a8,Qatar Airways Premium Lounge,Bangkok Suvarnabhumi Airport,First Class
+bc94fcfc38668bce9b764014eacb5c5c,Senator Lounge A-gates,Frankfurt Main Airport,Frequent Flyer
+c113699249fa5eb278e03702b080bcce,T5 Arrivals,London Heathrow Airport,Business Class
+73054d6d682fd108e54807ef52ea124f,DNATA T3,Singapore Changi Airport,Business Class
+6c92cb86b7dc18e57601f45c733d9912,KrisFlyer Gold T3,unknown,Frequent Flyer
+03a5d9e1b07b3e52dfee834250561c3c,unknown,Kansai International Airport,Frequent Flyer
+6afb636dd18913e568a442eb527b89b9,unknown,Paris CDG Airport,unknown
+83ed41d0ac30008594404babbd6de61e,Club Manila,Manila Airport,Pay to Use
+737c50893b3b86640c3f095a4f112cba,Terminal 5,London Heathrow Airport,Business Class
+da051b969ef77aa6194f522662617f7b,Air America,Miami Airport,Business Class
+bde28498092c49dde4530565efe26bec,unknown,Keflavik Airport,Business Class
+82c25c6d77a2942bb466594767d09350,unknown,Hobart Airport,Business Class
+8edcdc68ab59af759c99d661073ea78c,marco polo,Venice Marco Polo Airport,Business Class
+430fec42bc9861123c53356a65340d89,Royal Silk Lounge,Hong Kong Airport,Business Class
+b77cc8d638d86af5cae591bf44e5966d,First,London Gatwick Airport,First Class
+7bf5d1725c47ac535260a5c06ad4b9af,Finnair Premium Lounge,Helsinki Vantaa Airport,Business Class
+8f4f34f602f10427d9b714d79e551543,Oman Air Lounge,Muscat Seeb Airport,Business Class
+c481841ac8a320be13302b770feee724,unknown,Salt Lake City Airport,First Class
+f57df495fb36c66c2ecac8220fc9917b,DNATA T1,Singapore Changi Airport,Business Class
+afd4d67b0c44a7821233ba9957dda21f,QATAR AIRWAYS BUSINESS CLASS LOUNGE REVIEW,Frankfurt Main Airport,Business Class
+cc78db26330cff9103e48e3a63a96735,Business Lounge Dubai,Dubai Airport,Business Class
+1d4e3af3b8c80d878683f8e150044044,Gold / Senator Lounge,Vienna Airport,unknown
+552eddcf6b4dd19511b94ee3f1385072,unknown,Toronto Pearson Airport,Members
+7c13783b56806b349cd181b1691ad623,Orchid,Ho Chi Minh City Airport,Business Class
+4890e9a074cef8d3b89173641b503009,Sala VIP Pau Casals,Barcelona Airport,Frequent Flyer
+1c3482ae5b15f7161949298b1795fab4,unknown,Havana Airport,Business Class
+d82c6f9719901ef27e44990ec83bff87,Escape lounge,Manchester Airport,Frequent Flyer
+f36a6f04da4945b11d23b363d8cfa2d0,Koru Lounge,Christchurch Airport,Frequent Flyer
+73ae5474993f122f00e0b76a21628d67,Diners Club,Bangkok Suvarnabhumi Airport,Business Class
+a7128a547a8f9d8ef8db7a169cbdf9b5,Upper Class,Hong Kong Airport,unknown
+aad864dd49ee7519fd9f5afc56459d5e,VIP Lounge,Madrid Barajas Airport,Business Class
+963c7dd2647f72b009bef1a5abfaec80,Frequent Flyer lounge,Honolulu Airport,Frequent Flyer
+657bcbb4baca85ea2a128941f855a1d8,Menzies Aurora Lounge,Stockholm Arlanda Airport,Business Class
+5f940452273e66dd01b4f8b5cc636777,International Terminal,Vancouver Airport,Business Class
+d95f331cf594a81c94c7ef41f03aefbc,ANA Lounge,Lisbon Airport,Business Class
+806e8da7f2ef56e34198f84c72007577,Koru Lounge,Auckland Airport,Business Class
+1cba4371bd6ccea35c72eadc6bc9daca,Crown Lounge,Toronto Pearson Airport,Business Class
+c001fb0b8d618571f59e39eb4db613ff,SATS Lounge T2,Singapore Changi Airport,Business Class
+28e4f6b3706ad4a58decb9eb3b443353,Etihad,London Heathrow Airport,Business Class
+9cacc53e58cb63cb7601350148848e1e,OSL Lounge,Oslo Airport,Business Class
+c92bb20331023405dfb0e81f1353815e,Club World,Seattle Airport,unknown
+e0ec33cbac539930596bb710f3859616,Cathay Pacific,Melbourne Airport,Business Class
+7dd30f1a2a84c4b23a8b6a750ce42b03,Golden Lounge,Penang Airport,Business Class
+40508bf6c49bc04ab34fd886e670c1a3,ANA Lounge Terminal 2,Tokyo Haneda Airport,Business Class
+247b2c2508b682f19e58e1152ab8dcc9,Board Room,Portland Airport,First Class
+e42e7c51c198a82e789e909a3b612f21,Star Alliance,Shanghai Pudong Airport,Frequent Flyer
+978c500cd82565c96285c1fd2cd7e8f1,Strata Lounge,Auckland Airport,Business Class
+6bb88e2e137440cb4ec13dd35c9fedbc,Galleries Lounge,Dubai Airport,Business Class
+8e36a75e5b9ff758aff05b3532db94e1,JAL First lounge,Tokyo Haneda Airport,First Class
+0a3e871db421b2c2f8151f62c1fd3dd9,Business Lounge,Khartoum Airport,Frequent Flyer
+fa46ce090a3398276f9503ae412f13e0,British Airways Lounge,Singapore Changi Airport,Frequent Flyer
+629bf28144d27d717b8ea61f87aac747,Blue Ribbon Lounge,Koh Samui Airport,Pay to Use
+fc3d498d2c01ef46f13cdef3870dcde2,Clubhouse,Boston Logan Airport,unknown
+69a7fb32a08318ba5334c521e5dc93f4,Cathay Pacific Airways,London Heathrow Airport,Business Class
+9ff3b90c190554374db504479aab45a6,Business Class Lounge B,Dubai Airport,Business Class
+b1a713787729720a9896935d40ecec49,Senator Business class,Frankfurt Main Airport,Business Class
+9d4248cd9e12905b4065cb072c2b26c5,Aspire,Bristol Airport,Pay to Use
+15f1a4a9f05bee07387410167aa0dd38,Domestic Business,Sydney Airport,Business Class
+04d07043c9e3b03b575b040fd86937a2,unknown,Bermuda Airport,Business Class
+bb5d88889db26353baa774ed2dd0e1e4,The Crown Lounge,Amman Queen Alia Airport,Business Class
+be3b855ef85d60c3d427b66b428273ec,Rose Lounge,Ho Chi Minh City Airport,Frequent Flyer
+e387a658fad5928e0c53528e2ff65b3d,Virgin Lounge,Brisbane Airport,Business Class
+b16ab37ebd028960cb7f38f6c480897b,unknown,Edinburgh Airport,Frequent Flyer
+f258230d09c7e9bf3b7df1480979c626,Thai Airways,Krabi Airport,Business Class
+4b20e5318360d99771172848a0ebc7c1,Geneva,Geneva Airport,Business Class
+f742f7a0cdd2fd12ad3898c777177477,Oryx Lounge,unknown,unknown
+b70f453b9f1a5b69685ec50d22c51862,"Terminal 1, Gate B18",Chicago O'Hare Airport,Frequent Flyer
+abe4dff0518bdc8e72d0f3612322a7eb,Golden Lounge Domestic,unknown,Business Class
+88c3fdf27dc81a92c85c9755af9790b7,Domestic Maple Leaf Lounge,Vancouver Airport,Business Class
+378852f9461003a571c25f55ccc25f4c,unknown,Turin Airport,Business Class
+73bb7c5f31bf52bfc8ee9d6d3ceb1086,United Club E Gates,San Francisco Airport,Members
+b03bf73f63cff103670667c67cc93076,Delhi Lounge of Air India,unknown,Business Class
+8d4bd1815169950d0b76aff580bca592,unknown,Copenhagen Airport,unknown
+33b06e786686fe58bdc372107b0fbba5,Skylounge,Vienna Airport,Business Class
+17aa1fce591be68580f9a94392234c96,Premium,Miami Airport,First Class
+506c915d85d23e1cb7197fa3a0133a20,Concourse F,Cairo Airport,Business Class
+2b7eb6a85c2b3e0f32d3fed78062f03f,unknown,Sofia Airport,Business Class
+7dbbd362cacd32d62f3be5626ce76f4a,unknown,Dallas Fort-Worth Airport,First Class
+120fa947da0fee021c345e22bdf1941c,Qantas Hong Kong,Hong Kong Airport,Frequent Flyer
+e0b308da3e596e9bd19c06816df39a5b,Royal Jade Business Lounge,Yangon Airport,Business Class
+3728ee12a5b4cec9b9e846373a7837f6,Turkish Airlines Istanbul Lounge,Istanbul Airport,Business Class
+d68db565cc93480696dc26f34e62bdbb,Envoy Club,Phoenix Sky Harbor Airport,unknown
+e15549d6d3247dd8bd5d6ce5dc9c9124,Senator Lounge,Frankfurt Main Airport,unknown
+e96d65e687b59a0eae96571b9435ea90,Servisair,Amsterdam Schiphol Airport,Business Class
+bbe8f8e08783e7cabe70df4436c15d8c,unknown,Auckland Airport,Frequent Flyer
+be81406691fef2e4eb6a05a21666bb83,Crown Lounge,Amsterdam Schiphol Airport,Business Class
+ab587ef9fd9de512e2c3f46d52a6a1fd,unknown,Brisbane Airport,Frequent Flyer
+0c895243d3cc0496b6ba70a79d6367ad,Polonez Elite Lounge,Warsaw Chopin Airport,Members
+456f37ebd2ea11443a828f901a40e197,SAS Gold Lounge,Copenhagen Airport,Business Class
+1ba82a88e690884227edc05a819ecbde,unknown,Koh Samui Airport,Business Class
+3668febda5b4b2b695de3198c206a125,QATAR AIRWAYS FIRST CLASS LOUNGE REVIEW,Doha Airport,First Class
+cb767ee0f24700d4eb889d2cb8e5bd18,Senator Lounge,Berlin Brandenburg Airport,Frequent Flyer
+fe005722adb9a29d5edf81bacda55119,unknown,Pointe-à-Pitre Airport,Business Class
+eb6f71bb173edde1dc694bbc2c81d630,Sala Pau Casalls,Barcelona Airport,Business Class
+473547a620d645dfa06e971d0f7b918e,Schengen Lounge,unknown,Business Class
+bf11af2473153c0791663f33811378c4,Bidwest Lounge,Johannesburg Airport,Pay to Use
+105bd29cf5e4c2169f5aa0cf879bc6b2,First,London Heathrow Airport,First Class
+5f7cc369f2eafa5014fe10d3f9fba017,Sakura,Tokyo Haneda Airport,Business Class
+2baab118554aa6e5ed94d9055a203739,unknown,Guangzhou Airport,First Class
+18c77bcabee8cfd230f2a1625fea88c5,Hong Kong,Hong Kong Airport,Business Class
+6f637d9a67747a3d7e35aabcab224295,Star Gold Lounge,Vienna Airport,unknown
+9bf36b40980a7317034e123c82201045,Delta Sky lounge,Los Angeles LAX Airport,Members
+b30ebcc389bf1ce802722b851e76796f,Shongololo Lounge,Johannesburg Airport,Frequent Flyer
+a2dbd7f8af66d5bbddeb93fe44a0e47c,unknown,Aberdeen Airport,Business Class
+05e55f9fc0acf57026fc9d233bce904d,Aspire Lounge,Zurich Airport,Business Class
+e71402d78ed830442c65b97df23d8c77,Business Class / Miles & Smiles,Istanbul Airport,Business Class
+92dd735f7162937200f2c7a4b842fd45,Birmingham,Birmingham Airport,Business Class
+0dc3b6817689af9f87682660872aa85d,Clubhouse,New York JFK Airport,Business Class
+a7f7ab54bc6ecd87a0e6cf8f1091e063,unknown,Bucharest Otopeni Airport,Frequent Flyer
+8dee21aa67ac2982025c4794c408924f,Shanyrak,Astana Airport,Business Class
+ebdf0c5ef818c5c8bd67cd16162b2984,unknown,Cairo Airport,Frequent Flyer
+7db54ae98e1bfbfe366159e9def07a1c,unknown,Houston Hobby Airport,Business Class
+5cfb3f06956c7f4cfc39e68f35c8bdec,Plaza Premium,Toronto Pearson Airport,Pay to Use
+07d850da6b6844c83e75ac86cf6008c2,Qantas Business Lounge,Sydney Airport,Business Class
+91b4f2a5c968fe4d30b8bb6254414c41,Plaza Premium Lounge,Phnom Penh Airport,Business Class
+17f5e0361d39d5c90391218fc5fb5794,Golden Falcon Lounge,London Heathrow Airport,Business Class
+8fd5ebef99b8ae23e6be8a3302262f6e,First Class Lounge,Dubai Airport,First Class
+5ce03a6df35d9501e385d6092c51af34,EBL SkyLounge,Dhaka Airport,Business Class
+483b75899f1b7e09e6e0e01d071d250b,Dali,Madrid Barajas Airport,Business Class
+587c4f5776ea07763b4e2acf2df3712f,unknown,Papeete Airport,Business Class
+bf9c31a3c6c873a44bcaf75ffa342ea8,Terminal 3 Concourse A,Dubai Airport,Business Class
+8865eec62a12b65f3e03af5aeefcd06a,Weltbürger Lounge,Berlin Tegel Airport,Business Class
+a465aa45e12fb52892e48f15672c36eb,Royal Silk Domestic Lounge,Bangkok Suvarnabhumi Airport,Business Class
+640583f31357b38f3bdc64fbf594427e,Business Lounge,Abu Dhabi Airport,Business Class
+f5c862bdfc2dfb3df87674c0674a2d52,Maple Leaf,Vancouver Airport,Frequent Flyer
+e2c810f227954738cd845089a420f87d,unknown,London Heathrow Airport,Pay to Use
+74e3de284306887a5a7ae4fac8faec84,unknown,Santiago De Chile Airport,Frequent Flyer
+d59e09b7da7fe7d108413dc903504bd1,Admirals Club,Dallas Fort-Worth Airport,unknown
+dc4a1a47ec614afca6ff590aa6d1ceeb,First Class,London Heathrow Airport,First Class
+781c969e4c981221b1799e637da65c3c,SATS Premier lounge,Singapore Changi Airport,Frequent Flyer
+59bf8b35ae75a1f54419bc84f195540c,unknown,Bangkok Suvarnabhumi Airport,Members
+1c86823efad549df9f729694df2ca3c8,Al-Mourjan,Doha Airport,Business Class
+1ec2ec1440cfcd68c26302eba0243689,AA Admiral's Club,St Louis Airport,Frequent Flyer
+3524c0c368b30fe24c2f2d4269f81d0f,Terminal B,Punta Cana Airport,Members
+5dc8868107dde8d8a4801a4b184cb2bc,Virgin Clubhouse,Hong Kong Airport,Business Class
+5f7d13a1173dd4ba8e0f6341547e1ce1,Lounge Istanbul,Istanbul Airport,Business Class
+aab1e3596a132c5367958dca02df051d,Moscow Lounge,Moscow Sheremetyevo Airport,Business Class
+f2b46d7335e1d3e7198acad48a4bfb4e,Jet Lounge,Vienna Airport,Business Class
+4f5935ec5a659fa0989efc336fb738d2,Plaza Premium,Phnom Penh Airport,Frequent Flyer
+998d459c4a5447b86f2df3c9e5cd9a98,Terraces Lounge,Chicago O'Hare Airport,Business Class
+e68541b9921c57e09c8e699105504ccd,CIP Lounge - Gate G,Bangkok Suvarnabhumi Airport,Frequent Flyer
+6bb1779da1cc87b5efa6157b0cb35ab7,Maple Leaf Lounge,Calgary Airport,Members
+6d78ebbb530207c0239e1742a10c7deb,SilverKris Lounge,Bangkok Suvarnabhumi Airport,Business Class
+aeb7f864bacc1b364c66b3966b6d6536,unknown,Genova Airport,Business Class
+c5b85a269e671369a11017c702d3038b,unknown,Geneva Airport,Business Class
+399868a53e950e03e4406acde2eac135,Swiss Business Class Lounge,Zurich Airport,Business Class
+361ad6609d3ce31717479f770bec7dda,Admirals Club,San Diego Airport,Business Class
+645b0af6d40115f63c5d08cf0c48ff35,Golden Lounge,KLIA Kuala Lumpur Airport,Pay to Use
+ee6a22f310a14a0c31b1bc1ebea24cab,unknown,Nadi Airport,Business Class
+c3020756b7e303237312ebe87c52e1a1,unknown,Berlin Tegel Airport,Business Class
+c3c0daeed2c232219831cace6fbec3de,unknown,Nairobi Airport,Business Class
+6c5dc6a92e3848992835370afa5b1ed1,Galleries Lounge,Glasgow Prestwick Airport,unknown
+db9f009d665239a3243740c5ea7ed6c8,unknown,Atlanta Hartsfield Airport,unknown
+cf0897ba4a9bad47e1e3d44c3a0ad373,Premium Lounge,Denpasar Bali Airport,Business Class
+959c6f037092afa58fa7122fbb61394c,unknown,Marrakech Airport,Business Class
+36558d7ba91774cb6033d8672d56123c,The Concorde Room,London Heathrow Airport,First Class
+d98d6e24dba0e81c237b24a13799fb2a,SATS,Singapore Changi Airport,Business Class
+d96a6fb27ec2866e9acb01b8f0a7c967,unknown,Casablanca Airport,Frequent Flyer
+63a3a0e2e75d28a93dcb90d4f1a7ea64,Terminal 4,London Heathrow Airport,Business Class
+9bddf68bdd9e9f188270564523b9c076,Terminal 2,Taipei Airport,Business Class
+fd25bd848bde165175bc216c2628f988,United Club Terminal E,Dallas Fort-Worth Airport,Members
+bad4762ec34a823e5a4162077948c8e6,Erste Premier Lounge,Prague Airport,Business Class
+752765507a4265742b625279acf01ad0,unknown,Katowice Airport,Business Class
+3905117fef5df25eacff676a543acda5,Admirals Club,Houston IAH,First Class
+9db40e61488c68ab7c0071aeaf0c1036,Atlanta Lounge,Atlanta Hartsfield Airport,First Class
+3d47227e7da1602020814d8f5986ebfe,Terminal 2,Singapore Changi Airport,Business Class
+d132d641c89c90b031d8b61e04a45009,Private Room,Singapore Changi Airport,First Class
+da53d9217667f9b1ca579ede917e1178,Zhuo Yi,Shenzhen Baoan Airport,Business Class
+08f5992ba2aab6200fd008b95096dac5,unknown,Addis Ababa Airport,Business Class
+ac45543d761d0d70626df17418b50c30,Aeris,Abidjan Airport,Business Class
+1d627268a4fab0c3eeb8010a4f987e0b,Oryx lounge,Hamad  Doha Airport,Pay to Use
+0351ecab6f88b3d21f4ca5753d7358b1,Skyteam Lounge,Hong Kong Airport,Business Class
+6a599e6d4aac69ea5cafab2089beef20,Handling Lounge,Singapore Changi Airport,Business Class
+a78d8d73d1dcb0fa74e4440acc942352,Envoy Club,Charlotte Airport,Business Class
+ec45d27a00e6c379d24b6a0572444ede,unknown,Houston IAH,First Class
+e347ffd78c713f80e5f92a31e5261dfb,Maple Leaf Domestic T1,Toronto Pearson Airport,Business Class
+451dd51b0be45ebce2c1a8b06d141f45,The Private Room,Singapore Changi Airport,First Class
+53d6458175527bd54bc80d2b78d0c393,United First Class Lounge,San Francisco Airport,First Class
+98e25a11b42bbefd39dfccc7bdb00579,Star Alliance,Buenos Aires Airport,Business Class
+ff9cc97a8dc89082a9bed7f75fc24c51,Al Mourjan Lounge,Sao Paulo Guarulhos Airport,Business Class
+80e64a816c2627f6a223a0455d250089,unknown,Yaounde Airport,Business Class
+6fb1e024d2b167f907e9bce6961a97b4,Lotus,Da Nang Airport,Business Class
+7db7b8a1fb6b566cdee15bf19f8d9976,Senator Lounge,Zurich Airport,First Class
+31229d1c267b6d82b1cbbc667feae24d,DELTA AIR LINES SKYCLUB FIRST & BUSINESS CLASS LOUNGE REVIEW,Atlanta Hartsfield Airport,Business Class
+ecfcf3c3723fa15fc11a209f9184cdbb,Salon Premier,Mexico City Airport,Business Class
+849a4de863aa7c099bdb77877ca14a7c,Louis Tavern,Bangkok Suvarnabhumi Airport,First Class
+2a56cc26fcba72439ba6dfb96e8eeaa3,Koru Lounge,Sydney Airport,unknown
+69941ca3f006e42e8fb274e44c81dc42,Silverkris Lounge,Singapore Changi Airport,Business Class
+d79fae521f91221132d27d67eef110ff,Avianca Diamond,Bogota Airport,Business Class
+8f828b363ae3bc0436dd5b388690d4dc,Skyteam,Hong Kong Airport,Frequent Flyer
+f15f291bb1dcb94443e579b45565cfae,unknown,Hong Kong Airport,Frequent Flyer
+9acd3e51410227ac1f46320c45df2416,Crown,Amman Queen Alia Airport,Business Class
+e1b93494e1baa62031ff2ff38e59cbbd,Terminal 5 Galleries South,London Heathrow Airport,Business Class
+5153e52ec29f22cd9747614959fff335,Sala Velazquez,Madrid Barajas Airport,Business Class
+ccefe9255d419e8873aa831f01fe6cc7,United Club,Chicago O'Hare Airport,First Class
+e0a154e3c07aa466657d7c9fd1d5f63e,Terraces Lounge,Berlin Tegel Airport,Frequent Flyer
+86bf84eeaa1cc8dd2d38379526333a10,AlFursan,Jeddah Airport,Business Class
+86ff129b9735ba911009223739c7c469,Senator Lounge,Berlin Tegel Airport,unknown
+64c80aefe2c7958934d49bb2fea55a71,Le Saigonnais,Ho Chi Minh City Airport,Frequent Flyer
+e865a3b8900baaa4a210d6b318d36913,unknown,Hamad  Doha Airport,First Class
+aabd3ddeb762061514bf4f031cf0403f,unknown,Stockholm Arlanda Airport,Frequent Flyer
+e7bfe47823f30568ab0adb973ed35883,Sky Pearl VIP Lounge,Guangzhou Airport,Business Class
+e2f9966c32b9096345ad24b9f80f7e4f,Kris Flyer,Singapore Changi Airport,Frequent Flyer
+aa30e70fa99cb328266fb01654f5ba2c,Aspire Lounge,London Heathrow Airport,Members
+6df7d54109f69ea311f3391107854a6f,Newcastle,Newcastle Airport,Pay to Use
+635911b7e5463daa32cb746335be0fe0,Maple Leaf Transborder,Montréal Airport,Business Class
+97266834c621763679b8076a87e262a5,unknown,Mexico City Airport,Members
+63242a7077c67273d5c8c0a7cd889801,Senator Lounge Terminal E,Zurich Airport,Business Class
+7f24b4ee9eaf374176b960b030e94110,Oberoi Lounge,Chennai Airport,Business Class
+522039c0f0fb64177ec0f18242009c21,Business class lounge,Sydney Airport,Business Class
+443b333baa70c5400ec5652a51443ef6,Mazurka Business Lounge,Warsaw Chopin Airport,Business Class
+61c261c60a8946e660e5b469659f5316,Executive Lounge,Colombo Airport,Business Class
+a9a06d3dba41c5387d5fdcac497edc40,United Club,Tokyo Narita Airport,Business Class
+dddd25bb89e030df6e7ab4ba1ac2a8dd,Mariners Lounge,Doha Airport,Members
+a1cf8f65e420f5fb4fb8e73aa4245a84,Dynasty Lounge,Honolulu Airport,Business Class
+f8889b1f1c832e205e4f477548be3295,United Airlines,London Heathrow Airport,Business Class
+44abcc0928e811c9caf101dfb8571204,Maple Leaf Transborder,Vancouver Airport,unknown
+8f0426e793c6e2df215db63675c88f17,United Club - Concourse F,Chicago O'Hare Airport,Pay to Use
+758cedea692c508f2ae5d490ecf49090,Business Class Lounge,Helsinki Vantaa Airport,Business Class
+080e8f1cd9f95370775d57d3cc4ff75a,Hibiscus,Noumea Airport,Business Class
+6e5bf2b6674931046d40a201a3df5b94,SALS lounge,Milan Malpensa Airport,Business Class
+93baf529049330e691fa941fa558d625,Al Khareef,Salalah Airport,Business Class
+cdb9bd60d05c1044b94cba1438d1e6e6,Plaza Premium,Vancouver Airport,Business Class
+3d68dea77e8175460b603365a62562c3,unknown,Hong Kong Airport,Business Class
+de5244b9e0aedf2a34e02626d4ffd39a,unknown,Stockholm Arlanda Airport,Business Class
+60c85dba72e977173ba7133730d0f1a8,unknown,Tokyo Haneda Airport,Business Class
+5d6a923730c0ab1422de52d78d695d0d,Singapore,Singapore Changi Airport,Business Class
+8d369a56211a01501ac7dd10ee93e04f,SAS Lounge,Copenhagen Airport,Frequent Flyer
+2432483c607819d9bf89c876ea61fc09,Admirals Club,New York JFK Airport,Business Class
+67523658744df0ce216b9f46f17465c3,unknown,Auckland Airport,Business Class
+4addaeed80c5f530e0af62a985bf0ec6,Domestic Lounge,Tokyo Haneda Airport,Frequent Flyer
+73b48286e3938b2d6661dd7607b2d753,Maple Leaf,Vancouver Airport,Business Class
+892e4e082d9de51de7f1c778604f0fea,Air Lounge Vienna,Vienna Airport,Business Class
+3a70d3168d61cdaca5edb067192fd8e1,unknown,Budapest Ferihegy Airport,unknown
+cb61ca0eb1191e40808ea6cda9b75ebc,Koru Lounge,Wellington Airport,Frequent Flyer
+404225f192a9f963386b7dba21f57103,Le Anfore,Rome Fiumicino Airport,Business Class
+9d7a9f69d659d7a81063cc7daf3a4559,First Class Lounge,Hamad  Doha Airport,Members
+acce50d4ebfa34cf24ec01c5a1320890,unknown,Izmir Airport,Business Class
+db9739fb036309881dcdf2f441e7979b,Qantas Club,Darwin Airport,unknown
+9acd088955c30c6b04c8c5026a957cd0,Coral Lounge,Phuket Airport,Business Class
+d37584378520a4cfdac0c4a7c8ed8947,Millennium lounge,Istanbul Airport,Business Class
+e9752c6ff2f7c999d08b5c7b474eb053,Premier Lounge,Jakarta Airport,First Class
+940234d365d76657064dd417e2659ff7,Aegean Business Lounge,Athens Airport,Frequent Flyer
+f4d77efc26584facdf28321a73edf6e5,Gold,Oslo Airport,Business Class
+b977838e7bc000230e84c11901a3932e,United Club,Dallas Fort-Worth Airport,Pay to Use
+83ecf46c9f69790e04bfa5fbfb0c782b,South Terminal,London Gatwick Airport,Business Class
+2fe52b4dd5cca7317dc77b6c15c3af90,ITC Green,Delhi Airport,Business Class
+fc0f9a8d48a7fa8087c5044acf1e43ee,Business Class,Bangkok Suvarnabhumi Airport,Business Class
+7634b4ee3529ed4de8b0b94f75e4322d,Domestic Lounge,Istanbul Airport,Business Class
+3473d17961b07547dcb51c1caf1f7ce6,United Club (Terminal E),Houston IAH,First Class
+7354edcbd50b3e01b72b50f5c191ae8e,unknown,Brisbane Airport,Business Class
+44f84fddfff8767e7f58dccc8500d909,United Club,Houston IAH,Business Class
+f244df78ea524a78a93b5a6a843db827,The Suite,Brussels Zaventem Airport,Business Class
+60c3e1304b7d6b98ec343aecd2241e55,SilverKris Lounge,Sydney Airport,unknown
+7c9c269545dc53f802968d18327093f3,Terminal E,Zurich Airport,First Class
+1a5697f47b099f9903b5a80d381e6a66,unknown,Chicago O'Hare Airport,unknown
+359bcd98784c6c28862daeeb14a07b84,Concorde Lounge,London Heathrow Airport,First Class
+96a836e272ddda8abf885ddb3fea50dc,Maharaja Lounge,London Heathrow Airport,Business Class
+67616f08dca13783534448521a7eab08,unknown,Cairo Airport,Business Class
+395c19fdb5d3655aceb9228ed7c53831,unknown,Casablanca Airport,Business Class
+026855bb6c0fdb334d256d01bc09a09e,Silver Kris lounge,Bangkok Suvarnabhumi Airport,Business Class
+ca3f6d01b76cb3c8c0d1359f202ea2e9,Gold Lounge,Singapore Changi Airport,Frequent Flyer
+1c1ed271b3ad07bd6321cdb0a1f8664b,Plaza Premium,Penang Airport,Business Class
+7088c2977c798e7765c0066dff8bbdfa,Aspire,Malaga Airport,unknown
+42ca64c2d719f1b32d29b8acbcf4a7f5,Munich,Munich Airport,Business Class
+0dea4efcc5c4a7d6395119c68306f50e,Sakura,Shanghai Pudong Airport,Business Class
+831d638bd88299147dc4ed64ac5f2988,Monteverdi,Milan Malpensa Airport,Business Class
+dafac6e65a6f149272e94bec0c444b2a,Heineken,Mexico City Airport,Business Class
+53ff5e68ba797fad7dd5b714166cc660,Alitalia,New York JFK Airport,Business Class
+5f05a360f3cf7caaa91a239d855ccf05,Delta Sky Club,Tokyo Haneda Airport,Business Class
+cb95093e93eb08ac5460cf1eb074f628,Sanbra,Accra Kotoka Airport,Business Class
+8c6ae43f8ad71e74dad34000d6bd93ad,FIRST CLASS LOUNGE,Zurich Airport,First Class
+b073829dc39d9a1a8740d2f5889f429b,VIP Lounge,Santiago De Chile Airport,Business Class
+38fbcc6ba6a5d5f8a35361a1a5ff2458,Crown,Amman Queen Alia Airport,Frequent Flyer
+7e104dd8d56e33e90fb77f29c18099ce,unknown,Paris CDG Airport,First Class
+bd32d0f67e4c91b22141c5fe60a06c6d,Dynasty,Taipei Airport,Business Class
+213fdb2e27391ea19b3199ff9531157e,Qantas International Lounge,Sydney Airport,Business Class
+5d3d909a6e0bd4a3390ed77a9291ebfb,Lotus Lounge,Hanoi Airport,Business Class
+b64a17ede95f172eba510bfaba5c2851,Salon Premiere Lounge,Paris CDG Airport,Business Class
+5e00c4e1ebb7bf6126479c3d546a2381,Business Domestic,Melbourne Airport,Business Class
+c4ddb870a309a962481e8eda36f83599,Dublin,Dublin Airport,Business Class
+754e6288b26e9d22ec84c0216a78d704,unknown,Stockholm Vasteras Airport,Business Class
+d20123a3772bd5bef38d845a24dd7b68,Swissport Lounge,Chicago O'Hare Airport,Members
+a41097d5d5e9fc193916709714981cca,unknown,Milan Linate Airport,Business Class
+287b9dc51eec47e0991908c20c50915f,Premiere Lounge,Denpasar Bali Airport,Business Class
+a0b3f692511e66c3cb6c1e5464d3d902,Dnata,Singapore Changi Airport,Business Class
+f1353ea6869d6171031d43824b79ecf7,Plaza Premium First,Hong Kong Airport,Frequent Flyer
+1660ae71c43098d763570a255da91b1f,LOT,Warsaw Chopin Airport,Members
+a0c6a170a32387fc9cdb88733610225c,Amsterdam,Amsterdam Schiphol Airport,Pay to Use
+246325352e6d7c87e16dbc1eb04a45cb,SkyClub,unknown,Business Class
+3fb5c5a22e4b2e63f19dd4cc46e77454,Club World Lounge,London Gatwick Airport,Business Class
+3fc3ba7992327616b999a3b842ab8d2f,Royal Orchid Lounge,Hong Kong Airport,Business Class
+c5bc5bee071bca6432a6752609ffc62f,Aspire Lounge,Johannesburg Airport,Business Class
+b2c8f34dafa55a3c89f9680a15d3e551,United Airlines Lounge,Mexico City Airport,Frequent Flyer
+600622526620ce7aaaa54e9243f18fbb,Asiana Business Lounge,Incheon Airport,Business Class
+0ac365530feef931dc4484ea86e6acc6,unknown,Urumqi Airport,Business Class
+eb6da3afab9a4d331954661b53085bef,Business lounge,Denpasar Bali Airport,Business Class
+e1f6a9ea43ebecfc3aa409c81c9df1b0,Le Saigonnais,Ho Chi Minh City Airport,Business Class
+bf64d595edb7e5d400a3ac63e4aaba9c,Admirals Club,Toronto Pearson Airport,unknown
+e27a15792084ed4f7724371d83a5555b,arrivals lounge,Hamad  Doha Airport,Business Class
+6ad700ffe87700df8cd77dc74d0a8b1e,Qantas Club,Wellington Airport,Frequent Flyer
+d9b3b842711421cbb941c19225216623,Sala VIP,Tenerife Airport,Business Class
+ec8af757ee2ebf34f7662abef14b36e7,unknown,Tehran Imam Khomeini,Business Class
+88fa29a15b631638a4a4ff0a69629eac,TAV Primeclass Riga airport,Riga Airport,Business Class
+723a2249cec0ab4740756ba77c8fed69,Delta Sky Club,New York JFK Airport,Frequent Flyer
+206dc6ebc9ca8ba8bdeb7275d19f9e74,Priority Pass,Los Angeles LAX Airport,unknown
+4241f45411248e63e69988a35a426e1e,Prestige Lounge,Seoul Incheon Airport,Business Class
+c5b3423231ba1172db36e74b916fcdcd,British Airways First,Chicago O'Hare Airport,First Class
+cf49901b71ba1cbe944f7853226f519d,Business Lounge,Bucharest Otopeni Airport,Business Class
+bbbf19d00bd09bd2dca75c7b1ed61178,La Sala VIP,Florence Airport,Frequent Flyer
+8af7bddddd19a23dc3f07b7702cd045b,T5 North and South,London Heathrow Airport,Business Class
+a939f5252b2b87e72b56334bd0b1a7ea,Aspire T5,London Heathrow Airport,Frequent Flyer
+098b716f436f6fa75eae28b51054a3cf,unknown,Austin Airport,First Class
+82d842d2d8f970b00a7715ff876b0566,Airport Lounge Terminal D,Kiev Borispol Airport,Business Class
+551a3a61f314c659addb392d9ee8f51e,Amedee Maingard,Mauritius Airport,Pay to Use
+25b840d6c39da63743bf4aebcb263690,Kris Flyer,Singapore Changi Airport,Business Class
+5d6ed6ad4dec3d62ded4a17021872771,Flagship Lounge,Los Angeles LAX Airport,First Class
+a149aa66fef91e7bb3ca6a56482ae255,Dolce Vita,Rome Fiumicino Airport,Pay to Use
+1c7e0570178687ef987ecb31b3abfa14,unknown,London City Airport,Business Class
+e5ad680579e0f1747dc9b826722125e1,unknown,Santiago De Chile Airport,Business Class
+e2a5e6339a27fa63f1b44d8fad8d239e,Art Lounge,Vienna Airport,Members
+02a09fea6f89baeafe2cc2f48a78e93b,SkyTeam Lounge,London Heathrow Airport,Business Class
+a9dfd1ec4edbb89c05beebb840f5c23c,unknown,Bucharest Otopeni Airport,Business Class
+6dcec91e1690c4c05af38e4c46d0a48b,Dan Lounge,Tel Aviv Airport,Business Class
+2ea51c394f2f56212ad41a0f89702861,American Express/Plaza Lounge,Toronto Pearson Airport,unknown
+4dc4993cd2fc8f3c25ceffff5152d1b6,The Pearl Lounge,Bahrain Airport,Pay to Use
+c9932c9d0673b69fb8d5a26f521713d8,Jet Lounge,Vienna Airport,Frequent Flyer
+ed74dea650c69bd380bba8cf2c800916,Royal Silk Lounge,Chiang Mai Airport,Business Class
+fb231e83bf99a4d8242b3e6d9f2d0ae4,E Terminal,Dallas Fort-Worth Airport,Members
+737a5d697835f83427becec20dc58402,T5 South,unknown,Business Class
+b148874dc5de61f43752ad8b0ee5e600,US Lounge,Montréal Airport,First Class
+e37319f425963428bbc9abe1978dcdbb,Brisbane,Brisbane Airport,Frequent Flyer
+8004bd235b488b5cc1d9fa11ac10e4fd,Terminal F,Atlanta Hartsfield Airport,Business Class
+72b007bec658dfc7528c247a4a23c5a1,unknown,Incheon Airport,First Class
+7790ef81025f345e67d2ee6247b270b8,Plaza Premium,Sydney Airport,Frequent Flyer
+bb6fd201e794130674d46c96e4cf7575,unknown,Washington National Airport,First Class
+bf406725e34e175c4aa2f5f513f917db,KLM / AIR FRANCE BUSINESS CLASS LOUNGE REVIEW,Sao Paulo Guarulhos Airport,Business Class
+1600a2e4d2d09ceab70ff9ec10d193c6,Regional Golden Lounge,KLIA Kuala Lumpur Airport,Business Class
+47a2a2ed150e41ff067e83d3e24b6fdc,Senator,Frankfurt Main Airport,Business Class
+8e8dcd83ff3fcda8fa4cc21e93f36914,unknown,Vientiane Airport,Frequent Flyer
+effa968f91538db64e0cf079c0af7ce7,Infinity Lounge,Taipei Airport,Business Class
+7881abba152969f1f2bf4f3f4b797aa8,KrisFlyer Gold Lounge,Singapore Changi Airport,Frequent Flyer
+bc4f92e330e3961deae0ef811d0f1ac3,Air France Lounge,unknown,Business Class
+960fdd81443495c47f70e691f2ef0aa7,Non-Schengen Lounge,Munich Airport,Business Class
+dedbee3daec1b37b03b508bc99e57840,PAGSS,Manila Airport,Business Class
+cd115f334cd0bae9614b2c9f523aee93,No1 Lounge,London Gatwick Airport,Pay to Use
+54e099a4c14326440fa448d4b2793ea1,Business Lounge,Islamabad Airport,Business Class
+90c20d1ea3b906026948609623edb9d1,GVK lounge,Mumbai Airport,Business Class
+f0c309cdb2bcbc258f84e93750671e4d,Qantas First Class,Los Angeles LAX Airport,First Class
+83db2b55ccbb121226f0165cf0f526bc,Dubai,Dubai Airport,First Class
+a6557ce26d18beebf55ba9b7c8c64939,Terraces Lounge,Berlin Tegel Airport,Business Class
+505883f6398e555075b39c5bdc8a81c7,Kansai Premium Lounge,Kansai International Airport,Frequent Flyer
+17b7f987d2d85b43e614f8272da79ce6,Golden Lounge KLIA Satellite,KLIA Kuala Lumpur Airport,Business Class
+ffde083f599aba43d1d68e5d5bcb702b,Gold Lounge,Auckland Airport,Business Class
+f9d01357f85b5c6a41841326d8d990fd,Business,Brisbane Airport,Business Class
+262bd8e7ae4eba11686413fa92a8b09d,United Lounge,Hong Kong Airport,Frequent Flyer
+625e0a1f9edb0d8e742aaa341cc2dc7d,Doualair,Douala Airport,Business Class
+cf70a5aaf0b7e35fa324e7f02c617491,SilverKris Lounge,Melbourne Airport,Business Class
+be6bf0ab31bf7f3ca96f83161c3ddb04,unknown,Bangkok Suvarnabhumi Airport,Business Class
+d162306f5f47a80fac65bd0ebb551432,T3 Concourse B,Dubai Airport,Business Class
+7270e5171321f0873ffb165ca75d9c50,unknown,Shenzhen Baoan Airport,unknown
+a647d022000ec730463a0e0dcc2949a1,unknown,Aalborg Airport,Business Class
+61e1cc43f7da0754c50c4cbdbf2f065d,Emirates Lounge,Sydney Airport,Business Class
+66acf9c358b8940ae06430b52f64cd88,Alemein,Cairo Airport,Business Class
+7bbdd0be901ebe9213d9929ab7c70f44,unknown,Mexico City Airport,Business Class
+a5834faec2a437902ad58923b7e18137,Cedar Lounge,Beirut Airport,Frequent Flyer
+6dc67bdda7fa251b5f66b530dd5e8df7,United Club,San Francisco Airport,unknown
+da84a2b76da272263e6d6c550f5bb368,Kris Flyer,unknown,unknown
+ab3a02a63d92500e8540f04a81db0465,unknown,Singapore Changi Airport,unknown
+d5565c922a0cfafd8d501261d53fe022,unknown,Melbourne Airport,First Class
+4c087d845362ff8502471d8f88b30af7,E Lounge,Washington National Airport,Pay to Use
+da2f3d7f2a4c9ed1a7f398de06137082,Gold Circle,London Heathrow Airport,Business Class
+cc0af076250f2df03f692bbd36df7b61,Maple Leaf,London Heathrow Airport,Business Class
+7e01f218e7167f06747a6898bbfa0d24,Executive,Pisa Airport,Pay to Use
+0f87ec4e6bdb394640a7c88e7014e08e,unknown,Phoenix Sky Harbor Airport,unknown
+e9e96d28f7c5b0ebb0b0cbc325103078,unknown,Moscow Sheremetyevo Airport,Business Class
+35c5f6bd0edd0175efbfc41dfabc5cf7,Sala VIP Lounge,unknown,Business Class
+5c2d9e4ff22bf3b41586073a110579fc,BGS Lounge,Beijing Capital Airport,Business Class
+e242fb5c35e5e1df60de36d0afc047c2,unknown,Porto Airport,Business Class
+a3c7562929954ba1d75eb1f360d931f9,Senator Lounge Terminal A,Zurich Airport,Business Class
+f140fa59d7570a6824f93ea865c9047e,CIP domestic lounge,Istanbul Airport,Business Class
+eb28f1c79a3df5f60e4aef75b1c306f9,V6,Shanghai Hongqiao Airport,Business Class
+9569e60b93906a9c8b0ac11e89927391,E Calm Lounge,Delhi Airport,Pay to Use
+dd1d9fe5aaed689460e08fdb4e6a4bb3,unknown,Seattle Airport,First Class
+ca331b3a3622c2e9b6a8f419df0510c1,Galleries Terminal 5,London Heathrow Airport,Business Class
+72ce41997bb5112b36d65d2beabb92c0,Terminal 2,Madrid Barajas Airport,Business Class
+b6c23359323d47f17d7e54a49fe1cc13,Galleries Lounge,London Heathrow Airport,First Class
+4a125a81ae357dac35fda497562bdd66,unknown,Orlando Airport,unknown
+5fc5a6e5ef7f6f4ff927590d5c863313,Krisflyer Gold,Singapore Changi Airport,Frequent Flyer
+f18aaef16b6b7114dbe6b210532fd4d2,Emirates,Paris CDG Airport,Business Class
+264d33f961bd4e3e935a4e96fbdbc9ca,Puerta del Sol,Madrid Barajas Airport,Business Class
+e85a5c3da30bd9b52b0f503a3f96ae6d,Bidvest Lounge,Johannesburg Airport,Business Class
+c0affb57c5d3918d862c198d8c61fbde,Lotus,Colombo Airport,Business Class
+5aa379a67a616f7fa6b782423406ce99,Maple Leaf Lounge,London Heathrow Airport,Business Class
+c0e6baf897845c66cbdb7c096cd332ca,Lounge D,Zurich Airport,Frequent Flyer
+78a45baa93aa537d03e888038797a6d4,Terminal 3,Beijing Capital Airport,Business Class
+19cb07e8d430a2cc014ead9b0ba88241,Sky Clubs,Boston Logan Airport,Frequent Flyer
+eac601cf658206465c0a4d70b2aa5ed4,JFK,New York JFK Airport,Business Class
+8891f7c0e92de5c46acd82b897875613,No. 1 Lounge,London Heathrow Airport,Business Class
+b7c50c28892e8102506e1b67ca10f5cf,North Lounge T5,London Heathrow Airport,Business Class
+35bf859c81e25adc7aa3abe12caca070,Delta Skylounge,Miami Airport,Business Class
+0beb4c2fbf47612f342b5412380e6b90,unknown,Barbados Grantley Adams Airport,Business Class
+125b8e016a8d0fdf80cd9781965cbffc,Sky lounge,Seoul Gimpo Airport,Business Class
+0bf9407f0367b25ef4abe34c17322495,Sky Club,Honolulu Airport,Frequent Flyer
+c5afa97c812e279f85e03828195372e2,KLM BUSINESS CLASS CROWN LOUNGE REVIEW,Amsterdam Schiphol Airport,Business Class
+b158f291ff976ee7319fa9860998f7c9,Star Alliance,Amsterdam Schiphol Airport,Frequent Flyer
+645494a21a4297cd50529fc375cd8fd6,The Pier,Hong Kong Airport,First Class
+d9465511e4e59269cd483f3662f6282a,unknown,Chongqing Jiangbei Airport,First Class
+5cbbf0274a4f0bcd5a956264203e8e17,unknown,Lagos Airport,Business Class
+ce651a1324a0678c9b2146abb91908f9,unknown,Frankfurt Main Airport,First Class
+b28018243a07806b50c08ad07948b5a6,Manila,Manila Airport,Business Class
+e031b4d961d490754ac7bb6e56510ea0,United Club,Philadelphia Airport,Business Class
+f17309b8c4778515b8e6c6549ccf5fe0,Terminal 1,Taipei Airport,Business Class
+06f42c670c004c288a2a0e07e6d5fa6f,Terminal 2,Beijing Capital Airport,Business Class
+58877d3f0eac0e829b6e4db4037f3ecf,Priority Pass,Calgary Airport,Frequent Flyer
+14039729d86d19ed37ab1fa0fab47fac,Skyclub,Atlanta Hartsfield Airport,First Class
+825a2fca29acd65347357edb072573d0,Star Alliance,Bangkok Suvarnabhumi Airport,unknown
+425a3eeff51e66c3d463c52b463df0e8,Senator Lounge,Stuttgart Airport,Frequent Flyer
+1416314b926f54ac569beb94d338156f,Concorde Room,London Heathrow Airport,First Class
+a8e92838be059f7440403e7d3b608ddb,Galleries Lounge T3,London Heathrow Airport,Business Class
+53d729915384e8f5ea049864c71096b3,Thai Airways,Bangkok Suvarnabhumi Airport,Business Class
+023f230bca88bacaeb2aa6af20a06859,The Deck,Hong Kong Airport,Business Class
+1ac3e8c310845e625d476400c409194f,erminal 3,Beijing Capital Airport,Business Class
+3616a85da5edc5206d06e81d5e3474e5,Cathay Pacific Lounge,Manila Airport,Business Class
+3359d90368b79e688f75a7b2ce925bc4,Domestic side,Helsinki Vantaa Airport,Business Class
+3e8ad90540a6e98555131646ec312e09,Skyteam Lounge,London Heathrow Airport,Business Class
+c6273b44ff68fa968b080dc8f586d36f,Red Lounge,KLIA Kuala Lumpur Airport,Business Class
+3e81a9281f3418898b23b5e788a896f5,Premier Club,Honolulu Airport,First Class
+bf872f6c5aca49d098eed48612b97e8a,Platinum and Gold Lounge (North),Hamad  Doha Airport,Frequent Flyer
+c5839bc7c930f657370723a4a10d58db,Qantas Lounge,Hong Kong Airport,Business Class
+0755f85605fd28ebb1743623d25018d4,unknown,Milan Malpensa Airport,First Class
+ec221929b7760ee3627c4e08c71635bc,Senator Lounge E,Zurich Airport,Frequent Flyer
+40bf9edb420d382c62a7ad859073fe75,unknown,Riyadh Airport,Business Class
+ee09b945f7b8720c64f9f2e5851e6585,Ana Lounge,Lisbon Airport,Business Class
+b5e35dda1e875b73f4dd9987ebb281b2,Sala Motale,Milan Malpensa Airport,Business Class
+dd5936d9657e0d077c9829be8ebde77c,unknown,London Gatwick Airport,unknown
+d95e77eff97061a0f2d8b05978a6ce0a,Escape Lounge T3,Manchester Airport,Business Class
+ccdbc130f6f60c2afdb5608a3775565e,Terminal 3,Abu Dhabi Airport,Business Class
+5e17719966b6dc93ae92f6a71a04717d,Belama Lunge,Honiara Airport,Frequent Flyer
+ae52693f3d4ffaaae4c5d865089dc2ae,Kris Lounge Terminal 2,Singapore Changi Airport,Business Class
+07a0a3728e50c24a40b55d00b7ec874f,Air France,Antananarivo Airport,Business Class
+9b8ca3f4b519e2e03933e939737e2c8a,Senator Lounge,London Heathrow Airport,Business Class
+4429173acf16fb986def731f2ebdd7bb,Dalí Lounge,Madrid Barajas Airport,Business Class
+cdf4d2c0f6fd7475107f7879033b43cb,SilverKris Lounge,Singapore Changi Airport,First Class
+1d9ad6b06889fff97adc87d7f6f2ff79,unknown,Verona Airport,Business Class
+f007f1860d575c1b5eccf75a4efef391,All Star Lounge,Moscow Sheremetyevo Airport,Business Class
+fa442c61fbe9f3fb452b31ec9dd52652,Skyteam,unknown,Business Class
+6bee17d8838c6d2279d18363a0045c9d,United Club,Washington Dulles Airport,unknown
+c72dde8193cac9f8a7834664619ad802,Sala VIP,Las Vegas Airport,Business Class
+ad5896538374eefab66df2cc3a543b6d,LATAM lounge,Santiago De Chile Airport,Business Class
+699466fab70d4f8493153965ee311cbe,Pride Lounge,Nairobi Airport,Frequent Flyer
+ee96319ec0be840f74abeaa7745eaefb,Concordia Premier,Surabaya Juanda Airport,Frequent Flyer
+72756b8616b6184fb11b9ddbfe91d539,Silver Kris,London Heathrow Airport,Business Class
+984cb25a651afa465e3575f5d1cf5349,Iberia Lounge T4,Madrid Barajas Airport,Business Class
+194cac134d90c1b1549fbb806212d797,Qantas Club,Brisbane Airport,Frequent Flyer
+252f5da6aba37fb4a885bbbcdc237de9,CrownLounge,Amsterdam Schiphol Airport,Business Class
+ae8e6c6b5589521fd90f20161107d302,unknown,Dubai Airport,unknown
+38af6f92d27a3f5b0d6cec2b18190403,Panorama,Dublin Airport,Business Class
+9f2a22293cda8ad82f7a3ecf35b5af93,Casablanca,Casablanca Airport,Business Class
+423da230c0dbecb509ad8d52b7f28d36,Senator Lounge non-Schengen,Munich Airport,Frequent Flyer
+5aa40c464edf6bb63d5a6a004df0fd6d,Marco Polo Venice,Venice Marco Polo Airport,Business Class
+255864dc1d53024e600e4f231305c1c0,Plaza Premium KLIA,KLIA Kuala Lumpur Airport,Pay to Use
+e1e9c9f05e69b30414728ab3db3fb864,Galleries Lounge,New York JFK Airport,Business Class
+ed6b20c5a88de20d1dc169b0dfd1799c,Marhaba,Dubai Airport,Members
+5eb1e26a4a0737a3e5f7ce438c8ad6ed,unknown,New York JFK Airport,unknown
+10129b7e29cc0b7d580bc5924b126e26,Pride lounge,Nairobi Airport,Business Class
+d3a8923b03186c3125e615f3760a5448,Iberia,Mexico City Airport,Business Class
+a9ac4b09511833dfbb7b65290aa6a7a3,Alfursan Lounges,Riyadh Airport,Frequent Flyer
+8ab7b42f3280abfd04548bad89ef5510,Bangkok,Bangkok Suvarnabhumi Airport,Business Class
+d4bc1e88fefc1b476933809628579119,Premium Lounge,Paphos Airport,Pay to Use
+bfd40bb5660d2a81619a5e0920f93ad5,Aspire Lounge,Copenhagen Airport,Business Class
+663aa4254f3ca8f40dac76fbedc87d30,Asiana Lounge  West,Seoul Incheon Airport,Business Class
+e08aaeabd2d393daa401a689c23373df,Global First,London Heathrow Airport,First Class
+e1c03a4b18fa15db545aeb42fb8206a8,unknown,Conakry Airport,Business Class
+0eab51d77466ebad69f3ccbc3f99ce1e,unknown,Guam International Airport,First Class
+5f72ff9d6508db1fdeee5ee895d11214,United Airlines Lounge,London Heathrow Airport,Business Class
+4c099fdf63c1f5778a67e6439078290a,PAGGS,Manila Airport,Frequent Flyer
+1d6128bdee559f070887bce23f7b1b38,Dnata Singapore,Singapore Changi Airport,Business Class
+dde10fa0bbd3ccc02804d52c1fa57faa,Qantas First,Sydney Airport,First Class
+fb37bec218656b119868e2a536e0c404,unknown,Male Airport,Business Class
+05f0f2f7518224c6c7e51c7d7f249705,Aurora,Stockholm Arlanda Airport,Business Class
+47b24723765e3f8195c10e1e0237f8d2,Balaka Lounge,Dhaka Airport,Business Class
+6354ca850647eb04b91176688a1a5dda,Admirals Club,Austin Airport,Business Class
+fce88b2a65847be3ccff539bef83db33,Senator (Schengen Z),Frankfurt Main Airport,Frequent Flyer
+f542a8307083797958b6f37cebe5866c,Royal Silk Domestic,Bangkok Suvarnabhumi Airport,Business Class
+7846378c9a233474144943c6383d53c7,Admirals Club,Paris CDG Airport,Business Class
+ed2abd108bd933a6f5f026a072b760d5,Amex Lounge,San Jose Airport,Business Class
+95538ffc925fe0464b4c0fe8c0f65ef8,KLM Lounge 26,Amsterdam Schiphol Airport,Frequent Flyer
+5ad2c4919f9c0938358016c35a2dc01e,Lotus lounge domestic,Hanoi Airport,Pay to Use
+3e650625dea9325f5920ff442e115976,Gate A13,Frankfurt Main Airport,First Class
+b7bb79f2ce8863a788c6f64c73bdd8a6,Airport Lounge World,Munich Airport,Business Class
+88c55e12a3f3e8a089a91921fa43cccf,Terraces Lounge,London Heathrow Airport,unknown
+234f227af48c544465b75ecf6882da2d,unknown,Melbourne Airport,Business Class
+d2e8c7ab59b6f1c1f950d69ae946ec1e,unknown,London Heathrow Airport,Frequent Flyer
+fd223e31d4c3d7a385d9d1cbc7c5e6a4,Star Lounge,unknown,Business Class
+2a7b4dba291814da68a063d7228c3348,Sala Monteverdi,Milan Malpensa Airport,Business Class
+881775534b8b82d31a5139980fdd333a,Concorde,London Heathrow Airport,unknown
+df4ba3189fbd83c5d8975a883a74fa18,DAN Lounge,Tel Aviv Airport,Business Class
+14db118ff0c7dfa2cc4f25b6bcaeb74d,United Club,Denver Airport,Frequent Flyer
+c53fb04c066ef9d22f48723b59bff893,unknown,Fukuoka Airport,Business Class
+51bfde0ce5c7c3220ad09d7ef23352df,unknown,Frankfurt Main Airport,Business Class
+cee0a55a5150d9b1b30d6e87ef0e81ca,Adani terminal 2,Mumbai Airport,First Class
+0655f432d8c943d6dc16cf6d107718b7,Club America,Miami Airport,Business Class
+dffc198ed503a5b0e87b1e4d7b5359fb,Clubhouse,London Heathrow Airport,Business Class
+17b7cfef669cc147f725a35af12a4719,Galleries Lounge,London Heathrow Airport,Business Class
+6ee05545be4b6e5bbb87a98b19aefaca,The Pier,Hong Kong Airport,Business Class
+8dc752e76ffdd6ce0714f6271268be21,Red Lounge KLIA2,KLIA Kuala Lumpur Airport,Pay to Use
+3b5eef05724e7452badf30e5111bbd2b,unknown,Chongqing Jiangbei Airport,Business Class
+9b7cf2283a528a1e9f8e26f1b0c12672,SkyClub,Salt Lake City Airport,unknown
+84a2c8f5a7ed6613786487356016d338,Sala VIP,London Heathrow Airport,Business Class
+3d7e4b9b4e34bce66445e617f8d4d8c6,DNATA Lounge Terminal 1,Singapore Changi Airport,Business Class
+7b7252f1a86fd608eed3a6b2ff4f80b2,Sala VIP,Tenerife Airport,Pay to Use
+e420bd8fa85b22c357c79d2c035ccbcd,Senator,Munich Airport,Frequent Flyer
+1083e358a41c1a2040cecb5809e67540,Mera Business Lounge,Cancun Airport,Pay to Use
+c40ff7241526cb228ca4969f067be8dc,ANA lounge,Lisbon Airport,Business Class
+d49cc0b6ef5fc03f0c5f8a11f9143de5,SATS Premier,Singapore Changi Airport,Business Class
+d86e05656f6363d2ed4efa40b20ec817,Salon Premier Lounge,Mexico City Airport,Business Class
+c47b55a0f95b7fa676d8288b5460d31d,unknown,Milan Malpensa Airport,Business Class
+8d48c62864fab434a89302ffa3eb2238,unknown,Bangkok Suvarnabhumi Airport,First Class
+3d2baf2c5278523e331b8019c0dca896,Admirals Club,London Heathrow Airport,unknown
+efb6c8d47e5e5a715e933de9334928f4,unknown,San Jose Intl Airport,Frequent Flyer
+6fb214be978f98c9a7dd12efb1fd6c47,Skyteam,London Heathrow Airport,Business Class
+a0ff32449ea70e65ab5cdf7375c063cc,Bellini Lounge,Catania Airport,Members
+43f7323bd741a842c3f860765d3e1007,Marco Polo Lounge,Venice Marco Polo Airport,Business Class
+bad988a02684921445226620c62e49d0,Bird Lounge,Calicut Intl Airport,Business Class
+6eaaa347057972fb58f57d6c5da9bb65,Maple Leaf lounge,Calgary Airport,Frequent Flyer
+9aa520832d6c39742cf462e173614de3,Maple Leaf,Frankfurt Main Airport,Business Class
+4887dd46e28155e826d2ae9dc1762471,Royal Lounge,Sapporo Chitose Airport,Frequent Flyer
+9e8d10b8336c3767360d64a4869160e8,unknown,Tokyo Narita Airport,Frequent Flyer
+fd4a08997d20af26b8b51bf538025540,Swissport,Manchester Airport,Business Class
+32a935ccc32fc61383567976b88c41e3,SilverKris,London Heathrow Airport,Business Class
+a62a19a711fbd8e991eb5cfe330e85a0,Golden Lounge,KLIA Kuala Lumpur Airport,Frequent Flyer
+daf655e8cdb7a09473cfac3dfa3ab3e1,Krisflyer Gold Lounge,Singapore Changi Airport,Frequent Flyer
+a1b87fa208e2412386e82cfc83022f0b,Bidwest Lounge,Johannesburg Airport,Frequent Flyer
+f6328667c5a39f91029302bb1757cec5,Senator Lounge,Newark Airport,Frequent Flyer
+fd454678afa67f7ba3a078a1339211d7,T3 International,Jakarta Airport,Frequent Flyer
+7329d7cf77002ae2ea9c5cb294ff1adc,Terminal 3,London Heathrow Airport,Business Class
+0d41717df24ef2e76f848e7e2832507b,Escape Lounge,London Stansted Airport,Members
+6ce36be2f0fd4c308477e51a8260f828,SilverKris Lounge,Singapore Changi Airport,Business Class
+a4010f6fdef23a07f8175b1ac06e91ea,Helsinki Schengen Lounge,Helsinki Vantaa Airport,Frequent Flyer
+4c66715d2277470bffb58fb49228b61d,Admirals Club,Tokyo Narita Airport,unknown
+fb1e12bb5602d27c48e173b8827e94c6,Aspire Lounge,Luton Airport,unknown
+ac9446df16ee54a6b3b1e9b910df9bb5,Royal Silk Lounge,Bangkok Suvarnabhumi Airport,Frequent Flyer
+aca00d4f39ee2eef1815e875d397e58d,unknown,Brisbane Airport,Pay to Use
+636c449715d14502756bef939730a9c4,United Club,Chicago O'Hare Airport,Members
+767bd369dbb3bb35e0d7975c02e22985,Admirals Club,Miami Airport,Frequent Flyer
+1f4519c20295921aaa92a01483bdb344,Pearl Lounge,Sharm El Sheikh Airport,Frequent Flyer
+14454b0f4add4d1ce8c80e669893cb78,Maple Leaf,Montréal Airport,Business Class
+c9202ebd8fee5ad3c44bf6530503d23a,unknown,Riyadh Airport,First Class
+00881bbac59a551864d3634d683a1363,unknown,Stockholm Arlanda Airport,Pay to Use
+08d6aecf89d9a5b77b21d7ea1ea8db5e,Sakura Lounge,Kansai International Airport,Frequent Flyer
+0da16cf4583c601ac86f6910d0872cce,Al Safwa First Class,Hamad  Doha Airport,First Class
+494d9457b9f1fa60d980889c74c0fced,Dilmun Lounge,Bahrain Airport,Business Class
+5361322e2442ab9df43068b9be3ddfec,Airport Club,Berlin Tegel Airport,Frequent Flyer
+5f5d6d53aa7a49f817563728b16762ff,United Club,Los Angeles LAX Airport,Business Class
+43a378ff977cbd4a3dc7fb9d98fafd10,Royal Orchid / Royal Silk lounges,Bangkok Suvarnabhumi Airport,Business Class
+d3b053af008089f642a46232d6650169,unknown,Bogota Airport,Frequent Flyer
+80b85655559f66d7aca04a4da0d39e46,Flagship,Dallas Fort-Worth Airport,Business Class
+f8525eb98f2da8acd66fa1e87064c91a,Marhaba Lounge,Melbourne Airport,Business Class
+0c8592c876e4ff54d9b14c5b22beba24,unknown,Hong Kong Airport,Pay to Use
+e3a0c7ca7fc9ae669af9de5f5a71825c,The House,Sydney Airport,Business Class
+9224cb98ed00dc5c184002222897180e,Prime Class Lounge,Zagreb Airport,Business Class
+9e57ab560c0e67383ac34854c27f3eaf,GOL Airlines,Sao Paulo Guarulhos Airport,Business Class
+a3ab1afceb6fa08a7852957a74192a98,Board Room,Anchorage Airport,First Class
+5a20754f6b30554466219439158c97fd,unknown,Oslo Airport,Business Class
+1870d3aca946d83ecbee414e445dce79,Sea Pro Air,Rio De Janeiro Airport,Business Class
+262f8a904d8594f86d573b26fa42295e,Business Lounge E gates,Zurich Airport,Frequent Flyer
+985d93847cac38c0d558a82d2120ed78,Dolce Vito,Rome Fiumicino Airport,Business Class
+5dd2bf2d6bd6a88ac23e6740503675df,Silver Kris Lounge,Sydney Airport,Business Class
+6a4285d11e03834afd62ba44a130ade7,V2,Shenzhen Baoan Airport,Frequent Flyer
+4a9dfc453e459b51b5f838f4b89418cc,Ambassdor Transit Lounge,Singapore Changi Airport,Business Class
+fbbfe9a62504acb5fe7c031c867b091b,Cafe Lounge Tromso,Tromso Airport,Frequent Flyer
+75fd606fd44062af7f1c802e8e8b2b25,Chelsea,New York JFK Airport,First Class
+33d856f6ec2b165592f59b53057c7583,Domestic Business Lounge,Denpasar Bali Airport,Business Class
+d2f5323952517f88e1a578ea3a0956d5,Plaza Premium,Penang Airport,Pay to Use
+d3a386f5c4d81f82d90ad3b1954a89df,Galleries First lounge,London Heathrow Airport,First Class
+45dabebcc6a5880027c6e1628ff7f8b6,No.1,London Gatwick Airport,Business Class
+04e9f9e90da9329709184b848a020f38,First Class,Tokyo Narita Airport,First Class
+cf3aa8fec756c25bfd78e05eee2492d8,AENA,Ibiza Airport,Business Class
+0fffbebdbe07aa8864487f2364caa9d4,BA Galleries,London Heathrow Airport,Business Class
+de07214fc80ecc238b45a8651fe69c20,Business Lounge,Geneva Airport,Business Class
+ffe04dc25f4bedcb5f41536ec6250c61,Club Europe,Amsterdam Schiphol Airport,Business Class
+e3be1ff33ae473e8de044d25a6e1b5b5,Oryx,Doha Airport,Frequent Flyer
+ce134d342615265e9d9f93134840dd5a,Star Alliance lounge,Paris CDG Airport,Business Class
+71ec21253eca2109bfbb006b196e8448,unknown,Seattle Airport,Business Class
+1ad4eeb153e6c7bec25fd76f0ae24935,Prime Class,Istanbul Airport,Business Class
+6bc87985546501dd71e5977e5ba7e858,Star Alliance Lounge,Cairo Airport,Business Class
+b0ddcaa270b76bc131ba90bec49b65c9,Oryx Lounge,Hamad  Doha Airport,Business Class
+0e15d430a7aa390e2d813ace4f8ffa35,Star Alliance,Sao Paulo Guarulhos Airport,Business Class
+d7ae0a4403ab00c9f2d4c4cf8a0f57cc,Royal Orchid,Chiang Mai Airport,Frequent Flyer
+e3707f5ecd1c11345e3b3b4795f444db,Plaza Premium Lounge T3,Delhi Airport,Frequent Flyer
+4c6e935431304ea6857e93360316d76e,China Southern Kapok Lounge,Urumqi Airport,Business Class
+32b0ceefaa90b42d07c5345b2ed878b1,Gol Premium Terminal 2 - Domestic,Sao Paulo Guarulhos Airport,Frequent Flyer
+43c019a8852019cb98c37c1c6217cfc6,Casa Italia,Rome Fiumicino Airport,Business Class
+933277961e9f55e5f3b1466419a31601,Elite East,Seoul Incheon Airport,Business Class
+5d449cfd646886992173f8017bb0a616,Terraces Lounge,Jersey Airport,unknown
+4f4ee4d6ad0ce2d57a8b8084d578acde,Concorde First,Dubai Airport,First Class
+00f69859d62f2fd7300c426f0981580c,Slow Lounge,Johannesburg Airport,Business Class
+b8dcff1e5750574315f3ee63134d4580,International,Sydney Airport,Business Class
+3b9ab8be5829a9545b1cdd0f584ac7c8,"United Club, SFO Gate 69",San Francisco Airport,Members
+15fba819adea5e51c7e93fba9bb73ffe,Ahlan First T1,Dubai Airport,First Class
+6a93595867163de95b0f3bb978749bda,ICare,Paris CDG Airport,Business Class
+58ade549ff963650cffa02c66c1f5d3f,unknown,Islamabad Airport,Business Class
+f7a64906eb1de1ae7ab3248b101058a7,unknown,Noumea Airport,Business Class
+a9c724758aaee8cb275890efe0ff0c28,Etihad Abu Dhabi,Abu Dhabi Airport,Business Class
+4881c3697bd9477004eca7775b1ebac5,SkyClub,New York JFK Airport,Frequent Flyer
+0034b1cafb8840da35189fe5be58d495,Prestige,Seoul Incheon Airport,Business Class
+1309c220ff3797d357b311e87dda461a,SilverKris T3,Singapore Changi Airport,Business Class
+f47e0ec3834c6cfa03685f41ce9ab519,Platinum Lounge,Helsinki Vantaa Airport,Frequent Flyer
+3a2a8e942f70b00eeb49941a2eb2dd0f,Swiss Lounge,Moscow Domodedovo Airport,Business Class
+c9cae24f3b9092b503f2528c81f91832,Delta Skylounge Terminal E,Atlanta Hartsfield Airport,Members
+03e383c805ff0bfe119fd8c0b7c14997,BA Arrivals Lounge,London Heathrow Airport,First Class
+15fe960871fd6e837f3d111238f89f85,Singapore Terminal 3,Singapore Changi Airport,Business Class
+b2ff58c1c9d5c12880b1c62211c47650,United Club,London Heathrow Airport,Frequent Flyer
+5e9e24e09b248cc5d902fd7c773eceeb,Presidents Club,unknown,Business Class
+1c3adfa8306358c13485137529831462,Royal Silk,KLIA Kuala Lumpur Airport,Business Class
+324e4cb39286844ef44547d661c22477,Oneworld Lounge,unknown,First Class
+592a7ceb7548bb676767b3361914efe2,Centurion Lounge,Miami Airport,First Class
+046abba3289b07ef0b499d9cb2643881,Etihad Business Lounge,Abu Dhabi Airport,Business Class
+21abbc7d11a22494f2ab0747d9ccbda8,T4,London Heathrow Airport,Business Class
+60761220b9a66413be62171aa1018af8,SilverKris,Brisbane Airport,Business Class
+98c65245f4ffce6e477f359340a22e0c,unknown,Vilnius Airport,Business Class
+2dff00a994768102ce42a0bbeaf38131,Gold Circle,Dublin Airport,Frequent Flyer
+62343ef3c4f0fd8d5b5454871ad96c39,Royal Silk Lounge D and C,Bangkok Suvarnabhumi Airport,Business Class
+0a6f9ff288167d69757cedc3c854ab48,Plaza Premium,Phnom Penh Airport,Pay to Use
+9611d993903b7f89cf1719db67adf8cc,QANTAS BUSINESS CLASS LOUNGE REVIEW,Singapore Changi Airport,Business Class
+dc273fce5666875654a221019af73c8d,Business Lounge,London Heathrow Airport,Business Class
+84027e5f34bea5bdf1099bfb48c05035,"Terminal 4, Concourse B",New York JFK Airport,Frequent Flyer
+eac1f43215066f251bbf3bb8f6ef69ba,ProAir VIP lounge,Rio De Janeiro Airport,Business Class
+bc922a3349afaff7b4f4b0705aab817e,Falcon Gold Lounge,Bahrain Airport,Business Class
+77e5df6c4a1b8253b80790bb6bdad2ea,Servisair Aspire,Copenhagen Airport,Business Class
+55e0f3f893713462173a45b3df7e625d,unknown,Seoul Incheon Airport,Business Class
+f27c6c1e9e5bd3d8192f3c24f6715a21,unknown,Sydney Airport,Business Class
+a90042ec56ed4d6c45d2a107437dc0ac,Auckland International,Auckland Airport,Frequent Flyer
+7f6eda5265b00aaefe39255d936b71b3,Business Lounge,Istanbul Airport,Business Class
+ca19f676246f4d9851adb6adcb37700e,Al Mourjan Business Lounge,Hamad  Doha Airport,Business Class
+fbc32fb8c26f13e1dc4ec555fedd07e3,unknown,Madrid Barajas Airport,Business Class
+d712e89fd3ef0dafd330f24a02622d48,The Lounge,Cancun Airport,Members
+c11434c35e3dae296a1fa01d1605f011,Air France,Paris CDG Airport,Business Class
+295df14d3b5c29dda9e8da511a0653c4,KLM Crown Lounge 25,Amsterdam Schiphol Airport,Business Class
+245e4b711dd154e2841fd0b875942dc2,United Club Domestic,Newark Airport,Business Class
+a2775439d7a62dcde36a5e185540cd7c,Admirals Club,Chicago O'Hare Airport,First Class
+127156bf74471b599cbd545b2b8fb695,G16 lounge,Hong Kong Airport,Business Class
+ff7d0e0a8e61fe86f5d25d6bdd24fc35,Maple Leaf Transborder,Vancouver Airport,Business Class
+7e9685889b7ed4296444cf5b94eb49f1,Koru Lounge,Sydney Airport,Business Class
+36011308e186f6ab960ef058ee1fbd38,unknown,Atlanta Hartsfield Airport,Business Class
+c3b2e7d5c18060273fbee525ca699f12,SATS Premier lounge T1,Singapore Changi Airport,Business Class
+e57cac48e6f01d6bc98a02e1d281e42a,Terminal 2F,Paris CDG Airport,Business Class
+415853e12d26a20375cd74cb75734f09,Piemonte Lounge,Turin Airport,Business Class
+2e426da31daae5d0701b291331f6f03a,Admiral's club gate E 48,Washington National Airport,Members
+227084bc9dc30d2aba445bdcac2d77c0,The Lounge,Luxembourg Airport,Business Class
+75c6d71a35a6622277c714134e480a8f,Business Class,Johannesburg Airport,Business Class
+abfb488043062d83e2b444dc3510dfb3,Prime Class Lounge,Muscat Seeb Airport,Business Class
+0a0d1d99e6c3038de702ab9bf0f48494,SkyTeam,Istanbul Airport,Business Class
+6253e50599e9e617f4f99eabc3dbabff,Schengen T2,Munich Airport,Business Class
+6709993cf6af1ce3c9976f1f9d9f62cc,unknown,Shanghai Pudong Airport,Business Class
+2998d095be1bf60f6a4d974bfde76a85,Clipper Lounge,Mumbai Airport,Business Class
+33adfb8ffc88398dc491a7ed461e9e6f,Golden Satellite Lounge,KLIA Kuala Lumpur Airport,Business Class
+60a23ae730ea54ac4225d3bdb536c65e,Red Carpet,Chicago O'Hare Airport,unknown
+43f78805f820449fca5369dd8f04f233,Senator Lounge,Frankfurt Main Airport,Business Class
+b9ac218c5bae95b307a4deb27acb802b,Melbourne,Melbourne Airport,Frequent Flyer
+25c80c29b137af91e8b0ddc7da0cf85f,Admirals Club,Los Angeles LAX Airport,First Class
+6eb82191fb16a923c83357ca03d88673,Royal Thai business,Bangkok Suvarnabhumi Airport,Business Class
+0d58cbc1c8717393ef5e59c8db30ea62,Star Alliance Gold,Cairo Airport,Business Class
+5bc6438b6229f479994220b47165d2f1,Maharaja Lounge,Delhi Airport,Business Class
+a36fe4ee32b6bc0916a1c63e646ac9c9,unknown,Mauritius Airport,Business Class
+156e2092852fb63410783ec1103a32ba,Servisair,London Heathrow Airport,Business Class
+9c56bf0412af5576952b0c2ed9226fb1,IASS Executive,Tokyo Narita Airport,Business Class
+56ad30fb3263ff300a971c9cd9c01f84,unknown,Hilo Airport,Frequent Flyer
+840c8436e7469136fbb77fbafd695782,Clubhouse,New York JFK Airport,unknown
+aedca6a640d77a0cf036075032f82e5a,Emirates First Lounge,Dubai Airport,First Class
+6d2f03e4cf6d34e6d58b21b3465fa4e9,Oneworld Lounge,Los Angeles LAX Airport,Business Class
+0dad6c846c0cf2759c502b2c344448a9,NIA Lounge,Hanoi Airport,Business Class
+dc1c4819274e57ec954eb3061c0aee83,Aspire Lounge 26,Amsterdam Schiphol Airport,Business Class
+e70dcc85f369cb42871a632c249b429a,GVK Lounge,Mumbai Airport,Frequent Flyer
+17dbabc4d70820831b8ccf4e2f458e39,Etihad Lounge,London Heathrow Airport,Business Class
+17ec78513fa3fc3f943fc244466ae1e1,Qantas Business Lounge,Auckland Airport,Business Class
+0055786e6ae3ea126022244ea189daf6,Copa,Panama Tocumen Airport,First Class
+cc542a4636b0c855f734430a625bcd7e,Escape Lounge,Manchester Airport,Business Class
+26f9807bc40cfd54f21f61eb1b948849,unknown,Ho Chi Minh City Airport,Business Class
+a03d2714715ecf8bfc81ed0256addc73,unknown,Gold Coast Airport,Business Class
+aad4ca0ded2ded0157373a5c634d260c,Concordia Lounge,Manado Airport,Business Class
+05cf4bdb96b57a47f7d96accb49680c5,Golden Lounge,London Heathrow Airport,Business Class
+ae04769cfd22339fb4563467faab453a,Upper Class Lounge,Boston Logan Airport,Business Class
+b06e42bed8b06bf13ce516d801a64459,SkyClub,Los Angeles LAX Airport,Business Class
+a01210e1879d07dcc09a0671d29d1b1f,Eurobonus,Copenhagen Airport,Frequent Flyer
+48cfd22cb6357b471a7c1c2628701c48,Tarom,Bucharest Otopeni Airport,Business Class
+a33a2f48f3a1d5e9e89acd03aa0e44b7,Premium Lounge,Denpasar Bali Airport,unknown
+52d3e38a58c1124804e2a58fe2e30a49,Red Carpet,San Francisco Airport,Business Class
+007b1ea485ccd4741376269641ceb7fb,unknown,Phoenix Sky Harbor Airport,Members
+3987e357e003a867b1ac05898a4e8f89,EBL Skylounge,Dhaka Airport,Pay to Use
+1041852707c0d43fd48b7f0fcc8587a0,T1 Domestic Lounge,Mexico City Airport,Business Class
+12daf2d759cb5897d9ed62be99637385,Not sure,Istanbul Airport,Business Class
+8eacd12fb47331d18ea5981453645291,Admiral Club,New York JFK Airport,Business Class
+6e61937d117e8bae5e04db1c58584f15,Qantas Lounge,Honolulu Airport,Business Class
+ad2ec8b0fd5567ecaa50b6514085f281,First lounge,London Heathrow Airport,First Class
+f2008adc28d46f7f735bdd12f3262239,Golden lounge Satellite,KLIA Kuala Lumpur Airport,Business Class
+47d7b3c6fd60009af7921419fa08a580,Swiss Arrivals Lounge,Zurich Airport,Business Class
+73d414e183299530a4620b233997adb6,Sky Lounge,Minneapolis St Paul Airport,Business Class
+cb7469e318dc3b5082fea380cfc1d42a,Air France,Washington Dulles Airport,Business Class
+27e96fc5b546ed690c85a6801d00de63,Plaza,London Heathrow Airport,unknown
+21d82256c8d21c3b6fe07691dc917f8e,Crown Room,Los Angeles LAX Airport,First Class
+52d83c2c155513dc6d0dde74e2e2b869,Tallinn Airport Business Lounge,Tallin Airport,Frequent Flyer
+dce083c2208257a18a7f5f39b8fecdf3,Delta Sky Club,La Guardia Airport,First Class
+242e6d6d42ba4bcf8a62556fadc39e90,Hamburg Airport Lounge,Hamburg Airport,Frequent Flyer
+8dbfcc55000291b5d92c167de776810b,unknown,Geneva Airport,unknown
+5d0d448b916feb54d1f23016405bdfc5,unknown,Amsterdam Schiphol Airport,Frequent Flyer
+98d21084a18486a1c9f57af2cedf16f2,Pearl,Abu Dhabi Airport,Business Class
+2b2fb79d418e880e80e7bdb7c0bd7195,Crown 52,Amsterdam Schiphol Airport,Business Class
+c9215a5548b5a369b62ca15cc0c2d8a2,1903 Lounge,Manchester Airport,Business Class
+7d86f10c7ee4cc865ef9fa62d16a51f9,Miracle Lounge,Bangkok Suvarnabhumi Airport,Business Class
+a889d2f10b9fc46eee70d0c0c5fecb12,Senator,London Heathrow Airport,Business Class
+7e350218bd1e4097f5ff67152d2a5795,unknown,Nairobi Airport,unknown
+84c7ea89c8c1842817f753f02ecc3a09,SAS Oslo Airport Domestic,Oslo Airport,Business Class
+922e1edb5ba43d1a304c0fc5a1903bcd,Plaza Premium Lounge,Vancouver Airport,Members
+8e8aac77e67decb1e701190bd8fc73d5,Silver members lounge,Hamad  Doha Airport,Frequent Flyer
+ec5c98884fe251940952b633c0f8d656,Star Alliance Gold,Singapore Changi Airport,unknown
+e76008e03a8b65ed6e3e6ea28f2d68e8,Silverkris Lounge,Singapore Changi Airport,unknown
+c97fa07180b20d44f0647c5e79df2b97,Senator Lounge,Mumbai Airport,Business Class
+e9594909630025d8ac7d9565483741f1,Sala VIP,Frankfurt Main Airport,Business Class
+1f45b9eb90d41f5ebda32a2568025817,Silver Kris Lounge,London Heathrow Airport,Business Class
+7f5fd5cd3bb76fea4267b45d2ebab0e0,AA Arrivals Lounge,London Heathrow Airport,Business Class
+4a35463f44c66a742757357ba81e1fbc,Senator Lounge,Dusseldorf Airport,Frequent Flyer
+287711272b40203cf4e4ff9ae8425b76,Aspire Lounge,Manchester Airport,Pay to Use
+ac656fe363e0573b43fa74c029147f99,AA Admirals Club,Paris CDG Airport,Business Class
+d0c694cc1b08f1bdc085f3f4d9938426,Sky Club,Atlanta Hartsfield Airport,Frequent Flyer
+ed669ce8eab8779cea3eea437c34218d,unknown,Addis Ababa Airport,unknown
+df2879596b44b07816d97c5b165444d2,Grand class,Paris Orly Airport,Business Class
+d94fd182ebe48819f41cd74835b5081a,Anfore,Rome Fiumicino Airport,Business Class
+aba9bc33eea6806a6d3c6c559342cb4f,Domestic Lounge,Auckland Airport,Frequent Flyer
+8e7d5f6055ee682182b0232b44981e3c,Crowne lounge,Amsterdam Schiphol Airport,Members
+f286a2a13960517d3519b303dad46a44,Mexico City T2,Mexico City Airport,Business Class
+abad77453db4ff82816146931bd242c0,Menzies Executive Lounge,Stockholm Arlanda Airport,Business Class
+047c29cb3758f0bb1e5e56b10ba35826,T5,London Heathrow Airport,Frequent Flyer
+6e041ea0a8e84142efa56d0ef8b2a571,Finnair Lounge,Helsinki Vantaa Airport,Frequent Flyer
+638eedf67f7634156d1ba9b9dedeb887,KLM/Air France lounge,Houston Hobby Airport,Business Class
+383318d17a752994fea6635ee6748584,Arrivals,London Heathrow Airport,Business Class
+5799a3a42a0c71c06d8be8e351516b35,unknown,Cape Town Airport,First Class
+4d6d6db9ccffcaf322f285dca4f0c753,Plumeria Lounge,Honolulu Airport,First Class
+52900cbec309ef5d4bddbcbdf06bf67b,Skyteam lounge,London Heathrow Airport,Business Class
+c2bc785ad4fc49e06f40d9b8545398cb,unknown,Philadelphia Airport,First Class
+edfd0035726ba9c6a7bbab938cb654b2,Maple Leaf,Ottawa Airport,Business Class
+1f9cdbbca1263f5e0504932645613a0b,Golden Lounge Regional,KLIA Kuala Lumpur Airport,Business Class
+ac0a775a8120754e03320e65c8ac6d33,Cartagena Business Class Lounge,Cartagena Rafael Nunez Airport,Pay to Use
+2f6ccced04a1526ee9f869648b83a1b3,Doha,Hamad  Doha Airport,First Class
+bdec2e44a4383e288511a03d1917ea0b,unknown,Panama Tocumen Airport,Business Class
+03b4dfad4392b9c75f57cf2bd85455b7,Hato Airport,Curacao Airport,Business Class
+b950da60026359a6d2bf21d7c220e998,Avianca,El Salvador Intl Airport,Business Class
+31ef2638ef15ad08187230dfccb2a4c8,Salon Vallee De Mai,Seychelles Airport,Business Class
+8e9bc029f81c837a4d35f63f0d5e8640,unknown,Kathmandu Airport,Business Class
+0c51e7ae26a47b79c324127ff8aebccf,SilverKris,Bangkok Suvarnabhumi Airport,Business Class
+b78f411ed86e9b7f68c06b39f0a04169,Plaza Premium Lounge Dubai,Dubai Airport,Members
+3503b01f8bdb35ee23fdb368c7f215d6,COPA Club,Panama Tocumen Airport,Business Class
+ce06ab3d01274fce1ed761c9db7ba322,United Club,Boston Logan Airport,Business Class
+0818fddf855c9fb44935ca69bdb25666,unknown,Queenstown Airport,Frequent Flyer
+90e45c9ac190e0a0b101b7f332c3cc8f,Travellers Lounge,Hong Kong Airport,Business Class
+1a16d67f32abed5be9dc91b45ab3ea8c,Executive Lounge,Kathmandu Airport,Business Class
+8dc65fd5626497d3b7525085e3db76f9,United Club SFO,San Francisco Airport,Business Class
+03816f00ad27d05f3538dc33c15a903c,Terraces Lounge,Dubai Airport,Business Class
+fa9e898e025e58602f31bd83a5f4d2fc,International Business Lounge,Sydney Airport,Business Class
+a5cecac453657fb8f8a0b1dc8dd2b7fe,Priority Pass,Los Angeles LAX Airport,Frequent Flyer
+525c3e327345da4e6c7fdb30d6bb5e8d,Amédée Maingard,Mauritius Airport,Business Class
+5e2545542f32497bc147cd84dd399224,Lounge 2F,Paris CDG Airport,Business Class
+a908808ac293b2b713ca0d34109149b3,Salon VIP,Santiago De Chile Airport,Business Class
+9a89c2cf287c913459978d80a434bef4,Senator Lounge,Detroit Airport,unknown
+ad8d45519081f5ef3c04d25a6f38860b,Manaia Lounge,Christchurch Airport,Business Class
+4f06a69009b5161b680b95961bd58f8a,Sala VIP,Brussels Zaventem Airport,Business Class
+4ffc302eebd048b1d9087f81c64e5be7,casa italia,Rome Fiumicino Airport,Frequent Flyer
+b08b9317d8c1f63359533e15236a5331,unknown,Vancouver Airport,Members
+f559b097fabbeb0b3ba758dac68494de,Serandib Lounge,Colombo Airport,Business Class
+0039420393e7878f2a9f6c076796cfd9,Business Lounge,Seoul Incheon Airport,Business Class
+0a37085e2c2209adcb46c992a0e869c4,Air Canada Lounge,Calgary Airport,Members
+d8bc7fa5db31133a9fc71170b7f06947,unknown,Xiamen Airport,Business Class
+2b5de75b9c3e5ef0499122336f93ce2a,Star Alliance Lounge,Madrid Barajas Airport,Business Class
+3d8ede4e86ca10b17fc61792b6ceccc7,AIR NEW ZEALAND BUSINESS CLASS LOUNGE REVIEW,Los Angeles LAX Airport,Business Class
+d06603e5f322f66100f359d9f435a163,unknown,Dubai Airport,Members
+e69207a8e2683d891eb6b775f543e60f,SAS Plus,Stockholm Arlanda Airport,Business Class
+f76927cabb1820bef1b14271aac9634b,Senator Lounge (Pier C),Vienna Airport,Business Class
+784ab6d03662ab867ef721ec7a44c87e,ANA Lounge,Tokyo Narita Airport,Business Class
+d5fda806db7444f5e812d28acd1b1df8,Domestic Business,Melbourne Airport,Business Class
+9ea4c41dc24eb94ad3ef2b532f48df70,Hainan lounge,Beijing Capital Airport,Business Class
+16a868e29461ba25ff9ddd5ab1c245ff,Royal Silk,Bangkok Suvarnabhumi Airport,unknown
+b4e4d9ff3e4aa1b5ee2911e33fc904f1,Priority Pass,Edmonton Airport,Pay to Use
+697b6ca6528eda9d773df149a4f27bd8,Avianca,Miami Airport,Business Class
+153e5784495a736ea541a61d7bc793fa,Narita,Tokyo Narita Airport,Business Class
+9e2959df83f61b0ceea0736157e813f9,Senator Lounge A,Zurich Airport,Frequent Flyer
+63641de1d51d0cb6bcf2298a1f1046ef,unknown,Dhaka Airport,Frequent Flyer
+32c498302fadea694db9f18560cc93a3,unknown,Copenhagen Airport,Business Class
+c4317af0d851f9645b430c59b2d06036,unknown,Paris CDG Airport,Business Class
+a1dcee5eacda64574fd75f38e7367f9e,Hobart,unknown,Frequent Flyer
+5d328e2692c9a6098c3333bcb4a6d5b3,British Airways Lounge,Edinburgh Airport,Business Class
+0c44ca2b3473ea7107e75237d8958c45,unknown,Almaty Airport,Business Class
+49f9be280ae8dc8d8e1857524312fe58,unknown,Warsaw Chopin Airport,Business Class
+50a920b44eb16b5d6baa597e0bff9d81,Chinook Lounge,Calgary Airport,Business Class
+452f20cdb715d87beea981f19b18adc2,Salon Icare,Paris CDG Airport,Business Class
+14e3892334bffcf09639229d9906a6de,Admirals Club,Mexico City Airport,Business Class
+343c8a0a3430e5c1445b5f1a633faa84,unknown,Lima Airport,Business Class
+769f9c036ade9e0298babe6aca83efc5,unknown,Incheon Airport,Business Class
+c1e4180abf8256134196f40c52ecbb0c,unknown,Riyadh Airport,Pay to Use
+fcb9afc04e5373e6a9d3c62b15b23c7a,Qantas Club,Auckland Airport,Frequent Flyer
+ca6bc5893c7c7ea5928f2aa04868a0f7,Star Alliance lounge,Sao Paulo Guarulhos Airport,First Class
+004203901f1fc22cf3ee157c53c0b46f,SkyClub,Atlanta Hartsfield Airport,unknown
+20bb8913e489ac90c7d5af35afd58fdd,Galleries Lounge,Newark Airport,Business Class
+6d9e02652df38277cd89c6af7eddeed0,Bangkok airways lounge,Krabi Airport,unknown
+62b2f9d3c56d2c5fd7df445f1c93032a,CIP Siem Reap,Siem Reap Airport,Business Class
+c2319e97668718ae7fc382be4cf1f0d0,unknown,Hong Kong Airport,First Class
+26426c1ecf27abbbc9386995b46ee7f0,Royal Silk,Singapore Changi Airport,Business Class
+5318e2d691146600f0944de881ce0922,Virgin Clubhouse,London Heathrow Airport,Business Class
+26bac2fd28c17a6b32898be8ec7c2201,Senator Lounge review,Washington Dulles Airport,Business Class
+24fc1692cc2c20273838e8e20eb846f9,Maple Leaf,Toronto Pearson Airport,Frequent Flyer
+e5524a890fb2a29ed990923ad71fcc93,Dnata lounge,Singapore Changi Airport,Business Class
+37cfbf0c712d93d7f80ca8314b202021,Miracle lounge,Bangkok Suvarnabhumi Airport,Frequent Flyer
+9ee72bd1b603531402ac17933dd66266,Guangzhou,Guangzhou Airport,Business Class
+7ab3e3f646e308c50a94edba3e67017d,United Club West,Denver Airport,Frequent Flyer
+65e7264b9032e48be1e5e76d029ee49d,Aspire,Edinburgh Airport,Members
+ad11ef1c65c4df033024c5d119aae03f,unknown,Brisbane Airport,First Class
+c69df74f02ad9ecec62f94bf5c136e2c,unknown,San Francisco Airport,unknown
+ea682cce41d5fbfdb197750f7fdc782f,Al Dhabi,Abu Dhabi Airport,Business Class
+dc303c410f147db862194dc5d1e3b3d9,Qantas,Wellington Airport,Business Class
+fce8b3847143da48c67cf5752b30e0b3,Senator Lounge,Paris CDG Airport,Frequent Flyer
+a7c44be89cf81a271727a2c5b1e64ffe,DAA,Dublin Airport,Business Class
+d385bee04e7719cdbca6480e1c7183be,Admirals Club,New York JFK Airport,First Class
+5d66f49aaed3393fcf9cc77335718698,Koru Lounge,Auckland Airport,unknown
+ef574fa58b6ee0126ee97f811ecb04ac,SkyClub,Memphis Airport,Business Class
+53d03c7b31723259810b0d420dd290c1,Diamond,Bogota Airport,Business Class
+e73739b45f1ba8f198eed00572f7d249,Business Lounge,Frankfurt Main Airport,Business Class
+5931a25cf126e58263a5aa41c0b6184d,Korean Air,Los Angeles LAX Airport,Business Class
+c0fd124b28dd8a17bbe108d450840b72,unknown,Hanoi Airport,Business Class
+3cf43953dbf52d706e3371076e1bfed3,The Cabin,Hong Kong Airport,Business Class
+e4b60b2a4c30a27f5cde023f596605be,Vista Lounge,Rome Fiumicino Airport,Frequent Flyer
+0b086a61a5a1023318682eae7a489de6,Lounge Gate 21,Shanghai Pudong Airport,First Class
+fc8bb73ab7dcdeed5d85754d0fa176ce,Norrsken Lounge,Stockholm Arlanda Airport,Members
+9c146af7348d6ecea7fe1d075e9c0d07,unknown,Hamad  Doha Airport,Frequent Flyer
+a82c929e6652d8f71e7d38f6a39db70e,Flagship,Miami Airport,Business Class
+d4f9fcb51e6f9363468eded2e926a008,Weltbürger,Berlin Tegel Airport,Frequent Flyer
+db163f58f5fe5f222f3ff52fbb67929d,Crown lounge,Amsterdam Schiphol Airport,Business Class
+1691a2616c567bc82f94fcbdf4a4c419,Concorde lounge,London Heathrow Airport,First Class
+ef2e68421d3c931b483203c97075a10a,unknown,Helsinki Vantaa Airport,Frequent Flyer
+2907163e9075963e85caabd32dc15d41,Dubai,Dubai Airport,Business Class
+6d43e689f8192d5b3f598531f1a4ad47,IGA Lounge Domestic,Istanbul Airport,Pay to Use
+9543456ae343bc429229edca7d9b57b9,Gallery Lounge,Moscow Sheremetyevo Airport,Members
+efb5145a465fa67ca063eac461734f6f,unknown,Washington National Airport,Business Class
+ad2d878e9bc7317abc41cbbeb2861dc9,unknown,Luanda Airport,Business Class
+a4f7a0bac1dd81a1506860ba66f3430c,First,Sydney Airport,First Class
+92ab05b164104496f712dc0fc8150b14,unknown,Dar Es Salaam Airport,Business Class
+e68dc31183142e83662f2cd0a194c6a4,Art & Lounge,Newark Airport,unknown
+931867cbbcb4892319950fa234287299,Crown Lounge,Dubai Airport,Business Class
+be1e8ac88721d49da526ebcc718c0947,unknown,Beirut Airport,Business Class
+b9b898cba39e5835b5984f46c1a6b465,Senator Lounge,Munich Airport,Frequent Flyer
+fa09233c649b6e3dfeaa554bab75bad9,Red Carpet,Newark Airport,unknown
+d44cd00be4b68bdc8f80132fc377100b,First Class,KLIA Kuala Lumpur Airport,First Class
+15554c80fdb07200c153e2f3efc6d4c3,unknown,Lusaka Airport,Business Class
+443780e9496996f260ddacac0b5a257e,Sakura Lounge,Tokyo Haneda Airport,Business Class
+387849c4ab653cf65403593c1837c641,Club Condor,Buenos Aires Airport,Business Class
+ab22a31efc16674f89928c0aba815c74,Royal First Class,Bangkok Suvarnabhumi Airport,First Class
+3498cb2b8da187066ff57a7879623712,Copa Club,Bogota Airport,Business Class
+e87c0db26c1c21e7691751ea7bba62a1,Ahlan Business Class Lounge,Dubai Airport,Business Class
+6bb678220f5e31bb47bdfa0b1c1952a2,The Loft,Brussels Zaventem Airport,Frequent Flyer
+796dbb7b7309fe747d1518cb077d1112,Premier Lounge,Nadi Airport,Business Class
+5ebfc46f036077c30e1bb5e79726b690,Golden Lotus,Ho Chi Minh City Airport,Business Class
+745066c726e34e2e936d05134dc2268f,Oasis Lounge,New York JFK Airport,Business Class
+beaa2c73d2aa8b2d58fab5732813fcbf,Senator / Star Alliance Lounge,Munich Airport,unknown
+c5e83ee287887836e07afe1ecad58ab5,SAS Lounge,Stockholm Arlanda Airport,Business Class
+3a9bfca66839567c075aca5f90f18467,Galleries,Athens Airport,Frequent Flyer
+74bcd317164d4e2c90e59b44a6594374,Louis Tavern,Bangkok Suvarnabhumi Airport,Frequent Flyer
+5faec0ba86eb67f017a37ef2fe890608,Songolo,unknown,Business Class
+7ee71fe87e72a1f3ac57eaf3f007ef06,No 1 Lounge,London Heathrow Airport,Business Class
+30486a1db753d26fcaf24029c51af227,unknown,Delhi Airport,unknown
+286abbf05caf119278cbc80ddf54464a,Etihad Business Class Lounge,Abu Dhabi Airport,Business Class
+f734455a4ffbc965b44851ea2e2a1841,Austrian Business Lounge,Vienna Airport,Business Class
+34976c6707393da6647624651a5146f1,Oryx lounge,Doha Airport,Frequent Flyer
+52bc0b3e380628743f4e28c6c40adac5,Galleries,Johannesburg Airport,Business Class
+b6f3d343d24dab9bff3feab19e89aeeb,Ljubljana Business lounge,Ljubljana Airport,Business Class
+fa97edc9e7d5f1c9c84e844235c74eb9,unknown,Boston Logan Airport,unknown
+e56b1358223f8d88e9a2c545735e482c,Business Lounge,Hamad  Doha Airport,Business Class
+5bab92174d78496f2e7105537ea5c1ca,Galleries Lounge T5,London Heathrow Airport,Business Class
+66e2fc1cf025d53c86990de684ac0800,unknown,Denver Airport,unknown
+54b296c47f3308ba33f119384fa80242,Sala VIP,Malaga Airport,Frequent Flyer
+ed04a1354639e47205e4a932cef807d8,Maple Leaf,Paris CDG Airport,Business Class
+8c768f31d94f2707eeb883ae75b671e2,Copa Club T1,Panama Tocumen Airport,Business Class
+f40f8dda330a7e1284738d44f03bbecd,unknown,Auckland Airport,First Class
+ccf9ff20c25083e70bb962c39e787237,Admirals Club,Honolulu Airport,Members
+8cb96865cfdb46f026d1157d521deb23,Business class,Dubai Airport,Business Class
+2635e578ef56fa275e09930ba236328f,Senator / Star Alliance Lounge,unknown,unknown
+96a5c3c280f3ff9e009860cca7e2bfdc,Gatwick North,London Gatwick Airport,Business Class
+881c424c99424b88b502f8f7bea0dc95,Business Lounge,Hanoi Airport,Business Class
+0dd84d6eef8c5c73fb100d73d3b09712,Non Schengen Crown Lounge,Amsterdam Schiphol Airport,Business Class
+4c3f99319cb908183892ff22b35d82a0,Senator Lounge,Zurich Airport,Frequent Flyer
+fe9e4b5a1f53edd40c6ff294eb8d81d3,Lotus Lounge Domestic,Da Nang Airport,Business Class
+d281e3986c6ea5299b65b1d308dd3dbd,iCare Lounge,Paris CDG Airport,Business Class
+75138aafb14399f5f7a53382ea47d670,unknown,Riga Airport,Business Class
+51151a46a2a8720c25b34924ad5e99f5,Louis Tavern Lounge,Bangkok Suvarnabhumi Airport,Business Class
+ba4816837bb9e04e6f62f71778dafbba,SkyTeam,London Heathrow Airport,Business Class
+88bf64bbd69bc973fbdea95d9b29cf6c,Alaska Lounge,Seattle Airport,Members
+bdcbefd2952ced6d32ea547017a3b2d0,Etihad First,Abu Dhabi Airport,First Class
+b211abe2ce08c588d69753a15d90e5e8,King David lounge,Paris CDG Airport,Business Class
+8cd9174390c74a0692058ac6e8f6b3ea,Boardroom,Seattle Airport,Frequent Flyer
+846f7f4e766312a5c41115992522ada7,Domestic Lounge,Phuket Airport,Business Class
+d8359a13c2e25c4b54c89e503c4b3a43,DNATA Lounge,Singapore Changi Airport,First Class
+24b51ab6d1bfe3e100958dd370facf4d,Golden Falcon Lounge,Bahrain Airport,Business Class
+a5323bb06ee838c128b53a3e805945ad,Prestige Class,Seoul Incheon Airport,Business Class
+3530491614d1c2a4c1bb86566ae170fe,Skypass Lounge,Bangkok Suvarnabhumi Airport,unknown
+ac445de03b5dac90db2ae2798222da63,Silver Kris Lounge,Singapore Changi Airport,Business Class
+0677c87e80797332deae44a6041c3e3e,Delta Sky Club,Detroit Airport,unknown
+1b913d92da39b08c03ce95bc4629cbf1,Main Business Class Lounge,Dubai Airport,Business Class
+2b150d52ac4ba10c077955b74e1317ae,La Croix du Sud,Toulouse Airport,Business Class
+cf540a678f2cd67d9ddcca64d3c1ad73,Air New Zealand Lounge,Auckland Airport,Business Class
+55782376afc7b947857f019785d4d507,Pagasa,Manila Airport,Business Class
+5b4ccc8e936c3714190ee27cd11078e4,ANA Lounge,Tokyo Haneda Airport,Frequent Flyer
+8af0f63cbb6d629883e4e7f5590d696b,Delta Sky,Orlando Airport,Business Class
+1e69583816eea8e4fbb36b9118efdb17,Plaza Premium,Montréal Airport,Business Class
+949a8d720c0591d398c42b79fa9c482a,Senator Lounge G-concourse,Munich Airport,Frequent Flyer
+93173ed8f3db7372b0a6313876ab45ff,Msafiri Lounge,Nairobi Airport,Frequent Flyer
+acf56e3c369887420e06d79977a0d942,Lufthansa Business Class,London Heathrow Airport,Business Class
+35d802aaf35a0adc89a1bc692358dd1c,Iberia Lounge T4S,Madrid Barajas Airport,Frequent Flyer
+99f19554625eec2da52cd1bcf0ee2fd6,Business Lounge,Hamburg Airport,Business Class
+06958d92c8d7a5a7d92debb42aba9298,Coral Executive Lounge,Phuket Airport,Pay to Use
+aedae7144a9ddabea0b27a0ac3b05561,La Vallette Club,Malta Airport,Frequent Flyer
+8b0a05b3cc10a1595340e29b28e145e6,No 1 Traveller,London Gatwick Airport,Business Class
+e60bf9a46aec2144700c9b4538c1484f,unknown,unknown,Business Class
+6d6143a4946ad5f0caf97d1ab5630bdf,unknown,Zurich Airport,Business Class
+3e572b1c421c04445e45c06fdf4c4a57,Terraces Lounge,New York JFK Airport,Business Class
+f12beff42a2c7e0783f40668160ed91f,unknown,KLIA Kuala Lumpur Airport,Business Class
+822f3649fb109c59f84d3b0ec1d61613,Saga Lounge,Keflavik Airport,Business Class
+c4e77d8bfd1706f6652a3c2839f55dc7,International Club Lounge,Tampa Airport,Business Class
+de70e10b696a3a58e8464cb966aaccd3,Aer Lingus,New York JFK Airport,Business Class
+0c011868fb05bc8c04025af085b1f935,Star Alliance Lounge,unknown,Business Class
+9beb3a3fefbb69dd0d2c6129a078312f,unknown,Guayaquil Airport,Business Class
+47f4b9bd6596a360f14afe524ec77c9f,SASCO,Ho Chi Minh City Airport,Business Class
+57b46772a27581f8a57b333647323e93,SkyClub,Chicago O'Hare Airport,unknown
+f3dd06ae03b8aab1f4c61839c9b8fbd4,Club Lounge,London Heathrow Airport,Business Class
+a3d2ef16a79830a45b865c5347074431,unknown,Doha Airport,Business Class
+0aae963310a88d54a17ead4a186d5941,unknown,Prague Airport,Business Class
+a8f25d2fef060fb071cb3346a5b52809,unknown,Glasgow Prestwick Airport,Business Class
+443e0a927ae9aac6670aa70260d5076d,Panorama,Zurich Airport,Business Class
+48ae9b634ebc00a88e31893981196686,Copa Lounge,Panama Tocumen Airport,Business Class
+4c41ddc76587e5f4b05d73a72aa281f7,Serendib,Colombo Airport,Business Class
+98f30ab1ee087a59af703108f779b9cb,unknown,Dubai Airport,Frequent Flyer
+f1e5f3614a399e9a394bc7fc3c7a5137,Express,Oakland Airport,Business Class
+a5f988f416d90a941e223e3a271fc5ae,Qantas international,Melbourne Airport,Business Class
+7ccbfd868792c875fe386844f9bb4c79,Club Europe,Jersey Airport,unknown
+158de7b3e77edabceaf5bc214a2f4348,unknown,Lisbon Airport,Business Class
+1e91560654ea150fd71caa25fa3160dc,Rose Lounge,Ho Chi Minh City Airport,Pay to Use
+807b0ef736cfe635097760c63fdbe71c,Crown Lounge 52,Amsterdam Schiphol Airport,Business Class
+d64c09414a74a03ad12486eafc2e00ae,Maple Leaf Lounge,Toronto Pearson Airport,Pay to Use
+43636fbb4e3069b39e94d92a6f639692,unknown,Brussels Zaventem Airport,Business Class
+381a43744204f1d31008848485555082,unknown,Newark Airport,First Class
+29fc024a4753e3abe4d1ae93e76de364,T5 Satellite B,London Heathrow Airport,Frequent Flyer
+4cc5e6b334061e8f7bc7450f32bec96e,Krisflyer,Perth Airport,Business Class
+6f02cb2bd5bc8268abbd24b05cdfc378,Menzies Lounge,Amsterdam Schiphol Airport,Business Class
+ec782f9fec2a3962d3b79650eac6a3ad,Miracle First Class Lounge,Bangkok Suvarnabhumi Airport,Members
+5dc77dc63e94aff448214c2b02d5a9fa,Business,Guangzhou Airport,Business Class
+451e3b2f85528b85acd19d47f0fec2bb,Air Canada,Frankfurt Main Airport,Business Class
+ce9844fc6b41ee47b002492dfd83d030,La Valette Club lounge,Malta Airport,Business Class
+110f1b63e31fb692d661cd1f7b199404,Dali Madrid T4,Madrid Barajas Airport,Business Class
+99651415ee53143fc1eea6cfb6d74acd,Senator Lounge T2,Munich Airport,Business Class
+2ddd01392c74c5b432601cce36380dcc,unknown,Colombo Airport,Business Class
+69f479917fdf2c0c114e8f32b7f44dac,Platinum and Gold Lounge Concourse C,Hamad  Doha Airport,Frequent Flyer
+40ef5762f2faf989b1fb0b5ed14d3816,Concorde Room T5,London Heathrow Airport,First Class
+3c02ddacdebf7cc9901a0ea35e713084,Business Lounge Domestic,Sydney Airport,Business Class
+fb400fdd9989e7f1639bfdbdc77b7cab,Senator Lounge,Cologne/bonn Airport,Business Class
+73224ee2ab558c7c4e9553a48974881a,Skyclub,New York JFK Airport,Business Class
+ac209973f8f5b07432a161766d3f0906,Maple lounge,Toronto Pearson Airport,Frequent Flyer
+56a0a358cd3a181a1857ecab60b757bb,unknown,Jersey Airport,unknown
+7f2bac48cd6b9d69853c269b813179d9,Club Valetta,Malta Airport,Business Class
+f487fb5b2ec2f611689bf04e34d0320a,La Valette Club Lounge,Malta Airport,Pay to Use
+f8e2e90b12e234c5f5ab87076473cc01,T2,London Heathrow Airport,Frequent Flyer
+b78d5c5caeb2f8cc8adf92900b0986e7,Admiral's Club,Paris CDG Airport,Business Class
+1614cc4637c84f82ed51819e103a1cc6,United,Houston IAH,First Class
+a7d76c69b7f643938d4912e9ebf1d28e,Turkish Airlines,Istanbul Airport,Business Class
+d00e3a1baffc16869f7604d60a408d52,Admirals Club,Orlando Airport,First Class
+84f481bc3bf4957b56afc42fdac883fa,Salones Premier,Mexico City Airport,Business Class
+b9517064e120603c7f417119c126e573,unknown,Abu Dhabi Airport,First Class
+63596e153493a419a228ccbeab526d7a,unknown,Charlotte Airport,Business Class
+3c5959a0c07cc8ac512ea9268554f7f0,unknown,Karachi Airport,Business Class
+c45cbdb287ce4172407fe8f11655043d,United Club,Orlando Airport,Pay to Use
+d069a9336a156c449b420409550d8255,Lotus Lounge 2,Ho Chi Minh City Airport,Business Class
+7151a7e92bc54d49b18931a6c798579e,South China Airplane,Guangzhou Airport,First Class
+e3bba5205f6c83f11e392b52a1bbb3b2,United Airlines,Tokyo Narita Airport,Business Class
+8a3ad70e15560b27baff28ffbc4b6012,Business,Delhi Airport,Business Class
+bc55ce46ed7137c9d5e332d0432c900c,unknown,Phuket Airport,unknown
+109a46bf97aef73e0fc7d5e77cf02e0d,Aspire,Manchester Airport,Business Class
+222bff3f8a415d977bde893e6df01026,ANA Suite Lounge,Kansai International Airport,Business Class
+c53e645cc86fd7fd580e9ff29b6452c7,Maple leaf lounge,Toronto Pearson Airport,Business Class
+b6480cf97561f57398b300cd468d9e86,First & Business Lounge,London Heathrow Airport,Business Class
+a28ef45b0f4e869f7aa9e07805d83fca,Qantas Club,Adelaide Airport,Frequent Flyer
+6209d66544c5c69dd4f5dd4e35270dd0,Terraces Lounge,Manchester Airport,unknown
+d6d0a8d7b18689209968638e2e1349a4,The Terrace,San Francisco Airport,Business Class
+bc113e92a7c2d083000926d278ea0891,Lufthansa Lounge,London Heathrow Airport,Business Class
+e4acb31ace7c6e5c85d20e193189048b,Goldair CIP Lounge,Athens Airport,Members
+b4ac576ad9cd77c7a9c23fbf16de0e46,Sky Lounge,Vienna Airport,Frequent Flyer
+38fa20c2f02b40a3d860f774df764dab,Business,Kiev Borispol Airport,Business Class
+0e944469e13724fe04864995f060df68,unknown,New York JFK Airport,Frequent Flyer
+128ab65844377ea6d8440e9021d63ec0,unknown,Salt Lake City Airport,Members
+c6527250a731ea763723bfd55bd8657a,Austrian Airlines Gate G / F,Vienna Airport,Business Class
+2c6df75f99dab79994323a05d2911dcf,United Club,Washington Dulles Airport,Frequent Flyer
+0b9cc6f98b3fabcc246caf7c7e5ecebb,United Club,Honolulu Airport,Frequent Flyer
+8839256993a07807b810e6dc79a8ec29,Qantas Club,Gold Coast Airport,Frequent Flyer
+480c0d91215cd73d4b311e2da128c48c,Swissport,Larnaca Airport,Business Class
+a45caf0fef5e25f8f4ad3ddfb71936e5,Royal Silk,Manila Airport,Business Class
+18baa7e4fe444b6848d8cf0601da66e1,SilverKris Lounge,KLIA Kuala Lumpur Airport,Business Class
+6064f9a97d99336989a39887282904cc,Salon Vallée de Mai,Seychelles Airport,Business Class
+80702ec6164f2ea4f52f3fcc3fd3749c,Lounge 52,Amsterdam Schiphol Airport,Pay to Use
+8ae983c190844380d5865afc160487f2,Admirals Club,unknown,First Class
+c3b5c50c958d95d7abfe1d999aff5298,unknown,Vancouver Airport,Frequent Flyer
+9caac60cf40a8831dffd6c2266ebdcce,unknown,Buenos Aires Airport,Business Class
+f3d3bc58bd4315d272bc4139f6f81b9e,Emirates,Sydney Airport,First Class
+c973d12c79c5f8ab4d74467c66ad1f59,Flagship Lounge T4,Los Angeles LAX Airport,Business Class
+f81e4ecc88b17fe5647d25383639c214,Gold Circle,Chicago O'Hare Airport,Business Class
+ccdc44351389472e71c961e82c49e5ad,Mabuhay,San Francisco Airport,Business Class
+52cb52e572c06ac1009e4003d527822c,unknown,Rome Fiumicino Airport,Members
+2c9d52496a775f92f6d2f283c8bbde4a,Junker,Dusseldorf Airport,Business Class
+62d8bc7e83a3ae046e92875e3e99e96f,SkyClub (F concourse),Minneapolis St Paul Airport,Frequent Flyer
+a0843c72bec706e3badfaccefd8515a9,VIP lounge,Marrakech Airport,Business Class
+6f6e18ebfa5571e4c6aef117be26b070,Boutique lounge,Bangkok Suvarnabhumi Airport,unknown
+fd210839c029618a9506caf5621a6255,Board Room,Seattle Airport,unknown
+ee2338ad7d247db6c0aa955a004fa86e,Air France / KLM,Bangkok Suvarnabhumi Airport,Business Class
+d4b227f508a3a7c81f6ea239e89e1987,unknown,Singapore Changi Airport,Frequent Flyer
+32247a3cc5e726144a59659c01dc9815,Amex Centurion Lounge Atlanta,Atlanta Hartsfield Airport,Members
+1ef6227af1951c0dbc87e65db41e88d1,United Club,unknown,Business Class
+7835f1b389d8c76ba3049f645c8e50a0,G Gates Lounge,Vienna Airport,Business Class
+7abb5af4b83ee1abffeac9efe13f6f01,unknown,Amsterdam Schiphol Airport,Members
+3bff33f699b051a4eb7a020cd147a4fb,Royal Silk Class,Kansai International Airport,Business Class
+87906e69260f72e74d1e72b75ccb6bf8,Paradise Lounge,Port Moresby Airport,Frequent Flyer
+c71d6b8e13b8b0a5c1f1fca9932f0981,Air Canada Arrivals Lounge,London Heathrow Airport,unknown
+d67a457eadf6c6832c90587422602ee2,Admirals Club,Boston Logan Airport,unknown
+70ed5127cd45b18ae80eb3029d986e85,Admirals Club,Rio De Janeiro Airport,Business Class
+fbadfeaed1aa58d5b55284a2e62dcb50,LAN Sala VIP,Bogota Airport,Business Class
+3d9b7f5a58c35e6e9f3782decb530c3a,Sumaq VIP,Lima Airport,Business Class
+c8687c50f59ea3c3f317ddfd023b0876,Mastercard Lounge,Cairo Airport,Pay to Use
+21a9e56a4caabd7276cb4ce1c83a364d,Maple Leaf Lounge (International Departures),Vancouver Airport,Business Class
+94a24d6d992c7dae21f730e425e91ac6,Terminal E,Rome Fiumicino Airport,Business Class
+0cddf37a845e182478ab26eb61b8295d,The Club Seattle,Seattle Airport,Business Class
+5187d6f1353eca9e61c9a0c3d339fc17,Plaza Premium Lounge,Rio De Janeiro Airport,Frequent Flyer
+ff698150c35ced04bff2936435aee7e6,London Heathrow Terminal 2,London Heathrow Airport,Business Class
+525ac736b43a19c27c7d99e0b9597f95,Qantas Club,Darwin Airport,Members
+898bb914c02b24cd0b14851148258050,Blue lounge,Lisbon Airport,Business Class
+c78f11ef1e6cd33061fb18fe7bcdba03,United Club,San Francisco Airport,Frequent Flyer
+94655fa2faf30cb6817fba9d0696ea3e,Dynasty Lounge,San Francisco Airport,Business Class
+5afd0711be5b0ea3c956a56dac1c3395,Al Safwa,Doha Airport,First Class
+04a2ec842f6c4143dee68f547b9f5a8a,Al Maha,Hamad  Doha Airport,Pay to Use
+f65499305e70152c2dca6f2d96acf451,Terminal 2,Mexico City Airport,Business Class
+430f61d605b46dff99e1cbe01bc27ffa,Qatar Airways,Hamad  Doha Airport,Business Class
+ddf7d5dadac4c77129e5f14bd0965788,First Class Lounge,Denpasar Bali Airport,First Class
+a97fcdc286cef53ceafc405c4ce1f9e0,American Express Centurion,Miami Airport,Members
+e21d5df7698d7f7cdbbb11fce90494ee,Aspire Lounge,Birmingham Airport,Business Class
+6b2f7b7a12f78a6905c9380b15f2bc94,Qantas Club,Sydney Airport,Business Class
+f271f210e2df02f02b2536cd9c9c0db1,Terminal 2 Mabuhay,Manila Airport,Business Class
+e0a3a5752a9085cfb662316d54888a82,Bolero,Warsaw Chopin Airport,Members
+58046bf778a3256ef157eede8f18a0a4,Narbutas Business Lounge,Vilnius Airport,Business Class
+9015f057548a92fd85e753b1cf47565c,Flagship Lounge,Chicago O'Hare Airport,Business Class
+270b78d057a3499c4aff6f83bc9e50c7,Thai Silk,Bangkok Suvarnabhumi Airport,Business Class
+95f59d30563764ad55861b4433217be4,British Airways Lounge,Bermuda Airport,Business Class
+f37b031db149e6d337e77de3bd87f649,Vitosha lounge,Sofia Airport,Business Class
+f3b1ac26b19af1af1b4cb51a0bc0142c,Admirals Club,San Francisco Airport,unknown
+b78002ba9ee9628b6c55d712785ea858,SLOW,Cape Town Airport,Business Class
+f5882464877fe876a64e72c05ffbcb12,Senator Lounge,unknown,Business Class
+9e33e623969325480c788c0a9c00ba0b,unknown,Kota Kinabalu Airport,Business Class
+35f8d2a19914202d519346331728494b,unknown,Liverpool Airport,Pay to Use
+aa1ec6952521b421b0ba0d774ffcdfed,Sky team,London Heathrow Airport,Business Class
+67ee213890c537847472f4f67e2ddf9c,SkyClub,Cincinnati Airport,Business Class
+23cf8efe40c26891f08f78eb681be564,SAS Business Lounge,Chicago O'Hare Airport,Business Class
+94ad0e79a67ec06366da4a1737986266,The Loft,Brussels Zaventem Airport,Business Class
+38e0ec5b60c5aa33a1684bbbdc780147,Maple Leaf,Toronto Pearson Airport,Business Class
+5a86c72b5713fd1b529cbb94fa8eac43,unknown,Hyderabad Airport,Business Class
+087af08c8e3926ab15b9444d93a2c2bf,unknown,Helsinki Vantaa Airport,Business Class
+021fc8941fa1081b5fb66fc2f466b772,Priime Class Lounge,Medina Airport,Business Class
+b7d99661c5265512ba5a8dcd8da973c8,unknown,Warsaw Chopin Airport,Frequent Flyer
+687608edd33a1c8b19a289195613e86f,Al Reem Lounge,Abu Dhabi Airport,unknown
+8a71d409cb11b441e9927da58f74d2a5,United Club,Dallas Fort-Worth Airport,Members
+92238d9a5e7cb4be5d556d2fa83fda78,Lufthansa Business Lounge,Milan Malpensa Airport,Business Class
+b3c134214f57e3899c8d6685070537b0,Galleries Lounge,London Gatwick Airport,Business Class
+1f556118e080a74d97a586be09b2c2f7,Executive lounge,Dublin Airport,Business Class
+1f2924fe4111a67a8272c109b32547ad,Lufthansa,Washington Dulles Airport,Business Class
+2d095cf003f1400b20a7b38b4ecd2dff,Terraces Lounge,London Gatwick Airport,Business Class
+d03564bf7dc616c2eb926f0abd8d384a,Heathrow T5 South,London Heathrow Airport,Business Class
+e1ab638f20e331e770104f6f380568a9,SkyClub,Seattle Airport,unknown
+d1a8f0fbf18fb319449316f944c5d738,United Club,Chicago O'Hare Airport,Business Class
+b3e323c8f188372d807492ee32e36333,Casa Aitalia,Rome Fiumicino Airport,Pay to Use
+aa2543a1f52112f11feb2442aef4a589,Casitas,Barcelona Airport,Business Class
+2073bd4a92f0c1dd968bec8bd9d2ee3a,Delta Sky,Miami Airport,Business Class
+1719aeeb0823b386e4ea907f59d316f8,unknown,Houston Hobby Airport,First Class
+2f4b0fac8d04d937c28e742c40284b2c,Admirals Club,Los Angeles LAX Airport,unknown
+d70242bf3df39dce5aaac902bbbe2ec2,Millenium Lounge,Istanbul Airport,Business Class
+ca387a719c5612f32025f48d220df85c,unknown,Guangzhou Airport,Business Class
+198bc6a3f9e6c463b7048587d6a8e726,Aspire Lounge,Zurich Airport,First Class
+d9e9736c779b228bcdf71f7a5e4809cc,Aviator Lounge,Copenhagen Airport,Business Class
+00dd97dce0c0fbab464df3007029bdcb,Oasis,New York JFK Airport,Business Class
+a2c530bb85da64ec2231275d595daca6,Gallery Lounge,London Heathrow Airport,Business Class
+a7a5430da11c57d13c49e18c29015e3f,DNATA Lounge T1,Singapore Changi Airport,Frequent Flyer
+6da9b6b8f7617d764c730fd23da23751,Platinum lounge,KLIA Kuala Lumpur Airport,First Class
+4b193d62485699b691a25415881ac266,Lotus Lounge,Da Nang Airport,Business Class
+2c3ed3954a162f51adb5e621a0e38705,Borromini,Rome Fiumicino Airport,Frequent Flyer
+756c29ac9e9abfe9078476598dfaf444,unknown,Adelaide Airport,unknown
+b44a692146ccf00cb1f9359c21c7f52e,unknown,Pune Airport,Business Class
+e0f9e10e2587ca9647f548587c289a07,Admirals Club,Chicago O'Hare Airport,unknown
+9729793809fd3007b485c8b261879734,Plaza Premium First,Hong Kong Airport,First Class
+841ddda30c2f7053bbd82e5147efa5e8,Aspire by Swissport,Amsterdam Schiphol Airport,Frequent Flyer
+acdf39d34100618664ae6403e5a7344c,Royal Silk Domestic,Chiang Mai Airport,Business Class
+c5c607b15264f42892eb700c99c656fc,Qantas Business Lounge,Brisbane Airport,Business Class
+f880a92aba43de6f42003111b3e128ed,YoTelair Lounge,Paris CDG Airport,Members
+bec312f2f057f40912a65d17f0a4de43,Flagship/Admiral,New York JFK Airport,First Class
+cb22861248093d64d834e13ee55eea84,unknown,Paris CDG Airport,Frequent Flyer
+3cb29f40d2aa26506c109e5f8058a26f,KAL Lounge,Seoul Incheon Airport,Business Class
+0dcd1def8e38a4e71f70ec484b8e64b4,Admirals' Club,Paris CDG Airport,Members
+6dfa60913730cb5f1a2da57f2bd758d5,Plaza Premium,London Heathrow Airport,Members
+0be84619864577fbd3ff46dbbd65fc48,Hugo Junkers Lounge,Dusseldorf Airport,Members
+a0310dbaa8e635a47d6bb0e02d0f45d3,First Class Lounge,Melbourne Airport,First Class
+89362d1c51649f06aabb8fc608c8389b,Valazquez T4S,Madrid Barajas Airport,Business Class
+3fb005748d1ee5eeea3ed53052d4d72a,Al Reem,Abu Dhabi Airport,Pay to Use
+e6d82248e7df07fe899020d176a4dbb1,unknown,Siem Reap Airport,Business Class
+0a00dbc78f01833a6c11f8531fc5e324,Piazza del Popollo,Rome Fiumicino Airport,Frequent Flyer
+d33dfe8dff3a5ed4451fb014377337a6,Golden lounge,KLIA Kuala Lumpur Airport,Business Class
+dbdd6604e06cdba5868335094a169858,Club Bauhinia,Hong Kong Airport,Business Class
+602b17d7f5af98e0d33573f131d6fcaf,Concourse B,Dubai Airport,Business Class
+8003a58e45ca67d34dc3a99b1f55c9fa,Star Alliance Lounge,London Heathrow Airport,Business Class
+436c715be2f3b8a59a61231ef5ccc321,Qantas Club,Mackay Airport,Frequent Flyer
+458b8ead8efb2a8dfea17d7712756c90,Platinum Lounge,Johannesburg Airport,Frequent Flyer
+210f77928fa3ce9b4a0062d853c13a21,United Club,Newark Airport,unknown
+e55bd4e2f07161aab05e150c061c0808,Virgin Lounge,Sydney Airport,Frequent Flyer
+c966793ac694275454919c91ef0c6ab1,Swiss,New York JFK Airport,Business Class
+f903c6d4567ea9f5e26daa7c1abc6f99,unknown,Barcelona Airport,Business Class
+401d46cadfa4cc15c7fc96bcf6991f66,unknown,Hamad  Doha Airport,Business Class
+81b19840db23c5266ee86e604aab1e91,Maple Leaf Lounge,Ottawa Airport,Members
+739f7d03bac392d30f5e8f1960b53672,Signature Suite,Toronto Pearson Airport,Business Class
+b6d4faaa522563e3ba73440ffe5e5b2d,unknown,Jeddah Airport,Business Class
+907d83e2787b86ad6a682f43ffecea58,unknown,Penang Airport,Business Class
+7f214900d97188c1421a9d4ae4fd525c,Europe,Berlin Tegel Airport,Frequent Flyer
+3c5bc3c97a88ce71c9a05f0afb8641e1,Airlines Association Lounge,Seoul Incheon Airport,Frequent Flyer
+0b14998dcd1376cfe03f0fa6c9232bf4,Senator Lounge,Munich Airport,Business Class
+9342798b39df142b100cac39f3930f18,Lufthansa,Dubai Airport,Business Class
+52a3472066e4bfc9455a4ad7fa545a31,unknown,Rome Ciampino Airport,Business Class
+1e6fde968fe1d1181ee49defdf2dff2c,Gold Circle Lounge,London Heathrow Airport,Frequent Flyer
+c71d79fee10195488b034584e45c62e1,unknown,Philadelphia Airport,unknown
+5720916d860bc5f6979c1ef24f438d7f,unknown,Antigua Vc Bird Airport,Business Class
+f1339fca235dd9c0eff5dd0639b89128,Virgin Atlantic Lounge,New York JFK Airport,Business Class
+7fdf59876c06bf36ebf449806b9d634e,United Club,Los Angeles LAX Airport,Members
+18397b902c181909a8b57310e5e78332,Louis Tavern,Bangkok Suvarnabhumi Airport,Business Class
+067c868e45aef61f9d84b088a968ed48,Maple Leaf Lounge,Halifax Airport,Business Class
+5c3a810be7821eb72833d249757abeb3,Blue Ribbon Lounge,unknown,Business Class
+d814e3ac0538b25a8d4bab748d6446cd,Qantas,Melbourne Airport,Business Class
+4c12b10cc43451b7958703a4e24bf5fb,Air Mauritius Lounge,Mauritius Airport,Business Class
+8e27113e6d5f2161ea3281d956bb96c8,Senator Lounge G28 Schengen,Munich Airport,Business Class
+be3a48e3ab10297feabe024c14c7953a,Delta Sky Lounge,Salt Lake City Airport,Members
+abf9ba083a757073a02c06bbb0da1629,Tokyo Narita,Tokyo Narita Airport,Business Class
+8f5feb1b97a284a753ee97de64d50cf1,unknown,Dhaka Airport,Business Class
+14097bb92e9cf313e89decb7485e55c9,Terminal C,Madrid Barajas Airport,Business Class
+33afb9793e0be7b2cf7d35e98a6c443f,Business Class,Seoul Incheon Airport,Business Class
+08795b60d755c1768c58cadb0470587c,Delights to Go,Munich Airport,Business Class
+db12ab21b875553bd631143746f4cd8e,Star Alliance,Newark Airport,unknown
+06f5383e6bebe40b7bc6b09d9675ff8f,QATAR AIRWAYS PREMIUM TERMINAL BUSINESS CLASS LOUNGE REVIEW,Doha Airport,Business Class
+8c27343cbac21255e0ada28855540f47,Zrinjevac Lounge,Zagreb Airport,Business Class
+e822a86a6a98f14886070ad426612e09,Terraces Lounge,Aberdeen Airport,Business Class
+eb660eae3c4b5191aed449cb3f42b3d2,Maple Leaf Lounge (Domestic),Montréal Airport,Business Class
+29f71c6c658679261728f607b1504ccd,Eurobonus,Stockholm Arlanda Airport,Frequent Flyer
+62ab8458cca16d6a1de99e3e49e12c35,The Club at ATL,Atlanta Hartsfield Airport,Frequent Flyer
+d1abc80c1375b9395dbd21275cd54efb,Concorde lounge,Boston Logan Airport,Business Class
+310ca586ce6df95d719f020e7d2f11d7,The Pier First,Hong Kong Airport,First Class
+6975b34d96ee93b842b1c28a4748e657,Aspire Lounge,Edinburgh Airport,unknown
+1555044952ab4326ecec91383294396b,Serendip,Colombo Airport,Business Class
+3fa2e3fc6cfbf4f27ce56c175a7ff8b7,Dan lounge,Tel Aviv Airport,Frequent Flyer
+0ea58c38d42f8ff9b4fe3f99f8c671c3,First Class lounge,Munich Airport,First Class
+8c0a4c130e764a190a4f89eb932b7003,Maple Leaf Lounge Transborder,Toronto Pearson Airport,Frequent Flyer
+0fb627cc7073c2c17384be4706c0e2b5,Emirates,Manchester Airport,Business Class
+e71db27180c1c9f044b5601c049a5e13,Qantas Club,Auckland Airport,Business Class
+2a375b40e56681ccd13c00a02d839d1a,unknown,Houston IAH,Business Class
+45027d1d7a5d8f3d6025742531983ab0,Inn at Atlanta,Atlanta Hartsfield Airport,Business Class
+107ebd98d387afee242546b05fa0cd73,Miracle lounge,Bangkok Suvarnabhumi Airport,Business Class
+dffaa5e88262082ac6ba10c34e56eb59,KLM Crown Lounge,Amsterdam Schiphol Airport,Business Class
+293bdda3392ffa3d1a84177ac7358db0,unknown,Seattle Airport,Members
+39edbe0497cb84c11dd427d792b3293c,unknown,Melbourne Airport,Members
+6a9916889a4002bb4756792a5f51adad,Loft Lounge,Brussels Zaventem Airport,Business Class
+a982933b37309fda75d7e5b57ca1b81b,Business Class lounge (non satelite),KLIA Kuala Lumpur Airport,Business Class
+597dd8714d5c6dd4684507f936ed891c,Star Alliance Lounge,Hong Kong Airport,Business Class
+3a569d49356a1fd5429b076554f861ee,Oneworld,Los Angeles LAX Airport,Business Class
+f8ee43b2ed6d00487b075ee1d28109e4,unknown,Kolkata Airport,Business Class
+0311bc5899afc732c5c1e4c15f8018e3,ANA Lounge,Tokyo Haneda Airport,Business Class
+a0c806b5d18dc8ffef13ea71d50fbd76,Cardiff AIrport Lounge,Cardiff Airport,Business Class
+d284b508c13ce06e7e5c86bc3454349f,Skyteam,Istanbul Airport,Business Class
+0d9747337e83cd481e2ac12126c8f96b,"United Lounge IAH Terminal ""C"" North",Houston IAH,Business Class
+7147263dfea5e95d26fef4d175603fb8,Club,Orlando Airport,Business Class
+34156f1d6c49431f3d591857d18bb02d,Maple Leaf Transborder,Toronto Pearson Airport,unknown
+95cb0069c69ff67f434a1f7939e9fa2d,Senator Lounge,Boston Logan Airport,Business Class
+11e9d3fdfe025d0905b8fcac9b458d45,unknown,Kuching Airport,Business Class
+17e5a6c1de96f5aef944b8ed1f367cbf,Zurich Business,Zurich Airport,Business Class
+be851adf3aeb77eb3578e894d507f1c6,Copa Club,San Jose Airport,Business Class
+6ac4f7f268517e90a810bfb1c1e1f052,unknown,Johannesburg Airport,unknown
+7c9d2bc3e32196f8679a595c7e35df9d,Krabi,Krabi Airport,Members
+92b3b52c29f31e793c5735b0e97a25cc,First,Dubai Airport,First Class
+eb0d14f7a4b296c7550e40ef56972de8,Diamond Lounge,Brussels Zaventem Airport,Business Class
+75a6622bf82b4114f66fb52901be49a5,Admirals Club,Charlotte Airport,Pay to Use
+b73addd9420c77f7bf7e82d1c8c9e722,No. 1 Traveller,London Gatwick Airport,unknown
+70b7fa51afb4269f76e27c1990e40179,unknown,Brussels Charleroi Airport,Business Class
+30063862cbdfd446274a8e18f7b343fe,Cibeles,Madrid Barajas Airport,Business Class
+b655a4aab641f0dbb5bbbb058b3433fd,Business Class Terminal 3,Abu Dhabi Airport,Business Class
+2b059602236c586416a8685698f9c926,Raffles Lounge,Melbourne Airport,Business Class
+5b5586f9b84ba65ee13b899947b524f7,DNATA,Singapore Seletar Airport,Business Class
+57ff61bce2cdb186e63096c9331d2df4,Qantas Club,Perth Airport,Frequent Flyer
+9c2c62ad9d14842aa06dbfefef1fb35d,Pier First Class,Hong Kong Airport,First Class
+bd4106043d112a4a7a5895181f546306,unknown,Tokyo Narita Airport,First Class
+caf5292cbea9c954f3d99e09ad6052d5,Al Safwa,Hamad  Doha Airport,First Class
+a65d8c891910c790d3f5d43259b3c795,Serendib Lounge,Colombo Airport,Business Class
+0abb6da5dc736962366df9a8c535111d,Aspire Lounge LGW,London Gatwick Airport,Business Class
+19d6f57a6a5d66d7cb57e0390a243814,unknown,London Heathrow Airport,First Class
+6cd2c03db2b8f392907e3fae4e378e7a,Elli-beinhorn,Stuttgart Airport,Business Class
+0ce0905b92249ef494bbe171d98000f6,Boarding Room,Los Angeles LAX Airport,First Class
+73d89e86ca7d02a0fcd84e06c4c3352b,Admirals Club,San Francisco Airport,Business Class
+8b331264db40f20202f9833d36a86d12,unknown,Tashkent Airport,Business Class
+3f6563bd7ba227ddf2530c3c3bb09550,Plaza Premium,Taipei Airport,Members
+c55dcfbf9f09c4fdca14fdd5e646a8d1,Qantas Club,Brisbane Airport,Business Class
+53a83bbd04efc5faeb8a1b44c36e97e3,Royal Silk Concourse C,Bangkok Suvarnabhumi Airport,Business Class
+f27bfe7fbcdbddc3a86ab368ef921a74,United Club,unknown,unknown
+a4d84ee91ca055e1cbe644dfc9c5eec9,Club World,London Heathrow Airport,unknown
+a81a6763311c22925d227c6994f8c529,Clubhouse,Los Angeles LAX Airport,Business Class
+bb72135605c3db85a117ae11041d487d,The lounge,Istanbul Airport,Business Class
+298c4cdd408098c504d6cc10ab611fae,Dan Lounge,Tel Aviv Airport,Members
+06b6dd39816c8f9e5429931bf1fa3798,Copa Club,Panama Tocumen Airport,Business Class
+cc1a738f88ff4b8c77e18a4073e178b9,Swiss Lounge,New York JFK Airport,Business Class
+6a6ed900c0b2e9e564cf3cb55573e0e1,EVA Air,Bangkok Suvarnabhumi Airport,Business Class
+a34dc98f2268dfe016506b3a93ab24d6,unknown,Taipei Airport,Business Class
+5e62508341019d82b40e4045476bf7ad,Senator Lounge E Gates,Zurich Airport,Business Class
+5c3cb8576f12d72e4dc48937c9d6112b,Qantas Club,Cairns Airport,Frequent Flyer
+c456c3f87048e4d576f20d5819a01b6f,United Club,Houston IAH,Members
+82a1c3ab9aa4685c3150bcbc5f3cd888,Wingtips,New York JFK Airport,Frequent Flyer
+606a393528411786abb0b356025db4d6,The Coral Lounge,Phuket Airport,Business Class
+dbb817c5cca505fab820b5325cdbda90,Alhambra,Granada Airport,Business Class
+1106d2ea5b6f44dd54a1ccc3b6fb4fea,Admirals Club,Paris CDG Airport,Frequent Flyer
+5c6af69e9f81c85565784a274b149f9e,Terraces Lounge,Manchester Airport,Business Class
+9e8620abfbcc9b2b7ca2af5423a4c951,unknown,Zurich Airport,unknown
+2173579b802233731a307f3d03c3dfbf,King David,New York JFK Airport,First Class
+a5433ba52840b304e3afbe35a9c5db02,Senator Lounge,London Heathrow Airport,Frequent Flyer
+11289677b272caf2c05986d63ff19a09,Sky Team Lounge,Sydney Airport,Business Class
+3c931674470f0fb6080daf8b1081d6e3,Schengen Lounge,Helsinki Vantaa Airport,Business Class
+3089de25edeb8a08d45db1470f36b3d3,Alioth Lounge,Cairo Airport,Business Class
+b6b24bcd38057c68b98b1ec2e03e47cf,Cloud Nine,Addis Ababa Airport,Business Class
+e303ff3d5dc09fac611e24973d9fdf8b,Aspire Lounge,London Heathrow Airport,Frequent Flyer
+c03dc0ccaa3c827156a185358148311c,unknown,Amman Queen Alia Airport,Business Class
+4ed88999230343688316c1e8031511cf,unknown,Phuket Airport,Business Class
+1542ee39b90dd007a6cfd82a1a9514d6,ANA business lounge,Tokyo Haneda Airport,Business Class
+a77b0cea80597f6ae4e7b5f2a512d12c,Iberia Lounge,Madrid Barajas Airport,Business Class
+5a0dfe3cb22adc9004d8e49059f63f16,Admirals Club,Charlotte Airport,Business Class
+0f84aca0f21501ef90301b7bc276db59,Paris CDG T1,Paris CDG Airport,Frequent Flyer
+fedc6922f6a45362bde0e23f5a2cada7,Blue Ribbon,Bangkok Suvarnabhumi Airport,Business Class
+b599fb3a48e28c71e6c902cb43dfe487,unknown,Manila Airport,First Class
+948b22748defb3dd02f216d8f97cd7d4,Galleries Lounge,Geneva Airport,Business Class
+7ce5ae4933f4a2e44f2bbfee7f19255f,Qantas Business,Sydney Airport,Business Class
+dc8acfb8d783260fb9f733dc953c0f48,British Airways,Berlin Tegel Airport,Business Class
+7cacd8334a9a172cb4c7a0b7ebe3fa8c,Pride Lounge,Nairobi Airport,Business Class
+355994acecc4d1f2368df97067739cba,unknown,Moscow Sheremetyevo Airport,Frequent Flyer
+e8d28bec8ce587cee4c1e6447deefce8,Senator Lounge E,Zurich Airport,Business Class
+bec39ddbd0206ecc513b8719490eb0ea,Domestic Lounge,KLIA Kuala Lumpur Airport,Pay to Use
+4230e62d99de625f12b6b2056c5f268a,HON Circle,Vienna Airport,First Class
+ce90df7e3833c4caa8167a3979145255,Flagship Lounge,Dallas Fort-Worth Airport,First Class
+8886b07f17363d8b97e10ec25fe51f07,Bangkok lounge,Bangkok Suvarnabhumi Airport,First Class
+b924abafbda867ecb35f085dd70d78af,Cedar Lounge,Beirut Airport,Business Class
+d0eacbdf0a27637342542a47998abef2,unknown,Miami Airport,First Class
+ad54cf985dbcde2f20abf9c7527f9d84,Emirates Lounge Sydney,Sydney Airport,Business Class
+cbbc41ed8b22e6afc3e52207039c030d,Alitalia,Rome Fiumicino Airport,Business Class
+8e217c287637a888f0844376c24558cb,Senator Lounge,Stuttgart Airport,Business Class
+db2bf2a81c80136fd2fbcd7a9cd79a9d,The Wing,Melbourne Airport,Business Class
+295af2b44668ac20a718fc5684d04fc6,unknown,Jakarta Airport,First Class
+df62df9e0df435b7c670c39799240e10,Business Lounge T3,London Heathrow Airport,Business Class
+8928f47545b5f4a8dbcee4292d80bdb7,First Class Lounge,New York JFK Airport,First Class
+038efbed015bc924caac0cbef36bc6cf,Dali Lounge,Madrid Barajas Airport,Frequent Flyer
+2440def6885904c26961ed1148b1bdc7,Casa Italia Piazza di Spagna,Rome Fiumicino Airport,Business Class
+9c0311ba8ab077d5260f4f5bf8829e80,Business Class Lounge A26,Frankfurt Main Airport,Business Class
+0e9ccce9294ace3951f14da18a84a5bc,Regional lounge,Christchurch Airport,Members
+879ee548f7e6aac9684e41709212a77f,unknown,Tampa Airport,Business Class
+28ff843bd64459daafe863d819d45eee,The House,Melbourne Airport,Business Class
+f15cb7047c9019b2f64b148cf3b9ba50,Le Salon,Paris CDG Airport,Business Class
+d0f322a21dbe4cd1d8fde395381b5012,Dublin,Dublin Airport,Members
+8e2a337a46dcca46f75294899c6de731,unknown,unknown,unknown
+4b3e09f4a351821d17583a6e4669409b,Austrian Airlines,Vienna Airport,Business Class
+8de0644532f508ce9a1092ca436ac3e5,Admirals Club,Boston Logan Airport,Business Class
+5a7d8479d80d079b359f86a2725f83e4,unknown,Bangalore Airport,Pay to Use
+07fa1fa9a66609810fc31ee69a715725,SkyClub,New York JFK Airport,First Class
+ba9c4fbd8551eed40659be47868ed774,Domestic Lounge,Guangzhou Airport,Frequent Flyer
+b6125b22b6c75a33a259257ceaca83de,Galleries Lounge,Johannesburg Airport,First Class
+91dc902f724c673d15ad1d663aaf20ad,Premier Lounge,Mexico City Airport,Business Class
+50f9e24ae42e5a29ef74bb2ff332b8c5,unknown,Bangkok Suvarnabhumi Airport,Frequent Flyer
+27b475164411fcd63a59f7e33715d623,Marco Polo lounge,Venice Marco Polo Airport,Pay to Use
+5bbfa7673028efb777af455a410910d7,Terminal 2G,Paris CDG Airport,Business Class
+665e96ec6652e61c43626553af318fc8,Business Lounge,Con Dao Airport,Pay to Use
+74f806e0990ef8782aa0dc0139ab5290,Domestic Maple Leaf,Vancouver Airport,unknown
+3209a74acdf137c75a9efa5757d967bf,unknown,Dalian Airport,First Class
+a83e07e81a9e010f0508dd38b3e0db92,Crown Lounge 25 (Schengen),Amsterdam Schiphol Airport,Business Class
+16762de56d4f70441bc0a992cedf7ca8,No 1 Lounge,London Gatwick Airport,Business Class
+6c99b49f6bc97288626989af60a82cf3,Arrival Lounge LHR T5,London Heathrow Airport,Business Class
+3edbbc49ba4b68e40ae6f113c7cd3433,Jazz,Moscow Sheremetyevo Airport,Business Class
+695182c8119687e86dbe77fb7b65c2a8,Avianca,Santiago De Chile Airport,Business Class
+2e655f0a2134c1e37838253024be44fd,unknown,Venice Marco Polo Airport,Business Class
+f4e5d5863144251e06d300b9776a1973,Club Premier,Mexico City Airport,Business Class
+fb5d238f78b1a9926bd0d69849d29082,Koru Lounge,unknown,unknown
+edc3e75c31f6b921966f7e87e2cc200b,Admirals Club,Austin Airport,Frequent Flyer
+77a2d719f02bee24a804bf4e8d24a6fa,unknown,Doha Airport,unknown
+66e7d5386d2caa23c1fe41d70c5180f2,Miracle Lounge - Concourse F,Bangkok Suvarnabhumi Airport,Business Class
+e648e7a9080eb51096518bd0abfa205d,Aspire,Newcastle Airport,unknown
+33d5badf9eeb6cdeaaa086eb8cb2fe0f,Crown Longe,Amman Queen Alia Airport,Business Class
+e0b61e6b9b3f06baf35a864b6aa0d6d2,Galleries Lounge,unknown,Business Class
+d45fcb03f00739c6412de7e8d2666e61,Oneworld,Miami Airport,Business Class
+aac68d09ac360d35e1562fba1cbc6b15,Galleries Lounge,Rome Fiumicino Airport,Business Class
+93f35b42992a07c8c0bf46f60057f0fd,SilverKris,Singapore Changi Airport,Business Class
+7c118ea3b66e41dc49dd36f15a998fd0,First Class,Los Angeles LAX Airport,First Class
+33d9ed53977c9ae8714395c4b062b261,unknown,Brisbane Airport,Members
+5d2b5812ece664cf3eb4b9fd0a84d1a8,No.1 Lounge,London Gatwick Airport,Pay to Use
+ac48af765ec9d2a893ff943b863a6a52,Royal Orchid Prestige Lounge,Bangkok Suvarnabhumi Airport,Business Class
+4cb9edc7439e40ef6dd137babafd0638,unknown,Yichang Sanxia Airport,First Class
+e4aebae83d75b6c154a90ff84cffe398,The Infinity,Taipei Airport,Business Class
+d983ac991d50ff1f4c45b7a352c999d8,Escape Lounge,London Stansted Airport,Pay to Use
+0d603ea325763e1db5f25ec1aa412a51,United Club F Gates,San Francisco Airport,Members
+c7a703cc1a3446a3a9d8b4139de35165,Dnata T1,Singapore Changi Airport,Business Class
+2cb8464560b76aab2323af8c3e49049a,Terminal 5 South,London Heathrow Airport,First Class
+010057842ba1f4b76f523c8c7f4552ba,Skyteam Lounge,London Heathrow Airport,Frequent Flyer
+9e471a5423da59e2816ab7aee9739f67,SilverKris Lounge (T2),Singapore Changi Airport,Business Class
+e2edf5dc2f9f1e3d95c70fbc83f0041a,Sala VIP,Barcelona Airport,Business Class
+9ccea82f72220ab19522ef046b770c31,Little Red,London Heathrow Airport,Business Class
+fda97806c03f81ff86dbe52bfabadf43,Taipei Airport Lounge,Taipei Airport,Business Class
+35e80c33b15f1618b9b1bc248d41844b,Maple Leaf,Winnipeg Airport,Business Class
+d14f319173c5abeb4efa8755a4e5c734,Lotus Lounge,Ho Chi Minh City Airport,Business Class
+517a0fc7116de2a078d40fa67c9d2537,United Club,Chicago O'Hare Airport,Pay to Use
+45fef3ad1bb7f5d02fe6e003bd341b42,Frequent Flyer lounge,Muscat Seeb Airport,Frequent Flyer
+a46e14cccd84a7399fa864fcbd37d5e9,Senator Lounge,Vienna Airport,Frequent Flyer
+2d985c6a65fbc516fe3d2098ea6e0435,Club,San Francisco Airport,First Class
+e8f5c7aec8e4e83929301ab3199996b4,"Galleries, T5 North",London Heathrow Airport,Business Class
+3337fcfeb39f0a364b87194127c6893b,SkyClub,Santiago De Chile Airport,unknown
+161298d34b7229f45be0995b0451753b,Premium Lounge,Belgrade Airport,Business Class
+2c7eade8262ed10000549d1d533ba102,unknown,Charlotte Airport,unknown
+60c6ed003314181d3b60732d3299deba,unknown,Brussels Zaventem Airport,unknown
+f1fe1456458401da7d02ce79f2e42a3e,Les Salons Amedee Maingard,Mauritius Airport,Business Class

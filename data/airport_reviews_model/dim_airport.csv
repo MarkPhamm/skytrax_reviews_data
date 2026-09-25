@@ -1,0 +1,1005 @@
+airport_id,airport_name,airport_name_cleaned
+1,ANR Robinson International,anr robinson international
+2,Aalborg,aalborg
+3,Aarhus,aarhus
+4,Abbotsford Intl,abbotsford intl
+5,Aberdeen,aberdeen
+6,Abidjan,abidjan
+7,Abu Dhabi,abu dhabi
+8,Abuja,abuja
+9,Acapulco,acapulco
+10,Accra Kotoka,accra kotoka
+11,Adana,adana
+12,Addis Ababa,addis ababa
+13,Adelaide,adelaide
+14,Agadir,agadir
+15,Agadir Al Massira,agadir al massira
+16,Aguadilla,aguadilla
+17,Aguascalientes,aguascalientes
+18,Ahmedabad,ahmedabad
+19,Ajaccio,ajaccio
+20,Akita,akita
+21,Akron–Canton,akron–canton
+22,Al Ain,al ain
+23,Al Ula,al ula
+24,Albany,albany
+25,Albuquerque,albuquerque
+26,Albury,albury
+27,Alderney,alderney
+28,Alexandria Intl,alexandria intl
+29,Alghero Fertilia,alghero fertilia
+30,Algiers,algiers
+31,Alicante,alicante
+32,Alice Springs,alice springs
+33,Almaty,almaty
+34,Almeria,almeria
+35,Alor Setar,alor setar
+36,Altenburg,altenburg
+37,Amarillo,amarillo
+38,Amman Queen Alia,amman queen alia
+39,Amritsar,amritsar
+40,Amsterdam Schiphol,amsterdam schiphol
+41,Anchorage,anchorage
+42,Ancona,ancona
+43,Ankara,ankara
+44,Antalya,antalya
+45,Antananarivo,antananarivo
+46,Antigua Vc Bird,antigua vc bird
+47,Antwerp Deurne,antwerp deurne
+48,Arkhangelsk,arkhangelsk
+49,Aruba Reina Beatrix,aruba reina beatrix
+50,Ashgabat,ashgabat
+51,Aspen Pitkin County,aspen pitkin county
+52,Astana,astana
+53,Asturias,asturias
+54,Asuncion Silvio Pettirossi,asuncion silvio pettirossi
+55,Athens,athens
+56,Atlanta Hartsfield,atlanta hartsfield
+57,Auckland,auckland
+58,Austin,austin
+59,Avignon,avignon
+60,Ayers Rock,ayers rock
+61,Bacau,bacau
+62,Bacolod–Silay,bacolod–silay
+63,Bagdogra,bagdogra
+64,Baghdad,baghdad
+65,Bahrain,bahrain
+66,Baku,baku
+67,Ballina Byron,ballina byron
+68,Baltimore Washington,baltimore washington
+69,Bandar Seri Begawan,bandar seri begawan
+70,Bandung,bandung
+71,Baneasa,baneasa
+72,Bangalore,bangalore
+73,Bangkok Don Muang,bangkok don muang
+74,Bangkok Suvarnabhumi,bangkok suvarnabhumi
+75,Bangor,bangor
+76,Banjarmasin,banjarmasin
+77,Banjul,banjul
+78,Barbados Grantley Adams,barbados grantley adams
+79,Barcelona,barcelona
+80,Bari Palese,bari palese
+81,Barnaul,barnaul
+82,Barra Eoligarry,barra eoligarry
+83,Basel Mulhouse,basel mulhouse
+84,Batumi,batumi
+85,Bay Of Islands (kerikeri),bay of islands (kerikeri)
+86,Beauvais,beauvais
+87,Beijing Capital,beijing capital
+88,Beijing Daxing,beijing daxing
+89,Beirut,beirut
+90,Belem,belem
+91,Belfast,belfast
+92,Belfast City,belfast city
+93,Belgrade,belgrade
+94,Belize,belize
+95,Bellingham,bellingham
+96,Belo Horizonte Confins,belo horizonte confins
+97,Benghazi,benghazi
+98,Bengkulu,bengkulu
+99,Bergen,bergen
+100,Bergerac,bergerac
+101,Berlin Brandenburg,berlin brandenburg
+102,Berlin Schonefeld,berlin schonefeld
+103,Berlin Tegel,berlin tegel
+104,Berlin Tempelhof,berlin tempelhof
+105,Bermuda,bermuda
+106,Berne,berne
+107,Bharatpur,bharatpur
+108,Bhopal,bhopal
+109,Bhubaneswar,bhubaneswar
+110,Biarritz,biarritz
+111,Bilbao,bilbao
+112,Billund,billund
+113,Biratnagar,biratnagar
+114,Birmingham,birmingham
+115,Birmingham-Shuttlesworth,birmingham-shuttlesworth
+116,Birsa Munda,birsa munda
+117,Bishkek,bishkek
+118,Bismarck,bismarck
+119,Bissau,bissau
+120,Blackpool,blackpool
+121,Blantyre,blantyre
+122,Bloemfontein,bloemfontein
+123,Bloomington,bloomington
+124,Boa Vista,boa vista
+125,Bocas Del Toro,bocas del toro
+126,Bodrum,bodrum
+127,Bogota,bogota
+128,Bohol-Panglao,bohol-panglao
+129,Boise,boise
+130,Bologna Marconi,bologna marconi
+131,Bonriki International,bonriki international
+132,Bordeaux,bordeaux
+133,Borg El Arab,borg el arab
+134,Boston Logan,boston logan
+135,Bourgas,bourgas
+136,Bournemouth,bournemouth
+137,Bozeman Yellowstone,bozeman yellowstone
+138,Bradley,bradley
+139,Braganca,braganca
+140,Brasilia,brasilia
+141,Bratislava,bratislava
+142,Bremen,bremen
+143,Brescia,brescia
+144,Brindisi,brindisi
+145,Brisbane,brisbane
+146,Bristol,bristol
+147,Brno,brno
+148,Broken Hill,broken hill
+149,Broome,broome
+150,Brussels Charleroi,brussels charleroi
+151,Brussels Zaventem,brussels zaventem
+152,Bucharest Otopeni,bucharest otopeni
+153,Budapest Ferihegy,budapest ferihegy
+154,Buenos Aires,buenos aires
+155,Buenos Aires Aeroparque,buenos aires aeroparque
+156,Buffalo,buffalo
+157,Bujumbura,bujumbura
+158,Burbank Glendale Pasadena,burbank glendale pasadena
+159,Burgas,burgas
+160,Burlington,burlington
+161,Burnie Wynyard,burnie wynyard
+162,Bydgoszcz,bydgoszcz
+163,Cagliari,cagliari
+164,Cairns,cairns
+165,Cairo,cairo
+166,Calama El Loa,calama el loa
+167,Calcutta,calcutta
+168,Calgary,calgary
+169,Calicut Intl,calicut intl
+170,Cam Ranh International,cam ranh international
+171,Camiguin,camiguin
+172,Canberra,canberra
+173,Cancun,cancun
+174,Cape Town,cape town
+175,Caracas,caracas
+176,Carcassonne,carcassonne
+177,Cardiff,cardiff
+178,Cartagena Rafael Nunez,cartagena rafael nunez
+179,Casablanca,casablanca
+180,Cascais,cascais
+181,Catania,catania
+182,Caticlan Boracay,caticlan boracay
+183,Cayenne,cayenne
+184,Cebu,cebu
+185,Centrair Nagoya,centrair nagoya
+186,Central Nebraska Regional,central nebraska regional
+187,Chambery,chambery
+188,Chandigarh,chandigarh
+189,Changsha Huanghua,changsha huanghua
+190,Changzhou,changzhou
+191,Chania,chania
+192,Charlotte,charlotte
+193,Chattanooga Metropolitan,chattanooga metropolitan
+194,Chengdu,chengdu
+195,Chengdu Tianfu,chengdu tianfu
+196,Chennai,chennai
+197,Chiang Mai,chiang mai
+198,Chiang Rai,chiang rai
+199,Chicago Midway,chicago midway
+200,Chicago O'Hare,chicago o'hare
+201,Chisinau,chisinau
+202,Chittagong Shah Amanat,chittagong shah amanat
+203,Chongqing Jiangbei,chongqing jiangbei
+204,Christchurch,christchurch
+205,Christmas Island,christmas island
+206,Cibao,cibao
+207,Cincinnati,cincinnati
+208,Ciudad Juarez,ciudad juarez
+209,Clark,clark
+210,Cleveland,cleveland
+211,Cluj-napoca,cluj-napoca
+212,Cochabamba,cochabamba
+213,Cochin,cochin
+214,Coffs Harbour,coffs harbour
+215,Coimbatore,coimbatore
+216,College Station,college station
+217,Cologne/bonn,cologne/bonn
+218,Colombo,colombo
+219,Colorado Springs,colorado springs
+220,Columbia Metropolitan,columbia metropolitan
+221,Columbus,columbus
+222,Conakry,conakry
+223,Cooma-snowy Mountains,cooma-snowy mountains
+224,Copenhagen,copenhagen
+225,Cordoba Intl,cordoba intl
+226,Corfu,corfu
+227,Cork,cork
+228,Corpus Christi,corpus christi
+229,Cotonou,cotonou
+230,Coventry,coventry
+231,Craiova Intl,craiova intl
+232,Crown Point Tobago,crown point tobago
+233,Cuiaba,cuiaba
+234,Curacao,curacao
+235,Cusco,cusco
+236,Cúcuta,cúcuta
+237,Da Nang,da nang
+238,Dakar,dakar
+239,Dalaman,dalaman
+240,Dalian,dalian
+241,Dallas Fort-Worth,dallas fort-worth
+242,Dallas Love Field,dallas love field
+243,Damascus,damascus
+244,Dammam Port,dammam port
+245,Dane County Regional,dane county regional
+246,Dar Es Salaam,dar es salaam
+247,Darbhanga,darbhanga
+248,Darwin,darwin
+249,Davao,davao
+250,Dayton International,dayton international
+251,Daytona Beach,daytona beach
+252,Deer Lake Regional,deer lake regional
+253,Delhi,delhi
+254,Denizli Cardak,denizli cardak
+255,Denpasar Bali,denpasar bali
+256,Denver,denver
+257,Derry,derry
+258,Des Moines,des moines
+259,Destin-ft. Walton Beach,destin-ft. walton beach
+260,Detroit,detroit
+261,Dhaka,dhaka
+262,Dili,dili
+263,Dimapur,dimapur
+264,Dinard,dinard
+265,Djibouti Ambouli,djibouti ambouli
+266,Doha,doha
+267,Doncaster Sheffield,doncaster sheffield
+268,Donetsk,donetsk
+269,Dortmund,dortmund
+270,Douala,douala
+271,Douglas–Charles,douglas–charles
+272,Dresden,dresden
+273,Dubai,dubai
+274,Dubai World Central,dubai world central
+275,Dublin,dublin
+276,Dubrovnik,dubrovnik
+277,Duluth International,duluth international
+278,Dundee,dundee
+279,Dunedin,dunedin
+280,Durban,durban
+281,Durgapur,durgapur
+282,Durham/tees Valley,durham/tees valley
+283,Dushanbe,dushanbe
+284,Dusseldorf,dusseldorf
+285,East Midlands,east midlands
+286,Edinburgh,edinburgh
+287,Edmonton,edmonton
+288,Eilat,eilat
+289,Eindhoven,eindhoven
+290,Ekaterinburg Koltsovo,ekaterinburg koltsovo
+291,El Alto,el alto
+292,El Calafate,el calafate
+293,El Paso,el paso
+294,El Salvador Intl,el salvador intl
+295,Ende,ende
+296,Enfidha-hammamet,enfidha-hammamet
+297,Entebbe,entebbe
+298,Erbil Intl,erbil intl
+299,Ercan,ercan
+300,Exeter,exeter
+301,Fairbanks,fairbanks
+302,Faleolo,faleolo
+303,Fargo,fargo
+304,Faro,faro
+305,Fayetteville,fayetteville
+306,Fes-Saïss,fes-saïss
+307,Florence,florence
+308,Forli (bologna),forli (bologna)
+309,Fort Lauderdale,fort lauderdale
+310,Fort Myers,fort myers
+311,Fort Wayne,fort wayne
+312,Fort-de-France,fort-de-france
+313,Fortaleza,fortaleza
+314,Foz do Iguacu,foz do iguacu
+315,Frankfurt Hahn,frankfurt hahn
+316,Frankfurt Main,frankfurt main
+317,Freetown,freetown
+318,Friedrichshafen,friedrichshafen
+319,Fuerteventura,fuerteventura
+320,Fukuoka,fukuoka
+321,Funchal,funchal
+322,Fuzhou,fuzhou
+323,Gary Chicago,gary chicago
+324,Gdansk,gdansk
+325,Geneva,geneva
+326,Genova,genova
+327,Gibraltar,gibraltar
+328,Gimhae,gimhae
+329,Girona,girona
+330,Glacier Park,glacier park
+331,Gladstone,gladstone
+332,Glasgow,glasgow
+333,Glasgow Prestwick,glasgow prestwick
+334,Goa,goa
+335,Gold Coast,gold coast
+336,Gorontalo Jalaluddin,gorontalo jalaluddin
+337,Gothenburg City,gothenburg city
+338,Gothenburg-landvetter,gothenburg-landvetter
+339,Gran Canaria,gran canaria
+340,Granada,granada
+341,Grand Rapids,grand rapids
+342,Graz,graz
+343,Greater Binghamton,greater binghamton
+344,Greater Rochester,greater rochester
+345,Green Bay,green bay
+346,Greenville–Spartanburg,greenville–spartanburg
+347,Grenoble,grenoble
+348,Griffith,griffith
+349,Guadalajara,guadalajara
+350,Guangzhou,guangzhou
+351,Guatemala,guatemala
+352,Guayaquil,guayaquil
+353,Guernsey,guernsey
+354,Guilin Liangjiang,guilin liangjiang
+355,Gulfport,gulfport
+356,Guwahati,guwahati
+357,Gwalior,gwalior
+358,Haikou,haikou
+359,Hailar Dongshan,hailar dongshan
+360,Hakodate,hakodate
+361,Halifax,halifax
+362,Hamad  Doha,hamad  doha
+363,Hamburg,hamburg
+364,Hamburg Lubek,hamburg lubek
+365,Hamilton,hamilton
+366,Hamilton Island,hamilton island
+367,Hancock County-bar Harbor,hancock county-bar harbor
+368,Hangzhou,hangzhou
+369,Hannover,hannover
+370,Hanoi,hanoi
+371,Harare,harare
+372,Harbin Taiping,harbin taiping
+373,Hargeisa Egal,hargeisa egal
+374,Harrisburg,harrisburg
+375,Hartford,hartford
+376,Hat Yai,hat yai
+377,Hatay,hatay
+378,Havana,havana
+379,Heho,heho
+380,Helsinki Vantaa,helsinki vantaa
+381,Heraklion,heraklion
+382,Hermosillo,hermosillo
+383,Hewanorra Intl,hewanorra intl
+384,Hilo,hilo
+385,Hiroshima,hiroshima
+386,Ho Chi Minh City,ho chi minh city
+387,Hobart,hobart
+388,Holguin,holguin
+389,Hong Kong,hong kong
+390,Honiara,honiara
+391,Honolulu,honolulu
+392,Horn Island,horn island
+393,Houston Hobby,houston hobby
+394,Houston IAH,houston iah
+395,Hua Hin,hua hin
+396,Humberside,humberside
+397,Huntsville,huntsville
+398,Hurghada,hurghada
+399,Hyderabad,hyderabad
+400,Iasi,iasi
+401,Ibiza,ibiza
+402,Idaho Falls Regional,idaho falls regional
+403,Iloilo,iloilo
+404,Incheon,incheon
+405,Indianapolis,indianapolis
+406,Innsbruck,innsbruck
+407,Inverness,inverness
+408,Ireland West Knock,ireland west knock
+409,Irkutsk,irkutsk
+410,Islamabad,islamabad
+411,Islay,islay
+412,Isle Of Man,isle of man
+413,Istanbul,istanbul
+414,Istanbul Sabiha Gökçen,istanbul sabiha gökçen
+415,Ivalo,ivalo
+416,Izmir,izmir
+417,Jackson Hole,jackson hole
+418,Jacksonville,jacksonville
+419,Jaipur,jaipur
+420,Jakarta,jakarta
+421,Jakarta Halim,jakarta halim
+422,Jammu,jammu
+423,Janakpur,janakpur
+424,Jeddah,jeddah
+425,Jerez De La Frontera,jerez de la frontera
+426,Jersey,jersey
+427,Jharsuguda,jharsuguda
+428,Jiamusi,jiamusi
+429,Jinan Yaoqiang,jinan yaoqiang
+430,Jinzhou,jinzhou
+431,Johannesburg,johannesburg
+432,John Wayne,john wayne
+433,Juba,juba
+434,Juliaca,juliaca
+435,KLIA Kuala Lumpur,klia kuala lumpur
+436,Kabul,kabul
+437,Kahului Maui,kahului maui
+438,Kalamata,kalamata
+439,Kalibo,kalibo
+440,Kaliningrad,kaliningrad
+441,Kalmar,kalmar
+442,Kangerlussuaq,kangerlussuaq
+443,Kanpur,kanpur
+444,Kansai International,kansai international
+445,Kansas City,kansas city
+446,Kaohsiung,kaohsiung
+447,Karachi,karachi
+448,Karlsruhe,karlsruhe
+449,Kasane,kasane
+450,Kashgar,kashgar
+451,Kastellorizo,kastellorizo
+452,Kathmandu,kathmandu
+453,Katowice,katowice
+454,Kaunas,kaunas
+455,Kayseri Erkilet,kayseri erkilet
+456,Kazan,kazan
+457,Kefalonia,kefalonia
+458,Keflavik,keflavik
+459,Kent,kent
+460,Kerry,kerry
+461,Key West Intl,key west intl
+462,Khartoum,khartoum
+463,Kiev Borispol,kiev borispol
+464,Kiev Zhulyany,kiev zhulyany
+465,Kigali,kigali
+466,Kilimanjaro,kilimanjaro
+467,King Mswati III Intl,king mswati iii intl
+468,Kingston,kingston
+469,Kinshasa,kinshasa
+470,Kirkenes,kirkenes
+471,Kirksville Municipal,kirksville municipal
+472,Kirkwall,kirkwall
+473,Kiruna,kiruna
+474,Kittila,kittila
+475,Klagenfurt,klagenfurt
+476,Koh Samui,koh samui
+477,Kolkata,kolkata
+478,Komatsu,komatsu
+479,Kona,kona
+480,Kos,kos
+481,Kosice,kosice
+482,Kota Kinabalu,kota kinabalu
+483,Krabi,krabi
+484,Krakow,krakow
+485,Krasnodar,krasnodar
+486,Kristiansand,kristiansand
+487,Kualanamu,kualanamu
+488,Kuantan,kuantan
+489,Kuching,kuching
+490,Kunming,kunming
+491,Kutaisi International,kutaisi international
+492,Kuwait,kuwait
+493,La Guardia,la guardia
+494,La Palma,la palma
+495,La Rochelle,la rochelle
+496,Lagos,lagos
+497,Lahore,lahore
+498,Lamu,lamu
+499,Langkawi,langkawi
+500,Lanseria,lanseria
+501,Lanzarote Arrecife,lanzarote arrecife
+502,Lanzhou,lanzhou
+503,Laoag,laoag
+504,Larnaca,larnaca
+505,Las Vegas,las vegas
+506,Launceston,launceston
+507,Leeds Bradford,leeds bradford
+508,Leh,leh
+509,Leipzig/halle,leipzig/halle
+510,Leon Guanajuato,leon guanajuato
+511,Leticia,leticia
+512,Lexington,lexington
+513,Liberia,liberia
+514,Libreville,libreville
+515,Liege,liege
+516,Lille,lille
+517,Lilongwe,lilongwe
+518,Lima,lima
+519,Limoges,limoges
+520,Linz,linz
+521,Lisbon,lisbon
+522,Lismore,lismore
+523,Little Rock,little rock
+524,Liverpool,liverpool
+525,Livingstone,livingstone
+526,Ljubljana,ljubljana
+527,London City,london city
+528,London Gatwick,london gatwick
+529,London Heathrow,london heathrow
+530,London Stansted,london stansted
+531,Long Beach,long beach
+532,Long Island Macarthur,long island macarthur
+533,Los Angeles LAX,los angeles lax
+534,Louisville,louisville
+535,Luanda,luanda
+536,Luang Prabang,luang prabang
+537,Lucknow,lucknow
+538,Lugano,lugano
+539,Luleå,luleå
+540,Lusaka,lusaka
+541,Luton,luton
+542,Luxembourg,luxembourg
+543,Luxor,luxor
+544,Lviv,lviv
+545,Lyon,lyon
+546,Maastricht Aachen,maastricht aachen
+547,Macau,macau
+548,Mackay,mackay
+549,Madrid Barajas,madrid barajas
+550,Madurai,madurai
+551,Magong,magong
+552,Mahon,mahon
+553,Malabo,malabo
+554,Malaga,malaga
+555,Male,male
+556,Mallam Aminu Kano Intl,mallam aminu kano intl
+557,Malmo,malmo
+558,Malta,malta
+559,Manado,manado
+560,Managua,managua
+561,Manaus,manaus
+562,Manchester,manchester
+563,Manchester–Boston Regional,manchester–boston regional
+564,Mandalay Annisaton,mandalay annisaton
+565,Mangalore,mangalore
+566,Manila,manila
+567,Manuel Crescencio Rejon,manuel crescencio rejon
+568,Maputo,maputo
+569,Maracaibo La Chinita,maracaibo la chinita
+570,Marrakech,marrakech
+571,Marsa Alam,marsa alam
+572,Marseille,marseille
+573,Mashhad,mashhad
+574,Mataveri Intl,mataveri intl
+575,Maun,maun
+576,Mauritius,mauritius
+577,Medan,medan
+578,Medellin,medellin
+579,Medina,medina
+580,Melbourne,melbourne
+581,Melbourne (USA),melbourne (usa)
+582,Melbourne Avalon,melbourne avalon
+583,Melilla,melilla
+584,Memmingen,memmingen
+585,Memphis,memphis
+586,Mexico City,mexico city
+587,Miami,miami
+588,Milan Bergamo,milan bergamo
+589,Milan Linate,milan linate
+590,Milan Malpensa,milan malpensa
+591,Mildura,mildura
+592,Milwaukee,milwaukee
+593,Mineralnye Vody,mineralnye vody
+594,Minneapolis St Paul,minneapolis st paul
+595,Minsk National,minsk national
+596,Miri,miri
+597,Mobile Regional,mobile regional
+598,Mombasa,mombasa
+599,Monastir,monastir
+600,Monroe Regional,monroe regional
+601,Montego Bay,montego bay
+602,Monterey Regional,monterey regional
+603,Monterrey,monterrey
+604,Montevideo,montevideo
+605,Montgomery Regional,montgomery regional
+606,Montpellier,montpellier
+607,Montréal,montréal
+608,Moscow Domodedovo,moscow domodedovo
+609,Moscow Sheremetyevo,moscow sheremetyevo
+610,Muenster-osnabrueck,muenster-osnabrueck
+611,Mumbai,mumbai
+612,Munich,munich
+613,Murcia San Javier,murcia san javier
+614,Muscat Seeb,muscat seeb
+615,Muscle Shoals,muscle shoals
+616,Mykonos,mykonos
+617,Myrtle Beach,myrtle beach
+618,Mytilene,mytilene
+619,Nadi,nadi
+620,Nagpur,nagpur
+621,Nairobi,nairobi
+622,Nakhchivan,nakhchivan
+623,Nakhon Si Thammarat,nakhon si thammarat
+624,Nanchang Changbei,nanchang changbei
+625,Nanning Wuxu,nanning wuxu
+626,Nantes,nantes
+627,Naples,naples
+628,Naples Municipal,naples municipal
+629,Narrandeera-leeton,narrandeera-leeton
+630,Nashville,nashville
+631,Nassau,nassau
+632,Nauru International,nauru international
+633,Ndola,ndola
+634,Nevsehir Kapadokya,nevsehir kapadokya
+635,New Orleans,new orleans
+636,New York JFK,new york jfk
+637,Newark,newark
+638,Newcastle,newcastle
+639,Newquay,newquay
+640,Nice,nice
+641,Nimes,nimes
+642,Ningbo Lishe,ningbo lishe
+643,Nis Constantine the Great,nis constantine the great
+644,Norfolk,norfolk
+645,Norman Manley,norman manley
+646,Norrköping,norrköping
+647,Northwest Florida Beaches,northwest florida beaches
+648,Norwich,norwich
+649,Noumea,noumea
+650,Novosibirsk,novosibirsk
+651,Nuremburg,nuremburg
+652,Nyaung U,nyaung u
+653,Oakland,oakland
+654,Odessa,odessa
+655,Ohrid,ohrid
+656,Okinawa Naha,okinawa naha
+657,Oklahoma City,oklahoma city
+658,Olbia Costa Smeralda,olbia costa smeralda
+659,Omaha,omaha
+660,Omsk Tsentralny,omsk tsentralny
+661,Ontario,ontario
+662,Orlando,orlando
+663,Orlando Sanford,orlando sanford
+664,Oslo,oslo
+665,Ostend–Bruges,ostend–bruges
+666,Ostrava,ostrava
+667,Ottawa,ottawa
+668,Ouagadougou,ouagadougou
+669,Ouani,ouani
+670,Oulu,oulu
+671,Outagamie County,outagamie county
+672,Owen Roberts International,owen roberts international
+673,Paderborn,paderborn
+674,Painushima Ishigaki,painushima ishigaki
+675,Pakse,pakse
+676,Palau International,palau international
+677,Palembang,palembang
+678,Palermo,palermo
+679,Palm Beach,palm beach
+680,Palm Springs,palm springs
+681,Palma de Majorca,palma de majorca
+682,Palonegro Intl,palonegro intl
+683,Panama Albrook,panama albrook
+684,Panama Tocumen,panama tocumen
+685,Papeete,papeete
+686,Paphos,paphos
+687,Paramaribo,paramaribo
+688,Paris CDG,paris cdg
+689,Paris Orly,paris orly
+690,Paro,paro
+691,Paros,paros
+692,Patna,patna
+693,Pattaya,pattaya
+694,Pau,pau
+695,Penang,penang
+696,Pensacola,pensacola
+697,Pereira Matecana Intl,pereira matecana intl
+698,Perpignan,perpignan
+699,Perth,perth
+700,Philadelphia,philadelphia
+701,Phnom Penh,phnom penh
+702,Phoenix Sky Harbor,phoenix sky harbor
+703,Phoenix-Mesa Gateway,phoenix-mesa gateway
+704,Phu Quoc,phu quoc
+705,Phuket,phuket
+706,Piarco,piarco
+707,Piedmont Triad,piedmont triad
+708,Pisa,pisa
+709,Pittsburgh,pittsburgh
+710,Pleiku,pleiku
+711,Plovdiv,plovdiv
+712,Plymouth,plymouth
+713,Podgorica,podgorica
+714,Pointe Noire,pointe noire
+715,Pointe-à-Pitre,pointe-à-pitre
+716,Poitiers,poitiers
+717,Ponta Delgada,ponta delgada
+718,Port Au Prince,port au prince
+719,Port Augusta,port augusta
+720,Port Elizabeth,port elizabeth
+721,Port Harcourt,port harcourt
+722,Port Macquarie,port macquarie
+723,Port Moresby,port moresby
+724,Port Vila Bauerfield,port vila bauerfield
+725,Portland,portland
+726,Portland International Jetport,portland international jetport
+727,Porto,porto
+728,Porto Alegre,porto alegre
+729,Poznan,poznan
+730,Prague,prague
+731,Preveza,preveza
+732,Prince Rupert,prince rupert
+733,Princess Juliana Intl,princess juliana intl
+734,Pristina,pristina
+735,Providence,providence
+736,Providenciales Intl,providenciales intl
+737,Puerto Iguazu,puerto iguazu
+738,Puerto Maldonado,puerto maldonado
+739,Puerto Princesa,puerto princesa
+740,Puerto Vallarta,puerto vallarta
+741,Pula,pula
+742,Pulau Redang,pulau redang
+743,Pulau Tioman,pulau tioman
+744,Pune,pune
+745,Punta Cana,punta cana
+746,Punta Del Este,punta del este
+747,Punta Gorda,punta gorda
+748,Qingdao,qingdao
+749,Quebec City,quebec city
+750,Queenstown,queenstown
+751,Quito Mariscal,quito mariscal
+752,Raipur,raipur
+753,Rajbiraj,rajbiraj
+754,Raleigh-Durham,raleigh-durham
+755,Rapid City Regional,rapid city regional
+756,Raratonga,raratonga
+757,Read more,read more
+758,Recife,recife
+759,Redding Municipal,redding municipal
+760,Regina,regina
+761,Rennes,rennes
+762,Reno-tahoe,reno-tahoe
+763,Rhodes,rhodes
+764,Richmond,richmond
+765,Riga,riga
+766,Rijeka,rijeka
+767,Rimini,rimini
+768,Rio De Janeiro,rio de janeiro
+769,Riyadh,riyadh
+770,Roanoke Regional,roanoke regional
+771,Robert L Bradshaw St Kitts,robert l bradshaw st kitts
+772,Rockhampton,rockhampton
+773,Rodez,rodez
+774,Rogue Valley Medford,rogue valley medford
+775,Roi Et,roi et
+776,Roland Garros,roland garros
+777,Rome Ciampino,rome ciampino
+778,Rome Fiumicino,rome fiumicino
+779,Rostov Na Donu,rostov na donu
+780,Rotterdam,rotterdam
+781,Rovaniemi,rovaniemi
+782,Rzeszów-Jasionka,rzeszów-jasionka
+783,Río Grande,río grande
+784,Sacramento,sacramento
+785,Saint John,saint john
+786,Sal,sal
+787,Salalah,salalah
+788,Salt Lake City,salt lake city
+789,Salvador,salvador
+790,Salzburg,salzburg
+791,San Andres Island,san andres island
+792,San Antonio,san antonio
+793,San Diego,san diego
+794,San Francisco,san francisco
+795,San Jose,san jose
+796,San Jose Intl,san jose intl
+797,San Juan,san juan
+798,San Luis Potosi,san luis potosi
+799,San Sebastian,san sebastian
+800,Sana'a In't,sana'a in't
+801,Sandakan,sandakan
+802,Santa Genoveva,santa genoveva
+803,Santander,santander
+804,Santiago De Chile,santiago de chile
+805,Santiago de Compostela,santiago de compostela
+806,Santiago de Cuba,santiago de cuba
+807,Santo Domingo,santo domingo
+808,Santorini,santorini
+809,Sanya,sanya
+810,Sao Paulo Congonhas,sao paulo congonhas
+811,Sao Paulo Guarulhos,sao paulo guarulhos
+812,Sao Vicente,sao vicente
+813,Sapporo Chitose,sapporo chitose
+814,Sarajevo,sarajevo
+815,Saskatoon,saskatoon
+816,Savannah,savannah
+817,Sawyer,sawyer
+818,Sde Dov,sde dov
+819,Seattle,seattle
+820,Senai,senai
+821,Seoul Gimpo,seoul gimpo
+822,Seoul Incheon,seoul incheon
+823,Seville,seville
+824,Seychelles,seychelles
+825,Shanghai Hongqiao,shanghai hongqiao
+826,Shanghai Pudong,shanghai pudong
+827,Shannon,shannon
+828,Sharjah,sharjah
+829,Sharm El Sheikh,sharm el sheikh
+830,Shenyang,shenyang
+831,Shenzhen Baoan,shenzhen baoan
+832,Shirdi,shirdi
+833,Shreveport,shreveport
+834,Sialkot International,sialkot international
+835,Sibiu,sibiu
+836,Siem Reap,siem reap
+837,Simara,simara
+838,Simferopol,simferopol
+839,Singapore Changi,singapore changi
+840,Singapore Seletar,singapore seletar
+841,Sioux Falls,sioux falls
+842,Sitia,sitia
+843,Skiathos,skiathos
+844,Skopje,skopje
+845,Sligo,sligo
+846,Sofia,sofia
+847,South Bend,south bend
+848,Southampton,southampton
+849,Southend,southend
+850,Sphinx International,sphinx international
+851,Split,split
+852,Springfield-Branson,springfield-branson
+853,Srinagar,srinagar
+854,St Louis,st louis
+855,St Lucia,st lucia
+856,St Pete-Clearwater,st pete-clearwater
+857,St Petersburg,st petersburg
+858,St Thomas,st thomas
+859,St. John's,st. john's
+860,Stavanger,stavanger
+861,Stewart,stewart
+862,Stockholm Arlanda,stockholm arlanda
+863,Stockholm Bromma,stockholm bromma
+864,Stockholm Vasteras,stockholm vasteras
+865,Stockholm-skavsta,stockholm-skavsta
+866,Strasbourg,strasbourg
+867,Stuttgart,stuttgart
+868,Subang Kuala Lumpur,subang kuala lumpur
+869,Sukhothai,sukhothai
+870,Sumburgh,sumburgh
+871,Sunan Pyongyang,sunan pyongyang
+872,Sunshine Coast,sunshine coast
+873,Surabaya Juanda,surabaya juanda
+874,Surat Thani,surat thani
+875,Surigao,surigao
+876,Suva Nausori,suva nausori
+877,Svalbard,svalbard
+878,Sydney,sydney
+879,Syracuse Hancock,syracuse hancock
+880,Szczecin,szczecin
+881,São Paulo Viracopos,são paulo viracopos
+882,Taba,taba
+883,Tabriz,tabriz
+884,Taipei,taipei
+885,Taipei Songshan,taipei songshan
+886,Tallahassee,tallahassee
+887,Tallin,tallin
+888,Tampa,tampa
+889,Tampere Pirkkala,tampere pirkkala
+890,Tangier Ibn Battouta,tangier ibn battouta
+891,Tashkent,tashkent
+892,Taupo,taupo
+893,Tauranga,tauranga
+894,Tbilisi,tbilisi
+895,Techo International,techo international
+896,Tegucigalpa,tegucigalpa
+897,Tehran Imam Khomeini,tehran imam khomeini
+898,Tehran Mehrabad,tehran mehrabad
+899,Tel Aviv,tel aviv
+900,Tenerife,tenerife
+901,Terceira,terceira
+902,Thandwe,thandwe
+903,Thessaloniki,thessaloniki
+904,Tianjin Binhai,tianjin binhai
+905,Tijuana,tijuana
+906,Timimoun,timimoun
+907,Timisoara,timisoara
+908,Tirana,tirana
+909,Tiruchirappalli,tiruchirappalli
+910,Tivat,tivat
+911,Tokyo Haneda,tokyo haneda
+912,Tokyo Narita,tokyo narita
+913,Toluca,toluca
+914,Tontouta,tontouta
+915,Toronto City Centre,toronto city centre
+916,Toronto Pearson,toronto pearson
+917,Torp,torp
+918,Toulon,toulon
+919,Toulouse,toulouse
+920,Tours,tours
+921,Townsville,townsville
+922,Trabzon,trabzon
+923,Trapani-birgi,trapani-birgi
+924,Tri-Cities,tri-cities
+925,Trieste,trieste
+926,Tripoli,tripoli
+927,Trivandrum,trivandrum
+928,Tromso,tromso
+929,Trondheim,trondheim
+930,Tucson,tucson
+931,Tulsa International,tulsa international
+932,Tunis Carthage,tunis carthage
+933,Turin,turin
+934,Tweed New Haven,tweed new haven
+935,Udaipur,udaipur
+936,Udon Thani,udon thani
+937,Ulaanbaatar,ulaanbaatar
+938,University Park,university park
+939,Urgench International,urgench international
+940,Urumqi,urumqi
+941,Ushuaia,ushuaia
+942,Vadodara,vadodara
+943,Valencia,valencia
+944,Valladolid,valladolid
+945,Vancouver,vancouver
+946,Varadero,varadero
+947,Varna,varna
+948,Venice Marco Polo,venice marco polo
+949,Venice Treviso,venice treviso
+950,Veracruz,veracruz
+951,Verona,verona
+952,Victoria Falls,victoria falls
+953,Victoria Intl,victoria intl
+954,Vienna,vienna
+955,Vientiane,vientiane
+956,Vilanculos,vilanculos
+957,Vilnius,vilnius
+958,Visby,visby
+959,Vladivostok,vladivostok
+960,Vnukovo,vnukovo
+961,Volgograd,volgograd
+962,Waco,waco
+963,Wagga Wagga,wagga wagga
+964,Wakkanai,wakkanai
+965,Walvis Bay,walvis bay
+966,Warsaw Chopin,warsaw chopin
+967,Warsaw Modlin,warsaw modlin
+968,Warsaw-Radom,warsaw-radom
+969,Washington Dulles,washington dulles
+970,Washington National,washington national
+971,Waterford,waterford
+972,Weeze,weeze
+973,Weihai,weihai
+974,Wellington,wellington
+975,Wenzhou Longwan,wenzhou longwan
+976,Westchester County,westchester county
+977,Westerland,westerland
+978,Wichita,wichita
+979,Wick,wick
+980,Wilkes-Barre Scranton,wilkes-barre scranton
+981,Wilson,wilson
+982,Windhoek,windhoek
+983,Winnipeg,winnipeg
+984,Wroclaw,wroclaw
+985,Xi'an,xi'an
+986,Xiamen,xiamen
+987,Xining,xining
+988,Yangon,yangon
+989,Yaounde,yaounde
+990,Yerevan,yerevan
+991,Yichang Sanxia,yichang sanxia
+992,Yiwu,yiwu
+993,Yogyakarta,yogyakarta
+994,Yuzhno Sakhalinsk,yuzhno sakhalinsk
+995,Zadar,zadar
+996,Zagreb,zagreb
+997,Zakynthos,zakynthos
+998,Zanzibar,zanzibar
+999,Zaporizhia,zaporizhia
+1000,Zaragoza,zaragoza
+1001,Zhengzhou,zhengzhou
+1002,Zhuhai,zhuhai
+1003,Zhukovsky International,zhukovsky international
+1004,Zurich,zurich
