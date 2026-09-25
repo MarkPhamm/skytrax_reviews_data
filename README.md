@@ -192,6 +192,7 @@ SKYTRAX_RAW_DIR="$PWD/data/skytrax" ./build.sh
 ## Quick Reference
 
 ```bash
+./decompress.sh                   # expand the two .csv.gz files to plain CSV
 ./build.sh                        # build all four models + export CSVs
 ./build.sh --full-refresh         # rebuild the incremental facts from scratch
 ./build.sh -s +tag:lounge_reviews # any dbt selector is passed straight through
@@ -217,6 +218,7 @@ dbt docs generate && dbt docs serve
 
 ```text
 download.py                     Pull the [skytrax] schema from SQL Server as CSV
+decompress.sh                   Expand the gzipped CSVs next to their .gz files
 build.sh                        Create export dirs, set env, run dbt, report output
 dbt/
   models/
@@ -263,7 +265,7 @@ Model file names are prefixed with their mart (`airlines_reviews__dim_customer`)
 
 ## Notes
 
-The exported CSVs are gitignored — `fct_airline_review.csv` alone is 167 MB, past GitHub's file limit. Clone and run `./build.sh` to regenerate them in a few seconds, or export to Parquet if you need to ship them — that same fact is 46 MB as Parquet, comfortably under the limit.
+Two files are committed as gzip because they exceed GitHub's 100 MB limit: `data/raw/airline_reviews.csv.gz` and `data/airlines_reviews_model/fct_airline_review.csv.gz`. Run `./decompress.sh` before `./build.sh` to write the plain CSVs beside them. dbt reads `data/raw/*.csv`.
 
 ---
 
