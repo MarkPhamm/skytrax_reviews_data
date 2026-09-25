@@ -1,0 +1,124 @@
+version: 2
+
+models:
+  - name: airport_reviews__dim_airport
+    description: "Airport dimension. Grain: one row per airport."
+    columns:
+      - name: airport_id
+        description: Primary key - natural key from the source airport lookup.
+        data_tests: [unique, not_null]
+      - name: airport_name
+        description: Airport name as published on Skytrax.
+        data_tests: [not_null]
+      - name: airport_name_cleaned
+        description: Lowercased, trimmed airport name.
+        data_tests: [not_null]
+
+  - name: airport_reviews__dim_customer
+    description: "Customer dimension. Grain: one row per (customer_name, nationality)."
+    columns:
+      - name: customer_id
+        description: Primary key - surrogate hash of (customer_name, nationality).
+        data_tests: [unique, not_null]
+      - name: customer_name
+        data_tests: [not_null]
+      - name: nationality
+        data_tests: [not_null]
+      - name: number_of_reviews
+        description: Count of airport reviews this reviewer submitted.
+        data_tests: [not_null]
+      - name: first_review_date
+      - name: latest_review_date
+
+  - name: airport_reviews__dim_date
+    description: "Calendar and fiscal date dimension. Grain: one row per day."
+    columns:
+      - name: date_id
+        data_tests: [unique, not_null]
+      - name: is_weekend
+        data_tests: [not_null]
+      - name: fin_year
+        data_tests: [not_null]
+
+  - name: airport_reviews__fct_airport_review
+    description: >
+      Airport review fact. Grain: one row per review submission. Measures are
+      the eight 1-5 category ratings plus average_rating and rating_band.
+    columns:
+      - name: review_id
+        description: Primary key - review identifier from the source.
+        data_tests: [unique, not_null]
+      - name: airport_id
+        description: FK to dim_airport.
+        data_tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('airport_reviews__dim_airport')
+                field: airport_id
+      - name: customer_id
+        description: FK to dim_customer.
+        data_tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('airport_reviews__dim_customer')
+                field: customer_id
+      - name: date_submitted_id
+        description: FK to dim_date - date the review was submitted.
+        data_tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('airport_reviews__dim_date')
+                field: date_id
+      - name: date_visit_id
+        description: FK to dim_date - date of the airport visit; null when not stated.
+        data_tests:
+          - relationships:
+              arguments:
+                to: ref('airport_reviews__dim_date')
+                field: date_id
+      - name: is_verified
+        description: Whether Skytrax marked the review as a verified visit.
+      - name: experience_at_airport
+        description: "How the airport was used: Departure Only, Arrival Only, Arrival and Departure, Transit or unknown."
+        data_tests: [not_null]
+      - name: type_of_traveller
+        data_tests: [not_null]
+      - name: queuing_times
+        data_tests: &rating_1_to_5
+          - dbt_utils.accepted_range:
+              arguments:
+                min_value: 1
+                max_value: 5
+                inclusive: true
+      - name: terminal_cleanliness
+        data_tests: *rating_1_to_5
+      - name: terminal_seating
+        data_tests: *rating_1_to_5
+      - name: terminal_signs
+        data_tests: *rating_1_to_5
+      - name: food_beverages
+        data_tests: *rating_1_to_5
+      - name: airport_shopping
+        data_tests: *rating_1_to_5
+      - name: airport_staff
+        data_tests: *rating_1_to_5
+      - name: wifi_connectivity
+        data_tests: *rating_1_to_5
+      - name: recommended
+        description: Whether the reviewer would recommend the airport.
+      - name: average_rating
+        description: Mean of the category ratings actually scored; null when none were.
+      - name: rating_band
+        data_tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ['bad', 'medium', 'good', 'unknown']
+      - name: review_text
+      - name: source_updated_at
+        data_tests: [not_null]
+      - name: dbt_loaded_at
+        data_tests: [not_null]

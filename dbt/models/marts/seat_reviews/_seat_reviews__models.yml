@@ -1,0 +1,152 @@
+version: 2
+
+models:
+  - name: seat_reviews__dim_airline
+    description: "Airline dimension. Grain: one row per airline."
+    columns:
+      - name: airline_id
+        description: Primary key - natural key from the source airline lookup.
+        data_tests: [unique, not_null]
+      - name: airline_name
+        data_tests: [not_null]
+      - name: airline_name_cleaned
+        data_tests: [not_null]
+
+  - name: seat_reviews__dim_aircraft
+    description: "Aircraft dimension. Grain: one row per aircraft model string."
+    columns:
+      - name: aircraft_id
+        description: Primary key - surrogate hash of aircraft_model.
+        data_tests: [unique, not_null]
+      - name: aircraft_model
+        data_tests: [not_null]
+      - name: aircraft_manufacturer
+        data_tests: [not_null]
+      - name: seat_capacity
+        description: Typical seat count of the matched aircraft family; null when unmatched.
+
+  - name: seat_reviews__dim_seat_configuration
+    description: "Seat configuration dimension. Grain: one row per (seat_type, seat_layout)."
+    columns:
+      - name: seat_configuration_id
+        description: Primary key - surrogate hash of (seat_type, seat_layout).
+        data_tests: [unique, not_null]
+      - name: seat_type
+        description: "Cabin reviewed: Economy Class, Premium Economy, Business Class, First Class or unknown."
+        data_tests: [not_null]
+      - name: seat_layout
+        description: Abreast layout as free text, e.g. '3x4x3'; 'unknown' when not stated.
+        data_tests: [not_null]
+      - name: seats_per_row
+        description: Seats abreast, parsed from seat_layout; null when the layout is not an NxN pattern.
+
+  - name: seat_reviews__dim_date
+    description: "Calendar and fiscal date dimension. Grain: one row per day."
+    columns:
+      - name: date_id
+        data_tests: [unique, not_null]
+      - name: is_weekend
+        data_tests: [not_null]
+      - name: fin_year
+        data_tests: [not_null]
+
+  - name: seat_reviews__fct_seat_review
+    description: >
+      Aircraft seat review fact. Grain: one row per review submission. Measures
+      are the twelve 1-5 category ratings plus average_rating and rating_band.
+    columns:
+      - name: review_id
+        data_tests: [unique, not_null]
+      - name: airline_id
+        description: FK to dim_airline.
+        data_tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('seat_reviews__dim_airline')
+                field: airline_id
+      - name: aircraft_id
+        description: FK to dim_aircraft.
+        data_tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('seat_reviews__dim_aircraft')
+                field: aircraft_id
+      - name: seat_configuration_id
+        description: FK to dim_seat_configuration.
+        data_tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('seat_reviews__dim_seat_configuration')
+                field: seat_configuration_id
+      - name: customer_id
+        description: FK to dim_customer.
+        data_tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('seat_reviews__dim_customer')
+                field: customer_id
+      - name: date_submitted_id
+        description: FK to dim_date - date the review was submitted.
+        data_tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('seat_reviews__dim_date')
+                field: date_id
+      - name: date_flown_id
+        description: FK to dim_date - date of the flight; null when not stated.
+        data_tests:
+          - relationships:
+              arguments:
+                to: ref('seat_reviews__dim_date')
+                field: date_id
+      - name: is_verified
+      - name: type_of_traveller
+        data_tests: [not_null]
+      - name: seat_legroom
+        data_tests: &rating_1_to_5
+          - dbt_utils.accepted_range:
+              arguments:
+                min_value: 1
+                max_value: 5
+                inclusive: true
+      - name: seat_recline
+        data_tests: *rating_1_to_5
+      - name: seat_width
+        data_tests: *rating_1_to_5
+      - name: aisle_space
+        data_tests: *rating_1_to_5
+      - name: seat_storage
+        data_tests: *rating_1_to_5
+      - name: power_supply
+        data_tests: *rating_1_to_5
+      - name: viewing_tv_screen
+        data_tests: *rating_1_to_5
+      - name: sleep_comfort
+        data_tests: *rating_1_to_5
+      - name: sitting_comfort
+        data_tests: *rating_1_to_5
+      - name: seat_bed_width
+        data_tests: *rating_1_to_5
+      - name: seat_bed_length
+        data_tests: *rating_1_to_5
+      - name: seat_privacy
+        data_tests: *rating_1_to_5
+      - name: recommended
+        description: Whether the reviewer would recommend the seat.
+      - name: average_rating
+      - name: rating_band
+        data_tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ['bad', 'medium', 'good', 'unknown']
+      - name: review_text
+      - name: source_updated_at
+        data_tests: [not_null]
+      - name: dbt_loaded_at
+        data_tests: [not_null]

@@ -1,0 +1,8 @@
+skytrax_reviews_data:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: "{{ env_var('SKYTRAX_DUCKDB_PATH', '../skytrax_reviews.duckdb') }}"
+      schema: main
+      threads: 8

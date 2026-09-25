@@ -1,0 +1,64 @@
+name: 'skytrax_reviews_data'
+version: '1.0.0'
+profile: 'skytrax_reviews_data'
+
+model-paths: ["models"]
+macro-paths: ["macros"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+snapshot-paths: ["snapshots"]
+analysis-paths: ["analyses"]
+
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+# Input and output locations are read from the environment at render time
+# (SKYTRAX_RAW_DIR / SKYTRAX_EXPORT_ROOT) rather than from dbt vars, because
+# values under `vars:` here are not Jinja-rendered. They default to paths
+# relative to the dbt project directory, so plain `dbt build` must be run from
+# inside dbt/; build.sh exports absolute paths so it works from anywhere.
+
+models:
+  skytrax_reviews_data:
+    staging:
+      +materialized: view
+      +schema: staging
+      +tags: ['staging']
+    intermediate:
+      +materialized: view
+      +schema: intermediate
+      +tags: ['intermediate']
+
+    # Each mart is a self-contained star schema that lands in its own DuckDB
+    # schema and its own CSV output directory under data/. Model file names are
+    # prefixed to stay globally unique in dbt; +alias strips the prefix back off
+    # so the relation - and therefore the exported CSV - is named dim_customer,
+    # fct_airline_review, and so on.
+    marts:
+      +materialized: table
+      +tags: ['marts']
+
+      airlines_reviews:
+        +schema: airlines_reviews
+        +tags: ['airlines_reviews']
+        +post-hook: "{{ export_model_to_csv('airlines_reviews_model') }}"
+      airport_reviews:
+        +schema: airport_reviews
+        +tags: ['airport_reviews']
+        +post-hook: "{{ export_model_to_csv('airport_reviews_model') }}"
+      lounge_reviews:
+        +schema: lounge_reviews
+        +tags: ['lounge_reviews']
+        +post-hook: "{{ export_model_to_csv('lounge_reviews_model') }}"
+      seat_reviews:
+        +schema: seat_reviews
+        +tags: ['seat_reviews']
+        +post-hook: "{{ export_model_to_csv('seat_reviews_model') }}"
+
+data_tests:
+  skytrax_reviews_data:
+    +store_failures: true
+
+flags:
+  require_generic_test_arguments_property: true

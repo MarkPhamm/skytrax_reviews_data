@@ -1,0 +1,139 @@
+version: 2
+
+models:
+  - name: lounge_reviews__dim_airline
+    description: "Airline dimension. Grain: one row per airline."
+    columns:
+      - name: airline_id
+        description: Primary key - natural key from the source airline lookup.
+        data_tests: [unique, not_null]
+      - name: airline_name
+        data_tests: [not_null]
+      - name: airline_name_cleaned
+        data_tests: [not_null]
+
+  - name: lounge_reviews__dim_lounge
+    description: >
+      Lounge dimension. Grain: one row per (lounge_name, airport, type_of_lounge)
+      - the access tier is part of the grain because the same lounge is reviewed
+      under several tiers.
+    columns:
+      - name: lounge_id
+        description: Primary key - surrogate hash of (lounge_name, airport, type_of_lounge).
+        data_tests: [unique, not_null]
+      - name: lounge_name
+        data_tests: [not_null]
+      - name: airport
+        description: Airport the lounge sits in, as free text from the review.
+        data_tests: [not_null]
+      - name: type_of_lounge
+        description: "Access tier: Business Class, First Class, Frequent Flyer, Members, Pay to Use or unknown."
+        data_tests: [not_null]
+
+  - name: lounge_reviews__dim_customer
+    description: "Customer dimension. Grain: one row per (customer_name, nationality)."
+    columns:
+      - name: customer_id
+        data_tests: [unique, not_null]
+      - name: customer_name
+        data_tests: [not_null]
+      - name: nationality
+        data_tests: [not_null]
+      - name: number_of_reviews
+        description: Count of lounge reviews this reviewer submitted.
+        data_tests: [not_null]
+      - name: first_review_date
+      - name: latest_review_date
+
+  - name: lounge_reviews__dim_date
+    description: "Calendar and fiscal date dimension. Grain: one row per day."
+    columns:
+      - name: date_id
+        data_tests: [unique, not_null]
+      - name: is_weekend
+        data_tests: [not_null]
+      - name: fin_year
+        data_tests: [not_null]
+
+  - name: lounge_reviews__fct_lounge_review
+    description: >
+      Airport lounge review fact. Grain: one row per review submission. Measures
+      are the seven 1-5 category ratings plus average_rating and rating_band.
+    columns:
+      - name: review_id
+        data_tests: [unique, not_null]
+      - name: airline_id
+        description: FK to dim_airline - the airline operating the lounge.
+        data_tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('lounge_reviews__dim_airline')
+                field: airline_id
+      - name: lounge_id
+        description: FK to dim_lounge.
+        data_tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('lounge_reviews__dim_lounge')
+                field: lounge_id
+      - name: customer_id
+        description: FK to dim_customer.
+        data_tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('lounge_reviews__dim_customer')
+                field: customer_id
+      - name: date_submitted_id
+        description: FK to dim_date - date the review was submitted.
+        data_tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('lounge_reviews__dim_date')
+                field: date_id
+      - name: date_visit_id
+        description: FK to dim_date - date of the lounge visit; null when not stated.
+        data_tests:
+          - relationships:
+              arguments:
+                to: ref('lounge_reviews__dim_date')
+                field: date_id
+      - name: is_verified
+      - name: type_of_traveller
+        data_tests: [not_null]
+      - name: comfort
+        data_tests: &rating_1_to_5
+          - dbt_utils.accepted_range:
+              arguments:
+                min_value: 1
+                max_value: 5
+                inclusive: true
+      - name: cleanliness
+        data_tests: *rating_1_to_5
+      - name: bar_and_beverages
+        data_tests: *rating_1_to_5
+      - name: catering
+        data_tests: *rating_1_to_5
+      - name: washrooms
+        data_tests: *rating_1_to_5
+      - name: wifi_connectivity
+        data_tests: *rating_1_to_5
+      - name: staff_service
+        data_tests: *rating_1_to_5
+      - name: recommended
+        description: Whether the reviewer would recommend the lounge.
+      - name: average_rating
+      - name: rating_band
+        data_tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ['bad', 'medium', 'good', 'unknown']
+      - name: review_text
+      - name: source_updated_at
+        data_tests: [not_null]
+      - name: dbt_loaded_at
+        data_tests: [not_null]
