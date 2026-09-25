@@ -2,8 +2,11 @@
 __pycache__/
 *.pyc
 .env
-data/
 lib/
+
+# Plain copies from ./decompress.sh. The .csv.gz files are what git tracks.
+data/raw/airline_reviews.csv
+data/airlines_reviews_model/fct_airline_review.csv
 
 # dbt
 dbt/target/
