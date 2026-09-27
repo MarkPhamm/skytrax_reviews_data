@@ -1,17 +1,6 @@
 version: 2
 
 models:
-  - name: lounge_reviews__dim_airline
-    description: "Airline dimension. Grain: one row per airline."
-    columns:
-      - name: airline_id
-        description: Primary key - natural key from the source airline lookup.
-        data_tests: [unique, not_null]
-      - name: airline_name
-        data_tests: [not_null]
-      - name: airline_name_cleaned
-        data_tests: [not_null]
-
   - name: lounge_reviews__dim_lounge
     description: >
       Lounge dimension. Grain: one row per (lounge_name, airport, type_of_lounge)
@@ -30,31 +19,6 @@ models:
         description: "Access tier: Business Class, First Class, Frequent Flyer, Members, Pay to Use or unknown."
         data_tests: [not_null]
 
-  - name: lounge_reviews__dim_customer
-    description: "Customer dimension. Grain: one row per (customer_name, nationality)."
-    columns:
-      - name: customer_id
-        data_tests: [unique, not_null]
-      - name: customer_name
-        data_tests: [not_null]
-      - name: nationality
-        data_tests: [not_null]
-      - name: number_of_reviews
-        description: Count of lounge reviews this reviewer submitted.
-        data_tests: [not_null]
-      - name: first_review_date
-      - name: latest_review_date
-
-  - name: lounge_reviews__dim_date
-    description: "Calendar and fiscal date dimension. Grain: one row per day."
-    columns:
-      - name: date_id
-        data_tests: [unique, not_null]
-      - name: is_weekend
-        data_tests: [not_null]
-      - name: fin_year
-        data_tests: [not_null]
-
   - name: lounge_reviews__fct_lounge_review
     description: >
       Airport lounge review fact. Grain: one row per review submission. Measures
@@ -68,7 +32,7 @@ models:
           - not_null
           - relationships:
               arguments:
-                to: ref('lounge_reviews__dim_airline')
+                to: ref('conformed__dim_airline')
                 field: airline_id
       - name: lounge_id
         description: FK to dim_lounge.
@@ -84,7 +48,7 @@ models:
           - not_null
           - relationships:
               arguments:
-                to: ref('lounge_reviews__dim_customer')
+                to: ref('conformed__dim_customer')
                 field: customer_id
       - name: date_submitted_id
         description: FK to dim_date - date the review was submitted.
@@ -92,14 +56,14 @@ models:
           - not_null
           - relationships:
               arguments:
-                to: ref('lounge_reviews__dim_date')
+                to: ref('conformed__dim_date')
                 field: date_id
       - name: date_visit_id
         description: FK to dim_date - date of the lounge visit; null when not stated.
         data_tests:
           - relationships:
               arguments:
-                to: ref('lounge_reviews__dim_date')
+                to: ref('conformed__dim_date')
                 field: date_id
       - name: is_verified
       - name: type_of_traveller

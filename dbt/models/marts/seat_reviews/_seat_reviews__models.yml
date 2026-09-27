@@ -1,30 +1,6 @@
 version: 2
 
 models:
-  - name: seat_reviews__dim_airline
-    description: "Airline dimension. Grain: one row per airline."
-    columns:
-      - name: airline_id
-        description: Primary key - natural key from the source airline lookup.
-        data_tests: [unique, not_null]
-      - name: airline_name
-        data_tests: [not_null]
-      - name: airline_name_cleaned
-        data_tests: [not_null]
-
-  - name: seat_reviews__dim_aircraft
-    description: "Aircraft dimension. Grain: one row per aircraft model string."
-    columns:
-      - name: aircraft_id
-        description: Primary key - surrogate hash of aircraft_model.
-        data_tests: [unique, not_null]
-      - name: aircraft_model
-        data_tests: [not_null]
-      - name: aircraft_manufacturer
-        data_tests: [not_null]
-      - name: seat_capacity
-        description: Typical seat count of the matched aircraft family; null when unmatched.
-
   - name: seat_reviews__dim_seat_configuration
     description: "Seat configuration dimension. Grain: one row per (seat_type, seat_layout)."
     columns:
@@ -40,16 +16,6 @@ models:
       - name: seats_per_row
         description: Seats abreast, parsed from seat_layout; null when the layout is not an NxN pattern.
 
-  - name: seat_reviews__dim_date
-    description: "Calendar and fiscal date dimension. Grain: one row per day."
-    columns:
-      - name: date_id
-        data_tests: [unique, not_null]
-      - name: is_weekend
-        data_tests: [not_null]
-      - name: fin_year
-        data_tests: [not_null]
-
   - name: seat_reviews__fct_seat_review
     description: >
       Aircraft seat review fact. Grain: one row per review submission. Measures
@@ -63,7 +29,7 @@ models:
           - not_null
           - relationships:
               arguments:
-                to: ref('seat_reviews__dim_airline')
+                to: ref('conformed__dim_airline')
                 field: airline_id
       - name: aircraft_id
         description: FK to dim_aircraft.
@@ -71,7 +37,7 @@ models:
           - not_null
           - relationships:
               arguments:
-                to: ref('seat_reviews__dim_aircraft')
+                to: ref('conformed__dim_aircraft')
                 field: aircraft_id
       - name: seat_configuration_id
         description: FK to dim_seat_configuration.
@@ -87,7 +53,7 @@ models:
           - not_null
           - relationships:
               arguments:
-                to: ref('seat_reviews__dim_customer')
+                to: ref('conformed__dim_customer')
                 field: customer_id
       - name: date_submitted_id
         description: FK to dim_date - date the review was submitted.
@@ -95,14 +61,14 @@ models:
           - not_null
           - relationships:
               arguments:
-                to: ref('seat_reviews__dim_date')
+                to: ref('conformed__dim_date')
                 field: date_id
       - name: date_flown_id
         description: FK to dim_date - date of the flight; null when not stated.
         data_tests:
           - relationships:
               arguments:
-                to: ref('seat_reviews__dim_date')
+                to: ref('conformed__dim_date')
                 field: date_id
       - name: is_verified
       - name: type_of_traveller

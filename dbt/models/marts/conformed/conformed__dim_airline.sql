@@ -1,11 +1,12 @@
 {{ config(alias='dim_airline') }}
 
 -- dim_airline.sql
--- Airline dimension for the lounge review star schema.
+-- Conformed airline dimension, shared by airline, lounge and seat reviews.
 -- Grain: one row per airline in the source airline lookup.
--- Key: airline_id straight from the source.
--- Same definition as the airline review mart's dim_airline - each star schema
--- keeps its own physical copy so it can be shipped and read standalone.
+-- Key: airline_id straight from the source - it is a stable natural key, so
+-- there is nothing to gain from hashing a surrogate on top of it.
+-- Built from the full lookup rather than from the reviews, so airlines with no
+-- reviews yet are still present in the dimension.
 
 with airlines as (
 

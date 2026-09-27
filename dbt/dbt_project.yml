@@ -30,8 +30,8 @@ models:
       +schema: intermediate
       +tags: ['intermediate']
 
-    # Each mart is a self-contained star schema that lands in its own DuckDB
-    # schema and its own CSV output directory under data/. Model file names are
+    # Shared dimensions live in the conformed schema. Each subject mart keeps
+    # its fact and the dimensions only that fact uses. Model file names are
     # prefixed to stay globally unique in dbt; +alias strips the prefix back off
     # so the relation - and therefore the exported CSV - is named dim_customer,
     # fct_airline_review, and so on.
@@ -39,6 +39,10 @@ models:
       +materialized: table
       +tags: ['marts']
 
+      conformed:
+        +schema: conformed
+        +tags: ['conformed']
+        +post-hook: "{{ export_model_to_csv('conformed') }}"
       airlines_reviews:
         +schema: airlines_reviews
         +tags: ['airlines_reviews']

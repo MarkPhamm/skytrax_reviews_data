@@ -6,11 +6,11 @@ Downloads the four Skytrax review tables straight from the source database and m
 
 [Part 2](https://github.com/MarkPhamm/skytrax_reviews_transformation) models **airline** reviews into a Kimball star schema on Snowflake, with slim CI/CD, Terraform RBAC and hosted docs. The seat, lounge and airport reviews have been sitting in `RAW` unmodelled the whole time — the umbrella repo lists *"conformed facts for seat / lounge / airport review types"* as a next step. This repo is that next step, done locally: **214,335 fact rows across four star schemas**, built and tested in under ten seconds on a laptop.
 
-- **Four independent star schemas** — airline, airport, lounge and seat reviews, each with its own conformed dimensions, each exported as CSVs you can hand to anyone
+- **Four star schemas on one dimension bus** — airline, airport, lounge and seat facts, sharing `dim_airline`, `dim_customer`, `dim_aircraft` and `dim_date`, each exported as CSVs
 - **Zero infrastructure** — dbt-duckdb reads the CSVs in place with `read_csv`; nothing is loaded anywhere first, no credentials needed to build
 - **Same modelling conventions as Part 2** — staging → intermediate → marts, `dbt_utils` surrogate keys, incremental merge facts on a high-water mark, generated calendar/fiscal date dimension
 - **Real duplicates caught** — unlike Part 2's source, these tables ship a `review_id`, and the scrape re-issues it on re-ingest. Deduplicating on that id alone would keep 346 re-ingested submissions, so staging dedupes on review *content* — the same natural key Part 2 uses
-- **224 tests on every build** — 222 pass, 2 warn on known source defects that are documented rather than silently dropped
+- **194 tests on every build** — 192 pass, 2 warn on known source defects that are documented rather than silently dropped
 
 ## Where this fits
 
@@ -52,12 +52,19 @@ Downloads the four Skytrax review tables straight from the source database and m
         │  nulls → 'unknown', casts  │
         └─────────────┬──────────────┘
                       │
+                      ▼
+        ┌────────────────────────────┐
+        │  conformed                 │
+        │  dim_airline, dim_customer │
+        │  dim_aircraft, dim_date    │
+        └─────────────┬──────────────┘
+                      │
       ┌───────────┬───┴───────┬───────────┐
       ▼           ▼           ▼           ▼
  ┌─────────┐ ┌─────────┐ ┌─────────┐ ┌─────────┐
  │airlines_│ │airport_ │ │lounge_  │ │seat_    │
  │reviews  │ │reviews  │ │reviews  │ │reviews  │
- │ 5 dims  │ │ 3 dims  │ │ 4 dims  │ │ 5 dims  │
+ │location │ │airport  │ │lounge   │ │seat cfg │
  │ + fct   │ │ + fct   │ │ + fct   │ │ + fct   │
  └────┬────┘ └────┬────┘ └────┬────┘ └────┬────┘
       │           │           │           │
@@ -65,6 +72,7 @@ Downloads the four Skytrax review tables straight from the source database and m
                         │ post-hook: COPY … TO csv
                         ▼
         ┌────────────────────────────┐
+        │  data/conformed/*.csv      │
         │  data/<subject>_model/*.csv│
         │  + skytrax_reviews.duckdb  │
         └────────────────────────────┘
@@ -84,20 +92,25 @@ Everything runs on a laptop. There is no warehouse, no cloud account, and no cre
 
 ## Data Model
 
-Four **independent** star schemas, one per review subject. Each carries its own copy of every dimension it needs, so a directory can be shipped and queried standalone. Where a dimension appears in more than one model (`dim_airline`, `dim_aircraft`, `dim_customer`) the definition and the keys are identical, so the models can also be joined across subjects.
+Four star schemas, one fact per review subject, on a single conformed dimension bus. `dim_airline`, `dim_customer`, `dim_aircraft` and `dim_date` are built once and joined by every fact that needs them. A subject keeps only the dimensions that belong to it alone.
 
 **Grain:** one row per review submission. Primary key is `review_id` from the source.
+
+### `data/conformed/`
+
+| Model | Type | Rows | Description |
+| --- | --- | ---: | --- |
+| `dim_airline` | Dimension | 595 | Airline name + cleaned name. Shared by airline, lounge and seat reviews |
+| `dim_customer` | Dimension | 150,955 | One reviewer proxy across all subjects, with a lifetime count and a count per subject |
+| `dim_aircraft` | Dimension | 230 | Model, manufacturer, seat capacity. Union of airline and seat reviews |
+| `dim_date` | Dimension | 21,089 | One calendar + fiscal spine covering every subject date |
 
 ### `data/airlines_reviews_model/` — 156,077 reviews, 2002–2026
 
 | Model | Type | Rows | Description |
 | --- | --- | ---: | --- |
-| `fct_airline_review` | Fact (incremental merge) | 156,077 | 7 category ratings, `average_rating`, `rating_band`, `has_layover`, FKs to all dims |
-| `dim_airline` | Dimension | 595 | Airline name + cleaned name |
-| `dim_customer` | Dimension | 115,808 | Reviewer proxy, review count, first/latest review date |
+| `fct_airline_review` | Fact (incremental merge) | 156,077 | 7 category ratings, `average_rating`, `rating_band`, `has_layover`, FKs to the conformed bus and `dim_location` |
 | `dim_location` | Dimension | 5,973 | City + IATA code (role-playing: origin / destination / transit) |
-| `dim_aircraft` | Dimension | 227 | Model, manufacturer, seat capacity |
-| `dim_date` | Dimension | 9,399 | Calendar + fiscal (role-playing: submitted / flown) |
 
 ### `data/airport_reviews_model/` — 49,410 reviews, 2002–2026
 
@@ -105,8 +118,6 @@ Four **independent** star schemas, one per review subject. Each carries its own 
 | --- | --- | ---: | --- |
 | `fct_airport_review` | Fact (incremental merge) | 49,410 | 8 category ratings, `average_rating`, `rating_band`, `experience_at_airport` |
 | `dim_airport` | Dimension | 1,004 | Airport name + cleaned name |
-| `dim_customer` | Dimension | 38,101 | Reviewer proxy |
-| `dim_date` | Dimension | 9,399 | Calendar + fiscal (role-playing: submitted / visited) |
 
 ### `data/lounge_reviews_model/` — 5,085 reviews, 2006–2026
 
@@ -114,9 +125,6 @@ Four **independent** star schemas, one per review subject. Each carries its own 
 | --- | --- | ---: | --- |
 | `fct_lounge_review` | Fact (incremental merge) | 5,085 | 7 category ratings, `average_rating`, `rating_band` |
 | `dim_lounge` | Dimension | 2,220 | Lounge, airport, access tier (tier is part of the grain) |
-| `dim_airline` | Dimension | 595 | Airline operating the lounge |
-| `dim_customer` | Dimension | 3,241 | Reviewer proxy |
-| `dim_date` | Dimension | 7,938 | Calendar + fiscal (role-playing: submitted / visited) |
 
 ### `data/seat_reviews_model/` — 3,763 reviews, 2007–2026
 
@@ -124,15 +132,12 @@ Four **independent** star schemas, one per review subject. Each carries its own 
 | --- | --- | ---: | --- |
 | `fct_seat_review` | Fact (incremental merge) | 3,763 | 12 category ratings, `average_rating`, `rating_band` |
 | `dim_seat_configuration` | Dimension | 72 | Cabin + normalized layout, parsed `seats_per_row` |
-| `dim_aircraft` | Dimension | 64 | Model, manufacturer, seat capacity |
-| `dim_airline` | Dimension | 595 | Airline |
-| `dim_customer` | Dimension | 3,089 | Reviewer proxy |
-| `dim_date` | Dimension | 21,087 | Calendar + fiscal (role-playing: submitted / flown) |
 
 ### Key conventions
 
 - **Natural keys where the source has them.** `airline_id` and `airport_id` come from the lookup tables and are used directly; dimensions built from free text use a deterministic `dbt_utils.generate_surrogate_key` hash.
-- **`dim_date` is derived, not hard-coded.** Each model's calendar spans the dates it actually contains, extended 12 months past the latest for forecasting headroom — so no fact row is ever dropped for falling outside it.
+- **`dim_date` is derived, not hard-coded.** One calendar spans every date across all four subjects, extended 12 months past the latest for forecasting headroom — so no fact row is ever dropped for falling outside it.
+- **`dim_customer` counts across subjects.** `number_of_reviews` is the lifetime total. `airline_review_count`, `airport_review_count`, `lounge_review_count` and `seat_review_count` keep the per-subject totals, and are 0 when that customer has no reviews of that type.
 - **`'unknown'` over null.** Dimension-bearing text is coalesced in the intermediate layer, so every fact row resolves to a dimension row instead of vanishing on an inner join.
 - **Sparse ratings are respected.** `average_rating` divides by the number of categories the reviewer actually scored, not by the number of columns — a review that only rates value-for-money is not punished for it.
 
@@ -142,7 +147,7 @@ Column-level source text lives in [`data_model/schema.txt`](data_model/schema.tx
 
 ## Data Quality
 
-Every invariant below is enforced on each build — **222 tests pass, 2 warn**. Nothing is dropped silently.
+Every invariant below is enforced on each build — **192 tests pass, 2 warn**. Nothing is dropped silently.
 
 ### Fixed in the models
 
@@ -198,11 +203,11 @@ SKYTRAX_RAW_DIR="$PWD/data/skytrax" ./build.sh
 ./build.sh -s +tag:lounge_reviews # any dbt selector is passed straight through
 ./build.sh -s fct_seat_review     # one model and nothing else
 
-# Query the models directly — every mart is its own schema
+# Query the models directly — facts live in their subject schema, shared dims in conformed
 duckdb skytrax_reviews.duckdb -c "
   select a.airline_name, count(*) as reviews, round(avg(f.average_rating), 2) as avg_rating
   from airlines_reviews.fct_airline_review f
-  join airlines_reviews.dim_airline a using (airline_id)
+  join conformed.dim_airline a using (airline_id)
   group by 1 order by reviews desc limit 10"
 
 # dbt directly (build.sh sets these for you)
@@ -225,14 +230,11 @@ dbt/
     staging/                    stg_skytrax__*  views over data/raw/*.csv, deduplicated
     intermediate/               int_*_cleaned   null handling, renames, type casts
     marts/
-      airlines_reviews/         dim_airline, dim_customer, dim_location,
-                                dim_aircraft, dim_date, fct_airline_review
-      airport_reviews/          dim_airport, dim_customer, dim_date,
-                                fct_airport_review
-      lounge_reviews/           dim_airline, dim_lounge, dim_customer, dim_date,
-                                fct_lounge_review
-      seat_reviews/             dim_airline, dim_aircraft, dim_seat_configuration,
-                                dim_customer, dim_date, fct_seat_review
+      conformed/                dim_airline, dim_customer, dim_aircraft, dim_date
+      airlines_reviews/         dim_location, fct_airline_review
+      airport_reviews/          dim_airport, fct_airport_review
+      lounge_reviews/           dim_lounge, fct_lounge_review
+      seat_reviews/             dim_seat_configuration, fct_seat_review
   macros/
     aircraft.sql                Manufacturer parsing + fuzzy capacity lookup
     clean_airline_name.sql      Airline name normalization
@@ -245,21 +247,22 @@ dbt/
   profiles.yml                  DuckDB connection (env vars, no credentials)
 data/
   raw/                          Input CSVs from download.py
-  airlines_reviews_model/       Exported star schema, one CSV per model
-  airport_reviews_model/
-  lounge_reviews_model/
-  seat_reviews_model/
+  conformed/                    Shared dimensions, one CSV per model
+  airlines_reviews_model/       Airline fact + dim_location
+  airport_reviews_model/        Airport fact + dim_airport
+  lounge_reviews_model/         Lounge fact + dim_lounge
+  seat_reviews_model/           Seat fact + dim_seat_configuration
 data_model/schema.txt           Column-level reference for all four models
 ```
 
-Model file names are prefixed with their mart (`airlines_reviews__dim_customer`) because dbt model names must be globally unique; each sets `alias` back to the plain name, so the relation and the exported CSV are `dim_customer`.
+Model file names are prefixed with their folder (`conformed__dim_customer`) because dbt model names must be globally unique; each sets `alias` back to the plain name, so the relation and the exported CSV are `dim_customer`.
 
 ## Environment Variables
 
 | Variable | Used by | Default | Purpose |
 | --- | --- | --- | --- |
 | `SKYTRAX_RAW_DIR` | dbt sources | `../data/raw` | Where the input CSVs are read from |
-| `SKYTRAX_EXPORT_ROOT` | export post-hook | `../data` | Parent of the four output directories |
+| `SKYTRAX_EXPORT_ROOT` | export post-hook | `../data` | Parent of `conformed/` and the four subject directories |
 | `SKYTRAX_DUCKDB_PATH` | dbt profile | `../skytrax_reviews.duckdb` | Database file location |
 | `XOMDATA_*` | `download.py` only | — | SQL Server connection; not needed to build |
 

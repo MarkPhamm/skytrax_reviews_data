@@ -24,7 +24,7 @@ fi
 
 # DuckDB's COPY will not create missing directories, so make the export targets
 # up front. One directory per star schema.
-for model_dir in airlines_reviews_model airport_reviews_model lounge_reviews_model seat_reviews_model; do
+for model_dir in conformed airlines_reviews_model airport_reviews_model lounge_reviews_model seat_reviews_model; do
     mkdir -p "$SKYTRAX_EXPORT_ROOT/$model_dir"
 done
 
@@ -34,6 +34,6 @@ cd "$REPO_ROOT/dbt"
 
 echo
 echo "Star schemas exported to:"
-for model_dir in airlines_reviews_model airport_reviews_model lounge_reviews_model seat_reviews_model; do
+for model_dir in conformed airlines_reviews_model airport_reviews_model lounge_reviews_model seat_reviews_model; do
     echo "  $SKYTRAX_EXPORT_ROOT/$model_dir"
 done

@@ -1,37 +1,49 @@
-{% macro generate_dates_dimension(source_relation, date_columns) %}
+{% macro generate_dates_dimension(sources) %}
 {#-
-    Build a conformed date dimension for one mart.
+    Build one date dimension covering every review subject.
 
     Rather than hard-coding a start date, the calendar is bounded by the dates
-    actually present in that mart's reviews: it starts at the beginning of the
-    earliest year observed and runs to 12 months past the later of the latest
-    observed date and today (headroom for forecasting). That way every date
-    foreign key resolves and no review row is dropped for falling outside the
-    calendar.
+    actually present: it starts at the beginning of the earliest year observed
+    and runs to 12 months past the later of the latest observed date and today
+    (headroom for forecasting). That way every date foreign key resolves and no
+    review row is dropped for falling outside the calendar.
 
     Fiscal year is assumed to start on 1 July.
 
     Args:
-        source_relation: relation to read the date bounds from (e.g. ref('...'))
-        date_columns: list of date column names in that relation
+        sources: list of dicts, each with `relation` (a ref) and `columns`
+                 (date column names on that relation). Bounds are the earliest
+                 and latest date across all of them.
 -#}
 
-with bounds as (
+with source_bounds as (
 
+    {% for source in sources %}
     select
         -- least/greatest ignore nulls in DuckDB, so optional dates (date_flown,
         -- date_visit) widen the range when present and are harmless when not.
         least(
-            {% for column in date_columns -%}
+            {% for column in source.columns -%}
             min({{ column }}){{ ', ' if not loop.last }}
             {%- endfor %}
         ) as start_date,
         greatest(
-            {% for column in date_columns -%}
+            {% for column in source.columns -%}
             max({{ column }}){{ ', ' if not loop.last }}
             {%- endfor %}
         ) as end_date,
-    from {{ source_relation }}
+    from {{ source.relation }}
+    {{ 'union all' if not loop.last }}
+    {% endfor %}
+
+),
+
+bounds as (
+
+    select
+        min(start_date) as start_date,
+        max(end_date) as end_date,
+    from source_bounds
 
 ),
 

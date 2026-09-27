@@ -1,24 +1,23 @@
 {{ config(alias='dim_aircraft') }}
 
 -- dim_aircraft.sql
--- Aircraft dimension for the seat review star schema.
--- Grain: one row per distinct aircraft model string found in the seat reviews.
--- Surrogate key: dbt_utils hash of the model string, so a given model string
--- carries the same key here as it does in the airline review mart.
--- Capacity comes from the same canonical family list used elsewhere.
+-- Conformed aircraft dimension, shared by airline and seat reviews.
+-- Grain: one row per distinct aircraft model string found in either subject.
+-- Surrogate key: dbt_utils hash of the model string, so a model keeps the same
+-- key it had when the two stars each built their own copy.
+-- Capacity is enriched by fuzzy-matching the free-text model against a small
+-- canonical family list (see the aircraft macros); the QUALIFY keeps the
+-- longest - and therefore most specific - family match per model.
 
-with reviews as (
-
-    select
-        *,
-    from {{ ref('int_seat_reviews_cleaned') }}
-
-),
-
-raw_aircraft as (
+with raw_aircraft as (
 
     select distinct aircraft_model,
-    from reviews
+    from {{ ref('int_airline_reviews_cleaned') }}
+
+    union
+
+    select distinct aircraft_model,
+    from {{ ref('int_seat_reviews_cleaned') }}
 
 ),
 

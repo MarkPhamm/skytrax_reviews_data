@@ -21086,3 +21086,5 @@ date_id,day_of_week,day_of_week_name,cal_week_start_date,day_of_month,cal_month,
 2027-09-23,4,Thu,2027-09-20,23,9,September,Sep,3,Q3,2027,false,2028,3,1,12,p3,FQ1,wk12
 2027-09-24,5,Fri,2027-09-20,24,9,September,Sep,3,Q3,2027,false,2028,3,1,12,p3,FQ1,wk12
 2027-09-25,6,Sat,2027-09-20,25,9,September,Sep,3,Q3,2027,true,2028,3,1,12,p3,FQ1,wk12
+2027-09-26,7,Sun,2027-09-20,26,9,September,Sep,3,Q3,2027,true,2028,3,1,12,p3,FQ1,wk12
+2027-09-27,1,Mon,2027-09-27,27,9,September,Sep,3,Q3,2027,false,2028,3,1,13,p3,FQ1,wk13

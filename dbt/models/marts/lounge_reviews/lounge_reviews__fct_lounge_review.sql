@@ -44,7 +44,7 @@ with_customer as (
         b.*,
         dc.customer_id,
     from base as b
-    left join {{ ref('lounge_reviews__dim_customer') }} as dc
+    left join {{ ref('conformed__dim_customer') }} as dc
         on b.customer_name = dc.customer_name
         and b.nationality = dc.nationality
 
@@ -70,9 +70,9 @@ with_dates as (
         ds.date_id as date_submitted_id,
         dv.date_id as date_visit_id,
     from with_lounge as wl
-    left join {{ ref('lounge_reviews__dim_date') }} as ds
+    left join {{ ref('conformed__dim_date') }} as ds
         on wl.date_submitted = ds.date_id
-    left join {{ ref('lounge_reviews__dim_date') }} as dv
+    left join {{ ref('conformed__dim_date') }} as dv
         on wl.date_visit = dv.date_id
 
 ),

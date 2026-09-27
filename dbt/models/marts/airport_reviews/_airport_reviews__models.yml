@@ -14,32 +14,6 @@ models:
         description: Lowercased, trimmed airport name.
         data_tests: [not_null]
 
-  - name: airport_reviews__dim_customer
-    description: "Customer dimension. Grain: one row per (customer_name, nationality)."
-    columns:
-      - name: customer_id
-        description: Primary key - surrogate hash of (customer_name, nationality).
-        data_tests: [unique, not_null]
-      - name: customer_name
-        data_tests: [not_null]
-      - name: nationality
-        data_tests: [not_null]
-      - name: number_of_reviews
-        description: Count of airport reviews this reviewer submitted.
-        data_tests: [not_null]
-      - name: first_review_date
-      - name: latest_review_date
-
-  - name: airport_reviews__dim_date
-    description: "Calendar and fiscal date dimension. Grain: one row per day."
-    columns:
-      - name: date_id
-        data_tests: [unique, not_null]
-      - name: is_weekend
-        data_tests: [not_null]
-      - name: fin_year
-        data_tests: [not_null]
-
   - name: airport_reviews__fct_airport_review
     description: >
       Airport review fact. Grain: one row per review submission. Measures are
@@ -62,7 +36,7 @@ models:
           - not_null
           - relationships:
               arguments:
-                to: ref('airport_reviews__dim_customer')
+                to: ref('conformed__dim_customer')
                 field: customer_id
       - name: date_submitted_id
         description: FK to dim_date - date the review was submitted.
@@ -70,14 +44,14 @@ models:
           - not_null
           - relationships:
               arguments:
-                to: ref('airport_reviews__dim_date')
+                to: ref('conformed__dim_date')
                 field: date_id
       - name: date_visit_id
         description: FK to dim_date - date of the airport visit; null when not stated.
         data_tests:
           - relationships:
               arguments:
-                to: ref('airport_reviews__dim_date')
+                to: ref('conformed__dim_date')
                 field: date_id
       - name: is_verified
         description: Whether Skytrax marked the review as a verified visit.

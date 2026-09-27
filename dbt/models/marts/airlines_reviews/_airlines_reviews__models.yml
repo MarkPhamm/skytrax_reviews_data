@@ -1,39 +1,6 @@
 version: 2
 
 models:
-  - name: airlines_reviews__dim_airline
-    description: "Airline dimension. Grain: one row per airline."
-    columns:
-      - name: airline_id
-        description: Primary key - natural key from the source airline lookup.
-        data_tests: [unique, not_null]
-      - name: airline_name
-        description: Airline name as published on Skytrax.
-        data_tests: [not_null]
-      - name: airline_name_cleaned
-        description: Lowercased, trimmed name with trailing review-count artifacts stripped.
-        data_tests: [not_null]
-
-  - name: airlines_reviews__dim_customer
-    description: "Customer dimension. Grain: one row per (customer_name, nationality)."
-    columns:
-      - name: customer_id
-        description: Primary key - surrogate hash of (customer_name, nationality).
-        data_tests: [unique, not_null]
-      - name: customer_name
-        description: Reviewer display name; 'unknown' when the source left it blank.
-        data_tests: [not_null]
-      - name: nationality
-        description: Reviewer nationality; 'unknown' when the source left it blank.
-        data_tests: [not_null]
-      - name: number_of_reviews
-        description: Count of airline reviews this reviewer submitted.
-        data_tests: [not_null]
-      - name: first_review_date
-        description: Earliest date_submitted for this reviewer.
-      - name: latest_review_date
-        description: Latest date_submitted for this reviewer.
-
   - name: airlines_reviews__dim_location
     description: >
       Role-playing location dimension covering origin, destination and transit
@@ -47,34 +14,6 @@ models:
         data_tests: [not_null]
       - name: airport
         description: IATA airport code; 'unknown' when the source left it blank.
-        data_tests: [not_null]
-
-  - name: airlines_reviews__dim_aircraft
-    description: "Aircraft dimension. Grain: one row per aircraft model string."
-    columns:
-      - name: aircraft_id
-        description: Primary key - surrogate hash of aircraft_model.
-        data_tests: [unique, not_null]
-      - name: aircraft_model
-        description: Free-text aircraft model from the review; 'unknown' when not stated.
-        data_tests: [not_null]
-      - name: aircraft_manufacturer
-        description: Leading token of the model string, e.g. 'Boeing'.
-        data_tests: [not_null]
-      - name: seat_capacity
-        description: Typical seat count of the matched aircraft family; null when unmatched.
-
-  - name: airlines_reviews__dim_date
-    description: "Calendar and fiscal date dimension. Grain: one row per day."
-    columns:
-      - name: date_id
-        description: Primary key - the calendar date itself.
-        data_tests: [unique, not_null]
-      - name: is_weekend
-        description: True for Saturday and Sunday.
-        data_tests: [not_null]
-      - name: fin_year
-        description: Fiscal year, assuming a 1 July start.
         data_tests: [not_null]
 
   - name: airlines_reviews__fct_airline_review
@@ -92,7 +31,7 @@ models:
           - not_null
           - relationships:
               arguments:
-                to: ref('airlines_reviews__dim_airline')
+                to: ref('conformed__dim_airline')
                 field: airline_id
       - name: customer_id
         description: FK to dim_customer.
@@ -100,7 +39,7 @@ models:
           - not_null
           - relationships:
               arguments:
-                to: ref('airlines_reviews__dim_customer')
+                to: ref('conformed__dim_customer')
                 field: customer_id
       - name: date_submitted_id
         description: FK to dim_date - date the review was submitted.
@@ -108,14 +47,14 @@ models:
           - not_null
           - relationships:
               arguments:
-                to: ref('airlines_reviews__dim_date')
+                to: ref('conformed__dim_date')
                 field: date_id
       - name: date_flown_id
         description: FK to dim_date - date of the flight; null when not stated.
         data_tests:
           - relationships:
               arguments:
-                to: ref('airlines_reviews__dim_date')
+                to: ref('conformed__dim_date')
                 field: date_id
       - name: origin_location_id
         description: FK to dim_location - departure airport.
@@ -147,7 +86,7 @@ models:
           - not_null
           - relationships:
               arguments:
-                to: ref('airlines_reviews__dim_aircraft')
+                to: ref('conformed__dim_aircraft')
                 field: aircraft_id
       - name: is_verified
         description: Whether Skytrax marked the review as a verified trip.

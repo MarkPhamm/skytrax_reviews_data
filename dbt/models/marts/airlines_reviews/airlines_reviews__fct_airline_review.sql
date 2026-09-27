@@ -49,7 +49,7 @@ with_customer as (
         b.*,
         dc.customer_id,
     from base as b
-    left join {{ ref('airlines_reviews__dim_customer') }} as dc
+    left join {{ ref('conformed__dim_customer') }} as dc
         on b.customer_name = dc.customer_name
         and b.nationality = dc.nationality
 
@@ -62,9 +62,9 @@ with_dates as (
         ds.date_id as date_submitted_id,
         df.date_id as date_flown_id,
     from with_customer as wc
-    left join {{ ref('airlines_reviews__dim_date') }} as ds
+    left join {{ ref('conformed__dim_date') }} as ds
         on wc.date_submitted = ds.date_id
-    left join {{ ref('airlines_reviews__dim_date') }} as df
+    left join {{ ref('conformed__dim_date') }} as df
         on wc.date_flown = df.date_id
 
 ),
@@ -95,7 +95,7 @@ with_aircraft as (
         wl.*,
         da.aircraft_id,
     from with_locations as wl
-    left join {{ ref('airlines_reviews__dim_aircraft') }} as da
+    left join {{ ref('conformed__dim_aircraft') }} as da
         on wl.aircraft_model = da.aircraft_model
 
 ),

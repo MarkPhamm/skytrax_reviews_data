@@ -1,19 +1,17 @@
 Skytrax review data models
 ==========================
 
-Four independent star schemas, one per review subject. Each is built by dbt on
-DuckDB and exported as CSVs into its own directory under data/:
+Four star schemas, one fact per review subject, sharing one conformed dimension
+bus. Built by dbt on DuckDB and exported as CSVs:
 
+    data/conformed/                 dim_airline, dim_customer, dim_aircraft, dim_date
     data/airlines_reviews_model/    airline (flight) reviews
     data/airport_reviews_model/     airport reviews
     data/lounge_reviews_model/      airport lounge reviews
     data/seat_reviews_model/        aircraft seat reviews
 
-Each model is self-contained - it carries its own copy of every dimension it
-needs, so a directory can be shipped and queried on its own. Where the same
-dimension appears in more than one model (dim_airline, dim_aircraft,
-dim_customer) the definition and the keys are identical, so the models can also
-be unioned or joined across subjects.
+Dimensions used by more than one fact are built once, in the conformed schema.
+A subject folder keeps only its fact and the dimensions that fact alone uses.
 
 Key conventions
 ---------------
@@ -24,8 +22,11 @@ Key conventions
 * Dimensions with a stable source id (airline_id, airport_id) use it as the PK.
 * Dimensions derived from free text use a deterministic surrogate hash of their
   natural key (dbt_utils.generate_surrogate_key).
-* dim_date is keyed on the date itself; its range is derived from the dates
-  actually present in that model.
+* dim_date is keyed on the date itself. Its range is the union of every date
+  column across all four subjects.
+* dim_customer is one row per (customer_name, nationality). Review counts and
+  first/latest dates span all four subjects; a subject the customer never
+  reviewed is 0, not a missing row.
 * Text attributes that carry a dimension key are coalesced to 'unknown' rather
   than left null, so every fact row resolves to a dimension row.
 * Ratings are 1-5 and nullable - reviewers only score the categories they care
@@ -33,37 +34,8 @@ Key conventions
 * rating_band: unknown (no ratings), bad (<2), medium (<4), good (>=4).
 
 
-data/airlines_reviews_model/
-============================
-
-fct_airline_review
-------------------
-review_id PK bigint
-airline_id bigint FK >- dim_airline.airline_id
-customer_id string FK >- dim_customer.customer_id
-date_submitted_id date FK >- dim_date.date_id
-date_flown_id NULL date FK >- dim_date.date_id
-origin_location_id string FK >- dim_location.location_id
-destination_location_id string FK >- dim_location.location_id
-transit_location_id string FK >- dim_location.location_id
-aircraft_id string FK >- dim_aircraft.aircraft_id
-is_verified bool
-seat_type string
-type_of_traveller string
-has_layover bool
-seat_comfort NULL int
-cabin_staff_service NULL int
-food_and_beverages NULL int
-inflight_entertainment NULL int
-ground_service NULL int
-wifi_and_connectivity NULL int
-value_for_money NULL int
-recommended bool
-average_rating NULL float
-rating_band string
-review_text string
-source_updated_at timestamp
-dbt_loaded_at timestamp
+data/conformed/
+===============
 
 dim_airline
 -----------
@@ -76,15 +48,13 @@ dim_customer
 customer_id PK string
 customer_name string
 nationality string
-number_of_reviews int
-first_review_date date
+number_of_reviews int          -- all four subjects
+airline_review_count int
+airport_review_count int
+lounge_review_count int
+seat_review_count int
+first_review_date date         -- earliest date_submitted, any subject
 latest_review_date date
-
-dim_location
-------------
-location_id PK string
-city string
-airport string          -- IATA code
 
 dim_aircraft
 ------------
@@ -116,6 +86,45 @@ fin_quarter_name string
 fin_week_name string
 
 
+data/airlines_reviews_model/
+============================
+
+fct_airline_review
+------------------
+review_id PK bigint
+airline_id bigint FK >- conformed.dim_airline.airline_id
+customer_id string FK >- conformed.dim_customer.customer_id
+date_submitted_id date FK >- conformed.dim_date.date_id
+date_flown_id NULL date FK >- conformed.dim_date.date_id
+origin_location_id string FK >- dim_location.location_id
+destination_location_id string FK >- dim_location.location_id
+transit_location_id string FK >- dim_location.location_id
+aircraft_id string FK >- conformed.dim_aircraft.aircraft_id
+is_verified bool
+seat_type string
+type_of_traveller string
+has_layover bool
+seat_comfort NULL int
+cabin_staff_service NULL int
+food_and_beverages NULL int
+inflight_entertainment NULL int
+ground_service NULL int
+wifi_and_connectivity NULL int
+value_for_money NULL int
+recommended bool
+average_rating NULL float
+rating_band string
+review_text string
+source_updated_at timestamp
+dbt_loaded_at timestamp
+
+dim_location
+------------
+location_id PK string
+city string
+airport string          -- IATA code
+
+
 data/airport_reviews_model/
 ===========================
 
@@ -123,9 +132,9 @@ fct_airport_review
 ------------------
 review_id PK bigint
 airport_id bigint FK >- dim_airport.airport_id
-customer_id string FK >- dim_customer.customer_id
-date_submitted_id date FK >- dim_date.date_id
-date_visit_id NULL date FK >- dim_date.date_id
+customer_id string FK >- conformed.dim_customer.customer_id
+date_submitted_id date FK >- conformed.dim_date.date_id
+date_visit_id NULL date FK >- conformed.dim_date.date_id
 is_verified bool
 experience_at_airport string
 type_of_traveller string
@@ -150,9 +159,6 @@ airport_id PK bigint
 airport_name string
 airport_name_cleaned string
 
-dim_customer    -- same shape as above
-dim_date        -- same shape as above
-
 
 data/lounge_reviews_model/
 ==========================
@@ -160,11 +166,11 @@ data/lounge_reviews_model/
 fct_lounge_review
 -----------------
 review_id PK bigint
-airline_id bigint FK >- dim_airline.airline_id
+airline_id bigint FK >- conformed.dim_airline.airline_id
 lounge_id string FK >- dim_lounge.lounge_id
-customer_id string FK >- dim_customer.customer_id
-date_submitted_id date FK >- dim_date.date_id
-date_visit_id NULL date FK >- dim_date.date_id
+customer_id string FK >- conformed.dim_customer.customer_id
+date_submitted_id date FK >- conformed.dim_date.date_id
+date_visit_id NULL date FK >- conformed.dim_date.date_id
 is_verified bool
 type_of_traveller string
 comfort NULL int
@@ -188,10 +194,6 @@ lounge_name string
 airport string
 type_of_lounge string    -- access tier; part of the grain
 
-dim_airline     -- same shape as above
-dim_customer    -- same shape as above
-dim_date        -- same shape as above
-
 
 data/seat_reviews_model/
 ========================
@@ -199,12 +201,12 @@ data/seat_reviews_model/
 fct_seat_review
 ---------------
 review_id PK bigint
-airline_id bigint FK >- dim_airline.airline_id
-aircraft_id string FK >- dim_aircraft.aircraft_id
+airline_id bigint FK >- conformed.dim_airline.airline_id
+aircraft_id string FK >- conformed.dim_aircraft.aircraft_id
 seat_configuration_id string FK >- dim_seat_configuration.seat_configuration_id
-customer_id string FK >- dim_customer.customer_id
-date_submitted_id date FK >- dim_date.date_id
-date_flown_id NULL date FK >- dim_date.date_id
+customer_id string FK >- conformed.dim_customer.customer_id
+date_submitted_id date FK >- conformed.dim_date.date_id
+date_flown_id NULL date FK >- conformed.dim_date.date_id
 is_verified bool
 type_of_traveller string
 seat_legroom NULL int
@@ -232,8 +234,3 @@ seat_configuration_id PK string
 seat_type string
 seat_layout string       -- e.g. '3x4x3'
 seats_per_row NULL int   -- parsed from seat_layout
-
-dim_airline     -- same shape as above
-dim_aircraft    -- same shape as above
-dim_customer    -- same shape as above
-dim_date        -- same shape as above
