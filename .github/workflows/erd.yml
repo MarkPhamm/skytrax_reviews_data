@@ -1,0 +1,69 @@
+# Keeps the ERD in sync with the dbt project, using qdbd (quickdbd-cli).
+#   - every run: regenerate erd/ from `dbt parse` and fail if the committed files are stale
+#   - pull requests: one schema-diff comment, plus the diagram (changes highlighted) as the "erd" artifact
+#   - main: publish the diagram to GitHub Pages
+name: ERD
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: erd-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  erd:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dbt and qdbd
+        run: pip install -q -r requirements.txt quickdbd-cli==0.1.5
+
+      - name: Regenerate erd/ from the dbt manifest
+        run: DBT_BIN="$(command -v dbt)" ./erd.sh
+
+      - name: Fail if erd/ is stale
+        run: |
+          if [ -n "$(git status --porcelain -- erd/)" ]; then
+            git status --short -- erd/
+            git diff -- erd/
+            echo "::error::erd/ is out of date with the dbt models. Run ./erd.sh and commit the result."
+            exit 1
+          fi
+
+      - name: Check, build ERD, comment schema diff
+        uses: MarkPhamm/quickdbd-cli@v0.1.5
+        with:
+          path: erd/
+          output: site/index.html
+          qdbd-version: "0.1.5"
+          strict: "true"
+
+      - if: github.event_name != 'pull_request'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  pages:
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    needs: erd
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - id: deploy
+        uses: actions/deploy-pages@v4

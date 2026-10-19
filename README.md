@@ -145,6 +145,16 @@ Four star schemas, one fact per review subject, on a single conformed dimension 
 
 Column-level source text lives in [`data_model/schema.txt`](data_model/schema.txt). Paste it into [QuickDBD](https://www.quickdatabasediagrams.com/) to generate the ERD.
 
+An interactive ERD of the whole dbt project (sources → staging → intermediate → marts, 28 tables) is generated from the dbt manifest by [qdbd](https://github.com/MarkPhamm/quickdbd-cli) into [`erd/`](erd/). It needs only `dbt parse`, so no data is required:
+
+```bash
+pip install quickdbd-cli
+./erd.sh            # refresh erd/*.txt and build erd/index.html
+./erd.sh --serve    # also open the live editor; dragged positions save to erd/qdbd.layout.json
+```
+
+Relationships come from the `relationships` tests, primary keys from `unique` + `not_null`, and descriptions become hover tooltips. Commit `erd/` after changing models: CI fails when it is stale, posts a schema-diff comment on pull requests, and publishes the diagram to GitHub Pages from `main` (see [`.github/workflows/erd.yml`](.github/workflows/erd.yml)).
+
 ## Data Quality
 
 Every invariant below is enforced on each build — **192 tests pass, 2 warn**. Nothing is dropped silently.
@@ -225,6 +235,7 @@ dbt docs generate && dbt docs serve
 download.py                     Pull the [skytrax] schema from SQL Server as CSV
 decompress.sh                   Expand the gzipped CSVs next to their .gz files
 build.sh                        Create export dirs, set env, run dbt, report output
+erd.sh                          Regenerate the qdbd ERD in erd/ from dbt parse
 dbt/
   models/
     staging/                    stg_skytrax__*  views over data/raw/*.csv, deduplicated
@@ -253,6 +264,7 @@ data/
   lounge_reviews_model/         Lounge fact + dim_lounge
   seat_reviews_model/           Seat fact + dim_seat_configuration
 data_model/schema.txt           Column-level reference for all four models
+erd/                            qdbd schema files generated from the dbt manifest
 ```
 
 Model file names are prefixed with their folder (`conformed__dim_customer`) because dbt model names must be globally unique; each sets `alias` back to the plain name, so the relation and the exported CSV are `dim_customer`.
