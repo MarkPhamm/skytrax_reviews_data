@@ -32,22 +32,6 @@
       "x": 790,
       "y": 872
     },
-    "int_airline_reviews_cleaned": {
-      "x": 1151,
-      "y": 2135
-    },
-    "int_airport_reviews_cleaned": {
-      "x": 1423,
-      "y": 1759
-    },
-    "int_lounge_reviews_cleaned": {
-      "x": 1151,
-      "y": 1947
-    },
-    "int_seat_reviews_cleaned": {
-      "x": 1151,
-      "y": 1759
-    },
     "lounge_reviews__dim_lounge": {
       "x": 1344,
       "y": 1446
@@ -63,54 +47,6 @@
     "seat_reviews__fct_seat_review": {
       "x": 648,
       "y": 148
-    },
-    "skytrax_raw.airline_reviews": {
-      "x": 625,
-      "y": 2471
-    },
-    "skytrax_raw.airlines": {
-      "x": 0,
-      "y": 2520
-    },
-    "skytrax_raw.airport_reviews": {
-      "x": 870,
-      "y": 2467
-    },
-    "skytrax_raw.airports": {
-      "x": 194,
-      "y": 2516
-    },
-    "skytrax_raw.lounge_reviews": {
-      "x": 1119,
-      "y": 2466
-    },
-    "skytrax_raw.seat_reviews": {
-      "x": 392,
-      "y": 2484
-    },
-    "stg_skytrax__airline_reviews": {
-      "x": 335,
-      "y": 2206
-    },
-    "stg_skytrax__airlines": {
-      "x": 286,
-      "y": 1963
-    },
-    "stg_skytrax__airport_reviews": {
-      "x": 798,
-      "y": 2053
-    },
-    "stg_skytrax__airports": {
-      "x": 646,
-      "y": 2242
-    },
-    "stg_skytrax__lounge_reviews": {
-      "x": 0,
-      "y": 1883
-    },
-    "stg_skytrax__seat_reviews": {
-      "x": 453,
-      "y": 1759
     }
   },
   "version": 1

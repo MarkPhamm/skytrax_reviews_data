@@ -26,8 +26,11 @@ fi
 
 (cd "$REPO_ROOT/dbt" && "$DBT_BIN" deps --quiet && "$DBT_BIN" parse --quiet)
 
+# Marts only: the dims and facts people query. Staging and intermediate carry
+# almost no relationships, and their lineage is what dbt docs is for.
 # The import overwrites the .txt files; table positions in qdbd.layout.json survive.
-"$QDBD_BIN" import dbt "$REPO_ROOT/dbt/target/manifest.json" -o "$ERD_DIR/"
+"$QDBD_BIN" import dbt "$REPO_ROOT/dbt/target/manifest.json" \
+    --select 'models/marts/*' --no-sources -o "$ERD_DIR/"
 "$QDBD_BIN" check --strict "$ERD_DIR/" "$REPO_ROOT/data_model/schema.txt"
 if [[ ! -f "$ERD_DIR/qdbd.layout.json" ]]; then
     "$QDBD_BIN" layout "$ERD_DIR/" --by-group
