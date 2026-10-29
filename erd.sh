@@ -31,7 +31,7 @@ fi
 # The import overwrites the .txt files; table positions in qdbd.layout.json survive.
 "$QDBD_BIN" import dbt "$REPO_ROOT/dbt/target/manifest.json" \
     --select 'models/marts/*' --no-sources -o "$ERD_DIR/"
-"$QDBD_BIN" check --strict "$ERD_DIR/" "$REPO_ROOT/data_model/schema.txt"
+"$QDBD_BIN" check --strict "$ERD_DIR/"
 if [[ ! -f "$ERD_DIR/qdbd.layout.json" ]]; then
     "$QDBD_BIN" layout "$ERD_DIR/" --by-group
 fi

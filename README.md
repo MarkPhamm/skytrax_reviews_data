@@ -143,8 +143,6 @@ Four star schemas, one fact per review subject, on a single conformed dimension 
 
 ### Schema Diagram
 
-Column-level source text lives in [`data_model/schema.txt`](data_model/schema.txt). Paste it into [QuickDBD](https://www.quickdatabasediagrams.com/) to generate the ERD.
-
 An interactive ERD of the marts (the four facts and their dimensions, 12 tables) is generated from the dbt manifest by [qdbd](https://github.com/MarkPhamm/quickdbd-cli) into [`erd/`](erd/). It needs only `dbt parse`, so no data is required:
 
 ```bash
@@ -263,7 +261,6 @@ data/
   airport_reviews_model/        Airport fact + dim_airport
   lounge_reviews_model/         Lounge fact + dim_lounge
   seat_reviews_model/           Seat fact + dim_seat_configuration
-data_model/schema.txt           Column-level reference for all four models
 erd/                            qdbd schema files generated from the dbt manifest
 ```
 
