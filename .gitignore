@@ -19,3 +19,6 @@ dbt/package-lock.yml
 
 # qdbd: built by ./erd.sh and CI; the erd/*.txt sources are tracked
 erd/index.html
+
+# Substack drafts
+docs/article.md
