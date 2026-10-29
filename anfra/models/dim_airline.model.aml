@@ -1,0 +1,18 @@
+Model dim_airline {
+  type: 'table'
+  label: 'Airlines'
+  data_source_name: 'skytrax'
+  table_name: '"conformed"."dim_airline"'
+
+  dimension airline_id {
+    label: 'Airline Id'
+    type: 'number'
+    primary_key: true
+    definition: @sql {{ #SOURCE.airline_id }};;
+  }
+  dimension airline_name {
+    label: 'Airline'
+    type: 'text'
+    definition: @sql {{ #SOURCE.airline_name_cleaned }};;
+  }
+}

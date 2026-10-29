@@ -1,0 +1,128 @@
+Model fct_airline_review {
+  type: 'table'
+  label: 'Airline Reviews'
+  description: 'One row per Skytrax airline review.'
+  data_source_name: 'skytrax'
+  table_name: '"airlines_reviews"."fct_airline_review"'
+
+  dimension review_id {
+    label: 'Review Id'
+    type: 'number'
+    primary_key: true
+    definition: @sql {{ #SOURCE.review_id }};;
+  }
+  dimension airline_id {
+    label: 'Airline Id'
+    type: 'number'
+    hidden: true
+    definition: @sql {{ #SOURCE.airline_id }};;
+  }
+  dimension date_submitted {
+    label: 'Date Submitted'
+    type: 'date'
+    definition: @sql {{ #SOURCE.date_submitted_id }};;
+  }
+  dimension seat_type {
+    label: 'Seat Type'
+    type: 'text'
+    definition: @sql {{ #SOURCE.seat_type }};;
+  }
+  dimension average_rating {
+    label: 'Average Rating'
+    type: 'number'
+    description: 'Mean of the sub-ratings the reviewer filled in (1-5).'
+    definition: @sql {{ #SOURCE.average_rating }};;
+  }
+  dimension recommended {
+    label: 'Recommended'
+    type: 'truefalse'
+    definition: @sql {{ #SOURCE.recommended }};;
+  }
+
+  dimension seat_comfort {
+    label: 'Seat Comfort'
+    type: 'number'
+    hidden: true
+    definition: @sql {{ #SOURCE.seat_comfort }};;
+  }
+  dimension cabin_staff_service {
+    label: 'Cabin Staff Service'
+    type: 'number'
+    hidden: true
+    definition: @sql {{ #SOURCE.cabin_staff_service }};;
+  }
+  dimension food_and_beverages {
+    label: 'Food & Beverages'
+    type: 'number'
+    hidden: true
+    definition: @sql {{ #SOURCE.food_and_beverages }};;
+  }
+  dimension ground_service {
+    label: 'Ground Service'
+    type: 'number'
+    hidden: true
+    definition: @sql {{ #SOURCE.ground_service }};;
+  }
+  dimension value_for_money {
+    label: 'Value For Money'
+    type: 'number'
+    hidden: true
+    definition: @sql {{ #SOURCE.value_for_money }};;
+  }
+
+  measure review_count {
+    label: 'Reviews'
+    type: 'number'
+    definition: @sql {{ review_id }};;
+    aggregation_type: 'count'
+  }
+  measure avg_rating {
+    label: 'Avg Rating'
+    type: 'number'
+    description: 'Average of average_rating across reviews (1-5).'
+    definition: @sql {{ average_rating }};;
+    aggregation_type: 'avg'
+  }
+  measure recommend_rate {
+    label: '% Recommended'
+    type: 'number'
+    description: 'Share of reviews where the reviewer recommends the airline.'
+    definition: @sql CASE WHEN {{ recommended }} THEN 1.0 ELSE 0.0 END;;
+    aggregation_type: 'avg'
+  }
+  measure avg_seat_comfort {
+    label: 'Avg Seat Comfort'
+    type: 'number'
+    description: '1-5; reviews that left it blank are skipped.'
+    definition: @sql {{ seat_comfort }};;
+    aggregation_type: 'avg'
+  }
+  measure avg_cabin_staff_service {
+    label: 'Avg Cabin Staff Service'
+    type: 'number'
+    description: '1-5; reviews that left it blank are skipped.'
+    definition: @sql {{ cabin_staff_service }};;
+    aggregation_type: 'avg'
+  }
+  measure avg_food_and_beverages {
+    label: 'Avg Food & Beverages'
+    type: 'number'
+    description: '1-5; reviews that left it blank are skipped.'
+    definition: @sql {{ food_and_beverages }};;
+    aggregation_type: 'avg'
+  }
+  measure avg_ground_service {
+    label: 'Avg Ground Service'
+    type: 'number'
+    description: '1-5; reviews that left it blank are skipped.'
+    definition: @sql {{ ground_service }};;
+    aggregation_type: 'avg'
+  }
+  measure avg_value_for_money {
+    label: 'Avg Value For Money'
+    type: 'number'
+    description: '1-5; reviews that left it blank are skipped.'
+    definition: @sql {{ value_for_money }};;
+    aggregation_type: 'avg'
+  }
+}

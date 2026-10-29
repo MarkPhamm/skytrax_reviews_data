@@ -1,0 +1,475 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Airline vs Rest</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource-variable/inter@5.2.5/index.css"
+    integrity="sha384-ZTIcl2CmY0wyM9ANOhomBco7rEUIlWztf6lGcLKCocKUrIgGCsfisuZyE+hadW8K" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/basecoat-css@1.0.2/dist/basecoat.cdn.min.css"
+    integrity="sha384-XWKdrxzE2X33lI8Q03C9fIbqdLWV11whVNycR2/3bMNJY73EEQOa7rmN+SeiSCor" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/basecoat-css@1.0.2/dist/js/all.min.js"
+    integrity="sha384-rD2ZCuReXV7nIneJcn1lsTn6yOv87YARLQyUsemVAxrYYHdy5hcAW8XZEQxx87Dj" crossorigin="anonymous" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/echarts@6.1.0/dist/echarts.min.js"
+    integrity="sha384-C2iskrW/uPW46KzOjrvJIQo4YkV8lkD+QS0CrDN18IIPIpT/g2USu8bTP3nvmIAD" crossorigin="anonymous"></script>
+  <style>
+    /* anfra tokens (DESIGN.md) on Basecoat's variables. Light is from DESIGN.md; the dark values
+       are derived from it, since DESIGN.md only lists the light theme. */
+    :root {
+      --background: oklch(0.955 0.007 88.6);          /* paper: the page */
+      --foreground: oklch(0.201 0.022 301.1);         /* ink */
+      --card: oklch(1 0 0);                           /* white: panels */
+      --card-foreground: oklch(0.201 0.022 301.1);
+      --popover: oklch(1 0 0);
+      --popover-foreground: oklch(0.201 0.022 301.1);
+      --primary: oklch(0.565 0.194 300.3);            /* the one violet */
+      --primary-foreground: oklch(1 0 0);
+      --secondary: oklch(0.973 0.005 95.1);           /* sunken paper */
+      --secondary-foreground: oklch(0.392 0.021 304.3);
+      --muted: oklch(0.973 0.005 95.1);
+      --muted-foreground: oklch(0.485 0.022 306.3);
+      --accent: oklch(0.946 0.027 304.8);             /* violet wash: hover, selected */
+      --accent-foreground: oklch(0.201 0.022 301.1);
+      --border: oklch(0.201 0.022 301.1 / 0.12);
+      --input: oklch(0.201 0.022 301.1 / 0.22);
+      --ring: oklch(0.565 0.194 300.3);
+      --radius: 0.625rem;
+      /* ECharts cannot parse oklch, so chart colors are hex. Violet first, fixed order. */
+      --chart-text: #5b5560;
+      --chart-grid: #e7e4e0;
+      --chart-cat-1: #7c4dce; --chart-cat-2: #1f9aa6; --chart-cat-3: #d9972b; --chart-cat-4: #d4527a;
+      --chart-cat-5: #3d7bd9; --chart-cat-6: #3f9d6b; --chart-cat-7: #dd7a3c; --chart-cat-8: #7d7785;
+    }
+    .dark {
+      --background: oklch(0.17 0.015 301);
+      --foreground: oklch(0.961 0.007 304.2);
+      --card: oklch(0.215 0.017 301);
+      --card-foreground: oklch(0.961 0.007 304.2);
+      --popover: oklch(0.245 0.018 301);
+      --popover-foreground: oklch(0.961 0.007 304.2);
+      --primary: oklch(0.7 0.16 300);
+      --primary-foreground: oklch(0.17 0.015 301);
+      --secondary: oklch(0.26 0.018 301);
+      --secondary-foreground: oklch(0.86 0.01 304);
+      --muted: oklch(0.26 0.018 301);
+      --muted-foreground: oklch(0.72 0.02 304);
+      --accent: oklch(0.32 0.05 301);
+      --accent-foreground: oklch(0.961 0.007 304.2);
+      --border: oklch(1 0 0 / 0.1);
+      --input: oklch(1 0 0 / 0.16);
+      --ring: oklch(0.7 0.16 300);
+      --chart-text: #b4aebb;
+      --chart-grid: #38333d;
+      --chart-cat-1: #a98af0; --chart-cat-2: #4cc3cf; --chart-cat-3: #f0b252; --chart-cat-4: #f07ea0;
+      --chart-cat-5: #7aa8f2; --chart-cat-6: #6cc496; --chart-cat-7: #f59a63; --chart-cat-8: #a39dab;
+    }
+
+    /* Three sizes only (20, 14, 12px), one control height (32px), tabular numerals. */
+    body {
+      font: 14px/20px "Inter Variable", Inter, system-ui, sans-serif;
+      font-variant-numeric: tabular-nums;
+      background: var(--background); color: var(--foreground);
+      margin: 0; padding: 24px; max-width: 1280px; margin-inline: auto;
+    }
+    h1 { font-size: 20px; line-height: 28px; font-weight: 600; margin: 0; text-wrap: balance; }
+    .caption { font-size: 12px; line-height: 16px; color: var(--muted-foreground); }
+    .header { margin-bottom: 16px; }
+    .btn, .input { height: 32px; font-size: 14px; }
+    .card { border-radius: 14px; box-shadow: none; position: relative; }
+    .card > header { padding-bottom: 0; }
+    .card h2 { font-size: 14px; line-height: 20px; font-weight: 600; }
+
+    /* Filter bar: one row, wraps on narrow screens. */
+    /* Basecoat's .card is a clipped column: make the bar a row and let combobox dropdowns overflow. */
+    .card.filters { flex-direction: row; flex-wrap: wrap; gap: 16px; align-items: flex-end;
+                    justify-content: flex-start; padding: 12px 16px; margin-bottom: 16px;
+                    overflow: visible; }
+    .field-group { display: flex; flex-direction: column; gap: 8px; }
+    .field-group > label { font-weight: 500; }
+    .date-range { display: flex; align-items: center; gap: 8px; }
+    .date-range .input { width: 9.5rem; }
+    .presets { display: flex; gap: 4px; }
+    .spacer { flex: 1; }
+
+    .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    @media (max-width: 800px) { .grid { grid-template-columns: 1fr; } }
+    .chart { height: 420px; }
+    .status { position: absolute; inset: 56px 16px 16px; display: none; align-items: center;
+              justify-content: center; background: color-mix(in oklab, var(--card) 85%, transparent); }
+    .status.visible { display: flex; }
+    .status > * { width: 100%; }
+    .status .skeleton { height: 100%; border-radius: 10px; }
+    .status .empty { text-align: center; color: var(--muted-foreground); }
+
+    /* KPI row: picked airline (big) vs the rest of the airlines (small). */
+    .kpis { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 16px; }
+    @media (max-width: 1000px) { .kpis { grid-template-columns: repeat(2, 1fr); } }
+    .kpi { padding: 16px; gap: 4px; }
+    .kpi .value { font-size: 20px; line-height: 28px; font-weight: 600; }
+    .kpi .rest { display: flex; justify-content: space-between; gap: 8px; }
+    .delta.up { color: #3f9d6b; }
+    .delta.down { color: #d4527a; }
+    .legend { display: flex; gap: 16px; }
+    /* Basecoat's outline buttons read as "selected" in a group; mark the pressed one explicitly. */
+    .button-group [aria-pressed="true"] { background: var(--primary); color: var(--primary-foreground); }
+    .swatch { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 6px; }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Airline vs the rest</h1>
+    <div class="caption">Skytrax airline reviews. Ratings are 1-5 averages over the reviews that filled them in. "Rest" is every other airline combined.</div>
+  </div>
+
+  <div class="card filters" data-anfra-container="controls" data-anfra-label="Controls">
+    <div class="field-group" data-anfra-block="airline-picker" data-anfra-label="Airline" data-anfra-control="pick pickRest">
+      <label for="airline-input">Airline</label>
+      <div id="airline-combobox" class="combobox" style="width: 260px" data-auto-highlight="true">
+        <input id="airline-input" type="text" role="combobox" placeholder="Pick an airline" autocomplete="off"
+               autocorrect="off" spellcheck="false" aria-autocomplete="list" aria-expanded="false"
+               aria-controls="airline-listbox">
+        <div id="airline-popover" data-popover aria-hidden="true">
+          <div role="listbox" id="airline-listbox" aria-orientation="vertical" data-empty="No airlines found."></div>
+        </div>
+        <input type="hidden" name="airline" value="">
+      </div>
+    </div>
+
+    <div class="field-group" data-anfra-block="seat-picker" data-anfra-label="Seat type" data-anfra-control="seat">
+      <label for="seat-input">Seat type</label>
+      <div id="seat-combobox" class="combobox" style="width: 220px" data-auto-highlight="true">
+        <input id="seat-input" type="text" role="combobox" placeholder="All seat types" autocomplete="off"
+               autocorrect="off" spellcheck="false" aria-autocomplete="list" aria-expanded="false"
+               aria-controls="seat-listbox">
+        <div id="seat-popover" data-popover aria-hidden="true">
+          <div role="listbox" id="seat-listbox" aria-orientation="vertical" aria-multiselectable="true"
+               data-empty="No seat types found."></div>
+        </div>
+        <input type="hidden" name="seat" value="[]">
+      </div>
+    </div>
+  </div>
+
+  <div class="kpis" data-anfra-container="kpis" data-anfra-label="Airline vs rest" id="kpis"></div>
+
+  <div class="grid" data-anfra-container="charts" data-anfra-label="Charts">
+    <section class="card" data-anfra-block="by-airline" data-anfra-label="Avg rating by airline">
+      <header><h2>Avg rating, 15 most-reviewed airlines</h2><p class="caption">Click a bar to compare that airline</p></header>
+      <section><div id="by-airline" class="chart" data-anfra-query="byAirline"></div></section>
+      <div id="by-airline-status" class="status"></div>
+    </section>
+    <section class="card" data-anfra-block="trend" data-anfra-label="Avg rating over time" data-anfra-control="grain">
+      <header>
+        <h2>Avg rating over time</h2>
+        <div class="legend caption">
+          <span><span class="swatch" id="swatch-pick"></span><span id="legend-pick">Airline</span></span>
+          <span><span class="swatch" id="swatch-rest"></span>Rest of airlines</span>
+        </div>
+        <div class="button-group" role="group" aria-label="Date grain" style="margin-top: 8px">
+          <button class="btn" data-variant="outline" type="button" data-grain="month">Month</button>
+          <button class="btn" data-variant="secondary" type="button" data-grain="quarter" aria-pressed="true">Quarter</button>
+          <button class="btn" data-variant="outline" type="button" data-grain="year">Year</button>
+        </div>
+      </header>
+      <section><div id="trend" class="chart" data-anfra-query="trendPick trendRest"></div></section>
+      <div id="trend-status" class="status"></div>
+    </section>
+  </div>
+
+  <script>
+    // ---- Design layer: follow the OS light/dark setting (no storage: the frame is sandboxed). ----
+    const darkQuery = window.matchMedia('(prefers-color-scheme: dark)');
+    const applyTheme = () => document.documentElement.classList.toggle('dark', darkQuery.matches);
+    applyTheme();
+
+    function chartTheme () {
+      const css = getComputedStyle(document.documentElement);
+      const get = (name) => css.getPropertyValue(name).trim();
+      return {
+        text: get('--chart-text'),
+        grid: get('--chart-grid'),
+        cat: [1, 2, 3, 4, 5, 6, 7, 8].map((n) => get(`--chart-cat-${n}`)),
+      };
+    }
+
+    // ---- SDK wiring ----
+    const DATASET = 'airline_reviews';
+    const AIRLINE = 'dim_airline.airline_name';
+    const SEAT = 'fct_airline_review.seat_type';
+    const DATE = 'fct_airline_review.date_submitted';
+    const DEFAULT_AIRLINE = 'british airways';
+
+    // [alias, field, label, kind]; kind picks the format and how the gap to the rest is shown.
+    const KPIS = [
+      ['reviews', 'review_count', 'Reviews', 'count'],
+      ['avg_rating', 'avg_rating', 'Avg rating', 'rating'],
+      ['recommend_rate', 'recommend_rate', '% recommended', 'pct'],
+      ['value_for_money', 'avg_value_for_money', 'Value for money', 'rating'],
+      ['seat_comfort', 'avg_seat_comfort', 'Seat comfort', 'rating'],
+      ['cabin_staff', 'avg_cabin_staff_service', 'Cabin staff', 'rating'],
+      ['food', 'avg_food_and_beverages', 'Food & beverages', 'rating'],
+      ['ground_service', 'avg_ground_service', 'Ground service', 'rating'],
+    ];
+    const kpiAql = `explore { measures { ${KPIS.map(([alias, field]) => `${alias}: fct_airline_review.${field}`).join(', ')} } }`;
+    const trendAql = `
+      explore {
+        dimensions { period: ${DATE} }
+        measures { reviews: fct_airline_review.review_count, avg_rating: fct_airline_review.avg_rating }
+        sorts { period asc }
+      }
+    `;
+
+    const app = Anfra.createApp({ title: 'Airline vs Rest' });
+
+    // "Airline" queries filter airline = X; "rest" queries filter airline != X. Same AQL each.
+    const kpiPick = app.createQuery('kpiPick', { dataset: DATASET, aql: kpiAql });
+    const kpiRest = app.createQuery('kpiRest', { dataset: DATASET, aql: kpiAql });
+    const trendPick = app.createQuery('trendPick', { dataset: DATASET, aql: trendAql });
+    const trendRest = app.createQuery('trendRest', { dataset: DATASET, aql: trendAql });
+    // pageSize 15 + sort by reviews: the 15 most-reviewed airlines.
+    const byAirline = app.createQuery('byAirline', {
+      dataset: DATASET,
+      pageSize: 15,
+      aql: `
+        explore {
+          dimensions { airline: ${AIRLINE} }
+          measures { reviews: fct_airline_review.review_count, avg_rating: fct_airline_review.avg_rating }
+          sorts { reviews desc }
+        }
+      `,
+    });
+
+    const pick = app.createFilter('pick', { dataset: DATASET, field: AIRLINE, default: { operator: 'is', values: [DEFAULT_AIRLINE] } });
+    const pickRest = app.createFilter('pickRest', { dataset: DATASET, field: AIRLINE, default: { operator: 'is_not', values: [DEFAULT_AIRLINE] } });
+    const seat = app.createFilter('seat', { dataset: DATASET, field: SEAT });
+    const grain = app.createDateDrill('grain', { default: 'quarter' });
+
+    app.mapControl(pick, kpiPick, { field: AIRLINE });
+    app.mapControl(pick, trendPick, { field: AIRLINE });
+    app.mapControl(pickRest, kpiRest, { field: AIRLINE });
+    app.mapControl(pickRest, trendRest, { field: AIRLINE });
+    for (const query of [kpiPick, kpiRest, trendPick, trendRest, byAirline]) {
+      app.mapControl(seat, query, { field: SEAT });
+    }
+    app.mapControl(grain, trendPick, { field: DATE });
+    app.mapControl(grain, trendRest, { field: DATE });
+
+    let picked = DEFAULT_AIRLINE;
+    function setAirline (name) {
+      picked = name;
+      pick.setCondition({ operator: 'is', values: [name] });
+      pickRest.setCondition({ operator: 'is_not', values: [name] });
+      app.execute();
+    }
+
+    const fmt = {
+      count: new Intl.NumberFormat(),
+      rating: new Intl.NumberFormat(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 }),
+      pct: new Intl.NumberFormat(undefined, { style: 'percent', maximumFractionDigits: 1 }),
+    };
+    const signed = new Intl.NumberFormat(undefined, { signDisplay: 'exceptZero', minimumFractionDigits: 2, maximumFractionDigits: 2 });
+    const signedPp = new Intl.NumberFormat(undefined, { signDisplay: 'exceptZero', maximumFractionDigits: 1 });
+    const show = (value, kind) => (value == null ? 'n/a' : fmt[kind].format(value));
+
+    const byAirlineChart = echarts.init(document.getElementById('by-airline'));
+    const trendChart = echarts.init(document.getElementById('trend'));
+    const logged = new Set();
+
+    // The four states of a query: loading, error, no rows, success (status stays hidden).
+    function renderStatus (queries, elementId) {
+      const el = document.getElementById(elementId);
+      el.replaceChildren();
+      const failed = queries.find((query) => query.state === 'error');
+      if (failed) {
+        const alert = Object.assign(document.createElement('div'), { className: 'alert' });
+        alert.dataset.variant = 'destructive';
+        const title = document.createElement('h2');
+        title.textContent = "Couldn't load this chart";
+        const detail = document.createElement('section');
+        detail.textContent = failed.error.message;
+        alert.append(title, detail);
+        el.append(alert);
+      } else if (queries.some((query) => query.state === 'executing')) {
+        el.append(Object.assign(document.createElement('div'), { className: 'skeleton' }));
+      } else if (queries.every((query) => query.state === 'success' && query.result.rows.length === 0)) {
+        el.append(Object.assign(document.createElement('div'), { className: 'empty', textContent: 'No reviews for these filters' }));
+      }
+      el.classList.toggle('visible', el.childElementCount > 0);
+    }
+
+    function logFirstResult (query) {
+      if (query.state !== 'success' || logged.has(query.name)) return;
+      logged.add(query.name);
+      console.log(query.name, 'first row', query.result.rows[0], 'executed AQL', query.result.debug?.executedAql);
+    }
+
+    function axisStyle (theme) {
+      return {
+        axisLabel: { color: theme.text },
+        axisLine: { lineStyle: { color: theme.grid } },
+        splitLine: { lineStyle: { color: theme.grid } },
+      };
+    }
+
+    // Gap to the rest: points for ratings, percentage points for %, share of all reviews for counts.
+    function deltaText (kind, mine, rest) {
+      if (mine == null || rest == null) return ['', ''];
+      if (kind === 'count') return [`${fmt.pct.format(mine / (mine + rest))} of reviews`, ''];
+      const diff = mine - rest;
+      const text = kind === 'pct' ? `${signedPp.format(diff * 100)} pp` : signed.format(diff);
+      return [text, diff > 0 ? 'up' : diff < 0 ? 'down' : ''];
+    }
+
+    function renderKpis () {
+      const kpis = document.getElementById('kpis');
+      const mineRow = kpiPick.result?.rows[0] ?? {};
+      const restRow = kpiRest.result?.rows[0] ?? {};
+      const loading = kpiPick.state === 'executing' || kpiRest.state === 'executing';
+      const error = [kpiPick, kpiRest].find((query) => query.state === 'error');
+      kpis.replaceChildren(...KPIS.map(([alias, , label, kind]) => {
+        const num = (row) => (row[alias] == null ? null : Number(row[alias]));
+        const mine = num(mineRow);
+        const rest = num(restRow);
+        const [text, dir] = deltaText(kind, mine, rest);
+        const card = document.createElement('div');
+        card.className = 'card kpi';
+        card.dataset.anfraBlock = `kpi-${alias}`;
+        card.dataset.anfraLabel = label;
+        card.dataset.anfraQuery = 'kpiPick kpiRest';
+        card.innerHTML = `
+          <div class="caption"></div>
+          <div class="value"></div>
+          <div class="rest caption"><span class="rest-value"></span><span class="delta ${dir}"></span></div>`;
+        card.querySelector('.caption').textContent = label;
+        card.querySelector('.value').textContent = error ? 'Error' : loading && !kpiPick.result ? '...' : show(mine, kind);
+        card.querySelector('.rest-value').textContent = `Rest ${show(rest, kind)}`;
+        card.querySelector('.delta').textContent = text;
+        if (error) card.title = error.error.message;
+        return card;
+      }));
+    }
+
+    function render () {
+      renderKpis();
+      renderStatus([byAirline], 'by-airline-status');
+      renderStatus([trendPick, trendRest], 'trend-status');
+      [kpiPick, kpiRest, trendPick, trendRest, byAirline].forEach(logFirstResult);
+      const theme = chartTheme();
+      const pickColor = theme.cat[0];
+      const restColor = theme.cat[7];
+      document.getElementById('swatch-pick').style.background = pickColor;
+      document.getElementById('swatch-rest').style.background = restColor;
+      document.getElementById('legend-pick').textContent = picked;
+
+      if (byAirline.result) {
+        // Reversed so the most-reviewed airline sits at the top of the horizontal bars.
+        const rows = [...byAirline.result.rows].reverse();
+        byAirlineChart.setOption({
+          animation: false,
+          textStyle: { color: theme.text },
+          grid: { left: 8, right: 24, top: 8, bottom: 8, containLabel: true },
+          tooltip: {
+            formatter: (p) => `${p.name}<br>Avg rating ${fmt.rating.format(p.value)}<br>${fmt.count.format(rows[p.dataIndex].reviews)} reviews`,
+          },
+          yAxis: { type: 'category', data: rows.map((row) => row.airline), ...axisStyle(theme) },
+          xAxis: { type: 'value', min: 0, max: 5, axisLabel: { color: theme.text }, splitLine: axisStyle(theme).splitLine },
+          series: [{
+            type: 'bar',
+            itemStyle: { borderRadius: [0, 4, 4, 0] },
+            data: rows.map((row) => ({
+              value: Number(row.avg_rating), // numbers arrive as strings; a chart needs numbers
+              itemStyle: { color: row.airline === picked ? pickColor : restColor, opacity: row.airline === picked ? 1 : 0.45 },
+            })),
+          }],
+        });
+      }
+
+      if (trendPick.result || trendRest.result) {
+        // The two queries can cover different periods: line both up on the union of periods.
+        const toMap = (query) => new Map((query.result?.rows ?? []).map((row) => [String(row.period).slice(0, 10), row]));
+        const mine = toMap(trendPick);
+        const rest = toMap(trendRest);
+        const periods = [...new Set([...mine.keys(), ...rest.keys()])].sort();
+        // null (no rated reviews that period) stays a gap, not a 0
+        const series = (map) => periods.map((p) => (map.get(p)?.avg_rating == null ? null : Number(map.get(p).avg_rating)));
+        trendChart.setOption({
+          animation: false,
+          textStyle: { color: theme.text },
+          grid: { left: 8, right: 16, top: 16, bottom: 8, containLabel: true },
+          tooltip: { trigger: 'axis', valueFormatter: (v) => (v == null ? 'n/a' : fmt.rating.format(v)) },
+          xAxis: { type: 'category', data: periods, ...axisStyle(theme) },
+          yAxis: { type: 'value', min: 0, max: 5, axisLabel: { color: theme.text }, splitLine: axisStyle(theme).splitLine },
+          series: [
+            { name: picked, type: 'line', showSymbol: false, connectNulls: true, lineStyle: { color: pickColor, width: 2 }, itemStyle: { color: pickColor }, data: series(mine) },
+            { name: 'Rest of airlines', type: 'line', showSymbol: false, lineStyle: { color: restColor, width: 2, type: 'dashed' }, itemStyle: { color: restColor }, data: series(rest) },
+          ],
+        }, { replaceMerge: ['series'] });
+      }
+    }
+
+    app.subscribe(render);
+    darkQuery.addEventListener('change', () => { applyTheme(); render(); });
+
+    const airlineBox = document.getElementById('airline-combobox');
+    const airlineList = document.getElementById('airline-listbox');
+    const seatBox = document.getElementById('seat-combobox');
+    const seatList = document.getElementById('seat-listbox');
+
+    byAirlineChart.on('click', (params) => {
+      const name = [...byAirline.result.rows].reverse()[params.dataIndex].airline;
+      airlineBox.setValue?.(name);
+      setAirline(name);
+    });
+
+    // Basecoat initializes comboboxes on DOMContentLoaded, so wait for it before refresh().
+    const domReady = document.readyState === 'loading'
+      ? new Promise((resolve) => document.addEventListener('DOMContentLoaded', resolve))
+      : Promise.resolve();
+    function fillOptions (list, values) {
+      list.replaceChildren(...values.map((value) => {
+        const option = document.createElement('div');
+        option.setAttribute('role', 'option');
+        option.dataset.value = String(value);
+        option.textContent = String(value);
+        return option;
+      }));
+    }
+    Promise.all([pick.loadOptions(), seat.loadOptions(), domReady]).then(([airlines, seats]) => {
+      fillOptions(airlineList, airlines);
+      airlineBox.refresh();
+      airlineBox.setValue?.(DEFAULT_AIRLINE);
+      fillOptions(seatList, seats);
+      seatBox.refresh();
+    }).catch((err) => console.error('Could not load filter options', err));
+
+    airlineBox.addEventListener('change', (event) => {
+      const value = event.detail.value;
+      if (typeof value === 'string' && value) setAirline(value);
+    });
+    seatBox.addEventListener('change', (event) => {
+      const values = Array.isArray(event.detail.value) ? event.detail.value : [];
+      seat.setCondition({ operator: 'is', values });
+      app.execute();
+    });
+
+    document.querySelectorAll('[data-grain]').forEach((button) => {
+      button.addEventListener('click', () => {
+        document.querySelectorAll('[data-grain]').forEach((other) => {
+          const on = other === button;
+          other.dataset.variant = on ? 'secondary' : 'outline';
+          other.setAttribute('aria-pressed', String(on));
+        });
+        grain.setGrain(button.dataset.grain);
+        app.execute();
+      });
+    });
+
+    window.addEventListener('resize', () => {
+      byAirlineChart.resize();
+      trendChart.resize();
+    });
+
+    app.execute();
+  </script>
+</body>
+</html>

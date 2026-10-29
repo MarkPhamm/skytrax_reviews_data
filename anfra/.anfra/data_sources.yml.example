@@ -1,0 +1,21 @@
+# The data sources this repo's models query, by name: a model's or dataset's
+# data_source_name is one of these names. Each connection is passed as-is to
+# the database driver: its keys depend on the type.
+#
+# data_sources.yml holds credentials, so it is git-ignored; this repo commits
+# data_sources.yml.example instead, without them.
+#
+# settings, optional, are how the query engine connects and queries: timeouts,
+# requiring SSL and the like. Without them, the engine's defaults.
+data_sources:
+  skytrax:
+    type: duckdb
+    connection:
+      host: localhost
+      port: 5432
+      user: analyst
+      password: change-me
+      dbname: analytics
+    # settings:
+    #   statement_timeout_ms: 300000
+    #   require_ssl: true
