@@ -1,0 +1,18 @@
+Model dim_airport {
+  type: 'table'
+  label: 'Airports'
+  data_source_name: 'skytrax'
+  table_name: '"airport_reviews"."dim_airport"'
+
+  dimension airport_id {
+    label: 'Airport Id'
+    type: 'number'
+    primary_key: true
+    definition: @sql {{ #SOURCE.airport_id }};;
+  }
+  dimension airport_name {
+    label: 'Airport'
+    type: 'text'
+    definition: @sql {{ #SOURCE.airport_name_cleaned }};;
+  }
+}

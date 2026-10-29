@@ -1,0 +1,13 @@
+Dataset lounge_reviews {
+  label: 'Lounge Reviews'
+  description: 'Skytrax lounge reviews with the airline running the lounge.'
+  data_source_name: 'skytrax'
+
+  models: [
+    fct_lounge_review,
+    dim_airline,
+  ]
+  relationships: [
+    relationship(fct_lounge_review.airline_id > dim_airline.airline_id, true),
+  ]
+}

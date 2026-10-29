@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Airline vs Rest</title>
+  <title>Skytrax Dashboard</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource-variable/inter@5.2.5/index.css"
     integrity="sha384-ZTIcl2CmY0wyM9ANOhomBco7rEUIlWztf6lGcLKCocKUrIgGCsfisuZyE+hadW8K" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/basecoat-css@1.0.2/dist/basecoat.cdn.min.css"
@@ -101,8 +101,8 @@
     .status .skeleton { height: 100%; border-radius: 10px; }
     .status .empty { text-align: center; color: var(--muted-foreground); }
 
-    /* KPI row: picked airline (big) vs the rest of the airlines (small). */
-    .kpis { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 16px; }
+    /* KPI row: picked airline/airport (big) vs the rest (small). */
+    .kpis { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 24px; }
     @media (max-width: 1000px) { .kpis { grid-template-columns: repeat(2, 1fr); } }
     .kpi { padding: 16px; gap: 4px; }
     .kpi .value { font-size: 20px; line-height: 28px; font-weight: 600; }
@@ -110,71 +110,103 @@
     .delta.up { color: #3f9d6b; }
     .delta.down { color: #d4527a; }
     .legend { display: flex; gap: 16px; }
+    .swatch { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 6px; }
     /* Basecoat's outline buttons read as "selected" in a group; mark the pressed one explicitly. */
     .button-group [aria-pressed="true"] { background: var(--primary); color: var(--primary-foreground); }
-    .swatch { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 6px; }
+    .tabs-bar { margin-bottom: 16px; }
+    .page[hidden], .field-group[hidden] { display: none; }
+
+    /* One section per metric: a heading with the comparison, then two charts side by side. */
+    .metric-section { margin-bottom: 16px; }
+    .metric-section > header { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 8px; }
+    .metric-section .grid { grid-template-columns: 1fr 1fr; }
+    @media (max-width: 800px) { .metric-section .grid { grid-template-columns: 1fr; } }
+    .metric-section .chart { height: 300px; }
+    .metric-section .grid > div { min-width: 0; } /* let charts shrink with the column */
+    .chart-title { font-size: 12px; line-height: 16px; color: var(--muted-foreground); margin-bottom: 4px; }
   </style>
 </head>
 <body>
   <div class="header">
-    <h1>Airline vs the rest</h1>
-    <div class="caption">Skytrax airline reviews. Ratings are 1-5 averages over the reviews that filled them in. "Rest" is every other airline combined.</div>
+    <h1>Skytrax: one airline or airport vs the rest</h1>
+    <div class="caption">Ratings are 1-5 averages over the reviews that filled them in. "Rest" is every other airline (or airport) combined, in the same review type.</div>
+  </div>
+
+  <div class="tabs-bar" data-anfra-container="tabs" data-anfra-label="Pages">
+    <div class="button-group" role="group" aria-label="Review type" id="tabs"></div>
   </div>
 
   <div class="card filters" data-anfra-container="controls" data-anfra-label="Controls">
-    <div class="field-group" data-anfra-block="airline-picker" data-anfra-label="Airline" data-anfra-control="pick pickRest">
+    <div class="field-group" id="airline-group" data-anfra-block="airline-picker" data-anfra-label="Airline">
       <label for="airline-input">Airline</label>
       <div id="airline-combobox" class="combobox" style="width: 260px" data-auto-highlight="true">
         <input id="airline-input" type="text" role="combobox" placeholder="Pick an airline" autocomplete="off"
                autocorrect="off" spellcheck="false" aria-autocomplete="list" aria-expanded="false"
                aria-controls="airline-listbox">
-        <div id="airline-popover" data-popover aria-hidden="true">
+        <div data-popover aria-hidden="true">
           <div role="listbox" id="airline-listbox" aria-orientation="vertical" data-empty="No airlines found."></div>
         </div>
         <input type="hidden" name="airline" value="">
       </div>
     </div>
 
-    <div class="field-group" data-anfra-block="seat-picker" data-anfra-label="Seat type" data-anfra-control="seat">
-      <label for="seat-input">Seat type</label>
-      <div id="seat-combobox" class="combobox" style="width: 220px" data-auto-highlight="true">
-        <input id="seat-input" type="text" role="combobox" placeholder="All seat types" autocomplete="off"
+    <div class="field-group" id="airport-group" data-anfra-block="airport-picker" data-anfra-label="Airport" hidden>
+      <label for="airport-input">Airport</label>
+      <div id="airport-combobox" class="combobox" style="width: 260px" data-auto-highlight="true">
+        <input id="airport-input" type="text" role="combobox" placeholder="Pick an airport" autocomplete="off"
                autocorrect="off" spellcheck="false" aria-autocomplete="list" aria-expanded="false"
-               aria-controls="seat-listbox">
-        <div id="seat-popover" data-popover aria-hidden="true">
-          <div role="listbox" id="seat-listbox" aria-orientation="vertical" aria-multiselectable="true"
-               data-empty="No seat types found."></div>
+               aria-controls="airport-listbox">
+        <div data-popover aria-hidden="true">
+          <div role="listbox" id="airport-listbox" aria-orientation="vertical" data-empty="No airports found."></div>
         </div>
-        <input type="hidden" name="seat" value="[]">
+        <input type="hidden" name="airport" value="">
+      </div>
+    </div>
+
+    <div class="field-group" data-anfra-block="traveller-picker" data-anfra-label="Type of traveller">
+      <label for="traveller-input">Type of traveller</label>
+      <div id="traveller-combobox" class="combobox" style="width: 220px" data-auto-highlight="true">
+        <input id="traveller-input" type="text" role="combobox" placeholder="All travellers" autocomplete="off"
+               autocorrect="off" spellcheck="false" aria-autocomplete="list" aria-expanded="false"
+               aria-controls="traveller-listbox">
+        <div data-popover aria-hidden="true">
+          <div role="listbox" id="traveller-listbox" aria-orientation="vertical" aria-multiselectable="true"
+               data-empty="No traveller types found."></div>
+        </div>
+        <input type="hidden" name="traveller" value="[]">
+      </div>
+    </div>
+
+    <div class="field-group" data-anfra-block="date-picker" data-anfra-label="Date submitted" data-anfra-control="airline_dates airport_dates seat_dates lounge_dates">
+      <label for="date-from">Date submitted</label>
+      <div class="date-range">
+        <input id="date-from" class="input" type="date" aria-label="From">
+        <span class="caption">to</span>
+        <input id="date-to" class="input" type="date" aria-label="To">
+      </div>
+    </div>
+
+    <div class="field-group">
+      <span class="caption">Quick range</span>
+      <div class="presets">
+        <button class="btn" data-variant="outline" type="button" data-years="1">1y</button>
+        <button class="btn" data-variant="outline" type="button" data-years="3">3y</button>
+        <button class="btn" data-variant="outline" type="button" data-years="5">5y</button>
+        <button class="btn" data-variant="ghost" type="button" data-years="all">All</button>
+      </div>
+    </div>
+
+    <div class="field-group" data-anfra-block="grain-picker" data-anfra-label="Trend grain" data-anfra-control="grain">
+      <span class="caption">Trend grain</span>
+      <div class="button-group" role="group" aria-label="Date grain">
+        <button class="btn" data-variant="outline" type="button" data-grain="month">Month</button>
+        <button class="btn" data-variant="secondary" type="button" data-grain="quarter" aria-pressed="true">Quarter</button>
+        <button class="btn" data-variant="outline" type="button" data-grain="year">Year</button>
       </div>
     </div>
   </div>
 
-  <div class="kpis" data-anfra-container="kpis" data-anfra-label="Airline vs rest" id="kpis"></div>
-
-  <div class="grid" data-anfra-container="charts" data-anfra-label="Charts">
-    <section class="card" data-anfra-block="by-airline" data-anfra-label="Avg rating by airline">
-      <header><h2>Avg rating, 15 most-reviewed airlines</h2><p class="caption">Click a bar to compare that airline</p></header>
-      <section><div id="by-airline" class="chart" data-anfra-query="byAirline"></div></section>
-      <div id="by-airline-status" class="status"></div>
-    </section>
-    <section class="card" data-anfra-block="trend" data-anfra-label="Avg rating over time" data-anfra-control="grain">
-      <header>
-        <h2>Avg rating over time</h2>
-        <div class="legend caption">
-          <span><span class="swatch" id="swatch-pick"></span><span id="legend-pick">Airline</span></span>
-          <span><span class="swatch" id="swatch-rest"></span>Rest of airlines</span>
-        </div>
-        <div class="button-group" role="group" aria-label="Date grain" style="margin-top: 8px">
-          <button class="btn" data-variant="outline" type="button" data-grain="month">Month</button>
-          <button class="btn" data-variant="secondary" type="button" data-grain="quarter" aria-pressed="true">Quarter</button>
-          <button class="btn" data-variant="outline" type="button" data-grain="year">Year</button>
-        </div>
-      </header>
-      <section><div id="trend" class="chart" data-anfra-query="trendPick trendRest"></div></section>
-      <div id="trend-status" class="status"></div>
-    </section>
-  </div>
+  <div id="pages"></div>
 
   <script>
     // ---- Design layer: follow the OS light/dark setting (no storage: the frame is sandboxed). ----
@@ -192,76 +224,178 @@
       };
     }
 
-    // ---- SDK wiring ----
-    const DATASET = 'airline_reviews';
-    const AIRLINE = 'dim_airline.airline_name';
-    const SEAT = 'fct_airline_review.seat_type';
-    const DATE = 'fct_airline_review.date_submitted';
-    const DEFAULT_AIRLINE = 'british airways';
-
-    // [alias, field, label, kind]; kind picks the format and how the gap to the rest is shown.
-    const KPIS = [
+    // ---- Page config: one tab per fact. `group` is which picker drives the comparison. ----
+    const BASE_KPIS = [
       ['reviews', 'review_count', 'Reviews', 'count'],
       ['avg_rating', 'avg_rating', 'Avg rating', 'rating'],
       ['recommend_rate', 'recommend_rate', '% recommended', 'pct'],
-      ['value_for_money', 'avg_value_for_money', 'Value for money', 'rating'],
-      ['seat_comfort', 'avg_seat_comfort', 'Seat comfort', 'rating'],
-      ['cabin_staff', 'avg_cabin_staff_service', 'Cabin staff', 'rating'],
-      ['food', 'avg_food_and_beverages', 'Food & beverages', 'rating'],
-      ['ground_service', 'avg_ground_service', 'Ground service', 'rating'],
     ];
-    const kpiAql = `explore { measures { ${KPIS.map(([alias, field]) => `${alias}: fct_airline_review.${field}`).join(', ')} } }`;
-    const trendAql = `
-      explore {
-        dimensions { period: ${DATE} }
-        measures { reviews: fct_airline_review.review_count, avg_rating: fct_airline_review.avg_rating }
-        sorts { period asc }
-      }
-    `;
+    const PAGES = [
+      {
+        key: 'airline', label: 'Airline reviews', dataset: 'airline_reviews', fact: 'fct_airline_review',
+        group: 'airline', entityField: 'dim_airline.airline_name',
+        ratings: [['avg_value_for_money', 'Value for money'], ['avg_seat_comfort', 'Seat comfort'],
+          ['avg_cabin_staff_service', 'Cabin staff'], ['avg_food_and_beverages', 'Food & beverages'], ['avg_ground_service', 'Ground service']],
+      },
+      {
+        key: 'airport', label: 'Airport reviews', dataset: 'airport_reviews', fact: 'fct_airport_review',
+        group: 'airport', entityField: 'dim_airport.airport_name',
+        ratings: [['avg_queuing_times', 'Queuing times'], ['avg_terminal_cleanliness', 'Terminal cleanliness'],
+          ['avg_terminal_signs', 'Terminal signs'], ['avg_airport_shopping', 'Shopping'], ['avg_airport_staff', 'Airport staff']],
+      },
+      {
+        key: 'seat', label: 'Seat reviews', dataset: 'seat_reviews', fact: 'fct_seat_review',
+        group: 'airline', entityField: 'dim_airline.airline_name',
+        ratings: [['avg_seat_legroom', 'Legroom'], ['avg_seat_recline', 'Recline'], ['avg_seat_width', 'Seat width'],
+          ['avg_aisle_space', 'Aisle space'], ['avg_viewing_tv_screen', 'TV screen']],
+      },
+      {
+        key: 'lounge', label: 'Lounge reviews', dataset: 'lounge_reviews', fact: 'fct_lounge_review',
+        group: 'airline', entityField: 'dim_airline.airline_name',
+        ratings: [['avg_comfort', 'Comfort'], ['avg_cleanliness', 'Cleanliness'], ['avg_bar_and_beverages', 'Bar & beverages'],
+          ['avg_catering', 'Catering'], ['avg_staff_service', 'Staff service']],
+      },
+    ];
+    const DEFAULTS = { airline: 'british airways', airport: 'london heathrow' };
+    const NOUN = { airline: 'airlines', airport: 'airports' };
 
-    const app = Anfra.createApp({ title: 'Airline vs Rest' });
-
-    // "Airline" queries filter airline = X; "rest" queries filter airline != X. Same AQL each.
-    const kpiPick = app.createQuery('kpiPick', { dataset: DATASET, aql: kpiAql });
-    const kpiRest = app.createQuery('kpiRest', { dataset: DATASET, aql: kpiAql });
-    const trendPick = app.createQuery('trendPick', { dataset: DATASET, aql: trendAql });
-    const trendRest = app.createQuery('trendRest', { dataset: DATASET, aql: trendAql });
-    // pageSize 15 + sort by reviews: the 15 most-reviewed airlines.
-    const byAirline = app.createQuery('byAirline', {
-      dataset: DATASET,
-      pageSize: 15,
-      aql: `
-        explore {
-          dimensions { airline: ${AIRLINE} }
-          measures { reviews: fct_airline_review.review_count, avg_rating: fct_airline_review.avg_rating }
-          sorts { reviews desc }
-        }
-      `,
-    });
-
-    const pick = app.createFilter('pick', { dataset: DATASET, field: AIRLINE, default: { operator: 'is', values: [DEFAULT_AIRLINE] } });
-    const pickRest = app.createFilter('pickRest', { dataset: DATASET, field: AIRLINE, default: { operator: 'is_not', values: [DEFAULT_AIRLINE] } });
-    const seat = app.createFilter('seat', { dataset: DATASET, field: SEAT });
+    // ---- SDK wiring ----
+    const app = Anfra.createApp({ title: 'Skytrax Dashboard' });
     const grain = app.createDateDrill('grain', { default: 'quarter' });
+    const picked = { ...DEFAULTS };
+    const groupFilters = { airline: [], airport: [] }; // [pickFilter, restFilter] pairs per picker
+    const travellerFilters = [];
+    const dateFilters = [];
 
-    app.mapControl(pick, kpiPick, { field: AIRLINE });
-    app.mapControl(pick, trendPick, { field: AIRLINE });
-    app.mapControl(pickRest, kpiRest, { field: AIRLINE });
-    app.mapControl(pickRest, trendRest, { field: AIRLINE });
-    for (const query of [kpiPick, kpiRest, trendPick, trendRest, byAirline]) {
-      app.mapControl(seat, query, { field: SEAT });
+    for (const page of PAGES) {
+      const f = (name) => `${page.fact}.${name}`;
+      page.kpis = [
+        ...BASE_KPIS.map(([alias, field, label, kind]) => [alias, f(field), label, kind]),
+        ...page.ratings.map(([field, label]) => [field, f(field), label, 'rating']),
+      ];
+      // Sections: avg rating, % recommended, each sub-rating, then review volume last.
+      page.sections = [...page.kpis.filter(([alias]) => alias !== 'reviews'), page.kpis[0]];
+      // Every query returns every metric, so one query feeds all the sections of a page.
+      const measures = page.kpis.map(([alias, field]) => `${alias}: ${field}`).join(', ');
+      const kpiAql = `explore { measures { ${measures} } }`;
+      const trendAql = `explore {
+        dimensions { period: ${f('date_submitted')} }
+        measures { ${measures} }
+        sorts { period asc }
+      }`;
+      const q = (name, aql, opts = {}) => app.createQuery(`${page.key}_${name}`, { dataset: page.dataset, aql, ...opts });
+      page.kpiPick = q('kpiPick', kpiAql);
+      page.kpiRest = q('kpiRest', kpiAql);
+      page.trendPick = q('trendPick', trendAql);
+      page.trendRest = q('trendRest', trendAql);
+      // pageSize 15 + sort by reviews: the 15 most-reviewed airlines/airports.
+      page.top = q('top', `explore {
+        dimensions { name: ${page.entityField} }
+        measures { ${measures} }
+        sorts { reviews desc }
+      }`, { pageSize: 15 });
+      page.queries = [page.kpiPick, page.kpiRest, page.trendPick, page.trendRest, page.top];
+
+      const def = DEFAULTS[page.group];
+      const pick = app.createFilter(`${page.key}_pick`, { dataset: page.dataset, field: page.entityField, default: { operator: 'is', values: [def] } });
+      const rest = app.createFilter(`${page.key}_rest`, { dataset: page.dataset, field: page.entityField, default: { operator: 'is_not', values: [def] } });
+      const traveller = app.createFilter(`${page.key}_traveller`, { dataset: page.dataset, field: f('type_of_traveller') });
+      const dates = app.createFilter(`${page.key}_dates`, { dataset: page.dataset, field: f('date_submitted') });
+      page.pickFilter = pick;
+      groupFilters[page.group].push([pick, rest]);
+      travellerFilters.push(traveller);
+      dateFilters.push(dates);
+
+      for (const query of [page.kpiPick, page.trendPick]) app.mapControl(pick, query, { field: page.entityField });
+      for (const query of [page.kpiRest, page.trendRest]) app.mapControl(rest, query, { field: page.entityField });
+      for (const query of page.queries) {
+        app.mapControl(traveller, query, { field: f('type_of_traveller') });
+        app.mapControl(dates, query, { field: f('date_submitted') });
+      }
+      app.mapControl(grain, page.trendPick, { field: f('date_submitted') });
+      app.mapControl(grain, page.trendRest, { field: f('date_submitted') });
     }
-    app.mapControl(grain, trendPick, { field: DATE });
-    app.mapControl(grain, trendRest, { field: DATE });
 
-    let picked = DEFAULT_AIRLINE;
-    function setAirline (name) {
-      picked = name;
-      pick.setCondition({ operator: 'is', values: [name] });
-      pickRest.setCondition({ operator: 'is_not', values: [name] });
+    function setEntity (group, name) {
+      picked[group] = name;
+      for (const [pick, rest] of groupFilters[group]) {
+        pick.setCondition({ operator: 'is', values: [name] });
+        rest.setCondition({ operator: 'is_not', values: [name] });
+      }
       app.execute();
     }
 
+    // ---- Page markup, built from the config ----
+    const pagesEl = document.getElementById('pages');
+    const tabsEl = document.getElementById('tabs');
+    for (const page of PAGES) {
+      const k = page.key;
+      const noun = NOUN[page.group];
+      const section = document.createElement('div');
+      section.className = 'page';
+      section.id = `page-${k}`;
+      section.dataset.anfraContainer = `page-${k}`;
+      section.dataset.anfraLabel = page.label;
+      section.innerHTML = `<div class="kpis" data-anfra-container="${k}-kpis" data-anfra-label="Summary"></div>` +
+        page.sections.map(([alias, , label]) => `
+          <section class="card metric-section" data-anfra-block="${k}-${alias}" data-anfra-label="${page.label}: ${label}"
+                   data-anfra-query="${k}_top ${k}_trendPick ${k}_trendRest">
+            <header><h2>${label}</h2><span class="caption" data-summary="${alias}"></span></header>
+            <section class="grid">
+              <div>
+                <div class="chart-title">${alias === 'reviews' ? `15 most-reviewed ${noun}` : `15 most-reviewed ${noun}, ranked. Dashed line: rest of ${noun}`}</div>
+                <div class="chart" data-chart="top" data-alias="${alias}"></div>
+              </div>
+              <div>
+                <div class="chart-title">${alias === 'reviews' ? 'Reviews over time (bars) and share of all reviews (line)' : `Over time: <span class="legend-pick"></span> (solid) vs rest of ${noun} (dashed)`}</div>
+                <div class="chart" data-chart="trend" data-alias="${alias}"></div>
+              </div>
+            </section>
+            <div class="status"></div>
+          </section>`).join('');
+      pagesEl.append(section);
+      page.el = section;
+      page.charts = null; // created the first time the tab is shown, when the charts have a size
+
+      const tab = Object.assign(document.createElement('button'), { className: 'btn', type: 'button', textContent: page.label });
+      tab.dataset.page = k;
+      tab.addEventListener('click', () => showPage(k));
+      tabsEl.append(tab);
+    }
+
+    function initCharts (page) {
+      page.charts = [...page.el.querySelectorAll('[data-chart]')].map((el) => {
+        const chart = echarts.init(el);
+        if (el.dataset.chart === 'top') {
+          chart.on('click', (params) => {
+            const name = params.name;
+            pickers[page.group].box.setValue?.(name);
+            setEntity(page.group, name);
+          });
+        }
+        return { el, chart, kind: el.dataset.chart, alias: el.dataset.alias };
+      });
+    }
+
+    let current = PAGES[0].key;
+    const currentPage = () => PAGES.find((p) => p.key === current);
+    function showPage (key) {
+      current = key;
+      const page = currentPage();
+      for (const p of PAGES) p.el.hidden = p.key !== key;
+      tabsEl.querySelectorAll('[data-page]').forEach((tab) => {
+        const on = tab.dataset.page === key;
+        tab.dataset.variant = on ? 'secondary' : 'outline';
+        tab.setAttribute('aria-pressed', String(on));
+      });
+      document.getElementById('airline-group').hidden = page.group !== 'airline';
+      document.getElementById('airport-group').hidden = page.group !== 'airport';
+      if (!page.charts) initCharts(page);
+      page.charts.forEach(({ chart }) => chart.resize());
+      render();
+    }
+
+    // ---- Rendering ----
     const fmt = {
       count: new Intl.NumberFormat(),
       rating: new Intl.NumberFormat(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 }),
@@ -270,26 +404,23 @@
     const signed = new Intl.NumberFormat(undefined, { signDisplay: 'exceptZero', minimumFractionDigits: 2, maximumFractionDigits: 2 });
     const signedPp = new Intl.NumberFormat(undefined, { signDisplay: 'exceptZero', maximumFractionDigits: 1 });
     const show = (value, kind) => (value == null ? 'n/a' : fmt[kind].format(value));
-
-    const byAirlineChart = echarts.init(document.getElementById('by-airline'));
-    const trendChart = echarts.init(document.getElementById('trend'));
+    const num = (v) => (v == null ? null : Number(v)); // numbers arrive as strings; Number(null) would be 0
     const logged = new Set();
 
-    // The four states of a query: loading, error, no rows, success (status stays hidden).
-    function renderStatus (queries, elementId) {
-      const el = document.getElementById(elementId);
+    // The four states of the queries behind an element: loading, error, no rows, success (hidden).
+    function renderStatus (queries, el) {
       el.replaceChildren();
       const failed = queries.find((query) => query.state === 'error');
       if (failed) {
         const alert = Object.assign(document.createElement('div'), { className: 'alert' });
         alert.dataset.variant = 'destructive';
         const title = document.createElement('h2');
-        title.textContent = "Couldn't load this chart";
+        title.textContent = "Couldn't load this section";
         const detail = document.createElement('section');
         detail.textContent = failed.error.message;
         alert.append(title, detail);
         el.append(alert);
-      } else if (queries.some((query) => query.state === 'executing')) {
+      } else if (queries.some((query) => query.state === 'executing' && !query.result)) {
         el.append(Object.assign(document.createElement('div'), { className: 'skeleton' }));
       } else if (queries.every((query) => query.state === 'success' && query.result.rows.length === 0)) {
         el.append(Object.assign(document.createElement('div'), { className: 'empty', textContent: 'No reviews for these filters' }));
@@ -320,28 +451,24 @@
       return [text, diff > 0 ? 'up' : diff < 0 ? 'down' : ''];
     }
 
-    function renderKpis () {
-      const kpis = document.getElementById('kpis');
-      const mineRow = kpiPick.result?.rows[0] ?? {};
-      const restRow = kpiRest.result?.rows[0] ?? {};
-      const loading = kpiPick.state === 'executing' || kpiRest.state === 'executing';
-      const error = [kpiPick, kpiRest].find((query) => query.state === 'error');
-      kpis.replaceChildren(...KPIS.map(([alias, , label, kind]) => {
-        const num = (row) => (row[alias] == null ? null : Number(row[alias]));
-        const mine = num(mineRow);
-        const rest = num(restRow);
+    function renderKpis (page, mineRow, restRow) {
+      const loading = !page.kpiPick.result && page.kpiPick.state === 'executing';
+      const error = [page.kpiPick, page.kpiRest].find((query) => query.state === 'error');
+      page.el.querySelector('.kpis').replaceChildren(...page.kpis.map(([alias, , label, kind]) => {
+        const mine = num(mineRow[alias]);
+        const rest = num(restRow[alias]);
         const [text, dir] = deltaText(kind, mine, rest);
         const card = document.createElement('div');
         card.className = 'card kpi';
-        card.dataset.anfraBlock = `kpi-${alias}`;
+        card.dataset.anfraBlock = `${page.key}-kpi-${alias}`;
         card.dataset.anfraLabel = label;
-        card.dataset.anfraQuery = 'kpiPick kpiRest';
+        card.dataset.anfraQuery = `${page.key}_kpiPick ${page.key}_kpiRest`;
         card.innerHTML = `
           <div class="caption"></div>
           <div class="value"></div>
           <div class="rest caption"><span class="rest-value"></span><span class="delta ${dir}"></span></div>`;
         card.querySelector('.caption').textContent = label;
-        card.querySelector('.value').textContent = error ? 'Error' : loading && !kpiPick.result ? '...' : show(mine, kind);
+        card.querySelector('.value').textContent = error ? 'Error' : loading ? '...' : show(mine, kind);
         card.querySelector('.rest-value').textContent = `Rest ${show(rest, kind)}`;
         card.querySelector('.delta').textContent = text;
         if (error) card.title = error.error.message;
@@ -349,82 +476,131 @@
       }));
     }
 
-    function render () {
-      renderKpis();
-      renderStatus([byAirline], 'by-airline-status');
-      renderStatus([trendPick, trendRest], 'trend-status');
-      [kpiPick, kpiRest, trendPick, trendRest, byAirline].forEach(logFirstResult);
-      const theme = chartTheme();
+    // Left chart: the top 15 on this metric, picked one highlighted, the rest's value as a dashed line.
+    function topOption (page, alias, kind, restValue, theme, name) {
+      const rows = (page.top.result?.rows ?? [])
+        .filter((row) => row[alias] != null)
+        .sort((a, b) => Number(a[alias]) - Number(b[alias])); // ascending: the best ends up on top
       const pickColor = theme.cat[0];
       const restColor = theme.cat[7];
-      document.getElementById('swatch-pick').style.background = pickColor;
-      document.getElementById('swatch-rest').style.background = restColor;
-      document.getElementById('legend-pick').textContent = picked;
-
-      if (byAirline.result) {
-        // Reversed so the most-reviewed airline sits at the top of the horizontal bars.
-        const rows = [...byAirline.result.rows].reverse();
-        byAirlineChart.setOption({
-          animation: false,
-          textStyle: { color: theme.text },
-          grid: { left: 8, right: 24, top: 8, bottom: 8, containLabel: true },
-          tooltip: {
-            formatter: (p) => `${p.name}<br>Avg rating ${fmt.rating.format(p.value)}<br>${fmt.count.format(rows[p.dataIndex].reviews)} reviews`,
+      const valueAxis = kind === 'rating' ? { min: 0, max: 5 } : kind === 'pct' ? { min: 0, max: 1 } : {};
+      return {
+        animation: false,
+        textStyle: { color: theme.text },
+        grid: { left: 8, right: 24, top: 24, bottom: 8, containLabel: true }, // top room for the rest line's label
+        tooltip: { formatter: (p) => `${p.name}<br>${show(p.value, kind)}` },
+        yAxis: { type: 'category', data: rows.map((row) => row.name), ...axisStyle(theme), axisLabel: { color: theme.text, fontSize: 11 } },
+        xAxis: { type: 'value', ...valueAxis, axisLabel: { color: theme.text, formatter: (v) => show(v, kind) }, splitLine: axisStyle(theme).splitLine },
+        series: [{
+          type: 'bar',
+          itemStyle: { borderRadius: [0, 4, 4, 0] },
+          data: rows.map((row) => ({
+            value: Number(row[alias]),
+            itemStyle: { color: row.name === name ? pickColor : restColor, opacity: row.name === name ? 1 : 0.45 },
+          })),
+          markLine: kind === 'count' || restValue == null ? undefined : {
+            symbol: 'none', silent: true,
+            lineStyle: { color: theme.text, type: 'dashed' },
+            label: { formatter: `Rest ${show(restValue, kind)}`, color: theme.text },
+            data: [{ xAxis: restValue }],
           },
-          yAxis: { type: 'category', data: rows.map((row) => row.airline), ...axisStyle(theme) },
-          xAxis: { type: 'value', min: 0, max: 5, axisLabel: { color: theme.text }, splitLine: axisStyle(theme).splitLine },
-          series: [{
-            type: 'bar',
-            itemStyle: { borderRadius: [0, 4, 4, 0] },
-            data: rows.map((row) => ({
-              value: Number(row.avg_rating), // numbers arrive as strings; a chart needs numbers
-              itemStyle: { color: row.airline === picked ? pickColor : restColor, opacity: row.airline === picked ? 1 : 0.45 },
-            })),
-          }],
+        }],
+      };
+    }
+
+    // Right chart: picked vs rest over time. For review volume: picked count and its share of all reviews.
+    function trendOption (page, alias, kind, theme, name) {
+      const toMap = (query) => new Map((query.result?.rows ?? []).map((row) => [String(row.period).slice(0, 10), row]));
+      const mine = toMap(page.trendPick);
+      const rest = toMap(page.trendRest);
+      const periods = [...new Set([...mine.keys(), ...rest.keys()])].sort();
+      const pickColor = theme.cat[0];
+      const restColor = theme.cat[7];
+      const base = {
+        animation: false,
+        textStyle: { color: theme.text },
+        grid: { left: 8, right: 16, top: 24, bottom: 8, containLabel: true },
+        xAxis: { type: 'category', data: periods, ...axisStyle(theme) },
+      };
+      if (kind === 'count') {
+        const counts = periods.map((p) => num(mine.get(p)?.reviews) ?? 0);
+        const shares = periods.map((p, i) => {
+          const total = counts[i] + (num(rest.get(p)?.reviews) ?? 0);
+          return total ? counts[i] / total : null;
         });
+        return {
+          ...base,
+          tooltip: { trigger: 'axis' },
+          yAxis: [
+            { type: 'value', axisLabel: { color: theme.text }, splitLine: axisStyle(theme).splitLine },
+            { type: 'value', axisLabel: { color: theme.text, formatter: (v) => fmt.pct.format(v) }, splitLine: { show: false } },
+          ],
+          series: [
+            { name: `${name} reviews`, type: 'bar', itemStyle: { color: pickColor, opacity: 0.7 }, data: counts,
+              tooltip: { valueFormatter: (v) => fmt.count.format(v) } },
+            { name: 'Share of all reviews', type: 'line', yAxisIndex: 1, showSymbol: false, connectNulls: true,
+              lineStyle: { color: restColor, width: 2 }, itemStyle: { color: restColor }, data: shares,
+              tooltip: { valueFormatter: (v) => (v == null ? 'n/a' : fmt.pct.format(v)) } },
+          ],
+        };
+      }
+      // null (nothing rated that period) stays a gap, not a 0
+      const series = (map) => periods.map((p) => num(map.get(p)?.[alias]));
+      const valueAxis = kind === 'rating' ? { min: 0, max: 5 } : { min: 0, max: 1 };
+      return {
+        ...base,
+        tooltip: { trigger: 'axis', valueFormatter: (v) => show(v, kind) },
+        yAxis: { type: 'value', ...valueAxis, axisLabel: { color: theme.text, formatter: (v) => show(v, kind) }, splitLine: axisStyle(theme).splitLine },
+        series: [
+          { name, type: 'line', showSymbol: false, connectNulls: true, lineStyle: { color: pickColor, width: 2 }, itemStyle: { color: pickColor }, data: series(mine) },
+          { name: `Rest of ${NOUN[page.group]}`, type: 'line', showSymbol: false, lineStyle: { color: restColor, width: 2, type: 'dashed' }, itemStyle: { color: restColor }, data: series(rest) },
+        ],
+      };
+    }
+
+    function renderPage (page, theme) {
+      const name = picked[page.group];
+      const mineRow = page.kpiPick.result?.rows[0] ?? {};
+      const restRow = page.kpiRest.result?.rows[0] ?? {};
+      page.queries.forEach(logFirstResult);
+      renderKpis(page, mineRow, restRow);
+      page.el.querySelectorAll('.legend-pick').forEach((el) => { el.textContent = name; });
+
+      for (const [alias, , , kind] of page.sections) {
+        const sectionEl = page.el.querySelector(`[data-anfra-block="${page.key}-${alias}"]`);
+        const [text, dir] = deltaText(kind, num(mineRow[alias]), num(restRow[alias]));
+        const summary = sectionEl.querySelector('[data-summary]');
+        summary.textContent = `${name} ${show(num(mineRow[alias]), kind)} vs rest ${show(num(restRow[alias]), kind)}${text ? `  (${text})` : ''}`;
+        summary.className = `caption delta ${dir}`;
+        renderStatus([page.top, page.trendPick, page.trendRest], sectionEl.querySelector('.status'));
       }
 
-      if (trendPick.result || trendRest.result) {
-        // The two queries can cover different periods: line both up on the union of periods.
-        const toMap = (query) => new Map((query.result?.rows ?? []).map((row) => [String(row.period).slice(0, 10), row]));
-        const mine = toMap(trendPick);
-        const rest = toMap(trendRest);
-        const periods = [...new Set([...mine.keys(), ...rest.keys()])].sort();
-        // null (no rated reviews that period) stays a gap, not a 0
-        const series = (map) => periods.map((p) => (map.get(p)?.avg_rating == null ? null : Number(map.get(p).avg_rating)));
-        trendChart.setOption({
-          animation: false,
-          textStyle: { color: theme.text },
-          grid: { left: 8, right: 16, top: 16, bottom: 8, containLabel: true },
-          tooltip: { trigger: 'axis', valueFormatter: (v) => (v == null ? 'n/a' : fmt.rating.format(v)) },
-          xAxis: { type: 'category', data: periods, ...axisStyle(theme) },
-          yAxis: { type: 'value', min: 0, max: 5, axisLabel: { color: theme.text }, splitLine: axisStyle(theme).splitLine },
-          series: [
-            { name: picked, type: 'line', showSymbol: false, connectNulls: true, lineStyle: { color: pickColor, width: 2 }, itemStyle: { color: pickColor }, data: series(mine) },
-            { name: 'Rest of airlines', type: 'line', showSymbol: false, lineStyle: { color: restColor, width: 2, type: 'dashed' }, itemStyle: { color: restColor }, data: series(rest) },
-          ],
-        }, { replaceMerge: ['series'] });
+      for (const { chart, kind: chartKind, alias } of page.charts ?? []) {
+        const kind = page.kpis.find(([a]) => a === alias)[3];
+        if (chartKind === 'top' && page.top.result) {
+          chart.setOption(topOption(page, alias, kind, num(restRow[alias]), theme, name), { replaceMerge: ['series'] });
+        } else if (chartKind === 'trend' && (page.trendPick.result || page.trendRest.result)) {
+          chart.setOption(trendOption(page, alias, kind, theme, name), { replaceMerge: ['series', 'yAxis'] });
+        }
       }
+    }
+
+    // Only the open tab draws; the others draw when they are opened.
+    function render () {
+      renderPage(currentPage(), chartTheme());
     }
 
     app.subscribe(render);
     darkQuery.addEventListener('change', () => { applyTheme(); render(); });
 
-    const airlineBox = document.getElementById('airline-combobox');
-    const airlineList = document.getElementById('airline-listbox');
-    const seatBox = document.getElementById('seat-combobox');
-    const seatList = document.getElementById('seat-listbox');
+    // ---- Controls ----
+    const pickers = {
+      airline: { box: document.getElementById('airline-combobox'), list: document.getElementById('airline-listbox') },
+      airport: { box: document.getElementById('airport-combobox'), list: document.getElementById('airport-listbox') },
+    };
+    const travellerBox = document.getElementById('traveller-combobox');
+    const travellerList = document.getElementById('traveller-listbox');
 
-    byAirlineChart.on('click', (params) => {
-      const name = [...byAirline.result.rows].reverse()[params.dataIndex].airline;
-      airlineBox.setValue?.(name);
-      setAirline(name);
-    });
-
-    // Basecoat initializes comboboxes on DOMContentLoaded, so wait for it before refresh().
-    const domReady = document.readyState === 'loading'
-      ? new Promise((resolve) => document.addEventListener('DOMContentLoaded', resolve))
-      : Promise.resolve();
     function fillOptions (list, values) {
       list.replaceChildren(...values.map((value) => {
         const option = document.createElement('div');
@@ -434,22 +610,61 @@
         return option;
       }));
     }
-    Promise.all([pick.loadOptions(), seat.loadOptions(), domReady]).then(([airlines, seats]) => {
-      fillOptions(airlineList, airlines);
-      airlineBox.refresh();
-      airlineBox.setValue?.(DEFAULT_AIRLINE);
-      fillOptions(seatList, seats);
-      seatBox.refresh();
-    }).catch((err) => console.error('Could not load filter options', err));
 
-    airlineBox.addEventListener('change', (event) => {
-      const value = event.detail.value;
-      if (typeof value === 'string' && value) setAirline(value);
-    });
-    seatBox.addEventListener('change', (event) => {
+    // Basecoat initializes comboboxes on DOMContentLoaded, so wait for it before refresh().
+    const domReady = document.readyState === 'loading'
+      ? new Promise((resolve) => document.addEventListener('DOMContentLoaded', resolve))
+      : Promise.resolve();
+    const airlinePage = PAGES.find((p) => p.group === 'airline');
+    const airportPage = PAGES.find((p) => p.group === 'airport');
+    Promise.all([airlinePage.pickFilter.loadOptions(), airportPage.pickFilter.loadOptions(), travellerFilters[0].loadOptions(), domReady])
+      .then(([airlines, airports, travellers]) => {
+        for (const [group, values] of [['airline', airlines], ['airport', airports]]) {
+          fillOptions(pickers[group].list, values);
+          pickers[group].box.refresh();
+          pickers[group].box.setValue?.(DEFAULTS[group]);
+        }
+        fillOptions(travellerList, travellers);
+        travellerBox.refresh();
+      }).catch((err) => console.error('Could not load filter options', err));
+
+    for (const [group, { box }] of Object.entries(pickers)) {
+      box.addEventListener('change', (event) => {
+        const value = event.detail.value;
+        if (typeof value === 'string' && value) setEntity(group, value);
+      });
+    }
+    travellerBox.addEventListener('change', (event) => {
       const values = Array.isArray(event.detail.value) ? event.detail.value : [];
-      seat.setCondition({ operator: 'is', values });
+      for (const filter of travellerFilters) filter.setCondition({ operator: 'is', values });
       app.execute();
+    });
+
+    const fromInput = document.getElementById('date-from');
+    const toInput = document.getElementById('date-to');
+    function applyDateRange () {
+      const condition = fromInput.value && toInput.value
+        ? { operator: 'between', values: [fromInput.value, toInput.value] }
+        : { operator: 'is', values: [] };
+      for (const filter of dateFilters) filter.setCondition(condition);
+      app.execute();
+    }
+    fromInput.addEventListener('change', applyDateRange);
+    toInput.addEventListener('change', applyDateRange);
+    document.querySelectorAll('[data-years]').forEach((button) => {
+      button.addEventListener('click', () => {
+        const years = button.dataset.years;
+        if (years === 'all') {
+          fromInput.value = '';
+          toInput.value = '';
+        } else {
+          const today = new Date();
+          const from = new Date(Date.UTC(today.getUTCFullYear() - Number(years), today.getUTCMonth(), today.getUTCDate()));
+          fromInput.value = from.toISOString().slice(0, 10);
+          toInput.value = today.toISOString().slice(0, 10);
+        }
+        applyDateRange();
+      });
     });
 
     document.querySelectorAll('[data-grain]').forEach((button) => {
@@ -465,10 +680,10 @@
     });
 
     window.addEventListener('resize', () => {
-      byAirlineChart.resize();
-      trendChart.resize();
+      currentPage().charts?.forEach(({ chart }) => chart.resize());
     });
 
+    showPage(current);
     app.execute();
   </script>
 </body>

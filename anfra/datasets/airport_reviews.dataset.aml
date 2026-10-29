@@ -1,0 +1,13 @@
+Dataset airport_reviews {
+  label: 'Airport Reviews'
+  description: 'Skytrax airport reviews with the reviewed airport.'
+  data_source_name: 'skytrax'
+
+  models: [
+    fct_airport_review,
+    dim_airport,
+  ]
+  relationships: [
+    relationship(fct_airport_review.airport_id > dim_airport.airport_id, true),
+  ]
+}

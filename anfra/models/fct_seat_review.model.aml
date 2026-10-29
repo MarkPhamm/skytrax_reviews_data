@@ -1,0 +1,128 @@
+Model fct_seat_review {
+  type: 'table'
+  label: 'Seat Reviews'
+  description: 'One row per Skytrax seat review.'
+  data_source_name: 'skytrax'
+  table_name: '"seat_reviews"."fct_seat_review"'
+
+  dimension review_id {
+    label: 'Review Id'
+    type: 'number'
+    primary_key: true
+    definition: @sql {{ #SOURCE.review_id }};;
+  }
+  dimension airline_id {
+    label: 'Airline Id'
+    type: 'number'
+    hidden: true
+    definition: @sql {{ #SOURCE.airline_id }};;
+  }
+  dimension date_submitted {
+    label: 'Date Submitted'
+    type: 'date'
+    definition: @sql {{ #SOURCE.date_submitted_id }};;
+  }
+  dimension type_of_traveller {
+    label: 'Type Of Traveller'
+    type: 'text'
+    definition: @sql {{ #SOURCE.type_of_traveller }};;
+  }
+  dimension average_rating {
+    label: 'Average Rating'
+    type: 'number'
+    description: 'Mean of the sub-ratings the reviewer filled in (1-5).'
+    definition: @sql {{ #SOURCE.average_rating }};;
+  }
+  dimension recommended {
+    label: 'Recommended'
+    type: 'truefalse'
+    definition: @sql {{ #SOURCE.recommended }};;
+  }
+  dimension seat_legroom {
+    label: 'Legroom'
+    type: 'number'
+    hidden: true
+    definition: @sql {{ #SOURCE.seat_legroom }};;
+  }
+  dimension seat_recline {
+    label: 'Recline'
+    type: 'number'
+    hidden: true
+    definition: @sql {{ #SOURCE.seat_recline }};;
+  }
+  dimension seat_width {
+    label: 'Seat Width'
+    type: 'number'
+    hidden: true
+    definition: @sql {{ #SOURCE.seat_width }};;
+  }
+  dimension aisle_space {
+    label: 'Aisle Space'
+    type: 'number'
+    hidden: true
+    definition: @sql {{ #SOURCE.aisle_space }};;
+  }
+  dimension viewing_tv_screen {
+    label: 'TV Screen'
+    type: 'number'
+    hidden: true
+    definition: @sql {{ #SOURCE.viewing_tv_screen }};;
+  }
+
+  measure review_count {
+    label: 'Reviews'
+    type: 'number'
+    description: 'Number of reviews.'
+    definition: @sql {{ review_id }};;
+    aggregation_type: 'count'
+  }
+  measure avg_rating {
+    label: 'Avg Rating'
+    type: 'number'
+    description: 'Average of average_rating across reviews (1-5).'
+    definition: @sql {{ average_rating }};;
+    aggregation_type: 'avg'
+  }
+  measure recommend_rate {
+    label: '% Recommended'
+    type: 'number'
+    description: 'Share of reviews where the reviewer recommends it.'
+    definition: @sql CASE WHEN {{ recommended }} THEN 1.0 ELSE 0.0 END;;
+    aggregation_type: 'avg'
+  }
+  measure avg_seat_legroom {
+    label: 'Avg Legroom'
+    type: 'number'
+    description: '1-5; reviews that left it blank are skipped.'
+    definition: @sql {{ seat_legroom }};;
+    aggregation_type: 'avg'
+  }
+  measure avg_seat_recline {
+    label: 'Avg Recline'
+    type: 'number'
+    description: '1-5; reviews that left it blank are skipped.'
+    definition: @sql {{ seat_recline }};;
+    aggregation_type: 'avg'
+  }
+  measure avg_seat_width {
+    label: 'Avg Seat Width'
+    type: 'number'
+    description: '1-5; reviews that left it blank are skipped.'
+    definition: @sql {{ seat_width }};;
+    aggregation_type: 'avg'
+  }
+  measure avg_aisle_space {
+    label: 'Avg Aisle Space'
+    type: 'number'
+    description: '1-5; reviews that left it blank are skipped.'
+    definition: @sql {{ aisle_space }};;
+    aggregation_type: 'avg'
+  }
+  measure avg_viewing_tv_screen {
+    label: 'Avg TV Screen'
+    type: 'number'
+    description: '1-5; reviews that left it blank are skipped.'
+    definition: @sql {{ viewing_tv_screen }};;
+    aggregation_type: 'avg'
+  }
+}

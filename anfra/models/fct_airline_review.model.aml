@@ -27,6 +27,11 @@ Model fct_airline_review {
     type: 'text'
     definition: @sql {{ #SOURCE.seat_type }};;
   }
+  dimension type_of_traveller {
+    label: 'Type Of Traveller'
+    type: 'text'
+    definition: @sql {{ #SOURCE.type_of_traveller }};;
+  }
   dimension average_rating {
     label: 'Average Rating'
     type: 'number'
